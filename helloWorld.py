@@ -1,6 +1,7 @@
 import csv
 import numpy as np
 
+bots = ["swx-jenkins3", "swx-jenkins2", "MrBr-github"]
 
 def digits(str):
 
@@ -12,7 +13,7 @@ def digits(str):
 
 
 def is_valid(word):
-    non_interesting = ['with', 'coverity']
+    non_interesting = ['with', 'coverity', 'bot:retest']
 
     if len(word) < 4:
         return False
@@ -32,7 +33,6 @@ def get_users_and_words(f):
     users = []
     words = []
     with open(f, newline='') as csvfile:
-
         cnt = 0
         fieldnames = ['line', 'user', 'body']
         reader = csv.DictReader(csvfile, fieldnames=fieldnames)
@@ -41,11 +41,17 @@ def get_users_and_words(f):
             user = row['user']
             body = row['body'].lower()
 
+            if user in bots:
+                continue
+
             if user not in users:
                 users.append(user)
 
             wlist = body.split()
             for word in wlist:
+                if "from:" in word:
+                    break
+
                 if is_valid(word):
                     cnt = cnt + 1
                 if is_valid(word) and word not in words:
@@ -68,30 +74,23 @@ def get_np_array(f, users, words):
             user = row['user']
             body = row['body'].lower()
 
+            if user in bots:
+                continue
+
+            #if "From" in :
+            #    yy = 9
+
             wlist = body.split()
             for word in wlist:
+                if "from:" in word:
+                    break
+
                 if is_valid(word):
                     nparr[users.index(user), words.index(word)] = nparr[users.index(user), words.index(word)] + 1
 
     return nparr
 
 
-
-#a = [0] * 250
-
-#b = [1] * 250
-
-#y = np.array(a)
-
-#b[50] = 8
-
-#y = np.append(y, b)
-#y = np.reshape(y, [2, 250])
-
-# print(y.size)
-
-
 #usersList, wordsList = get_users_and_words("Mellanox_nvmx.csv")
 #x = get_np_array("Mellanox_nvmx.csv", usersList, wordsList)
-#b=2
-#analyze_csv("text1.txt")
+
