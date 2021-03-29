@@ -1,5 +1,6 @@
 import csv
 import numpy as np
+import re
 
 bots = ["swx-jenkins3", "swx-jenkins2", "MrBr-github"]
 
@@ -91,6 +92,52 @@ def get_np_array(f, users, words):
     return nparr
 
 
+def pp_file(f):
+    newName = "PP_" + f
+    newF = open(newName, "w")
+
+    with open(f, newline='') as csvfile:
+
+        fieldnames = ['line', 'user', 'body']
+        reader = csv.DictReader(csvfile, fieldnames=fieldnames)
+
+        for row in reader:
+            line = row['line']
+            user = row['user']
+            body = row['body'].lower()
+
+            newF.write("{},{},".format(line, user))
+            wlist = body.split()
+            for word in wlist:
+                newWord = re.sub('[^a-zA-Z]+', '', word)
+                if len(newWord) > 0:
+                    space = " "
+                else:
+                    space = ""
+
+                if "?" in word:
+                    q = "???? "
+                else:
+                    q = ""
+
+                if "!" in word:
+                    ex = "!!!! "
+                else:
+                    ex = ""
+
+                newF.write("{}{}{}{}".format(newWord, space, q, ex))
+                #if q:
+                #    newF.write("{} ? ".format(newWord))
+                #else:
+                #    newF.write("{} ".format(newWord))
+
+            newF.write("\n")
+
+    newF.close()
+    return newName
+
+
 #usersList, wordsList = get_users_and_words("Mellanox_nvmx.csv")
 #x = get_np_array("Mellanox_nvmx.csv", usersList, wordsList)
 
+#print(pp_file("example.csv"))
