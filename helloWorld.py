@@ -14,7 +14,7 @@ def digits(str):
 
 
 def is_valid(word):
-    non_interesting = ['with', 'coverity', 'bot:retest']
+    non_interesting = ['with', 'coverity', 'bot:retest', 'this', 'that', 'these']
 
     if len(word) < 4:
         return False
@@ -55,8 +55,8 @@ def get_users_and_words(f):
 
                 if is_valid(word):
                     cnt = cnt + 1
-                if is_valid(word) and word not in words:
-                    words.append(word)
+                    if word not in words:
+                        words.append(word)
 
     print(cnt)
     return users, words
