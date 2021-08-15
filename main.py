@@ -16,7 +16,7 @@ def print_sorted(name, values):
 
 
 #fname = pp_file("Mellanox_nvmx.csv")
-fname = "inputh.txt"
+fname = "input.txt"
 titles, vocab = get_users_and_words(fname)
 X = get_np_array(fname, titles, vocab)
 
