@@ -15,7 +15,19 @@ def get_translated_text(fname):
 
 
 def is_valid_text(text):
-    return not (pd.isnull(text)) and not (isinstance(text, (int, float)))
+
+    if pd.isnull(text):
+        return False
+
+    if isinstance(text, (int, float)):
+        return False
+
+    wlist = text.split()
+    if len(wlist) < 2:
+        return False
+
+    return True
+
 
 # df = pd.read_excel('Book1.xlsx', sheetname=None, header=None)
 # df = pd.read_excel('Book1.xlsx')

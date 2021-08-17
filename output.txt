@@ -1,16 +1,51 @@
+Results for 2015
+Users: 7658 (Diff Year : 2778, Inv text: 35, T.ratio: 1597, Dup: 42)
+Topic 0: always will person good people everything does you
+Topic 1: commander soldiers very man officer army during war
+Topic 2: life family children very woman school time mother
+Topic 3: man very world one many rabbi ability field
+Topic 4: people king leader man led against great knew
+Topic 5: character positive qualities traits chose others ability person
+Topic 6: even people give way believed goal man state
+Topic 7: man israel state country very people leader minister
+Topic 8: character book positive very chose even does series
+Topic 9: person character knows always very does people good
+
+First Topic Distribution: [0:1176] [1:458] [2:575] [3:432] [4:524] [5:819] [6:821] [7:665] [8:545] [9:1643]  (Total 7658)
+Officers Distribution: [0:58.59%] [1:69.00%] [2:69.22%] [3:62.50%] [4:63.74%] [5:63.25%] [6:66.14%] [7:68.72%] [8:64.04%] [9:64.27%]  (Total 64.38%)
+
+
+Results for 2020
+Users: 1704 (Diff Year : 9967, Inv text: 4, T.ratio: 392, Dup: 43)
+Topic 0: character person always will good qualities very appreciate
+Topic 1: world man time one great creative many change
+Topic 2: state even appreciate against people israel character jewish
+Topic 3: you qualities appreciate character will can even very
+Topic 4: life family through despite went even father after
+Topic 5: people qualities leader appreciate man great example person
+Topic 6: character book does series about chose read even
+Topic 7: soldiers commander officer school very would army course
+Topic 8: player work very team hard world best always
+Topic 9: character qualities woman appreciate very life positive society
+
+First Topic Distribution: [0:552] [1:61] [2:173] [3:286] [4:145] [5:136] [6:54] [7:58] [8:94] [9:145]  (Total 1704)
+Officers Distribution: [0:21.92%] [1:21.31%] [2:21.97%] [3:16.78%] [4:17.24%] [5:17.65%] [6:18.52%] [7:8.62%] [8:12.77%] [9:20.69%]  (Total 19.13%)
+
+
 Results for 2021
 Users: 498 (Diff Year : 11475, Inv text: 18, T.ratio: 119, Dup: 0)
-Topic 0: character appreciate positive because qualities you people traits
-Topic 1: will commander soldiers character also their other one
-Topic 2: life very important time himself something change both
-Topic 3: people appreciate does knows because good qualities also
-Topic 4: world work hard appreciate things more age day
-Topic 5: leader people even man qualities person values figure
-Topic 6: character family life see series book love lot
-Topic 7: person always very character life will even because
-Topic 8: israel country state would because first many during
-Topic 9: very really woman despite herself appreciate something against
+Topic 0: very you appreciate can really things people important
+Topic 1: character traits positive qualities life chose appreciate series
+Topic 2: always very life even everything positive much lot
+Topic 3: does character book woman others give very herself
+Topic 4: about family man one give country himself even
+Topic 5: people leader even qualities israel leadership way man
+Topic 6: appreciate state desire world qualities many lot really
+Topic 7: person character people qualities always will around good
+Topic 8: world during also children very things woman high
+Topic 9: work important commander hard will soldiers their also
 
-First Topic Distribution: 0:88 1:25 2:23 3:41 4:28 5:44 6:31 7:143 8:31 9:44 
+First Topic Distribution: [0:68] [1:52] [2:57] [3:29] [4:28] [5:58] [6:33] [7:122] [8:28] [9:23]  (Total 498)
+Officers Distribution: [0:2.94%] [1:3.85%] [2:1.75%] [3:0.00%] [4:3.57%] [5:3.45%] [6:0.00%] [7:5.74%] [8:10.71%] [9:0.00%]  (Total 3.61%)
 
 
