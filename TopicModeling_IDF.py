@@ -6,6 +6,7 @@ from OType import OType
 from OType import get_officer_type
 from OType import NONE
 from DataSet import DataSet
+from CandData import CandData
 import re
 import numpy as np
 import lda
@@ -21,7 +22,11 @@ INVALID_TEXT = 1
 INVALID_TRANS_RATIO = 2
 INVALID_OFFICER = 3
 INVALID_SADIR = 4
+INVALID_FAIL = 5
 
+
+MEDIC = "הרחק-רפואיות"
+BIRO = "סגירה מנהלתית"
 
 def valid_translation(db, engLines, i):
     hebText = db.text[i]
@@ -50,13 +55,20 @@ def valid_index(db, engLines, i, year, errors):
         errors[INVALID_OFFICER] = errors[INVALID_OFFICER] + 1
         valid = False
 
-    if db.officer[i] == 1 and is_empty_text(db.TZIUN_KKZ[i]):
+    officer = db.officer[i]
+
+    if officer == 1 and is_empty_text(db.TZIUN_KKZ[i]):
         errors[INVALID_OFFICER] = errors[INVALID_OFFICER] + 1
         valid = False
 
-    if db.officer[i] == 0 and not is_empty_text(db.TZIUN_KKZ[i]):
+    if officer == 0 and not is_empty_text(db.TZIUN_KKZ[i]):
         errors[INVALID_SADIR] = errors[INVALID_SADIR] + 1
         valid = False
+
+#    sium = db.OFEN_SIUM_KKZ[i]
+#    if sium == MEDIC or sium == BIRO:
+#        errors[INVALID_FAIL] = errors[INVALID_FAIL] + 1
+#        valid = False
 
     return valid
 
@@ -88,7 +100,7 @@ def get_users_and_words(myDb, engLines, year, outFile):
     words = []
     cands = {}
     duplicate = 0
-    errors = [0, 0, 0, 0, 0]
+    errors = [0, 0, 0, 0, 0, 0]
 
     for i in range(0, DATA_LEN):
         #if i == 8407:
@@ -110,13 +122,14 @@ def get_users_and_words(myDb, engLines, year, outFile):
                 #print("{} already in users".format(user))
                 duplicate = duplicate + 1
 
-    outFile.write("Users: {} (Diff Year : {}, Inv text: {}, T.ratio: {}, Dup: {}, Inv Off: {}, Inv Sadir {})\n".format(users.__len__(),
+    outFile.write("Users: {} (Diff Year : {}, Inv text: {}, T.ratio: {}, Dup: {}, Inv Off: {}, Inv Sadir {}, Inv Fail {})\n".format(users.__len__(),
                                                                                             errors[YEAR_MISMATCH],
                                                                                             errors[INVALID_TEXT],
                                                                                             errors[INVALID_TRANS_RATIO],
                                                                                             duplicate,
                                                                                             errors[INVALID_OFFICER],
-                                                                                            errors[INVALID_SADIR]))
+                                                                                            errors[INVALID_SADIR],
+                                                                                            errors[INVALID_FAIL]))
     return users, words, cands
 
 
@@ -124,7 +137,7 @@ def get_np_array(myDb, engLines, users, words, year):
     reviewed = []
     nparr = np.array([0] * len(users) * len(words))
     nparr = np.reshape(nparr, [len(users), len(words)])
-    errors = [0, 0, 0, 0, 0]
+    errors = [0, 0, 0, 0, 0, 0]
 
     for i in range(0, DATA_LEN):
         if valid_index(myDb, engLines, i, year, errors):
@@ -149,6 +162,7 @@ def get_np_array(myDb, engLines, users, words, year):
 
 def print_topic_modeling_stats(db, doc_topic, users, cands, file):
     Otypes = []
+    ot = OType(N, 0)
     dSet = DataSet("Summary")
 
     for i in range(4):
@@ -156,12 +170,14 @@ def print_topic_modeling_stats(db, doc_topic, users, cands, file):
 
     for i in range(0, len(users)):
         line = cands[users[i]]
-        o = db.officer[line]
-        dSet.add_item(o)
-        Otypes[get_officer_type(line)].add_item(doc_topic[i], o)
+        cand = CandData(db, line)
+        dSet.add_item(cand)
+        Otypes[get_officer_type(line)].add_item(doc_topic[i], cand)
+        ot.add_item(doc_topic[i], cand)
 
 
     file.write("\n{}\n".format(dSet.print_data()))
+    file.write("{}\n".format(ot.print_topics()))
     for t in Otypes:
         file.write("{}\n".format(t.print_topics()))
 
@@ -173,10 +189,10 @@ def run_topic_modeling(cand_year, outFile):
     engLines = get_translated_text("Translated_text.txt")
 
     users, words, cands = get_users_and_words(db, engLines, cand_year, outFile)
-    return 0
+    #return 0
     X = get_np_array(db, engLines, users, words, cand_year)
 
-    model = lda.LDA(n_topics=N, n_iter=300, random_state=1)
+    model = lda.LDA(n_topics=N, n_iter=1500, random_state=1)
     model.fit(X)  # model.fit_transform(X) is also available
     topic_word = model.topic_word_  # model.components_ also works
     n_top_words = 8
@@ -193,8 +209,8 @@ def run_topic_modeling(cand_year, outFile):
 
 outFile = open("output.txt", "w")
 run_topic_modeling(2015, outFile)
-run_topic_modeling(2020, outFile)
-run_topic_modeling(2021, outFile)
+#run_topic_modeling(2020, outFile)
+#run_topic_modeling(2021, outFile)
 outFile.close()
 
 print("Done")

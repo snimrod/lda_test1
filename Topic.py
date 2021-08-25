@@ -28,8 +28,8 @@ class Topic:
         for i in range(LEVELS):
             self.dSets.append(DataSet(i))
 
-    def add_item(self, probability, officer):
-        self.dSets[prob_to_level(probability)].add_item(officer)
+    def add_item(self, probability, cand):
+        self.dSets[prob_to_level(probability)].add_item(cand)
 
     def print_datasets(self):
         output = "Topic {}\n".format(self.id)

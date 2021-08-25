@@ -1,6 +1,385 @@
 Results for 2015
-Users: 7513 (Diff Year : 2778, Inv text: 35, T.ratio: 1597, Dup: 41, Inv Off: 14, Inv Sadir 171)
-Results for 2020
-Users: 968 (Diff Year : 9967, Inv text: 4, T.ratio: 392, Dup: 24, Inv Off: 30, Inv Sadir 894)
-Results for 2021
-Users: 270 (Diff Year : 11475, Inv text: 18, T.ratio: 119, Dup: 0, Inv Off: 0, Inv Sadir 285)
+Users: 7513 (Diff Year : 2778, Inv text: 35, T.ratio: 1597, Dup: 41, Inv Off: 14, Inv Sadir 171, Inv Fail 0)
+Topic 0: character positive traits qualities chose very think opinion
+Topic 1: king man people even leader despite one knew
+Topic 2: person character knows people does others positive very
+Topic 3: people person you will others character good does
+Topic 4: very man also school person high knowledge rabbi
+Topic 5: even people state man believed way give goal
+Topic 6: always person character very will everything does good
+Topic 7: commander soldiers man very example officer personal military
+Topic 8: life children family woman book character chose father
+Topic 9: man people israel leader very country figure state
+
+Summary - Count: 7513, Officers 65.54% (4924), Exel 2.58% (127), kkz avg 80.95
+Officer Type None
+
+None - Count: 7513, Officers 65.54% (4924), Exel 2.58% (127), kkz avg 80.95
+Topic 0
+0 - Count: 6021, Officers 65.30% (3932), Exel 2.64% (104), kkz avg 80.97
+1 - Count: 980, Officers 68.06% (667), Exel 2.55% (17), kkz avg 80.81
+2 - Count: 347, Officers 63.40% (220), Exel 2.27% (5), kkz avg 81.30
+3 - Count: 127, Officers 66.93% (85), Exel 1.18% (1), kkz avg 79.81
+4 - Count: 38, Officers 52.63% (20), Exel 0.00% (0), kkz avg 82.35
+
+Topic 1
+0 - Count: 6677, Officers 65.87% (4398), Exel 2.66% (117), kkz avg 80.94
+1 - Count: 511, Officers 60.86% (311), Exel 2.25% (7), kkz avg 80.82
+2 - Count: 227, Officers 66.52% (151), Exel 0.00% (0), kkz avg 80.84
+3 - Count: 90, Officers 66.67% (60), Exel 5.00% (3), kkz avg 82.37
+4 - Count: 8, Officers 50.00% (4), Exel 0.00% (0), kkz avg 81.50
+
+Topic 2
+0 - Count: 5198, Officers 65.64% (3412), Exel 2.64% (90), kkz avg 80.97
+1 - Count: 934, Officers 64.67% (604), Exel 1.99% (12), kkz avg 81.29
+2 - Count: 673, Officers 68.05% (458), Exel 3.49% (16), kkz avg 80.71
+3 - Count: 443, Officers 64.11% (284), Exel 2.11% (6), kkz avg 80.48
+4 - Count: 265, Officers 62.64% (166), Exel 1.81% (3), kkz avg 80.67
+
+Topic 3
+0 - Count: 5957, Officers 66.41% (3956), Exel 2.60% (103), kkz avg 80.98
+1 - Count: 941, Officers 62.70% (590), Exel 2.71% (16), kkz avg 80.82
+2 - Count: 407, Officers 65.85% (268), Exel 1.12% (3), kkz avg 80.88
+3 - Count: 169, Officers 48.52% (82), Exel 3.66% (3), kkz avg 80.20
+4 - Count: 39, Officers 71.79% (28), Exel 7.14% (2), kkz avg 81.11
+
+Topic 4
+0 - Count: 6570, Officers 65.16% (4281), Exel 2.66% (114), kkz avg 80.85
+1 - Count: 632, Officers 68.20% (431), Exel 2.09% (9), kkz avg 81.65
+2 - Count: 231, Officers 67.53% (156), Exel 1.28% (2), kkz avg 81.06
+3 - Count: 69, Officers 68.12% (47), Exel 4.26% (2), kkz avg 82.62
+4 - Count: 11, Officers 81.82% (9), Exel 0.00% (0), kkz avg 83.78
+
+Topic 5
+0 - Count: 6021, Officers 65.17% (3924), Exel 2.62% (103), kkz avg 80.96
+1 - Count: 749, Officers 65.42% (490), Exel 1.84% (9), kkz avg 81.15
+2 - Count: 406, Officers 70.94% (288), Exel 3.12% (9), kkz avg 80.67
+3 - Count: 241, Officers 67.63% (163), Exel 1.84% (3), kkz avg 80.49
+4 - Count: 96, Officers 61.46% (59), Exel 5.08% (3), kkz avg 80.73
+
+Topic 6
+0 - Count: 5615, Officers 66.32% (3724), Exel 2.66% (99), kkz avg 81.07
+1 - Count: 899, Officers 66.74% (600), Exel 2.17% (13), kkz avg 80.95
+2 - Count: 587, Officers 62.69% (368), Exel 1.90% (7), kkz avg 80.13
+3 - Count: 282, Officers 56.74% (160), Exel 3.12% (5), kkz avg 80.36
+4 - Count: 130, Officers 55.38% (72), Exel 4.17% (3), kkz avg 79.75
+
+Topic 7
+0 - Count: 6643, Officers 65.14% (4327), Exel 2.59% (112), kkz avg 80.88
+1 - Count: 535, Officers 68.97% (369), Exel 1.63% (6), kkz avg 81.14
+2 - Count: 234, Officers 64.96% (152), Exel 3.95% (6), kkz avg 81.98
+3 - Count: 87, Officers 75.86% (66), Exel 4.55% (3), kkz avg 82.18
+4 - Count: 14, Officers 71.43% (10), Exel 0.00% (0), kkz avg 80.00
+
+Topic 8
+0 - Count: 6403, Officers 65.39% (4187), Exel 2.48% (104), kkz avg 80.98
+1 - Count: 690, Officers 65.94% (455), Exel 3.30% (15), kkz avg 80.80
+2 - Count: 299, Officers 65.55% (196), Exel 3.57% (7), kkz avg 80.83
+3 - Count: 102, Officers 70.59% (72), Exel 1.39% (1), kkz avg 80.36
+4 - Count: 19, Officers 73.68% (14), Exel 0.00% (0), kkz avg 80.71
+
+Topic 9
+0 - Count: 6181, Officers 64.83% (4007), Exel 2.50% (100), kkz avg 80.79
+1 - Count: 641, Officers 68.02% (436), Exel 2.29% (10), kkz avg 81.80
+2 - Count: 416, Officers 71.39% (297), Exel 2.02% (6), kkz avg 81.40
+3 - Count: 229, Officers 68.12% (156), Exel 7.05% (11), kkz avg 81.93
+4 - Count: 46, Officers 60.87% (28), Exel 0.00% (0), kkz avg 79.57
+
+
+Officer Type None
+
+None - Count: 2326, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+Topic 0
+0 - Count: 1880, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+1 - Count: 286, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+2 - Count: 106, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+3 - Count: 36, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+4 - Count: 18, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+
+Topic 1
+0 - Count: 2044, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+1 - Count: 182, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+2 - Count: 68, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+3 - Count: 28, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+4 - Count: 4, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+
+Topic 2
+0 - Count: 1589, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+1 - Count: 304, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+2 - Count: 198, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+3 - Count: 145, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+4 - Count: 90, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+
+Topic 3
+0 - Count: 1796, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+1 - Count: 315, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+2 - Count: 123, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+3 - Count: 83, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+4 - Count: 9, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+
+Topic 4
+0 - Count: 2054, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+1 - Count: 184, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+2 - Count: 68, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+3 - Count: 19, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+4 - Count: 1, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+
+Topic 5
+0 - Count: 1886, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+1 - Count: 228, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+2 - Count: 106, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+3 - Count: 72, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+4 - Count: 34, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+
+Topic 6
+0 - Count: 1699, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+1 - Count: 267, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+2 - Count: 201, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+3 - Count: 111, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+4 - Count: 48, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+
+Topic 7
+0 - Count: 2085, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+1 - Count: 144, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+2 - Count: 73, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+3 - Count: 20, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+4 - Count: 4, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+
+Topic 8
+0 - Count: 1997, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+1 - Count: 208, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+2 - Count: 88, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+3 - Count: 29, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+4 - Count: 4, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+
+Topic 9
+0 - Count: 1956, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+1 - Count: 186, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+2 - Count: 106, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+3 - Count: 61, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+4 - Count: 17, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+
+
+Officer Type Lahav
+
+Lahav - Count: 1474, Officers 94.91% (1399), Exel 3.00% (42), kkz avg 81.97
+Topic 0
+0 - Count: 1238, Officers 95.07% (1177), Exel 3.23% (38), kkz avg 82.01
+1 - Count: 155, Officers 96.77% (150), Exel 2.00% (3), kkz avg 81.40
+2 - Count: 53, Officers 90.57% (48), Exel 0.00% (0), kkz avg 82.67
+3 - Count: 22, Officers 81.82% (18), Exel 5.56% (1), kkz avg 81.11
+4 - Count: 6, Officers 100.00% (6), Exel 0.00% (0), kkz avg 86.83
+
+Topic 1
+0 - Count: 1272, Officers 95.20% (1211), Exel 3.14% (38), kkz avg 81.94
+1 - Count: 115, Officers 93.04% (107), Exel 2.80% (3), kkz avg 82.26
+2 - Count: 63, Officers 92.06% (58), Exel 0.00% (0), kkz avg 81.95
+3 - Count: 23, Officers 95.65% (22), Exel 4.55% (1), kkz avg 82.59
+4 - Count: 1, Officers 100.00% (1), Exel 0.00% (0), kkz avg 77.00
+
+Topic 2
+0 - Count: 1072, Officers 94.59% (1014), Exel 2.96% (30), kkz avg 82.19
+1 - Count: 180, Officers 96.67% (174), Exel 1.72% (3), kkz avg 81.93
+2 - Count: 111, Officers 96.40% (107), Exel 4.67% (5), kkz avg 80.24
+3 - Count: 72, Officers 93.06% (67), Exel 5.97% (4), kkz avg 82.64
+4 - Count: 39, Officers 94.87% (37), Exel 0.00% (0), kkz avg 80.19
+
+Topic 3
+0 - Count: 1150, Officers 94.96% (1092), Exel 3.02% (33), kkz avg 81.97
+1 - Count: 179, Officers 94.97% (170), Exel 4.12% (7), kkz avg 82.42
+2 - Count: 96, Officers 92.71% (89), Exel 0.00% (0), kkz avg 81.65
+3 - Count: 35, Officers 97.14% (34), Exel 5.88% (2), kkz avg 80.29
+4 - Count: 14, Officers 100.00% (14), Exel 0.00% (0), kkz avg 83.43
+
+Topic 4
+0 - Count: 1335, Officers 94.91% (1267), Exel 3.00% (38), kkz avg 81.87
+1 - Count: 99, Officers 94.95% (94), Exel 4.26% (4), kkz avg 83.34
+2 - Count: 34, Officers 97.06% (33), Exel 0.00% (0), kkz avg 81.61
+3 - Count: 3, Officers 66.67% (2), Exel 0.00% (0), kkz avg 80.50
+4 - Count: 3, Officers 100.00% (3), Exel 0.00% (0), kkz avg 86.67
+
+Topic 5
+0 - Count: 1169, Officers 94.35% (1103), Exel 3.26% (36), kkz avg 81.95
+1 - Count: 162, Officers 96.91% (157), Exel 1.91% (3), kkz avg 82.20
+2 - Count: 87, Officers 96.55% (84), Exel 1.19% (1), kkz avg 81.37
+3 - Count: 38, Officers 97.37% (37), Exel 0.00% (0), kkz avg 81.68
+4 - Count: 18, Officers 100.00% (18), Exel 11.11% (2), kkz avg 84.78
+
+Topic 6
+0 - Count: 1135, Officers 95.07% (1079), Exel 2.87% (31), kkz avg 82.01
+1 - Count: 172, Officers 93.60% (161), Exel 3.73% (6), kkz avg 81.96
+2 - Count: 105, Officers 95.24% (100), Exel 3.00% (3), kkz avg 81.66
+3 - Count: 45, Officers 97.78% (44), Exel 4.55% (2), kkz avg 82.27
+4 - Count: 17, Officers 88.24% (15), Exel 0.00% (0), kkz avg 81.13
+
+Topic 7
+0 - Count: 1183, Officers 95.35% (1128), Exel 3.01% (34), kkz avg 81.93
+1 - Count: 158, Officers 91.14% (144), Exel 2.08% (3), kkz avg 81.78
+2 - Count: 87, Officers 94.25% (82), Exel 3.66% (3), kkz avg 82.79
+3 - Count: 39, Officers 97.44% (38), Exel 5.26% (2), kkz avg 82.61
+4 - Count: 7, Officers 100.00% (7), Exel 0.00% (0), kkz avg 80.14
+
+Topic 8
+0 - Count: 1299, Officers 95.00% (1234), Exel 2.92% (36), kkz avg 81.96
+1 - Count: 116, Officers 95.69% (111), Exel 5.41% (6), kkz avg 82.05
+2 - Count: 44, Officers 88.64% (39), Exel 0.00% (0), kkz avg 82.28
+3 - Count: 14, Officers 100.00% (14), Exel 0.00% (0), kkz avg 81.86
+4 - Count: 1, Officers 100.00% (1), Exel 0.00% (0), kkz avg 81.00
+
+Topic 9
+0 - Count: 1186, Officers 94.69% (1123), Exel 2.94% (33), kkz avg 81.92
+1 - Count: 130, Officers 96.15% (125), Exel 1.60% (2), kkz avg 82.72
+2 - Count: 94, Officers 95.74% (90), Exel 2.22% (2), kkz avg 81.08
+3 - Count: 54, Officers 94.44% (51), Exel 9.80% (5), kkz avg 82.98
+4 - Count: 10, Officers 100.00% (10), Exel 0.00% (0), kkz avg 81.40
+
+
+Officer Type Maoz
+
+Maoz - Count: 929, Officers 93.11% (865), Exel 2.43% (21), kkz avg 78.17
+Topic 0
+0 - Count: 712, Officers 93.26% (664), Exel 2.11% (14), kkz avg 78.10
+1 - Count: 141, Officers 94.33% (133), Exel 4.51% (6), kkz avg 78.80
+2 - Count: 49, Officers 85.71% (42), Exel 2.38% (1), kkz avg 78.02
+3 - Count: 21, Officers 95.24% (20), Exel 0.00% (0), kkz avg 76.70
+4 - Count: 6, Officers 100.00% (6), Exel 0.00% (0), kkz avg 78.00
+
+Topic 1
+0 - Count: 845, Officers 92.78% (784), Exel 2.55% (20), kkz avg 78.26
+1 - Count: 57, Officers 96.49% (55), Exel 1.82% (1), kkz avg 77.36
+2 - Count: 20, Officers 100.00% (20), Exel 0.00% (0), kkz avg 77.20
+3 - Count: 7, Officers 85.71% (6), Exel 0.00% (0), kkz avg 77.50
+4 - Count: 0, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+
+Topic 2
+0 - Count: 640, Officers 92.97% (595), Exel 3.36% (20), kkz avg 78.09
+1 - Count: 103, Officers 91.26% (94), Exel 0.00% (0), kkz avg 78.52
+2 - Count: 92, Officers 96.74% (89), Exel 1.12% (1), kkz avg 78.38
+3 - Count: 58, Officers 91.38% (53), Exel 0.00% (0), kkz avg 77.09
+4 - Count: 36, Officers 94.44% (34), Exel 0.00% (0), kkz avg 79.79
+
+Topic 3
+0 - Count: 751, Officers 93.08% (699), Exel 2.29% (16), kkz avg 78.10
+1 - Count: 114, Officers 92.11% (105), Exel 3.81% (4), kkz avg 78.58
+2 - Count: 45, Officers 93.33% (42), Exel 0.00% (0), kkz avg 78.29
+3 - Count: 14, Officers 100.00% (14), Exel 0.00% (0), kkz avg 78.00
+4 - Count: 5, Officers 100.00% (5), Exel 20.00% (1), kkz avg 78.40
+
+Topic 4
+0 - Count: 819, Officers 92.92% (761), Exel 2.63% (20), kkz avg 78.10
+1 - Count: 80, Officers 93.75% (75), Exel 1.33% (1), kkz avg 78.71
+2 - Count: 26, Officers 96.15% (25), Exel 0.00% (0), kkz avg 78.64
+3 - Count: 4, Officers 100.00% (4), Exel 0.00% (0), kkz avg 79.00
+4 - Count: 0, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+
+Topic 5
+0 - Count: 750, Officers 93.33% (700), Exel 2.29% (16), kkz avg 78.20
+1 - Count: 86, Officers 90.70% (78), Exel 1.28% (1), kkz avg 78.22
+2 - Count: 49, Officers 93.88% (46), Exel 4.35% (2), kkz avg 78.24
+3 - Count: 34, Officers 94.12% (32), Exel 3.12% (1), kkz avg 77.72
+4 - Count: 10, Officers 90.00% (9), Exel 11.11% (1), kkz avg 76.78
+
+Topic 6
+0 - Count: 669, Officers 93.27% (624), Exel 2.88% (18), kkz avg 78.30
+1 - Count: 124, Officers 92.74% (115), Exel 0.87% (1), kkz avg 78.50
+2 - Count: 74, Officers 94.59% (70), Exel 0.00% (0), kkz avg 77.01
+3 - Count: 44, Officers 90.91% (40), Exel 2.50% (1), kkz avg 77.95
+4 - Count: 18, Officers 88.89% (16), Exel 6.25% (1), kkz avg 76.44
+
+Topic 7
+0 - Count: 844, Officers 93.01% (785), Exel 2.29% (18), kkz avg 78.12
+1 - Count: 53, Officers 92.45% (49), Exel 2.04% (1), kkz avg 77.73
+2 - Count: 18, Officers 94.44% (17), Exel 5.88% (1), kkz avg 79.65
+3 - Count: 13, Officers 100.00% (13), Exel 7.69% (1), kkz avg 81.15
+4 - Count: 1, Officers 100.00% (1), Exel 0.00% (0), kkz avg 76.00
+
+Topic 8
+0 - Count: 776, Officers 93.17% (723), Exel 2.07% (15), kkz avg 78.21
+1 - Count: 94, Officers 91.49% (86), Exel 3.49% (3), kkz avg 77.87
+2 - Count: 42, Officers 92.86% (39), Exel 5.13% (2), kkz avg 78.18
+3 - Count: 13, Officers 100.00% (13), Exel 7.69% (1), kkz avg 78.23
+4 - Count: 4, Officers 100.00% (4), Exel 0.00% (0), kkz avg 76.75
+
+Topic 9
+0 - Count: 783, Officers 93.49% (732), Exel 2.32% (17), kkz avg 78.19
+1 - Count: 79, Officers 89.87% (71), Exel 4.23% (3), kkz avg 77.92
+2 - Count: 41, Officers 95.12% (39), Exel 2.56% (1), kkz avg 78.95
+3 - Count: 22, Officers 86.36% (19), Exel 0.00% (0), kkz avg 77.16
+4 - Count: 4, Officers 100.00% (4), Exel 0.00% (0), kkz avg 77.00
+
+
+Officer Type Nachshon
+
+Nachshon - Count: 2784, Officers 95.55% (2660), Exel 2.41% (64), kkz avg 81.31
+Topic 0
+0 - Count: 2191, Officers 95.44% (2091), Exel 2.49% (52), kkz avg 81.29
+1 - Count: 398, Officers 96.48% (384), Exel 2.08% (8), kkz avg 81.27
+2 - Count: 139, Officers 93.53% (130), Exel 3.08% (4), kkz avg 81.85
+3 - Count: 48, Officers 97.92% (47), Exel 0.00% (0), kkz avg 80.64
+4 - Count: 8, Officers 100.00% (8), Exel 0.00% (0), kkz avg 82.25
+
+Topic 1
+0 - Count: 2516, Officers 95.51% (2403), Exel 2.46% (59), kkz avg 81.31
+1 - Count: 157, Officers 94.90% (149), Exel 2.01% (3), kkz avg 81.07
+2 - Count: 76, Officers 96.05% (73), Exel 0.00% (0), kkz avg 80.96
+3 - Count: 32, Officers 100.00% (32), Exel 6.25% (2), kkz avg 83.12
+4 - Count: 3, Officers 100.00% (3), Exel 0.00% (0), kkz avg 83.00
+
+Topic 2
+0 - Count: 1897, Officers 95.04% (1803), Exel 2.22% (40), kkz avg 81.23
+1 - Count: 347, Officers 96.83% (336), Exel 2.68% (9), kkz avg 81.74
+2 - Count: 272, Officers 96.32% (262), Exel 3.82% (10), kkz avg 81.70
+3 - Count: 168, Officers 97.62% (164), Exel 1.22% (2), kkz avg 80.70
+4 - Count: 100, Officers 95.00% (95), Exel 3.16% (3), kkz avg 81.17
+
+Topic 3
+0 - Count: 2260, Officers 95.80% (2165), Exel 2.49% (54), kkz avg 81.42
+1 - Count: 333, Officers 94.59% (315), Exel 1.59% (5), kkz avg 80.70
+2 - Count: 143, Officers 95.80% (137), Exel 2.19% (3), kkz avg 81.17
+3 - Count: 37, Officers 91.89% (34), Exel 2.94% (1), kkz avg 81.00
+4 - Count: 11, Officers 81.82% (9), Exel 11.11% (1), kkz avg 79.00
+
+Topic 4
+0 - Count: 2362, Officers 95.39% (2253), Exel 2.49% (56), kkz avg 81.20
+1 - Count: 269, Officers 97.40% (262), Exel 1.53% (4), kkz avg 81.89
+2 - Count: 103, Officers 95.15% (98), Exel 2.04% (2), kkz avg 81.49
+3 - Count: 43, Officers 95.35% (41), Exel 4.88% (2), kkz avg 83.07
+4 - Count: 7, Officers 85.71% (6), Exel 0.00% (0), kkz avg 82.33
+
+Topic 5
+0 - Count: 2216, Officers 95.71% (2121), Exel 2.40% (51), kkz avg 81.36
+1 - Count: 273, Officers 93.41% (255), Exel 1.96% (5), kkz avg 81.40
+2 - Count: 164, Officers 96.34% (158), Exel 3.80% (6), kkz avg 81.00
+3 - Count: 97, Officers 96.91% (94), Exel 2.13% (2), kkz avg 80.97
+4 - Count: 34, Officers 94.12% (32), Exel 0.00% (0), kkz avg 79.56
+
+Topic 6
+0 - Count: 2112, Officers 95.69% (2021), Exel 2.47% (50), kkz avg 81.43
+1 - Count: 336, Officers 96.43% (324), Exel 1.85% (6), kkz avg 81.32
+2 - Count: 207, Officers 95.65% (198), Exel 2.02% (4), kkz avg 80.46
+3 - Count: 82, Officers 92.68% (76), Exel 2.63% (2), kkz avg 80.53
+4 - Count: 47, Officers 87.23% (41), Exel 4.88% (2), kkz avg 80.54
+
+Topic 7
+0 - Count: 2531, Officers 95.38% (2414), Exel 2.49% (60), kkz avg 81.28
+1 - Count: 180, Officers 97.78% (176), Exel 1.14% (2), kkz avg 81.56
+2 - Count: 56, Officers 94.64% (53), Exel 3.77% (2), kkz avg 81.47
+3 - Count: 15, Officers 100.00% (15), Exel 0.00% (0), kkz avg 82.00
+4 - Count: 2, Officers 100.00% (2), Exel 0.00% (0), kkz avg 81.50
+
+Topic 8
+0 - Count: 2331, Officers 95.67% (2230), Exel 2.38% (53), kkz avg 81.33
+1 - Count: 272, Officers 94.85% (258), Exel 2.33% (6), kkz avg 81.24
+2 - Count: 125, Officers 94.40% (118), Exel 4.24% (5), kkz avg 81.22
+3 - Count: 46, Officers 97.83% (45), Exel 0.00% (0), kkz avg 80.51
+4 - Count: 10, Officers 90.00% (9), Exel 0.00% (0), kkz avg 82.44
+
+Topic 9
+0 - Count: 2256, Officers 95.39% (2152), Exel 2.32% (50), kkz avg 81.09
+1 - Count: 246, Officers 97.56% (240), Exel 2.08% (5), kkz avg 82.47
+2 - Count: 175, Officers 96.00% (168), Exel 1.79% (3), kkz avg 82.14
+3 - Count: 92, Officers 93.48% (86), Exel 6.98% (6), kkz avg 82.36
+4 - Count: 15, Officers 93.33% (14), Exel 0.00% (0), kkz avg 79.00
+
+
+

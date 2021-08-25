@@ -1,5 +1,6 @@
 from Topic import Topic
 from DataSet import DataSet
+from CandData import CandData
 #from TopicModeling_IDF import N
 #from TopicModeling_IDF import O_TYPES_STR
 
@@ -38,10 +39,14 @@ class OType:
         for i in range(self.N):
             self.topics.append(Topic(i))
 
-    def add_item(self, probabilities, officer):
-        self.dSet.add_item(officer)
+    def add_item(self, probabilities, cand):
+        #officer = db.officer[line]
+        #if officer == 1:
+        #    y = 2
+
+        self.dSet.add_item(cand)
         for i in range(self.N):
-            self.topics[i].add_item(probabilities[i], officer)
+            self.topics[i].add_item(probabilities[i], cand)
 
     def print_topics(self):
         output = "Officer Type {}\n".format(O_TYPES_STR[self.id])
