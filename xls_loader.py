@@ -14,6 +14,9 @@ def get_translated_text(fname):
     return lines
 
 
+def is_empty_text(text):
+    return pd.isnull(text)
+
 def is_valid_text(text):
 
     if pd.isnull(text):

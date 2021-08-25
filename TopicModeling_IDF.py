@@ -1,7 +1,11 @@
 from xls_loader import get_cands_data
 from xls_loader import get_translated_text
 from xls_loader import is_valid_text
-from Topic import Topic
+from xls_loader import is_empty_text
+from OType import OType
+from OType import get_officer_type
+from OType import NONE
+from DataSet import DataSet
 import re
 import numpy as np
 import lda
@@ -15,6 +19,8 @@ ACCEPTED_RATIO = 1.3
 YEAR_MISMATCH = 0
 INVALID_TEXT = 1
 INVALID_TRANS_RATIO = 2
+INVALID_OFFICER = 3
+INVALID_SADIR = 4
 
 
 def valid_translation(db, engLines, i):
@@ -22,8 +28,7 @@ def valid_translation(db, engLines, i):
     engText = engLines[i]
     ratio = len(engText)/len(hebText)
     return ratio > ACCEPTED_RATIO
-    #return True
-
+    # return True
 
 
 def valid_index(db, engLines, i, year, errors):
@@ -35,11 +40,25 @@ def valid_index(db, engLines, i, year, errors):
         errors[INVALID_TEXT] = errors[INVALID_TEXT] + 1
         return False
 
+    valid = True
+
     if not valid_translation(db, engLines, i):
         errors[INVALID_TRANS_RATIO] = errors[INVALID_TRANS_RATIO] + 1
-        return False
+        valid = False
 
-    return True
+    if get_officer_type(i) == NONE and db.officer[i] == 1:
+        errors[INVALID_OFFICER] = errors[INVALID_OFFICER] + 1
+        valid = False
+
+    if db.officer[i] == 1 and is_empty_text(db.TZIUN_KKZ[i]):
+        errors[INVALID_OFFICER] = errors[INVALID_OFFICER] + 1
+        valid = False
+
+    if db.officer[i] == 0 and not is_empty_text(db.TZIUN_KKZ[i]):
+        errors[INVALID_SADIR] = errors[INVALID_SADIR] + 1
+        valid = False
+
+    return valid
 
 def is_valid(word):
     non_interesting = ['with', 'this', 'that', 'these', 'the', 'and', 'for', 'thing', 'did', 'all', 'who', 'are', 'was',
@@ -69,9 +88,12 @@ def get_users_and_words(myDb, engLines, year, outFile):
     words = []
     cands = {}
     duplicate = 0
-    errors = [0, 0, 0]
+    errors = [0, 0, 0, 0, 0]
 
     for i in range(0, DATA_LEN):
+        #if i == 8407:
+        #    stop = True
+
         print(i)
         if valid_index(myDb, engLines, i, year, errors):
             user = myDb.ID_coded[i]
@@ -88,19 +110,21 @@ def get_users_and_words(myDb, engLines, year, outFile):
                 #print("{} already in users".format(user))
                 duplicate = duplicate + 1
 
-    outFile.write("Users: {} (Diff Year : {}, Inv text: {}, T.ratio: {}, Dup: {})\n".format(users.__len__(),
+    outFile.write("Users: {} (Diff Year : {}, Inv text: {}, T.ratio: {}, Dup: {}, Inv Off: {}, Inv Sadir {})\n".format(users.__len__(),
                                                                                             errors[YEAR_MISMATCH],
                                                                                             errors[INVALID_TEXT],
                                                                                             errors[INVALID_TRANS_RATIO],
-                                                                                            duplicate))
+                                                                                            duplicate,
+                                                                                            errors[INVALID_OFFICER],
+                                                                                            errors[INVALID_SADIR]))
     return users, words, cands
 
 
-def get_np_array(myDb, engLines, users, words, year, cands):
+def get_np_array(myDb, engLines, users, words, year):
     reviewed = []
     nparr = np.array([0] * len(users) * len(words))
     nparr = np.reshape(nparr, [len(users), len(words)])
-    errors = [0, 0, 0]
+    errors = [0, 0, 0, 0, 0]
 
     for i in range(0, DATA_LEN):
         if valid_index(myDb, engLines, i, year, errors):
@@ -124,30 +148,22 @@ def get_np_array(myDb, engLines, users, words, year, cands):
 
 
 def print_topic_modeling_stats(db, doc_topic, users, cands, file):
-    topics = []
-    maxTopics = [0] * N
-    cnt = 0
+    Otypes = []
+    dSet = DataSet("Summary")
 
-    for i in range(N):
-        topics.append(Topic())
+    for i in range(4):
+        Otypes.append(OType(N, i))
 
     for i in range(0, len(users)):
-        max_topic = doc_topic[i].argmax()
-        topics[max_topic].inc_first()
-        #maxTopics[t] = maxTopics[t] + 1
-        if db.officer[cands[users[i]]] == 1:
-            topics[max_topic].inc_officers()
+        line = cands[users[i]]
+        o = db.officer[line]
+        dSet.add_item(o)
+        Otypes[get_officer_type(line)].add_item(doc_topic[i], o)
 
 
-    file.write("\nFirst Topic Distribution: ")
-    for i in range(N):
-        file.write("[{}:{}] ".format(i, topics[i].first))
-    file.write(" (Total {})\n".format(sum(t.first for t in topics)))
-
-    file.write("Officers Distribution: ")
-    for i in range(N):
-        file.write("[{}:{:.2f}%] ".format(i, topics[i].officers_percent()))
-    file.write(" (Total {:.2f}%)\n\n".format(100 * sum(t.officers for t in topics)/len(users)))
+    file.write("\n{}\n".format(dSet.print_data()))
+    for t in Otypes:
+        file.write("{}\n".format(t.print_topics()))
 
 
 def run_topic_modeling(cand_year, outFile):
@@ -157,9 +173,10 @@ def run_topic_modeling(cand_year, outFile):
     engLines = get_translated_text("Translated_text.txt")
 
     users, words, cands = get_users_and_words(db, engLines, cand_year, outFile)
-    X = get_np_array(db, engLines, users, words, cand_year, cands)
+    return 0
+    X = get_np_array(db, engLines, users, words, cand_year)
 
-    model = lda.LDA(n_topics=N, n_iter=1500, random_state=1)
+    model = lda.LDA(n_topics=N, n_iter=300, random_state=1)
     model.fit(X)  # model.fit_transform(X) is also available
     topic_word = model.topic_word_  # model.components_ also works
     n_top_words = 8

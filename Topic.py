@@ -1,17 +1,39 @@
+from DataSet import DataSet
+
+LEVELS = 5
+
+
+def prob_to_level(probability):
+    if probability < 0.2:
+        return 0
+
+    if probability < 0.4:
+        return 1
+
+    if probability < 0.6:
+        return 2
+
+    if probability < 0.8:
+        return 3
+
+    return 4
+
+
 class Topic:
 
-    def __init__(self):
-        self.first = 0  # For how many cands this topic is first
-        self.officers = 0
+    def __init__(self, id):
+        self.id = id
+        self.dSets = []
 
-    def inc_first(self):
-        self.first = self.first + 1
+        for i in range(LEVELS):
+            self.dSets.append(DataSet(i))
 
-    def inc_officers(self):
-        self.officers = self.officers + 1
+    def add_item(self, probability, officer):
+        self.dSets[prob_to_level(probability)].add_item(officer)
 
-    def officers_percent(self):
-        if self.first > 0:
-            return 100 * self.officers/self.first
-        else:
-            return 0
+    def print_datasets(self):
+        output = "Topic {}\n".format(self.id)
+        for i in range(LEVELS):
+            output = "{}{}\n".format(output, self.dSets[i].print_data())
+
+        return output
