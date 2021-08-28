@@ -1,385 +1,1155 @@
 Results for 2015
 Users: 7513 (Diff Year : 2778, Inv text: 35, T.ratio: 1597, Dup: 41, Inv Off: 14, Inv Sadir 171, Inv Fail 0)
-Topic 0: character positive traits qualities chose very think opinion
-Topic 1: king man people even leader despite one knew
-Topic 2: person character knows people does others positive very
-Topic 3: people person you will others character good does
-Topic 4: very man also school person high knowledge rabbi
-Topic 5: even people state man believed way give goal
-Topic 6: always person character very will everything does good
-Topic 7: commander soldiers man very example officer personal military
-Topic 8: life children family woman book character chose father
-Topic 9: man people israel leader very country figure state
+Topic 0: character positive traits qualities chose very book think
+Topic 1: even king man people world give one despite
+Topic 2: person character knows positive others does people very
+Topic 3: people you will one does person good without
+Topic 4: very man person life high school knowledge also
+Topic 5: people even state man positive believed character figure
+Topic 6: always person character everything very good will does
+Topic 7: commander soldiers man army example very officer personal
+Topic 8: life family children woman father through chose mother
+Topic 9: man country israel state very leader minister people
 
-Summary - Count: 7513, Officers 65.54% (4924), Exel 2.58% (127), kkz avg 80.95
+Summary - 7513, Off 65.54% (4924), Exel 2.58% (127), NF 2.12% (159), NE 1.17% (88), kkz avg 80.95, dap 69.11, tza 28.52 (4433)
 Officer Type None
 
-None - Count: 7513, Officers 65.54% (4924), Exel 2.58% (127), kkz avg 80.95
+None - 7513, Off 65.54% (4924), Exel 2.58% (127), NF 2.12% (159), NE 1.17% (88), kkz avg 80.95, dap 69.11, tza 28.52 (4433)
 Topic 0
-0 - Count: 6021, Officers 65.30% (3932), Exel 2.64% (104), kkz avg 80.97
-1 - Count: 980, Officers 68.06% (667), Exel 2.55% (17), kkz avg 80.81
-2 - Count: 347, Officers 63.40% (220), Exel 2.27% (5), kkz avg 81.30
-3 - Count: 127, Officers 66.93% (85), Exel 1.18% (1), kkz avg 79.81
-4 - Count: 38, Officers 52.63% (20), Exel 0.00% (0), kkz avg 82.35
+0 - 6142, Off 65.50% (4023), Exel 2.61% (105), NF 1.99% (122), NE 1.16% (71), kkz avg 81.00, dap 69.05, tza 28.53 (3692)
+1 - 913, Off 67.14% (613), Exel 2.12% (13), NF 2.19% (20), NE 1.31% (12), kkz avg 80.62, dap 69.55, tza 28.50 (516)
+2 - 345, Off 62.90% (217), Exel 3.69% (8), NF 4.35% (15), NE 1.45% (5), kkz avg 80.99, dap 69.30, tza 28.32 (159)
+3 - 89, Off 66.29% (59), Exel 1.69% (1), NF 2.25% (2), NE 0.00% (0), kkz avg 80.71, dap 67.75, tza 27.88 (51)
+4 - 24, Off 50.00% (12), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 81.25, dap 70.83, tza 29.27 (15)
 
 Topic 1
-0 - Count: 6677, Officers 65.87% (4398), Exel 2.66% (117), kkz avg 80.94
-1 - Count: 511, Officers 60.86% (311), Exel 2.25% (7), kkz avg 80.82
-2 - Count: 227, Officers 66.52% (151), Exel 0.00% (0), kkz avg 80.84
-3 - Count: 90, Officers 66.67% (60), Exel 5.00% (3), kkz avg 82.37
-4 - Count: 8, Officers 50.00% (4), Exel 0.00% (0), kkz avg 81.50
+0 - 6644, Off 65.89% (4378), Exel 2.72% (119), NF 2.11% (140), NE 1.23% (82), kkz avg 80.95, dap 68.93, tza 28.58 (3792)
+1 - 530, Off 63.02% (334), Exel 1.50% (5), NF 1.89% (10), NE 1.13% (6), kkz avg 80.93, dap 70.47, tza 28.03 (376)
+2 - 249, Off 62.25% (155), Exel 1.29% (2), NF 2.81% (7), NE 0.00% (0), kkz avg 80.63, dap 70.72, tza 28.05 (188)
+3 - 78, Off 61.54% (48), Exel 2.08% (1), NF 2.56% (2), NE 0.00% (0), kkz avg 81.85, dap 69.10, tza 28.70 (66)
+4 - 12, Off 75.00% (9), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 81.44, dap 73.33, tza 29.82 (11)
 
 Topic 2
-0 - Count: 5198, Officers 65.64% (3412), Exel 2.64% (90), kkz avg 80.97
-1 - Count: 934, Officers 64.67% (604), Exel 1.99% (12), kkz avg 81.29
-2 - Count: 673, Officers 68.05% (458), Exel 3.49% (16), kkz avg 80.71
-3 - Count: 443, Officers 64.11% (284), Exel 2.11% (6), kkz avg 80.48
-4 - Count: 265, Officers 62.64% (166), Exel 1.81% (3), kkz avg 80.67
+0 - 5082, Off 66.16% (3362), Exel 2.71% (91), NF 2.14% (109), NE 1.10% (56), kkz avg 81.04, dap 69.26, tza 28.51 (3204)
+1 - 998, Off 64.13% (640), Exel 2.97% (19), NF 2.20% (22), NE 1.50% (15), kkz avg 80.94, dap 69.47, tza 28.63 (570)
+2 - 667, Off 64.17% (428), Exel 2.34% (10), NF 1.95% (13), NE 1.20% (8), kkz avg 80.39, dap 68.43, tza 28.23 (326)
+3 - 505, Off 64.75% (327), Exel 1.53% (5), NF 2.38% (12), NE 0.99% (5), kkz avg 80.83, dap 68.50, tza 28.60 (231)
+4 - 261, Off 63.98% (167), Exel 1.20% (2), NF 1.15% (3), NE 1.53% (4), kkz avg 80.77, dap 67.74, tza 28.75 (102)
 
 Topic 3
-0 - Count: 5957, Officers 66.41% (3956), Exel 2.60% (103), kkz avg 80.98
-1 - Count: 941, Officers 62.70% (590), Exel 2.71% (16), kkz avg 80.82
-2 - Count: 407, Officers 65.85% (268), Exel 1.12% (3), kkz avg 80.88
-3 - Count: 169, Officers 48.52% (82), Exel 3.66% (3), kkz avg 80.20
-4 - Count: 39, Officers 71.79% (28), Exel 7.14% (2), kkz avg 81.11
+0 - 6067, Off 66.13% (4012), Exel 2.49% (100), NF 2.13% (129), NE 1.14% (69), kkz avg 80.91, dap 69.15, tza 28.49 (3509)
+1 - 934, Off 62.53% (584), Exel 3.08% (18), NF 2.36% (22), NE 1.50% (14), kkz avg 81.11, dap 68.88, tza 28.75 (575)
+2 - 366, Off 64.48% (236), Exel 2.12% (5), NF 1.37% (5), NE 0.82% (3), kkz avg 81.17, dap 69.37, tza 28.38 (234)
+3 - 128, Off 64.06% (82), Exel 4.88% (4), NF 2.34% (3), NE 1.56% (2), kkz avg 80.82, dap 68.75, tza 28.42 (99)
+4 - 18, Off 55.56% (10), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 83.50, dap 65.00, tza 29.38 (16)
 
 Topic 4
-0 - Count: 6570, Officers 65.16% (4281), Exel 2.66% (114), kkz avg 80.85
-1 - Count: 632, Officers 68.20% (431), Exel 2.09% (9), kkz avg 81.65
-2 - Count: 231, Officers 67.53% (156), Exel 1.28% (2), kkz avg 81.06
-3 - Count: 69, Officers 68.12% (47), Exel 4.26% (2), kkz avg 82.62
-4 - Count: 11, Officers 81.82% (9), Exel 0.00% (0), kkz avg 83.78
+0 - 6419, Off 65.27% (4190), Exel 2.53% (106), NF 2.12% (136), NE 1.17% (75), kkz avg 80.86, dap 68.63, tza 28.55 (3688)
+1 - 755, Off 67.28% (508), Exel 3.35% (17), NF 1.99% (15), NE 0.93% (7), kkz avg 81.26, dap 71.60, tza 28.33 (500)
+2 - 249, Off 67.47% (168), Exel 1.79% (3), NF 2.01% (5), NE 1.20% (3), kkz avg 81.74, dap 72.69, tza 28.32 (183)
+3 - 80, Off 63.75% (51), Exel 1.96% (1), NF 3.75% (3), NE 3.75% (3), kkz avg 82.33, dap 72.00, tza 28.40 (53)
+4 - 10, Off 70.00% (7), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 82.29, dap 76.00, tza 28.44 (9)
 
 Topic 5
-0 - Count: 6021, Officers 65.17% (3924), Exel 2.62% (103), kkz avg 80.96
-1 - Count: 749, Officers 65.42% (490), Exel 1.84% (9), kkz avg 81.15
-2 - Count: 406, Officers 70.94% (288), Exel 3.12% (9), kkz avg 80.67
-3 - Count: 241, Officers 67.63% (163), Exel 1.84% (3), kkz avg 80.49
-4 - Count: 96, Officers 61.46% (59), Exel 5.08% (3), kkz avg 80.73
+0 - 5927, Off 64.81% (3841), Exel 2.50% (96), NF 2.16% (128), NE 1.13% (67), kkz avg 80.94, dap 69.05, tza 28.53 (3420)
+1 - 778, Off 70.05% (545), Exel 2.57% (14), NF 1.80% (14), NE 1.16% (9), kkz avg 81.26, dap 69.27, tza 28.28 (512)
+2 - 428, Off 65.89% (282), Exel 3.19% (9), NF 2.10% (9), NE 1.17% (5), kkz avg 80.72, dap 70.07, tza 28.66 (262)
+3 - 263, Off 69.96% (184), Exel 3.80% (7), NF 2.28% (6), NE 1.90% (5), kkz avg 80.59, dap 69.92, tza 28.57 (166)
+4 - 117, Off 61.54% (72), Exel 1.39% (1), NF 1.71% (2), NE 1.71% (2), kkz avg 80.89, dap 65.98, tza 28.85 (73)
 
 Topic 6
-0 - Count: 5615, Officers 66.32% (3724), Exel 2.66% (99), kkz avg 81.07
-1 - Count: 899, Officers 66.74% (600), Exel 2.17% (13), kkz avg 80.95
-2 - Count: 587, Officers 62.69% (368), Exel 1.90% (7), kkz avg 80.13
-3 - Count: 282, Officers 56.74% (160), Exel 3.12% (5), kkz avg 80.36
-4 - Count: 130, Officers 55.38% (72), Exel 4.17% (3), kkz avg 79.75
+0 - 5563, Off 66.39% (3693), Exel 2.46% (91), NF 2.09% (116), NE 1.04% (58), kkz avg 81.13, dap 69.46, tza 28.51 (3432)
+1 - 943, Off 65.54% (618), Exel 3.07% (19), NF 2.01% (19), NE 1.80% (17), kkz avg 80.72, dap 68.79, tza 28.62 (507)
+2 - 561, Off 62.57% (351), Exel 2.56% (9), NF 2.50% (14), NE 0.89% (5), kkz avg 80.13, dap 68.40, tza 28.34 (285)
+3 - 307, Off 59.61% (183), Exel 2.73% (5), NF 1.63% (5), NE 1.95% (6), kkz avg 79.88, dap 66.84, tza 28.52 (149)
+4 - 139, Off 56.83% (79), Exel 3.80% (3), NF 3.60% (5), NE 1.44% (2), kkz avg 80.42, dap 65.40, tza 28.72 (60)
 
 Topic 7
-0 - Count: 6643, Officers 65.14% (4327), Exel 2.59% (112), kkz avg 80.88
-1 - Count: 535, Officers 68.97% (369), Exel 1.63% (6), kkz avg 81.14
-2 - Count: 234, Officers 64.96% (152), Exel 3.95% (6), kkz avg 81.98
-3 - Count: 87, Officers 75.86% (66), Exel 4.55% (3), kkz avg 82.18
-4 - Count: 14, Officers 71.43% (10), Exel 0.00% (0), kkz avg 80.00
+0 - 6629, Off 64.90% (4302), Exel 2.58% (111), NF 2.10% (139), NE 1.25% (83), kkz avg 80.87, dap 69.27, tza 28.44 (3790)
+1 - 551, Off 70.78% (390), Exel 1.79% (7), NF 1.45% (8), NE 0.73% (4), kkz avg 81.28, dap 67.95, tza 28.92 (397)
+2 - 234, Off 67.95% (159), Exel 4.40% (7), NF 4.27% (10), NE 0.43% (1), kkz avg 81.67, dap 68.42, tza 29.07 (171)
+3 - 86, Off 73.26% (63), Exel 3.17% (2), NF 2.33% (2), NE 0.00% (0), kkz avg 82.16, dap 66.86, tza 28.83 (64)
+4 - 13, Off 76.92% (10), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 80.20, dap 65.38, tza 27.64 (11)
 
 Topic 8
-0 - Count: 6403, Officers 65.39% (4187), Exel 2.48% (104), kkz avg 80.98
-1 - Count: 690, Officers 65.94% (455), Exel 3.30% (15), kkz avg 80.80
-2 - Count: 299, Officers 65.55% (196), Exel 3.57% (7), kkz avg 80.83
-3 - Count: 102, Officers 70.59% (72), Exel 1.39% (1), kkz avg 80.36
-4 - Count: 19, Officers 73.68% (14), Exel 0.00% (0), kkz avg 80.71
+0 - 6360, Off 65.35% (4156), Exel 2.62% (109), NF 2.09% (133), NE 1.18% (75), kkz avg 80.97, dap 69.12, tza 28.57 (3867)
+1 - 738, Off 65.85% (486), Exel 2.26% (11), NF 2.30% (17), NE 1.08% (8), kkz avg 80.95, dap 69.08, tza 28.03 (383)
+2 - 281, Off 69.40% (195), Exel 2.56% (5), NF 2.85% (8), NE 1.78% (5), kkz avg 80.71, dap 69.43, tza 28.50 (138)
+3 - 110, Off 66.36% (73), Exel 2.74% (2), NF 0.91% (1), NE 0.00% (0), kkz avg 80.32, dap 67.91, tza 28.35 (37)
+4 - 24, Off 58.33% (14), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 80.00, dap 70.00, tza 26.12 (8)
 
 Topic 9
-0 - Count: 6181, Officers 64.83% (4007), Exel 2.50% (100), kkz avg 80.79
-1 - Count: 641, Officers 68.02% (436), Exel 2.29% (10), kkz avg 81.80
-2 - Count: 416, Officers 71.39% (297), Exel 2.02% (6), kkz avg 81.40
-3 - Count: 229, Officers 68.12% (156), Exel 7.05% (11), kkz avg 81.93
-4 - Count: 46, Officers 60.87% (28), Exel 0.00% (0), kkz avg 79.57
+0 - 6307, Off 64.80% (4087), Exel 2.37% (97), NF 2.30% (145), NE 1.17% (74), kkz avg 80.83, dap 69.02, tza 28.47 (3593)
+1 - 661, Off 69.59% (460), Exel 3.70% (17), NF 1.21% (8), NE 1.06% (7), kkz avg 81.66, dap 69.73, tza 28.78 (449)
+2 - 349, Off 67.34% (235), Exel 2.13% (5), NF 0.86% (3), NE 1.15% (4), kkz avg 80.99, dap 68.88, tza 28.40 (247)
+3 - 156, Off 73.08% (114), Exel 6.14% (7), NF 0.64% (1), NE 1.28% (2), kkz avg 81.83, dap 70.00, tza 28.81 (113)
+4 - 40, Off 70.00% (28), Exel 3.57% (1), NF 5.00% (2), NE 2.50% (1), kkz avg 81.46, dap 71.25, tza 30.23 (31)
 
 
 Officer Type None
 
-None - Count: 2326, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+None - 2326, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 67.19, tza 28.07 (1394)
 Topic 0
-0 - Count: 1880, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
-1 - Count: 286, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
-2 - Count: 106, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
-3 - Count: 36, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
-4 - Count: 18, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+0 - 1915, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 67.03, tza 28.14 (1166)
+1 - 265, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 67.25, tza 27.88 (147)
+2 - 107, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 70.19, tza 27.44 (52)
+3 - 27, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 64.81, tza 26.84 (19)
+4 - 12, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 70.83, tza 29.00 (10)
 
 Topic 1
-0 - Count: 2044, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
-1 - Count: 182, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
-2 - Count: 68, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
-3 - Count: 28, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
-4 - Count: 4, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+0 - 2031, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 67.15, tza 28.12 (1174)
+1 - 177, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 67.12, tza 27.89 (123)
+2 - 87, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 68.51, tza 27.59 (69)
+3 - 28, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 66.79, tza 27.85 (26)
+4 - 3, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 66.67, tza 31.50 (2)
 
 Topic 2
-0 - Count: 1589, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
-1 - Count: 304, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
-2 - Count: 198, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
-3 - Count: 145, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
-4 - Count: 90, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+0 - 1541, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 67.39, tza 28.03 (1000)
+1 - 321, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 67.57, tza 28.08 (181)
+2 - 216, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 66.71, tza 28.05 (109)
+3 - 161, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 65.90, tza 28.90 (72)
+4 - 87, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 65.86, tza 27.59 (32)
 
 Topic 3
-0 - Count: 1796, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
-1 - Count: 315, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
-2 - Count: 123, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
-3 - Count: 83, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
-4 - Count: 9, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+0 - 1842, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 67.11, tza 28.09 (1080)
+1 - 313, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 68.21, tza 28.20 (196)
+2 - 122, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 66.89, tza 27.41 (79)
+3 - 41, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 63.90, tza 28.48 (31)
+4 - 8, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 67.50, tza 27.12 (8)
 
 Topic 4
-0 - Count: 2054, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
-1 - Count: 184, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
-2 - Count: 68, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
-3 - Count: 19, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
-4 - Count: 1, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+0 - 2004, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 66.79, tza 28.05 (1158)
+1 - 223, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 69.15, tza 27.99 (163)
+2 - 73, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 71.78, tza 28.44 (54)
+3 - 23, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 68.26, tza 29.18 (17)
+4 - 3, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 73.33, tza 27.00 (2)
 
 Topic 5
-0 - Count: 1886, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
-1 - Count: 228, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
-2 - Count: 106, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
-3 - Count: 72, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
-4 - Count: 34, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+0 - 1880, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 67.12, tza 28.12 (1097)
+1 - 208, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 67.36, tza 27.74 (140)
+2 - 129, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 68.45, tza 27.92 (84)
+3 - 68, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 67.65, tza 27.75 (44)
+4 - 41, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 64.88, tza 28.69 (29)
 
 Topic 6
-0 - Count: 1699, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
-1 - Count: 267, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
-2 - Count: 201, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
-3 - Count: 111, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
-4 - Count: 48, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+0 - 1684, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 67.36, tza 28.07 (1064)
+1 - 285, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 67.61, tza 28.06 (158)
+2 - 191, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 67.07, tza 27.83 (98)
+3 - 113, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 65.75, tza 29.07 (55)
+4 - 53, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 63.02, tza 27.00 (19)
 
 Topic 7
-0 - Count: 2085, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
-1 - Count: 144, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
-2 - Count: 73, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
-3 - Count: 20, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
-4 - Count: 4, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+0 - 2092, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 67.27, tza 28.05 (1216)
+1 - 147, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 67.14, tza 28.34 (109)
+2 - 63, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 64.92, tza 28.39 (51)
+3 - 21, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 65.71, tza 27.47 (15)
+4 - 3, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 73.33, tza 27.33 (3)
 
 Topic 8
-0 - Count: 1997, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
-1 - Count: 208, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
-2 - Count: 88, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
-3 - Count: 29, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
-4 - Count: 4, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+0 - 1983, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 67.34, tza 28.18 (1227)
+1 - 225, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 65.51, tza 27.04 (112)
+2 - 73, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 68.63, tza 27.72 (36)
+3 - 36, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 67.50, tza 28.40 (15)
+4 - 9, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 63.33, tza 25.00 (4)
 
 Topic 9
-0 - Count: 1956, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
-1 - Count: 186, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
-2 - Count: 106, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
-3 - Count: 61, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
-4 - Count: 17, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+0 - 1988, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 67.17, tza 28.02 (1159)
+1 - 186, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 68.55, tza 28.38 (127)
+2 - 105, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 65.24, tza 27.74 (72)
+3 - 38, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 66.58, tza 29.03 (29)
+4 - 9, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 68.89, tza 30.86 (7)
 
 
 Officer Type Lahav
 
-Lahav - Count: 1474, Officers 94.91% (1399), Exel 3.00% (42), kkz avg 81.97
+Lahav - 1474, Off 94.91% (1399), Exel 3.00% (42), NF 4.61% (68), NE 0.00% (0), kkz avg 81.97, dap 67.27, tza 29.75 (1383)
 Topic 0
-0 - Count: 1238, Officers 95.07% (1177), Exel 3.23% (38), kkz avg 82.01
-1 - Count: 155, Officers 96.77% (150), Exel 2.00% (3), kkz avg 81.40
-2 - Count: 53, Officers 90.57% (48), Exel 0.00% (0), kkz avg 82.67
-3 - Count: 22, Officers 81.82% (18), Exel 5.56% (1), kkz avg 81.11
-4 - Count: 6, Officers 100.00% (6), Exel 0.00% (0), kkz avg 86.83
+0 - 1251, Off 95.36% (1193), Exel 3.02% (36), NF 4.32% (54), NE 0.00% (0), kkz avg 82.04, dap 67.24, tza 29.77 (1182)
+1 - 153, Off 94.77% (145), Exel 2.76% (4), NF 4.58% (7), NE 0.00% (0), kkz avg 80.99, dap 68.37, tza 29.51 (139)
+2 - 53, Off 86.79% (46), Exel 4.35% (2), NF 11.32% (6), NE 0.00% (0), kkz avg 82.96, dap 64.15, tza 29.96 (46)
+3 - 13, Off 84.62% (11), Exel 0.00% (0), NF 7.69% (1), NE 0.00% (0), kkz avg 82.73, dap 66.92, tza 29.50 (12)
+4 - 4, Off 100.00% (4), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 84.00, dap 75.00, tza 30.50 (4)
 
 Topic 1
-0 - Count: 1272, Officers 95.20% (1211), Exel 3.14% (38), kkz avg 81.94
-1 - Count: 115, Officers 93.04% (107), Exel 2.80% (3), kkz avg 82.26
-2 - Count: 63, Officers 92.06% (58), Exel 0.00% (0), kkz avg 81.95
-3 - Count: 23, Officers 95.65% (22), Exel 4.55% (1), kkz avg 82.59
-4 - Count: 1, Officers 100.00% (1), Exel 0.00% (0), kkz avg 77.00
+0 - 1287, Off 94.95% (1222), Exel 3.11% (38), NF 4.51% (58), NE 0.00% (0), kkz avg 82.00, dap 67.22, tza 29.80 (1203)
+1 - 105, Off 97.14% (102), Exel 2.94% (3), NF 2.86% (3), NE 0.00% (0), kkz avg 81.69, dap 68.48, tza 29.43 (103)
+2 - 59, Off 91.53% (54), Exel 0.00% (0), NF 8.47% (5), NE 0.00% (0), kkz avg 81.67, dap 66.10, tza 29.32 (56)
+3 - 18, Off 88.89% (16), Exel 6.25% (1), NF 11.11% (2), NE 0.00% (0), kkz avg 82.56, dap 65.56, tza 30.00 (16)
+4 - 5, Off 100.00% (5), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 82.80, dap 74.00, tza 29.00 (5)
 
 Topic 2
-0 - Count: 1072, Officers 94.59% (1014), Exel 2.96% (30), kkz avg 82.19
-1 - Count: 180, Officers 96.67% (174), Exel 1.72% (3), kkz avg 81.93
-2 - Count: 111, Officers 96.40% (107), Exel 4.67% (5), kkz avg 80.24
-3 - Count: 72, Officers 93.06% (67), Exel 5.97% (4), kkz avg 82.64
-4 - Count: 39, Officers 94.87% (37), Exel 0.00% (0), kkz avg 80.19
+0 - 1051, Off 95.15% (1000), Exel 3.00% (30), NF 4.28% (45), NE 0.00% (0), kkz avg 82.22, dap 67.35, tza 29.78 (994)
+1 - 191, Off 95.81% (183), Exel 2.19% (4), NF 4.19% (8), NE 0.00% (0), kkz avg 81.56, dap 67.70, tza 30.08 (176)
+2 - 120, Off 94.17% (113), Exel 5.31% (6), NF 5.00% (6), NE 0.00% (0), kkz avg 80.68, dap 66.58, tza 29.16 (109)
+3 - 76, Off 90.79% (69), Exel 1.45% (1), NF 9.21% (7), NE 0.00% (0), kkz avg 81.61, dap 65.00, tza 29.32 (73)
+4 - 36, Off 94.44% (34), Exel 2.94% (1), NF 5.56% (2), NE 0.00% (0), kkz avg 81.91, dap 69.44, tza 30.06 (31)
 
 Topic 3
-0 - Count: 1150, Officers 94.96% (1092), Exel 3.02% (33), kkz avg 81.97
-1 - Count: 179, Officers 94.97% (170), Exel 4.12% (7), kkz avg 82.42
-2 - Count: 96, Officers 92.71% (89), Exel 0.00% (0), kkz avg 81.65
-3 - Count: 35, Officers 97.14% (34), Exel 5.88% (2), kkz avg 80.29
-4 - Count: 14, Officers 100.00% (14), Exel 0.00% (0), kkz avg 83.43
+0 - 1153, Off 94.45% (1089), Exel 3.21% (35), NF 5.03% (58), NE 0.00% (0), kkz avg 81.98, dap 67.18, tza 29.73 (1078)
+1 - 193, Off 96.37% (186), Exel 2.69% (5), NF 3.11% (6), NE 0.00% (0), kkz avg 82.08, dap 67.36, tza 29.96 (180)
+2 - 80, Off 97.50% (78), Exel 1.28% (1), NF 2.50% (2), NE 0.00% (0), kkz avg 82.46, dap 68.88, tza 29.82 (78)
+3 - 41, Off 95.12% (39), Exel 2.56% (1), NF 4.88% (2), NE 0.00% (0), kkz avg 79.92, dap 67.56, tza 28.90 (40)
+4 - 7, Off 100.00% (7), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 84.57, dap 58.57, tza 32.43 (7)
 
 Topic 4
-0 - Count: 1335, Officers 94.91% (1267), Exel 3.00% (38), kkz avg 81.87
-1 - Count: 99, Officers 94.95% (94), Exel 4.26% (4), kkz avg 83.34
-2 - Count: 34, Officers 97.06% (33), Exel 0.00% (0), kkz avg 81.61
-3 - Count: 3, Officers 66.67% (2), Exel 0.00% (0), kkz avg 80.50
-4 - Count: 3, Officers 100.00% (3), Exel 0.00% (0), kkz avg 86.67
+0 - 1281, Off 94.93% (1216), Exel 2.96% (36), NF 4.53% (58), NE 0.00% (0), kkz avg 81.94, dap 67.14, tza 29.74 (1199)
+1 - 137, Off 94.16% (129), Exel 4.65% (6), NF 5.84% (8), NE 0.00% (0), kkz avg 81.91, dap 67.45, tza 30.08 (130)
+2 - 41, Off 97.56% (40), Exel 0.00% (0), NF 2.44% (1), NE 0.00% (0), kkz avg 82.47, dap 70.24, tza 29.45 (40)
+3 - 14, Off 92.86% (13), Exel 0.00% (0), NF 7.14% (1), NE 0.00% (0), kkz avg 83.31, dap 69.29, tza 29.00 (13)
+4 - 1, Off 100.00% (1), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 91.00, dap 60.00, tza 26.00 (1)
 
 Topic 5
-0 - Count: 1169, Officers 94.35% (1103), Exel 3.26% (36), kkz avg 81.95
-1 - Count: 162, Officers 96.91% (157), Exel 1.91% (3), kkz avg 82.20
-2 - Count: 87, Officers 96.55% (84), Exel 1.19% (1), kkz avg 81.37
-3 - Count: 38, Officers 97.37% (37), Exel 0.00% (0), kkz avg 81.68
-4 - Count: 18, Officers 100.00% (18), Exel 11.11% (2), kkz avg 84.78
+0 - 1151, Off 94.70% (1090), Exel 3.03% (33), NF 4.87% (56), NE 0.00% (0), kkz avg 81.92, dap 67.37, tza 29.73 (1078)
+1 - 187, Off 96.79% (181), Exel 2.76% (5), NF 2.67% (5), NE 0.00% (0), kkz avg 82.03, dap 66.74, tza 29.51 (178)
+2 - 76, Off 92.11% (70), Exel 2.86% (2), NF 6.58% (5), NE 0.00% (0), kkz avg 82.54, dap 66.97, tza 30.29 (69)
+3 - 42, Off 97.62% (41), Exel 4.88% (2), NF 2.38% (1), NE 0.00% (0), kkz avg 81.83, dap 67.62, tza 30.07 (41)
+4 - 18, Off 94.44% (17), Exel 0.00% (0), NF 5.56% (1), NE 0.00% (0), kkz avg 83.12, dap 66.67, tza 31.00 (17)
 
 Topic 6
-0 - Count: 1135, Officers 95.07% (1079), Exel 2.87% (31), kkz avg 82.01
-1 - Count: 172, Officers 93.60% (161), Exel 3.73% (6), kkz avg 81.96
-2 - Count: 105, Officers 95.24% (100), Exel 3.00% (3), kkz avg 81.66
-3 - Count: 45, Officers 97.78% (44), Exel 4.55% (2), kkz avg 82.27
-4 - Count: 17, Officers 88.24% (15), Exel 0.00% (0), kkz avg 81.13
+0 - 1125, Off 94.93% (1068), Exel 2.72% (29), NF 4.62% (52), NE 0.00% (0), kkz avg 81.92, dap 67.29, tza 29.75 (1056)
+1 - 173, Off 94.80% (164), Exel 3.05% (5), NF 4.05% (7), NE 0.00% (0), kkz avg 82.27, dap 68.15, tza 29.96 (162)
+2 - 104, Off 94.23% (98), Exel 6.12% (6), NF 5.77% (6), NE 0.00% (0), kkz avg 82.18, dap 67.88, tza 29.49 (97)
+3 - 51, Off 98.04% (50), Exel 4.00% (2), NF 1.96% (1), NE 0.00% (0), kkz avg 81.72, dap 65.10, tza 29.68 (47)
+4 - 21, Off 90.48% (19), Exel 0.00% (0), NF 9.52% (2), NE 0.00% (0), kkz avg 82.32, dap 60.95, tza 29.86 (21)
 
 Topic 7
-0 - Count: 1183, Officers 95.35% (1128), Exel 3.01% (34), kkz avg 81.93
-1 - Count: 158, Officers 91.14% (144), Exel 2.08% (3), kkz avg 81.78
-2 - Count: 87, Officers 94.25% (82), Exel 3.66% (3), kkz avg 82.79
-3 - Count: 39, Officers 97.44% (38), Exel 5.26% (2), kkz avg 82.61
-4 - Count: 7, Officers 100.00% (7), Exel 0.00% (0), kkz avg 80.14
+0 - 1178, Off 94.91% (1118), Exel 2.86% (32), NF 4.58% (54), NE 0.00% (0), kkz avg 81.87, dap 67.68, tza 29.73 (1109)
+1 - 176, Off 96.59% (170), Exel 2.94% (5), NF 2.84% (5), NE 0.00% (0), kkz avg 82.42, dap 65.11, tza 29.95 (165)
+2 - 80, Off 91.25% (73), Exel 5.48% (4), NF 8.75% (7), NE 0.00% (0), kkz avg 82.59, dap 67.88, tza 29.79 (70)
+3 - 32, Off 93.75% (30), Exel 3.33% (1), NF 6.25% (2), NE 0.00% (0), kkz avg 82.63, dap 63.44, tza 30.03 (31)
+4 - 8, Off 100.00% (8), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 79.62, dap 62.50, tza 27.75 (8)
 
 Topic 8
-0 - Count: 1299, Officers 95.00% (1234), Exel 2.92% (36), kkz avg 81.96
-1 - Count: 116, Officers 95.69% (111), Exel 5.41% (6), kkz avg 82.05
-2 - Count: 44, Officers 88.64% (39), Exel 0.00% (0), kkz avg 82.28
-3 - Count: 14, Officers 100.00% (14), Exel 0.00% (0), kkz avg 81.86
-4 - Count: 1, Officers 100.00% (1), Exel 0.00% (0), kkz avg 81.00
+0 - 1295, Off 94.98% (1230), Exel 3.09% (38), NF 4.56% (59), NE 0.00% (0), kkz avg 81.97, dap 67.06, tza 29.78 (1217)
+1 - 115, Off 93.91% (108), Exel 2.78% (3), NF 5.22% (6), NE 0.00% (0), kkz avg 82.13, dap 68.87, tza 29.56 (108)
+2 - 49, Off 93.88% (46), Exel 2.17% (1), NF 6.12% (3), NE 0.00% (0), kkz avg 81.74, dap 69.18, tza 29.67 (46)
+3 - 14, Off 100.00% (14), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 82.00, dap 65.00, tza 29.55 (11)
+4 - 1, Off 100.00% (1), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 81.00, dap 90.00, tza 29.00 (1)
 
 Topic 9
-0 - Count: 1186, Officers 94.69% (1123), Exel 2.94% (33), kkz avg 81.92
-1 - Count: 130, Officers 96.15% (125), Exel 1.60% (2), kkz avg 82.72
-2 - Count: 94, Officers 95.74% (90), Exel 2.22% (2), kkz avg 81.08
-3 - Count: 54, Officers 94.44% (51), Exel 9.80% (5), kkz avg 82.98
-4 - Count: 10, Officers 100.00% (10), Exel 0.00% (0), kkz avg 81.40
+0 - 1189, Off 94.20% (1120), Exel 2.50% (28), NF 5.38% (64), NE 0.00% (0), kkz avg 81.92, dap 67.01, tza 29.62 (1108)
+1 - 164, Off 97.56% (160), Exel 6.25% (10), NF 2.44% (4), NE 0.00% (0), kkz avg 82.61, dap 68.17, tza 30.05 (157)
+2 - 72, Off 98.61% (71), Exel 1.41% (1), NF 0.00% (0), NE 0.00% (0), kkz avg 80.97, dap 67.78, tza 30.59 (70)
+3 - 36, Off 97.22% (35), Exel 8.57% (3), NF 0.00% (0), NE 0.00% (0), kkz avg 82.60, dap 70.28, tza 30.42 (36)
+4 - 13, Off 100.00% (13), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 83.08, dap 68.46, tza 31.33 (12)
 
 
 Officer Type Maoz
 
-Maoz - Count: 929, Officers 93.11% (865), Exel 2.43% (21), kkz avg 78.17
+Maoz - 929, Off 93.11% (865), Exel 2.43% (21), NF 2.80% (26), NE 3.88% (36), kkz avg 78.17, dap 66.32, tza 28.29 (336)
 Topic 0
-0 - Count: 712, Officers 93.26% (664), Exel 2.11% (14), kkz avg 78.10
-1 - Count: 141, Officers 94.33% (133), Exel 4.51% (6), kkz avg 78.80
-2 - Count: 49, Officers 85.71% (42), Exel 2.38% (1), kkz avg 78.02
-3 - Count: 21, Officers 95.24% (20), Exel 0.00% (0), kkz avg 76.70
-4 - Count: 6, Officers 100.00% (6), Exel 0.00% (0), kkz avg 78.00
+0 - 740, Off 93.24% (690), Exel 2.17% (15), NF 2.43% (18), NE 4.05% (30), kkz avg 78.26, dap 66.39, tza 28.24 (279)
+1 - 121, Off 95.04% (115), Exel 0.87% (1), NF 2.48% (3), NE 2.48% (3), kkz avg 77.58, dap 66.03, tza 28.65 (40)
+2 - 53, Off 84.91% (45), Exel 11.11% (5), NF 9.43% (5), NE 5.66% (3), kkz avg 78.20, dap 65.85, tza 28.36 (14)
+3 - 12, Off 100.00% (12), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 78.67, dap 66.67, tza 27.67 (3)
+4 - 3, Off 100.00% (3), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 77.67, dap 66.67, tza 0.00 (0)
 
 Topic 1
-0 - Count: 845, Officers 92.78% (784), Exel 2.55% (20), kkz avg 78.26
-1 - Count: 57, Officers 96.49% (55), Exel 1.82% (1), kkz avg 77.36
-2 - Count: 20, Officers 100.00% (20), Exel 0.00% (0), kkz avg 77.20
-3 - Count: 7, Officers 85.71% (6), Exel 0.00% (0), kkz avg 77.50
-4 - Count: 0, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+0 - 855, Off 92.87% (794), Exel 2.52% (20), NF 3.04% (26), NE 3.98% (34), kkz avg 78.16, dap 65.96, tza 28.26 (301)
+1 - 53, Off 94.34% (50), Exel 2.00% (1), NF 0.00% (0), NE 3.77% (2), kkz avg 78.64, dap 70.75, tza 28.31 (26)
+2 - 17, Off 100.00% (17), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 77.35, dap 68.82, tza 28.50 (6)
+3 - 4, Off 100.00% (4), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 78.00, dap 72.50, tza 30.67 (3)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
 
 Topic 2
-0 - Count: 640, Officers 92.97% (595), Exel 3.36% (20), kkz avg 78.09
-1 - Count: 103, Officers 91.26% (94), Exel 0.00% (0), kkz avg 78.52
-2 - Count: 92, Officers 96.74% (89), Exel 1.12% (1), kkz avg 78.38
-3 - Count: 58, Officers 91.38% (53), Exel 0.00% (0), kkz avg 77.09
-4 - Count: 36, Officers 94.44% (34), Exel 0.00% (0), kkz avg 79.79
+0 - 605, Off 93.06% (563), Exel 3.20% (18), NF 2.48% (15), NE 4.13% (25), kkz avg 78.09, dap 66.69, tza 28.23 (243)
+1 - 132, Off 92.42% (122), Exel 2.46% (3), NF 4.55% (6), NE 3.03% (4), kkz avg 78.51, dap 66.21, tza 28.43 (47)
+2 - 90, Off 92.22% (83), Exel 0.00% (0), NF 3.33% (3), NE 4.44% (4), kkz avg 77.96, dap 65.89, tza 26.48 (25)
+3 - 64, Off 95.31% (61), Exel 0.00% (0), NF 3.12% (2), NE 1.56% (1), kkz avg 78.11, dap 64.38, tza 29.60 (10)
+4 - 38, Off 94.74% (36), Exel 0.00% (0), NF 0.00% (0), NE 5.26% (2), kkz avg 78.94, dap 65.00, tza 31.91 (11)
 
 Topic 3
-0 - Count: 751, Officers 93.08% (699), Exel 2.29% (16), kkz avg 78.10
-1 - Count: 114, Officers 92.11% (105), Exel 3.81% (4), kkz avg 78.58
-2 - Count: 45, Officers 93.33% (42), Exel 0.00% (0), kkz avg 78.29
-3 - Count: 14, Officers 100.00% (14), Exel 0.00% (0), kkz avg 78.00
-4 - Count: 5, Officers 100.00% (5), Exel 20.00% (1), kkz avg 78.40
+0 - 770, Off 93.38% (719), Exel 2.09% (15), NF 2.73% (21), NE 3.64% (28), kkz avg 78.16, dap 66.35, tza 28.28 (275)
+1 - 112, Off 90.18% (101), Exel 4.95% (5), NF 4.46% (5), NE 5.36% (6), kkz avg 78.31, dap 65.27, tza 28.57 (40)
+2 - 38, Off 94.74% (36), Exel 0.00% (0), NF 0.00% (0), NE 5.26% (2), kkz avg 77.53, dap 67.89, tza 28.00 (16)
+3 - 8, Off 100.00% (8), Exel 12.50% (1), NF 0.00% (0), NE 0.00% (0), kkz avg 81.62, dap 70.00, tza 27.80 (5)
+4 - 1, Off 100.00% (1), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 71.00, dap 70.00, tza 0.00 (0)
 
 Topic 4
-0 - Count: 819, Officers 92.92% (761), Exel 2.63% (20), kkz avg 78.10
-1 - Count: 80, Officers 93.75% (75), Exel 1.33% (1), kkz avg 78.71
-2 - Count: 26, Officers 96.15% (25), Exel 0.00% (0), kkz avg 78.64
-3 - Count: 4, Officers 100.00% (4), Exel 0.00% (0), kkz avg 79.00
-4 - Count: 0, Officers 0.00% (0), Exel 0.00% (0), kkz avg 0.00
+0 - 808, Off 92.95% (751), Exel 2.40% (18), NF 3.09% (25), NE 3.71% (30), kkz avg 78.09, dap 65.95, tza 28.38 (273)
+1 - 93, Off 94.62% (88), Exel 3.41% (3), NF 1.08% (1), NE 4.30% (4), kkz avg 78.89, dap 69.14, tza 27.66 (50)
+2 - 22, Off 100.00% (22), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 78.18, dap 65.00, tza 28.55 (11)
+3 - 5, Off 60.00% (3), Exel 0.00% (0), NF 0.00% (0), NE 40.00% (2), kkz avg 78.67, dap 78.00, tza 30.00 (1)
+4 - 1, Off 100.00% (1), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 78.00, dap 70.00, tza 32.00 (1)
 
 Topic 5
-0 - Count: 750, Officers 93.33% (700), Exel 2.29% (16), kkz avg 78.20
-1 - Count: 86, Officers 90.70% (78), Exel 1.28% (1), kkz avg 78.22
-2 - Count: 49, Officers 93.88% (46), Exel 4.35% (2), kkz avg 78.24
-3 - Count: 34, Officers 94.12% (32), Exel 3.12% (1), kkz avg 77.72
-4 - Count: 10, Officers 90.00% (9), Exel 11.11% (1), kkz avg 76.78
+0 - 721, Off 93.48% (674), Exel 1.93% (13), NF 2.91% (21), NE 3.47% (25), kkz avg 78.15, dap 66.09, tza 28.32 (246)
+1 - 98, Off 91.84% (90), Exel 4.44% (4), NF 3.06% (3), NE 5.10% (5), kkz avg 78.60, dap 67.65, tza 27.96 (45)
+2 - 55, Off 94.55% (52), Exel 5.77% (3), NF 0.00% (0), NE 3.64% (2), kkz avg 77.98, dap 68.55, tza 28.65 (20)
+3 - 38, Off 86.84% (33), Exel 0.00% (0), NF 5.26% (2), NE 7.89% (3), kkz avg 77.76, dap 65.79, tza 28.12 (17)
+4 - 17, Off 94.12% (16), Exel 6.25% (1), NF 0.00% (0), NE 5.88% (1), kkz avg 78.25, dap 62.35, tza 28.75 (8)
 
 Topic 6
-0 - Count: 669, Officers 93.27% (624), Exel 2.88% (18), kkz avg 78.30
-1 - Count: 124, Officers 92.74% (115), Exel 0.87% (1), kkz avg 78.50
-2 - Count: 74, Officers 94.59% (70), Exel 0.00% (0), kkz avg 77.01
-3 - Count: 44, Officers 90.91% (40), Exel 2.50% (1), kkz avg 77.95
-4 - Count: 18, Officers 88.89% (16), Exel 6.25% (1), kkz avg 76.44
+0 - 654, Off 92.97% (608), Exel 2.47% (15), NF 2.60% (17), NE 4.13% (27), kkz avg 78.32, dap 66.36, tza 28.32 (248)
+1 - 134, Off 93.28% (125), Exel 3.20% (4), NF 2.24% (3), NE 4.48% (6), kkz avg 78.66, dap 66.27, tza 28.20 (41)
+2 - 77, Off 92.21% (71), Exel 1.41% (1), NF 5.19% (4), NE 2.60% (2), kkz avg 77.03, dap 65.71, tza 27.96 (28)
+3 - 43, Off 97.67% (42), Exel 0.00% (0), NF 2.33% (1), NE 0.00% (0), kkz avg 76.29, dap 66.28, tza 27.85 (13)
+4 - 21, Off 90.48% (19), Exel 5.26% (1), NF 4.76% (1), NE 4.76% (1), kkz avg 78.68, dap 67.62, tza 30.17 (6)
 
 Topic 7
-0 - Count: 844, Officers 93.01% (785), Exel 2.29% (18), kkz avg 78.12
-1 - Count: 53, Officers 92.45% (49), Exel 2.04% (1), kkz avg 77.73
-2 - Count: 18, Officers 94.44% (17), Exel 5.88% (1), kkz avg 79.65
-3 - Count: 13, Officers 100.00% (13), Exel 7.69% (1), kkz avg 81.15
-4 - Count: 1, Officers 100.00% (1), Exel 0.00% (0), kkz avg 76.00
+0 - 833, Off 92.92% (774), Exel 2.45% (19), NF 2.88% (24), NE 3.96% (33), kkz avg 78.09, dap 66.53, tza 28.25 (289)
+1 - 58, Off 96.55% (56), Exel 0.00% (0), NF 0.00% (0), NE 3.45% (2), kkz avg 78.34, dap 63.10, tza 27.93 (27)
+2 - 27, Off 88.89% (24), Exel 4.17% (1), NF 7.41% (2), NE 3.70% (1), kkz avg 79.25, dap 66.67, tza 29.21 (14)
+3 - 10, Off 100.00% (10), Exel 10.00% (1), NF 0.00% (0), NE 0.00% (0), kkz avg 79.90, dap 67.00, tza 29.67 (6)
+4 - 1, Off 100.00% (1), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 85.00, dap 60.00, tza 0.00 (0)
 
 Topic 8
-0 - Count: 776, Officers 93.17% (723), Exel 2.07% (15), kkz avg 78.21
-1 - Count: 94, Officers 91.49% (86), Exel 3.49% (3), kkz avg 77.87
-2 - Count: 42, Officers 92.86% (39), Exel 5.13% (2), kkz avg 78.18
-3 - Count: 13, Officers 100.00% (13), Exel 7.69% (1), kkz avg 78.23
-4 - Count: 4, Officers 100.00% (4), Exel 0.00% (0), kkz avg 76.75
+0 - 779, Off 93.07% (725), Exel 2.21% (16), NF 2.57% (20), NE 4.11% (32), kkz avg 78.15, dap 66.30, tza 28.41 (292)
+1 - 92, Off 93.48% (86), Exel 3.49% (3), NF 4.35% (4), NE 2.17% (2), kkz avg 78.35, dap 66.52, tza 27.52 (31)
+2 - 41, Off 90.24% (37), Exel 2.70% (1), NF 4.88% (2), NE 4.88% (2), kkz avg 78.05, dap 66.59, tza 28.10 (10)
+3 - 14, Off 100.00% (14), Exel 7.14% (1), NF 0.00% (0), NE 0.00% (0), kkz avg 78.93, dap 64.29, tza 24.50 (2)
+4 - 3, Off 100.00% (3), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 75.67, dap 70.00, tza 28.00 (1)
 
 Topic 9
-0 - Count: 783, Officers 93.49% (732), Exel 2.32% (17), kkz avg 78.19
-1 - Count: 79, Officers 89.87% (71), Exel 4.23% (3), kkz avg 77.92
-2 - Count: 41, Officers 95.12% (39), Exel 2.56% (1), kkz avg 78.95
-3 - Count: 22, Officers 86.36% (19), Exel 0.00% (0), kkz avg 77.16
-4 - Count: 4, Officers 100.00% (4), Exel 0.00% (0), kkz avg 77.00
+0 - 802, Off 93.39% (749), Exel 2.54% (19), NF 2.99% (24), NE 3.49% (28), kkz avg 78.22, dap 66.45, tza 28.47 (274)
+1 - 69, Off 92.75% (64), Exel 0.00% (0), NF 1.45% (1), NE 5.80% (4), kkz avg 77.69, dap 65.07, tza 27.63 (30)
+2 - 36, Off 88.89% (32), Exel 3.12% (1), NF 2.78% (1), NE 5.56% (2), kkz avg 77.72, dap 66.39, tza 27.15 (20)
+3 - 18, Off 88.89% (16), Exel 6.25% (1), NF 0.00% (0), NE 11.11% (2), kkz avg 78.19, dap 63.89, tza 27.00 (8)
+4 - 4, Off 100.00% (4), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 81.00, dap 72.50, tza 29.50 (4)
 
 
 Officer Type Nachshon
 
-Nachshon - Count: 2784, Officers 95.55% (2660), Exel 2.41% (64), kkz avg 81.31
+Nachshon - 2784, Off 95.55% (2660), Exel 2.41% (64), NF 2.33% (65), NE 1.87% (52), kkz avg 81.31, dap 72.62, tza 27.74 (1320)
 Topic 0
-0 - Count: 2191, Officers 95.44% (2091), Exel 2.49% (52), kkz avg 81.29
-1 - Count: 398, Officers 96.48% (384), Exel 2.08% (8), kkz avg 81.27
-2 - Count: 139, Officers 93.53% (130), Exel 3.08% (4), kkz avg 81.85
-3 - Count: 48, Officers 97.92% (47), Exel 0.00% (0), kkz avg 80.64
-4 - Count: 8, Officers 100.00% (8), Exel 0.00% (0), kkz avg 82.25
+0 - 2236, Off 95.71% (2140), Exel 2.52% (54), NF 2.24% (50), NE 1.83% (41), kkz avg 81.29, dap 72.67, tza 27.66 (1065)
+1 - 374, Off 94.39% (353), Exel 2.27% (8), NF 2.67% (10), NE 2.41% (9), kkz avg 81.46, dap 72.81, tza 28.19 (190)
+2 - 132, Off 95.45% (126), Exel 0.79% (1), NF 3.03% (4), NE 1.52% (2), kkz avg 81.27, dap 72.05, tza 27.68 (47)
+3 - 37, Off 97.30% (36), Exel 2.78% (1), NF 2.70% (1), NE 0.00% (0), kkz avg 80.78, dap 70.54, tza 27.94 (17)
+4 - 5, Off 100.00% (5), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 81.20, dap 70.00, tza 27.00 (1)
 
 Topic 1
-0 - Count: 2516, Officers 95.51% (2403), Exel 2.46% (59), kkz avg 81.31
-1 - Count: 157, Officers 94.90% (149), Exel 2.01% (3), kkz avg 81.07
-2 - Count: 76, Officers 96.05% (73), Exel 0.00% (0), kkz avg 80.96
-3 - Count: 32, Officers 100.00% (32), Exel 6.25% (2), kkz avg 83.12
-4 - Count: 3, Officers 100.00% (3), Exel 0.00% (0), kkz avg 83.00
+0 - 2471, Off 95.59% (2362), Exel 2.58% (61), NF 2.27% (56), NE 1.94% (48), kkz avg 81.34, dap 72.32, tza 27.83 (1114)
+1 - 195, Off 93.33% (182), Exel 0.55% (1), NF 3.59% (7), NE 2.05% (4), kkz avg 81.13, dap 74.51, tza 26.96 (124)
+2 - 86, Off 97.67% (84), Exel 2.38% (2), NF 2.33% (2), NE 0.00% (0), kkz avg 80.62, dap 76.51, tza 27.30 (57)
+3 - 28, Off 100.00% (28), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 82.00, dap 73.21, tza 28.48 (21)
+4 - 4, Off 100.00% (4), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 79.75, dap 77.50, tza 30.00 (4)
 
 Topic 2
-0 - Count: 1897, Officers 95.04% (1803), Exel 2.22% (40), kkz avg 81.23
-1 - Count: 347, Officers 96.83% (336), Exel 2.68% (9), kkz avg 81.74
-2 - Count: 272, Officers 96.32% (262), Exel 3.82% (10), kkz avg 81.70
-3 - Count: 168, Officers 97.62% (164), Exel 1.22% (2), kkz avg 80.70
-4 - Count: 100, Officers 95.00% (95), Exel 3.16% (3), kkz avg 81.17
+0 - 1885, Off 95.44% (1799), Exel 2.39% (43), NF 2.60% (49), NE 1.64% (31), kkz avg 81.30, dap 72.68, tza 27.77 (967)
+1 - 354, Off 94.63% (335), Exel 3.58% (12), NF 2.26% (8), NE 3.11% (11), kkz avg 81.48, dap 73.36, tza 27.75 (166)
+2 - 241, Off 96.27% (232), Exel 1.72% (4), NF 1.66% (4), NE 1.66% (4), kkz avg 81.12, dap 71.83, tza 27.80 (83)
+3 - 204, Off 96.57% (197), Exel 2.03% (4), NF 1.47% (3), NE 1.96% (4), kkz avg 81.40, dap 73.14, tza 27.50 (76)
+4 - 100, Off 97.00% (97), Exel 1.03% (1), NF 1.00% (1), NE 2.00% (2), kkz avg 81.04, dap 69.80, tza 27.39 (28)
 
 Topic 3
-0 - Count: 2260, Officers 95.80% (2165), Exel 2.49% (54), kkz avg 81.42
-1 - Count: 333, Officers 94.59% (315), Exel 1.59% (5), kkz avg 80.70
-2 - Count: 143, Officers 95.80% (137), Exel 2.19% (3), kkz avg 81.17
-3 - Count: 37, Officers 91.89% (34), Exel 2.94% (1), kkz avg 81.00
-4 - Count: 11, Officers 81.82% (9), Exel 11.11% (1), kkz avg 79.00
+0 - 2302, Off 95.74% (2204), Exel 2.27% (50), NF 2.17% (50), NE 1.78% (41), kkz avg 81.27, dap 72.71, tza 27.68 (1076)
+1 - 316, Off 93.99% (297), Exel 2.69% (8), NF 3.48% (11), NE 2.53% (8), kkz avg 81.45, dap 71.74, tza 28.09 (159)
+2 - 126, Off 96.83% (122), Exel 3.28% (4), NF 2.38% (3), NE 0.79% (1), kkz avg 81.43, dap 72.54, tza 27.90 (61)
+3 - 38, Off 92.11% (35), Exel 5.71% (2), NF 2.63% (1), NE 5.26% (2), kkz avg 81.63, dap 75.00, tza 27.65 (23)
+4 - 2, Off 100.00% (2), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 86.00, dap 75.00, tza 26.00 (1)
 
 Topic 4
-0 - Count: 2362, Officers 95.39% (2253), Exel 2.49% (56), kkz avg 81.20
-1 - Count: 269, Officers 97.40% (262), Exel 1.53% (4), kkz avg 81.89
-2 - Count: 103, Officers 95.15% (98), Exel 2.04% (2), kkz avg 81.49
-3 - Count: 43, Officers 95.35% (41), Exel 4.88% (2), kkz avg 83.07
-4 - Count: 7, Officers 85.71% (6), Exel 0.00% (0), kkz avg 82.33
+0 - 2326, Off 95.57% (2223), Exel 2.34% (52), NF 2.28% (53), NE 1.93% (45), kkz avg 81.20, dap 71.98, tza 27.80 (1058)
+1 - 302, Off 96.36% (291), Exel 2.75% (8), NF 1.99% (6), NE 0.99% (3), kkz avg 81.68, dap 76.06, tza 27.43 (157)
+2 - 113, Off 93.81% (106), Exel 2.83% (3), NF 3.54% (4), NE 2.65% (3), kkz avg 82.20, dap 75.66, tza 27.63 (78)
+3 - 38, Off 92.11% (35), Exel 2.86% (1), NF 5.26% (2), NE 2.63% (1), kkz avg 82.29, dap 74.47, tza 27.36 (22)
+4 - 5, Off 100.00% (5), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 81.40, dap 82.00, tza 28.80 (5)
 
 Topic 5
-0 - Count: 2216, Officers 95.71% (2121), Exel 2.40% (51), kkz avg 81.36
-1 - Count: 273, Officers 93.41% (255), Exel 1.96% (5), kkz avg 81.40
-2 - Count: 164, Officers 96.34% (158), Exel 3.80% (6), kkz avg 81.00
-3 - Count: 97, Officers 96.91% (94), Exel 2.13% (2), kkz avg 80.97
-4 - Count: 34, Officers 94.12% (32), Exel 0.00% (0), kkz avg 79.56
+0 - 2175, Off 95.49% (2077), Exel 2.41% (50), NF 2.34% (51), NE 1.93% (42), kkz avg 81.33, dap 72.58, tza 27.74 (999)
+1 - 285, Off 96.14% (274), Exel 1.82% (5), NF 2.11% (6), NE 1.40% (4), kkz avg 81.64, dap 72.88, tza 27.41 (149)
+2 - 168, Off 95.24% (160), Exel 2.50% (4), NF 2.38% (4), NE 1.79% (3), kkz avg 80.81, dap 73.21, tza 28.09 (89)
+3 - 115, Off 95.65% (110), Exel 4.55% (5), NF 2.61% (3), NE 1.74% (2), kkz avg 80.98, dap 73.48, tza 28.30 (64)
+4 - 41, Off 95.12% (39), Exel 0.00% (0), NF 2.44% (1), NE 2.44% (1), kkz avg 81.00, dap 68.29, tza 27.21 (19)
 
 Topic 6
-0 - Count: 2112, Officers 95.69% (2021), Exel 2.47% (50), kkz avg 81.43
-1 - Count: 336, Officers 96.43% (324), Exel 1.85% (6), kkz avg 81.32
-2 - Count: 207, Officers 95.65% (198), Exel 2.02% (4), kkz avg 80.46
-3 - Count: 82, Officers 92.68% (76), Exel 2.63% (2), kkz avg 80.53
-4 - Count: 47, Officers 87.23% (41), Exel 4.88% (2), kkz avg 80.54
+0 - 2100, Off 96.05% (2017), Exel 2.33% (47), NF 2.24% (47), NE 1.48% (31), kkz avg 81.55, dap 73.26, tza 27.78 (1064)
+1 - 351, Off 93.73% (329), Exel 3.04% (10), NF 2.56% (9), NE 3.13% (11), kkz avg 80.73, dap 71.03, tza 27.84 (146)
+2 - 189, Off 96.30% (182), Exel 1.10% (2), NF 2.12% (4), NE 1.59% (3), kkz avg 80.24, dap 71.11, tza 27.53 (62)
+3 - 100, Off 91.00% (91), Exel 3.30% (3), NF 3.00% (3), NE 6.00% (6), kkz avg 80.53, dap 69.20, tza 26.26 (34)
+4 - 44, Off 93.18% (41), Exel 4.88% (2), NF 4.55% (2), NE 2.27% (1), kkz avg 80.34, dap 69.32, tza 28.71 (14)
 
 Topic 7
-0 - Count: 2531, Officers 95.38% (2414), Exel 2.49% (60), kkz avg 81.28
-1 - Count: 180, Officers 97.78% (176), Exel 1.14% (2), kkz avg 81.56
-2 - Count: 56, Officers 94.64% (53), Exel 3.77% (2), kkz avg 81.47
-3 - Count: 15, Officers 100.00% (15), Exel 0.00% (0), kkz avg 82.00
-4 - Count: 2, Officers 100.00% (2), Exel 0.00% (0), kkz avg 81.50
+0 - 2526, Off 95.41% (2410), Exel 2.49% (60), NF 2.41% (61), NE 1.98% (50), kkz avg 81.31, dap 72.57, tza 27.69 (1176)
+1 - 170, Off 96.47% (164), Exel 1.22% (2), NF 1.76% (3), NE 1.18% (2), kkz avg 81.10, dap 73.24, tza 28.11 (96)
+2 - 64, Off 96.88% (62), Exel 3.23% (2), NF 1.56% (1), NE 0.00% (0), kkz avg 81.52, dap 73.28, tza 28.58 (36)
+3 - 23, Off 100.00% (23), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 82.52, dap 72.61, tza 27.00 (12)
+4 - 1, Off 100.00% (1), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 80.00, dap 70.00, tza 0.00 (0)
 
 Topic 8
-0 - Count: 2331, Officers 95.67% (2230), Exel 2.38% (53), kkz avg 81.33
-1 - Count: 272, Officers 94.85% (258), Exel 2.33% (6), kkz avg 81.24
-2 - Count: 125, Officers 94.40% (118), Exel 4.24% (5), kkz avg 81.22
-3 - Count: 46, Officers 97.83% (45), Exel 0.00% (0), kkz avg 80.51
-4 - Count: 10, Officers 90.00% (9), Exel 0.00% (0), kkz avg 82.44
+0 - 2303, Off 95.57% (2201), Exel 2.50% (55), NF 2.34% (54), NE 1.87% (43), kkz avg 81.34, dap 72.76, tza 27.74 (1131)
+1 - 306, Off 95.42% (292), Exel 1.71% (5), NF 2.29% (7), NE 1.96% (6), kkz avg 81.28, dap 72.55, tza 27.72 (132)
+2 - 118, Off 94.92% (112), Exel 2.68% (3), NF 2.54% (3), NE 2.54% (3), kkz avg 81.16, dap 71.02, tza 28.02 (46)
+3 - 46, Off 97.83% (45), Exel 2.22% (1), NF 2.17% (1), NE 0.00% (0), kkz avg 80.22, dap 70.22, tza 27.67 (9)
+4 - 11, Off 90.91% (10), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 81.20, dap 73.64, tza 26.00 (2)
 
 Topic 9
-0 - Count: 2256, Officers 95.39% (2152), Exel 2.32% (50), kkz avg 81.09
-1 - Count: 246, Officers 97.56% (240), Exel 2.08% (5), kkz avg 82.47
-2 - Count: 175, Officers 96.00% (168), Exel 1.79% (3), kkz avg 82.14
-3 - Count: 92, Officers 93.48% (86), Exel 6.98% (6), kkz avg 82.36
-4 - Count: 15, Officers 93.33% (14), Exel 0.00% (0), kkz avg 79.00
+0 - 2328, Off 95.27% (2218), Exel 2.25% (50), NF 2.45% (57), NE 1.98% (46), kkz avg 81.17, dap 72.52, tza 27.74 (1052)
+1 - 242, Off 97.52% (236), Exel 2.97% (7), NF 1.24% (3), NE 1.24% (3), kkz avg 82.10, dap 73.02, tza 27.95 (135)
+2 - 136, Off 97.06% (132), Exel 2.27% (3), NF 1.47% (2), NE 1.47% (2), kkz avg 81.80, dap 72.94, tza 27.47 (85)
+3 - 64, Off 98.44% (63), Exel 4.76% (3), NF 1.56% (1), NE 0.00% (0), kkz avg 82.33, dap 73.59, tza 27.57 (40)
+4 - 14, Off 78.57% (11), Exel 9.09% (1), NF 14.29% (2), NE 7.14% (1), kkz avg 79.73, dap 75.00, tza 28.38 (8)
+
+
+
+Results for 2020
+Users: 968 (Diff Year : 9967, Inv text: 4, T.ratio: 392, Dup: 24, Inv Off: 30, Inv Sadir 894, Inv Fail 0)
+Topic 0: book world series their change were own only
+Topic 1: you person will character people can appreciate qualities
+Topic 2: always character positive life appreciate good very does
+Topic 3: people every about one would person something way
+Topic 4: woman life about society lot strong country through
+Topic 5: work perseverance player high hard one appreciate very
+Topic 6: qualities character very appreciate positive traits people important
+Topic 7: even life after family himself time father during
+Topic 8: character give qualities goal like chose way even
+Topic 9: people state man leader israel country appreciate one
+
+Summary - 968, Off 32.54% (315), Exel 0.95% (3), NF 3.20% (31), NE 2.38% (23), kkz avg 81.26, dap 69.02, tza 26.91 (512)
+Officer Type None
+
+None - 968, Off 32.54% (315), Exel 0.95% (3), NF 3.20% (31), NE 2.38% (23), kkz avg 81.26, dap 69.02, tza 26.91 (512)
+Topic 0
+0 - 887, Off 31.57% (280), Exel 1.07% (3), NF 3.16% (28), NE 2.48% (22), kkz avg 81.39, dap 68.59, tza 26.98 (462)
+1 - 72, Off 41.67% (30), Exel 0.00% (0), NF 4.17% (3), NE 1.39% (1), kkz avg 81.27, dap 73.61, tza 26.35 (43)
+2 - 9, Off 55.56% (5), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 73.60, dap 74.44, tza 26.00 (7)
+3 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 1
+0 - 563, Off 30.73% (173), Exel 0.58% (1), NF 3.37% (19), NE 2.49% (14), kkz avg 80.90, dap 68.04, tza 26.74 (288)
+1 - 235, Off 36.17% (85), Exel 1.18% (1), NF 4.26% (10), NE 2.98% (7), kkz avg 81.53, dap 70.04, tza 27.26 (125)
+2 - 124, Off 36.29% (45), Exel 0.00% (0), NF 0.81% (1), NE 1.61% (2), kkz avg 82.22, dap 70.16, tza 26.75 (67)
+3 - 37, Off 27.03% (10), Exel 10.00% (1), NF 2.70% (1), NE 0.00% (0), kkz avg 81.10, dap 74.05, tza 27.40 (25)
+4 - 9, Off 22.22% (2), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 79.50, dap 66.67, tza 27.71 (7)
+
+Topic 2
+0 - 685, Off 32.70% (224), Exel 1.34% (3), NF 3.80% (26), NE 1.02% (7), kkz avg 81.16, dap 70.07, tza 26.74 (398)
+1 - 169, Off 33.14% (56), Exel 0.00% (0), NF 2.37% (4), NE 4.73% (8), kkz avg 82.14, dap 67.10, tza 27.48 (67)
+2 - 81, Off 33.33% (27), Exel 0.00% (0), NF 1.23% (1), NE 4.94% (4), kkz avg 80.67, dap 65.19, tza 27.61 (31)
+3 - 23, Off 30.43% (7), Exel 0.00% (0), NF 0.00% (0), NE 8.70% (2), kkz avg 80.43, dap 66.52, tza 28.11 (9)
+4 - 10, Off 10.00% (1), Exel 0.00% (0), NF 0.00% (0), NE 20.00% (2), kkz avg 76.00, dap 66.00, tza 26.71 (7)
+
+Topic 3
+0 - 852, Off 34.04% (290), Exel 1.03% (3), NF 3.17% (27), NE 2.23% (19), kkz avg 81.18, dap 68.71, tza 26.91 (443)
+1 - 106, Off 22.64% (24), Exel 0.00% (0), NF 3.77% (4), NE 2.83% (3), kkz avg 81.96, dap 71.43, tza 26.77 (64)
+2 - 10, Off 10.00% (1), Exel 0.00% (0), NF 0.00% (0), NE 10.00% (1), kkz avg 88.00, dap 70.00, tza 29.60 (5)
+3 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 4
+0 - 818, Off 32.27% (264), Exel 0.76% (2), NF 3.55% (29), NE 2.44% (20), kkz avg 81.42, dap 69.56, tza 27.04 (458)
+1 - 112, Off 30.36% (34), Exel 2.94% (1), NF 0.00% (0), NE 1.79% (2), kkz avg 80.94, dap 66.76, tza 25.95 (42)
+2 - 29, Off 51.72% (15), Exel 0.00% (0), NF 3.45% (1), NE 3.45% (1), kkz avg 79.40, dap 63.79, tza 25.36 (11)
+3 - 9, Off 22.22% (2), Exel 0.00% (0), NF 11.11% (1), NE 0.00% (0), kkz avg 79.50, dap 64.44, tza 27.00 (1)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 5
+0 - 850, Off 33.29% (283), Exel 1.06% (3), NF 3.29% (28), NE 2.47% (21), kkz avg 81.24, dap 68.98, tza 26.96 (438)
+1 - 80, Off 27.50% (22), Exel 0.00% (0), NF 2.50% (2), NE 2.50% (2), kkz avg 81.86, dap 69.62, tza 27.20 (44)
+2 - 29, Off 27.59% (8), Exel 0.00% (0), NF 3.45% (1), NE 0.00% (0), kkz avg 80.25, dap 69.31, tza 25.90 (21)
+3 - 8, Off 25.00% (2), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 80.50, dap 67.50, tza 25.62 (8)
+4 - 1, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 60.00, tza 25.00 (1)
+
+Topic 6
+0 - 732, Off 32.10% (235), Exel 1.28% (3), NF 3.14% (23), NE 2.73% (20), kkz avg 81.20, dap 68.77, tza 26.87 (380)
+1 - 168, Off 33.93% (57), Exel 0.00% (0), NF 3.57% (6), NE 1.79% (3), kkz avg 81.09, dap 70.77, tza 27.03 (97)
+2 - 54, Off 31.48% (17), Exel 0.00% (0), NF 3.70% (2), NE 0.00% (0), kkz avg 82.00, dap 68.33, tza 27.21 (29)
+3 - 14, Off 42.86% (6), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 82.83, dap 63.57, tza 26.67 (6)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 7
+0 - 820, Off 33.78% (277), Exel 1.08% (3), NF 2.56% (21), NE 2.68% (22), kkz avg 81.40, dap 69.34, tza 26.85 (430)
+1 - 118, Off 25.42% (30), Exel 0.00% (0), NF 5.93% (7), NE 0.85% (1), kkz avg 79.80, dap 68.14, tza 27.21 (66)
+2 - 26, Off 26.92% (7), Exel 0.00% (0), NF 11.54% (3), NE 0.00% (0), kkz avg 81.43, dap 64.62, tza 27.29 (14)
+3 - 4, Off 25.00% (1), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 84.00, dap 57.50, tza 28.50 (2)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 8
+0 - 817, Off 31.95% (261), Exel 1.15% (3), NF 3.06% (25), NE 2.45% (20), kkz avg 81.27, dap 69.00, tza 26.96 (439)
+1 - 120, Off 37.50% (45), Exel 0.00% (0), NF 3.33% (4), NE 2.50% (3), kkz avg 81.53, dap 69.50, tza 26.00 (61)
+2 - 25, Off 28.00% (7), Exel 0.00% (0), NF 8.00% (2), NE 0.00% (0), kkz avg 79.71, dap 67.60, tza 30.33 (9)
+3 - 6, Off 33.33% (2), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 79.00, dap 68.33, tza 28.67 (3)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 9
+0 - 783, Off 31.80% (249), Exel 0.40% (1), NF 3.45% (27), NE 2.68% (21), kkz avg 81.45, dap 68.83, tza 27.04 (404)
+1 - 100, Off 39.00% (39), Exel 2.56% (1), NF 3.00% (3), NE 1.00% (1), kkz avg 80.44, dap 68.90, tza 26.36 (53)
+2 - 65, Off 27.69% (18), Exel 5.56% (1), NF 1.54% (1), NE 1.54% (1), kkz avg 80.44, dap 71.54, tza 27.27 (40)
+3 - 15, Off 53.33% (8), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 80.88, dap 70.67, tza 25.10 (10)
+4 - 5, Off 20.00% (1), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 82.00, dap 62.00, tza 23.20 (5)
+
+
+Officer Type None
+
+None - 480, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 68.20, tza 26.86 (265)
+Topic 0
+0 - 445, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 67.77, tza 26.92 (244)
+1 - 31, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 73.55, tza 26.39 (18)
+2 - 4, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 75.00, tza 25.00 (3)
+3 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 1
+0 - 282, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 67.38, tza 26.87 (149)
+1 - 104, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 68.54, tza 26.80 (56)
+2 - 66, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 70.76, tza 27.02 (41)
+3 - 22, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 70.91, tza 26.21 (14)
+4 - 6, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 63.33, tza 27.80 (5)
+
+Topic 2
+0 - 344, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 68.86, tza 26.60 (201)
+1 - 80, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 67.38, tza 27.62 (34)
+2 - 36, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 65.00, tza 28.29 (17)
+3 - 13, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 64.62, tza 27.38 (8)
+4 - 7, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 68.57, tza 26.80 (5)
+
+Topic 3
+0 - 414, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 67.56, tza 26.91 (227)
+1 - 60, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 73.05, tza 26.64 (36)
+2 - 6, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 65.00, tza 26.00 (2)
+3 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 4
+0 - 404, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 68.31, tza 27.00 (233)
+1 - 64, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 67.97, tza 26.31 (26)
+2 - 9, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 66.67, tza 23.83 (6)
+3 - 3, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 63.33, tza 0.00 (0)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 5
+0 - 415, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 68.29, tza 26.97 (223)
+1 - 46, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 68.70, tza 26.62 (26)
+2 - 12, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 67.50, tza 26.00 (9)
+3 - 6, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 61.67, tza 25.67 (6)
+4 - 1, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 60.00, tza 25.00 (1)
+
+Topic 6
+0 - 359, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 68.27, tza 26.81 (193)
+1 - 85, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 68.94, tza 26.80 (54)
+2 - 29, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 65.52, tza 27.56 (16)
+3 - 7, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 67.14, tza 28.50 (2)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 7
+0 - 400, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 68.70, tza 26.77 (220)
+1 - 67, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 67.16, tza 27.44 (39)
+2 - 10, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 60.00, tza 25.75 (4)
+3 - 3, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 53.33, tza 28.50 (2)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 8
+0 - 408, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 68.23, tza 26.92 (232)
+1 - 56, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 68.75, tza 25.64 (28)
+2 - 15, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 64.67, tza 32.50 (4)
+3 - 1, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 80.00, tza 26.00 (1)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 9
+0 - 396, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 68.13, tza 26.86 (217)
+1 - 46, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 67.17, tza 26.67 (24)
+2 - 29, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 71.38, tza 27.94 (18)
+3 - 5, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 64.00, tza 23.50 (2)
+4 - 4, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 70.00, tza 25.00 (4)
+
+
+Officer Type Lahav
+
+Lahav - 73, Off 13.70% (10), Exel 0.00% (0), NF 12.33% (9), NE 15.07% (11), kkz avg 85.70, dap 67.53, tza 28.18 (62)
+Topic 0
+0 - 65, Off 12.31% (8), Exel 0.00% (0), NF 10.77% (7), NE 15.38% (10), kkz avg 85.00, dap 67.38, tza 27.93 (56)
+1 - 8, Off 25.00% (2), Exel 0.00% (0), NF 25.00% (2), NE 12.50% (1), kkz avg 88.50, dap 68.75, tza 30.50 (6)
+2 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+3 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 1
+0 - 41, Off 14.63% (6), Exel 0.00% (0), NF 14.63% (6), NE 12.20% (5), kkz avg 84.83, dap 68.54, tza 28.03 (35)
+1 - 23, Off 13.04% (3), Exel 0.00% (0), NF 8.70% (2), NE 17.39% (4), kkz avg 86.33, dap 65.22, tza 28.52 (21)
+2 - 7, Off 14.29% (1), Exel 0.00% (0), NF 0.00% (0), NE 28.57% (2), kkz avg 89.00, dap 65.71, tza 27.50 (4)
+3 - 1, Off 0.00% (0), Exel 0.00% (0), NF 100.00% (1), NE 0.00% (0), kkz avg 0.00, dap 80.00, tza 26.00 (1)
+4 - 1, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 80.00, tza 31.00 (1)
+
+Topic 2
+0 - 52, Off 15.38% (8), Exel 0.00% (0), NF 15.38% (8), NE 9.62% (5), kkz avg 85.00, dap 68.65, tza 28.04 (45)
+1 - 11, Off 9.09% (1), Exel 0.00% (0), NF 9.09% (1), NE 27.27% (3), kkz avg 91.00, dap 64.55, tza 28.90 (10)
+2 - 8, Off 12.50% (1), Exel 0.00% (0), NF 0.00% (0), NE 12.50% (1), kkz avg 86.00, dap 68.75, tza 28.60 (5)
+3 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+4 - 2, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 100.00% (2), kkz avg 0.00, dap 50.00, tza 26.50 (2)
+
+Topic 3
+0 - 66, Off 15.15% (10), Exel 0.00% (0), NF 10.61% (7), NE 13.64% (9), kkz avg 85.70, dap 67.42, tza 28.39 (56)
+1 - 6, Off 0.00% (0), Exel 0.00% (0), NF 33.33% (2), NE 33.33% (2), kkz avg 0.00, dap 68.33, tza 26.60 (5)
+2 - 1, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 70.00, tza 24.00 (1)
+3 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 4
+0 - 69, Off 14.49% (10), Exel 0.00% (0), NF 13.04% (9), NE 14.49% (10), kkz avg 85.70, dap 67.97, tza 28.25 (60)
+1 - 3, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 33.33% (1), kkz avg 0.00, dap 56.67, tza 26.00 (2)
+2 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+3 - 1, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 70.00, tza 0.00 (0)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 5
+0 - 63, Off 11.11% (7), Exel 0.00% (0), NF 14.29% (9), NE 15.87% (10), kkz avg 86.29, dap 68.10, tza 27.91 (53)
+1 - 5, Off 20.00% (1), Exel 0.00% (0), NF 0.00% (0), NE 20.00% (1), kkz avg 89.00, dap 60.00, tza 31.25 (4)
+2 - 5, Off 40.00% (2), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 82.00, dap 68.00, tza 28.60 (5)
+3 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 6
+0 - 57, Off 10.53% (6), Exel 0.00% (0), NF 15.79% (9), NE 17.54% (10), kkz avg 85.67, dap 66.32, tza 28.00 (47)
+1 - 12, Off 33.33% (4), Exel 0.00% (0), NF 0.00% (0), NE 8.33% (1), kkz avg 85.75, dap 71.67, tza 29.45 (11)
+2 - 4, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 72.50, tza 26.75 (4)
+3 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 7
+0 - 57, Off 15.79% (9), Exel 0.00% (0), NF 8.77% (5), NE 19.30% (11), kkz avg 85.89, dap 68.07, tza 28.31 (48)
+1 - 10, Off 10.00% (1), Exel 0.00% (0), NF 30.00% (3), NE 0.00% (0), kkz avg 84.00, dap 65.00, tza 28.56 (9)
+2 - 6, Off 0.00% (0), Exel 0.00% (0), NF 16.67% (1), NE 0.00% (0), kkz avg 0.00, dap 66.67, tza 26.20 (5)
+3 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 8
+0 - 65, Off 13.85% (9), Exel 0.00% (0), NF 12.31% (8), NE 13.85% (9), kkz avg 85.89, dap 67.69, tza 28.07 (55)
+1 - 6, Off 16.67% (1), Exel 0.00% (0), NF 0.00% (0), NE 33.33% (2), kkz avg 84.00, dap 65.00, tza 29.17 (6)
+2 - 2, Off 0.00% (0), Exel 0.00% (0), NF 50.00% (1), NE 0.00% (0), kkz avg 0.00, dap 70.00, tza 28.00 (1)
+3 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 9
+0 - 56, Off 14.29% (8), Exel 0.00% (0), NF 10.71% (6), NE 17.86% (10), kkz avg 85.50, dap 66.43, tza 28.62 (45)
+1 - 5, Off 0.00% (0), Exel 0.00% (0), NF 40.00% (2), NE 0.00% (0), kkz avg 0.00, dap 68.00, tza 27.20 (5)
+2 - 10, Off 10.00% (1), Exel 0.00% (0), NF 10.00% (1), NE 10.00% (1), kkz avg 91.00, dap 71.00, tza 27.00 (10)
+3 - 2, Off 50.00% (1), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 82.00, dap 80.00, tza 26.50 (2)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+
+Officer Type Maoz
+
+Maoz - 112, Off 77.68% (87), Exel 0.00% (0), NF 7.14% (8), NE 2.68% (3), kkz avg 81.00, dap 64.59, tza 26.29 (35)
+Topic 0
+0 - 105, Off 77.14% (81), Exel 0.00% (0), NF 7.62% (8), NE 2.86% (3), kkz avg 81.31, dap 64.52, tza 26.53 (32)
+1 - 7, Off 85.71% (6), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 76.83, dap 65.71, tza 23.67 (3)
+2 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+3 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 1
+0 - 62, Off 69.35% (43), Exel 0.00% (0), NF 9.68% (6), NE 3.23% (2), kkz avg 82.00, dap 65.41, tza 25.86 (21)
+1 - 31, Off 87.10% (27), Exel 0.00% (0), NF 6.45% (2), NE 3.23% (1), kkz avg 78.93, dap 66.77, tza 27.33 (9)
+2 - 18, Off 88.89% (16), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 81.88, dap 58.89, tza 26.20 (5)
+3 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+4 - 1, Off 100.00% (1), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 80.00, dap 50.00, tza 0.00 (0)
+
+Topic 2
+0 - 72, Off 77.78% (56), Exel 0.00% (0), NF 9.72% (7), NE 1.39% (1), kkz avg 80.43, dap 64.79, tza 26.15 (27)
+1 - 23, Off 73.91% (17), Exel 0.00% (0), NF 4.35% (1), NE 4.35% (1), kkz avg 83.71, dap 61.30, tza 25.00 (5)
+2 - 11, Off 90.91% (10), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 80.00, dap 65.45, tza 29.67 (3)
+3 - 6, Off 66.67% (4), Exel 0.00% (0), NF 0.00% (0), NE 16.67% (1), kkz avg 80.00, dap 73.33, tza 0.00 (0)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 3
+0 - 103, Off 78.64% (81), Exel 0.00% (0), NF 6.80% (7), NE 2.91% (3), kkz avg 80.89, dap 64.61, tza 25.63 (30)
+1 - 8, Off 62.50% (5), Exel 0.00% (0), NF 12.50% (1), NE 0.00% (0), kkz avg 81.40, dap 61.25, tza 28.25 (4)
+2 - 1, Off 100.00% (1), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 88.00, dap 90.00, tza 38.00 (1)
+3 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 4
+0 - 89, Off 79.78% (71), Exel 0.00% (0), NF 6.74% (6), NE 3.37% (3), kkz avg 81.11, dap 65.39, tza 26.57 (30)
+1 - 14, Off 71.43% (10), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 82.50, dap 65.38, tza 24.33 (3)
+2 - 6, Off 83.33% (5), Exel 0.00% (0), NF 16.67% (1), NE 0.00% (0), kkz avg 76.20, dap 53.33, tza 25.00 (2)
+3 - 3, Off 33.33% (1), Exel 0.00% (0), NF 33.33% (1), NE 0.00% (0), kkz avg 82.00, dap 60.00, tza 0.00 (0)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 5
+0 - 103, Off 77.67% (80), Exel 0.00% (0), NF 6.80% (7), NE 1.94% (2), kkz avg 80.86, dap 64.08, tza 26.09 (33)
+1 - 8, Off 75.00% (6), Exel 0.00% (0), NF 12.50% (1), NE 12.50% (1), kkz avg 82.33, dap 74.29, tza 29.50 (2)
+2 - 1, Off 100.00% (1), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 84.00, dap 50.00, tza 0.00 (0)
+3 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 6
+0 - 92, Off 81.52% (75), Exel 0.00% (0), NF 4.35% (4), NE 2.17% (2), kkz avg 81.57, dap 63.85, tza 26.78 (27)
+1 - 15, Off 53.33% (8), Exel 0.00% (0), NF 20.00% (3), NE 6.67% (1), kkz avg 76.25, dap 70.00, tza 24.67 (6)
+2 - 3, Off 66.67% (2), Exel 0.00% (0), NF 33.33% (1), NE 0.00% (0), kkz avg 83.50, dap 73.33, tza 24.00 (1)
+3 - 2, Off 100.00% (2), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 76.00, dap 45.00, tza 25.00 (1)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 7
+0 - 95, Off 80.00% (76), Exel 0.00% (0), NF 6.32% (6), NE 2.11% (2), kkz avg 80.91, dap 63.62, tza 26.11 (27)
+1 - 14, Off 57.14% (8), Exel 0.00% (0), NF 14.29% (2), NE 7.14% (1), kkz avg 81.00, dap 70.00, tza 25.17 (6)
+2 - 2, Off 100.00% (2), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 83.00, dap 70.00, tza 32.00 (2)
+3 - 1, Off 100.00% (1), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 84.00, dap 70.00, tza 0.00 (0)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 8
+0 - 91, Off 78.02% (71), Exel 0.00% (0), NF 7.69% (7), NE 2.20% (2), kkz avg 80.66, dap 63.96, tza 26.68 (31)
+1 - 19, Off 73.68% (14), Exel 0.00% (0), NF 5.26% (1), NE 5.26% (1), kkz avg 82.57, dap 68.33, tza 23.25 (4)
+2 - 1, Off 100.00% (1), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 84.00, dap 70.00, tza 0.00 (0)
+3 - 1, Off 100.00% (1), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 80.00, dap 50.00, tza 0.00 (0)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 9
+0 - 96, Off 77.08% (74), Exel 0.00% (0), NF 8.33% (8), NE 3.12% (3), kkz avg 81.01, dap 64.63, tza 26.67 (27)
+1 - 8, Off 75.00% (6), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 78.67, dap 70.00, tza 26.00 (4)
+2 - 4, Off 75.00% (3), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 82.33, dap 60.00, tza 0.00 (0)
+3 - 3, Off 100.00% (3), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 83.67, dap 66.67, tza 26.67 (3)
+4 - 1, Off 100.00% (1), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 82.00, dap 30.00, tza 16.00 (1)
+
+
+Officer Type Nachshon
+
+Nachshon - 303, Off 71.95% (218), Exel 1.38% (3), NF 4.62% (14), NE 2.97% (9), kkz avg 81.16, dap 72.28, tza 26.63 (150)
+Topic 0
+0 - 272, Off 70.22% (191), Exel 1.57% (3), NF 4.78% (13), NE 3.31% (9), kkz avg 81.28, dap 71.76, tza 26.79 (130)
+1 - 26, Off 84.62% (22), Exel 0.00% (0), NF 3.85% (1), NE 0.00% (0), kkz avg 81.82, dap 77.31, tza 25.25 (16)
+2 - 5, Off 100.00% (5), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 73.60, dap 74.00, tza 26.75 (4)
+3 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 1
+0 - 178, Off 69.66% (124), Exel 0.81% (1), NF 3.93% (7), NE 3.93% (7), kkz avg 80.33, dap 69.89, tza 26.18 (83)
+1 - 77, Off 71.43% (55), Exel 1.82% (1), NF 7.79% (6), NE 2.60% (2), kkz avg 82.55, dap 74.81, tza 27.23 (39)
+2 - 33, Off 84.85% (28), Exel 0.00% (0), NF 3.03% (1), NE 0.00% (0), kkz avg 82.18, dap 76.06, tza 26.06 (17)
+3 - 14, Off 71.43% (10), Exel 10.00% (1), NF 0.00% (0), NE 0.00% (0), kkz avg 81.10, dap 78.57, tza 29.20 (10)
+4 - 1, Off 100.00% (1), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 79.00, dap 90.00, tza 24.00 (1)
+
+Topic 2
+0 - 217, Off 73.73% (160), Exel 1.88% (3), NF 5.07% (11), NE 0.46% (1), kkz avg 81.22, dap 74.06, tza 26.63 (125)
+1 - 55, Off 69.09% (38), Exel 0.00% (0), NF 3.64% (2), NE 7.27% (4), kkz avg 81.21, dap 69.64, tza 27.11 (18)
+2 - 26, Off 61.54% (16), Exel 0.00% (0), NF 3.85% (1), NE 11.54% (3), kkz avg 80.75, dap 64.23, tza 23.83 (6)
+3 - 4, Off 75.00% (3), Exel 0.00% (0), NF 0.00% (0), NE 25.00% (1), kkz avg 81.00, dap 62.50, tza 34.00 (1)
+4 - 1, Off 100.00% (1), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 76.00, dap 80.00, tza 0.00 (0)
+
+Topic 3
+0 - 269, Off 73.98% (199), Exel 1.51% (3), NF 4.83% (13), NE 2.60% (7), kkz avg 81.07, dap 72.34, tza 26.55 (130)
+1 - 32, Off 59.38% (19), Exel 0.00% (0), NF 3.12% (1), NE 3.12% (1), kkz avg 82.11, dap 71.56, tza 26.74 (19)
+2 - 2, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 50.00% (1), kkz avg 0.00, dap 75.00, tza 34.00 (1)
+3 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 4
+0 - 256, Off 71.48% (183), Exel 1.09% (2), NF 5.47% (14), NE 2.73% (7), kkz avg 81.30, dap 73.40, tza 26.67 (135)
+1 - 31, Off 77.42% (24), Exel 4.17% (1), NF 0.00% (0), NE 3.23% (1), kkz avg 80.29, dap 65.81, tza 25.55 (11)
+2 - 14, Off 71.43% (10), Exel 0.00% (0), NF 0.00% (0), NE 7.14% (1), kkz avg 81.00, dap 66.43, tza 28.67 (3)
+3 - 2, Off 50.00% (1), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 77.00, dap 70.00, tza 27.00 (1)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 5
+0 - 269, Off 72.86% (196), Exel 1.53% (3), NF 4.46% (12), NE 3.35% (9), kkz avg 81.22, dap 72.12, tza 26.78 (129)
+1 - 21, Off 71.43% (15), Exel 0.00% (0), NF 4.76% (1), NE 0.00% (0), kkz avg 81.20, dap 72.38, tza 26.75 (12)
+2 - 11, Off 45.45% (5), Exel 0.00% (0), NF 9.09% (1), NE 0.00% (0), kkz avg 78.80, dap 73.64, tza 23.86 (7)
+3 - 2, Off 100.00% (2), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 80.50, dap 85.00, tza 25.50 (2)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 6
+0 - 224, Off 68.75% (154), Exel 1.95% (3), NF 4.46% (10), NE 3.57% (8), kkz avg 80.85, dap 72.19, tza 26.51 (113)
+1 - 56, Off 80.36% (45), Exel 0.00% (0), NF 5.36% (3), NE 1.79% (1), kkz avg 81.53, dap 73.57, tza 27.04 (26)
+2 - 18, Off 83.33% (15), Exel 0.00% (0), NF 5.56% (1), NE 0.00% (0), kkz avg 81.80, dap 71.11, tza 27.12 (8)
+3 - 5, Off 80.00% (4), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 86.25, dap 66.00, tza 26.00 (3)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 7
+0 - 268, Off 71.64% (192), Exel 1.56% (3), NF 3.73% (10), NE 3.36% (9), kkz avg 81.39, dap 72.57, tza 26.61 (135)
+1 - 27, Off 77.78% (21), Exel 0.00% (0), NF 7.41% (2), NE 0.00% (0), kkz avg 79.14, dap 70.74, tza 26.50 (12)
+2 - 8, Off 62.50% (5), Exel 0.00% (0), NF 25.00% (2), NE 0.00% (0), kkz avg 80.80, dap 67.50, tza 28.00 (3)
+3 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 8
+0 - 253, Off 71.54% (181), Exel 1.66% (3), NF 3.95% (10), NE 3.56% (9), kkz avg 81.28, dap 72.37, tza 26.60 (121)
+1 - 39, Off 76.92% (30), Exel 0.00% (0), NF 7.69% (3), NE 0.00% (0), kkz avg 80.97, dap 71.79, tza 26.09 (23)
+2 - 7, Off 85.71% (6), Exel 0.00% (0), NF 14.29% (1), NE 0.00% (0), kkz avg 79.00, dap 72.86, tza 28.75 (4)
+3 - 4, Off 25.00% (1), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 78.00, dap 70.00, tza 30.00 (2)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 9
+0 - 235, Off 71.06% (167), Exel 0.60% (1), NF 5.53% (13), NE 3.40% (8), kkz avg 81.46, dap 72.30, tza 26.85 (115)
+1 - 41, Off 80.49% (33), Exel 3.03% (1), NF 2.44% (1), NE 2.44% (1), kkz avg 80.76, dap 70.73, tza 25.85 (20)
+2 - 22, Off 63.64% (14), Exel 7.14% (1), NF 0.00% (0), NE 0.00% (0), kkz avg 79.29, dap 74.09, tza 26.50 (12)
+3 - 5, Off 80.00% (4), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 78.50, dap 76.00, tza 23.67 (3)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+
+
+Results for 2021
+Users: 270 (Diff Year : 11475, Inv text: 18, T.ratio: 119, Dup: 0, Inv Off: 0, Inv Sadir 285, Inv Fail 0)
+Topic 0: character know very would even important people one
+Topic 1: family children many time always ability their commander
+Topic 2: very character positive appreciate always really qualities life
+Topic 3: people leader qualities appreciate leadership man eyes israel
+Topic 4: country high where about love into went man
+Topic 5: work hard world give himself many first amazing
+Topic 6: desire make change things goal age through musk
+Topic 7: people will person you good qualities important around
+Topic 8: also person lot about world more role addition
+Topic 9: character appreciate always life like something even one
+
+Summary - 270, Off 6.67% (18), Exel 11.11% (2), NF 4.44% (12), NE 3.70% (10), kkz avg 82.11, dap 70.71, tza 27.14 (147)
+Officer Type None
+
+None - 270, Off 6.67% (18), Exel 11.11% (2), NF 4.44% (12), NE 3.70% (10), kkz avg 82.11, dap 70.71, tza 27.14 (147)
+Topic 0
+0 - 229, Off 6.99% (16), Exel 12.50% (2), NF 4.80% (11), NE 3.93% (9), kkz avg 82.69, dap 70.93, tza 27.14 (125)
+1 - 32, Off 3.12% (1), Exel 0.00% (0), NF 3.12% (1), NE 3.12% (1), kkz avg 80.00, dap 68.12, tza 28.12 (16)
+2 - 8, Off 12.50% (1), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 75.00, dap 76.25, tza 24.50 (6)
+3 - 1, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 60.00, tza 0.00 (0)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 1
+0 - 242, Off 6.20% (15), Exel 6.67% (1), NF 3.72% (9), NE 3.72% (9), kkz avg 81.67, dap 71.00, tza 27.08 (139)
+1 - 24, Off 8.33% (2), Exel 0.00% (0), NF 12.50% (3), NE 4.17% (1), kkz avg 82.00, dap 67.50, tza 27.20 (5)
+2 - 4, Off 25.00% (1), Exel 100.00% (1), NF 0.00% (0), NE 0.00% (0), kkz avg 89.00, dap 72.50, tza 30.00 (3)
+3 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 2
+0 - 191, Off 5.76% (11), Exel 9.09% (1), NF 3.14% (6), NE 3.66% (7), kkz avg 81.64, dap 70.84, tza 27.04 (117)
+1 - 63, Off 11.11% (7), Exel 14.29% (1), NF 7.94% (5), NE 3.17% (2), kkz avg 82.86, dap 70.97, tza 28.20 (25)
+2 - 14, Off 0.00% (0), Exel 0.00% (0), NF 7.14% (1), NE 0.00% (0), kkz avg 0.00, dap 70.00, tza 22.67 (3)
+3 - 2, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 50.00% (1), kkz avg 0.00, dap 55.00, tza 26.50 (2)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 3
+0 - 218, Off 6.42% (14), Exel 7.14% (1), NF 4.13% (9), NE 3.67% (8), kkz avg 80.86, dap 70.46, tza 27.07 (114)
+1 - 33, Off 9.09% (3), Exel 33.33% (1), NF 9.09% (3), NE 6.06% (2), kkz avg 86.67, dap 72.81, tza 27.44 (18)
+2 - 14, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 65.71, tza 25.90 (10)
+3 - 5, Off 20.00% (1), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 86.00, dap 82.00, tza 30.20 (5)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 4
+0 - 228, Off 7.46% (17), Exel 11.76% (2), NF 4.39% (10), NE 3.07% (7), kkz avg 81.82, dap 70.80, tza 27.41 (127)
+1 - 37, Off 2.70% (1), Exel 0.00% (0), NF 5.41% (2), NE 5.41% (2), kkz avg 87.00, dap 71.08, tza 25.44 (18)
+2 - 5, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 20.00% (1), kkz avg 0.00, dap 64.00, tza 25.50 (2)
+3 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 5
+0 - 233, Off 6.87% (16), Exel 12.50% (2), NF 4.72% (11), NE 3.86% (9), kkz avg 82.06, dap 70.35, tza 26.89 (123)
+1 - 28, Off 3.57% (1), Exel 0.00% (0), NF 3.57% (1), NE 3.57% (1), kkz avg 79.00, dap 72.86, tza 27.31 (16)
+2 - 7, Off 14.29% (1), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 86.00, dap 77.14, tza 32.33 (6)
+3 - 2, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 60.00, tza 25.50 (2)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 6
+0 - 247, Off 7.29% (18), Exel 11.11% (2), NF 4.05% (10), NE 4.05% (10), kkz avg 82.11, dap 70.89, tza 27.11 (132)
+1 - 16, Off 0.00% (0), Exel 0.00% (0), NF 6.25% (1), NE 0.00% (0), kkz avg 0.00, dap 67.33, tza 27.00 (9)
+2 - 6, Off 0.00% (0), Exel 0.00% (0), NF 16.67% (1), NE 0.00% (0), kkz avg 0.00, dap 71.67, tza 28.60 (5)
+3 - 1, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 70.00, tza 26.00 (1)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 7
+0 - 145, Off 6.90% (10), Exel 20.00% (2), NF 5.52% (8), NE 2.76% (4), kkz avg 83.60, dap 71.46, tza 27.62 (80)
+1 - 78, Off 6.41% (5), Exel 0.00% (0), NF 2.56% (2), NE 2.56% (2), kkz avg 81.00, dap 70.26, tza 26.90 (41)
+2 - 35, Off 5.71% (2), Exel 0.00% (0), NF 5.71% (2), NE 8.57% (3), kkz avg 78.00, dap 68.57, tza 26.83 (18)
+3 - 12, Off 8.33% (1), Exel 0.00% (0), NF 0.00% (0), NE 8.33% (1), kkz avg 81.00, dap 70.83, tza 24.25 (8)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 8
+0 - 241, Off 7.05% (17), Exel 5.88% (1), NF 4.56% (11), NE 3.73% (9), kkz avg 81.65, dap 70.25, tza 27.24 (132)
+1 - 22, Off 4.55% (1), Exel 100.00% (1), NF 4.55% (1), NE 4.55% (1), kkz avg 90.00, dap 72.27, tza 25.70 (10)
+2 - 7, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 81.43, tza 27.40 (5)
+3 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 9
+0 - 189, Off 6.88% (13), Exel 7.69% (1), NF 3.70% (7), NE 3.17% (6), kkz avg 83.08, dap 71.90, tza 27.11 (109)
+1 - 67, Off 5.97% (4), Exel 25.00% (1), NF 7.46% (5), NE 5.97% (4), kkz avg 81.75, dap 68.46, tza 26.73 (30)
+2 - 12, Off 8.33% (1), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 71.00, dap 65.00, tza 29.71 (7)
+3 - 2, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 65.00, tza 25.00 (1)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+
+Officer Type None
+
+None - 144, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 68.61, tza 26.47 (68)
+Topic 0
+0 - 120, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 69.08, tza 26.63 (59)
+1 - 19, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 64.21, tza 26.17 (6)
+2 - 4, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 77.50, tza 24.00 (3)
+3 - 1, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 60.00, tza 0.00 (0)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 1
+0 - 128, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 69.38, tza 26.23 (64)
+1 - 13, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 59.23, tza 29.00 (2)
+2 - 3, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 76.67, tza 31.50 (2)
+3 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 2
+0 - 108, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 68.98, tza 26.43 (60)
+1 - 28, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 67.14, tza 27.17 (6)
+2 - 7, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 71.43, tza 25.00 (1)
+3 - 1, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 50.00, tza 26.00 (1)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 3
+0 - 114, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 68.07, tza 26.26 (50)
+1 - 17, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 71.76, tza 27.12 (8)
+2 - 10, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 64.00, tza 25.86 (7)
+3 - 3, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 86.67, tza 29.67 (3)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 4
+0 - 125, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 68.16, tza 26.80 (59)
+1 - 16, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 70.62, tza 24.00 (7)
+2 - 3, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 76.67, tza 25.50 (2)
+3 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 5
+0 - 121, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 68.02, tza 26.09 (54)
+1 - 18, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 70.56, tza 29.00 (10)
+2 - 3, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 86.67, tza 25.00 (2)
+3 - 2, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 60.00, tza 25.50 (2)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 6
+0 - 135, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 68.89, tza 26.50 (64)
+1 - 9, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 64.44, tza 26.00 (4)
+2 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+3 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 7
+0 - 76, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 69.47, tza 26.79 (39)
+1 - 48, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 66.88, tza 26.80 (20)
+2 - 15, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 67.33, tza 24.80 (5)
+3 - 5, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 76.00, tza 23.75 (4)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 8
+0 - 127, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 68.35, tza 26.59 (58)
+1 - 13, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 68.46, tza 25.67 (6)
+2 - 4, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 77.50, tza 26.00 (4)
+3 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 9
+0 - 106, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 69.91, tza 26.39 (56)
+1 - 29, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 66.90, tza 25.62 (8)
+2 - 7, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 57.14, tza 30.67 (3)
+3 - 2, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 65.00, tza 25.00 (1)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+
+Officer Type Lahav
+
+Lahav - 42, Off 0.00% (0), Exel 0.00% (0), NF 2.38% (1), NE 4.76% (2), kkz avg 0.00, dap 71.43, tza 28.94 (36)
+Topic 0
+0 - 37, Off 0.00% (0), Exel 0.00% (0), NF 2.70% (1), NE 5.41% (2), kkz avg 0.00, dap 71.89, tza 28.68 (31)
+1 - 4, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 65.00, tza 32.25 (4)
+2 - 1, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 80.00, tza 24.00 (1)
+3 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 1
+0 - 37, Off 0.00% (0), Exel 0.00% (0), NF 2.70% (1), NE 2.70% (1), kkz avg 0.00, dap 71.08, tza 29.12 (34)
+1 - 5, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 20.00% (1), kkz avg 0.00, dap 74.00, tza 26.00 (2)
+2 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+3 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 2
+0 - 33, Off 0.00% (0), Exel 0.00% (0), NF 3.03% (1), NE 6.06% (2), kkz avg 0.00, dap 71.52, tza 28.69 (29)
+1 - 8, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 71.25, tza 30.00 (7)
+2 - 1, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 70.00, tza 0.00 (0)
+3 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 3
+0 - 35, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 2.86% (1), kkz avg 0.00, dap 70.57, tza 28.77 (30)
+1 - 6, Off 0.00% (0), Exel 0.00% (0), NF 16.67% (1), NE 16.67% (1), kkz avg 0.00, dap 75.00, tza 29.20 (5)
+2 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+3 - 1, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 80.00, tza 33.00 (1)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 4
+0 - 34, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 5.88% (2), kkz avg 0.00, dap 71.76, tza 29.41 (29)
+1 - 8, Off 0.00% (0), Exel 0.00% (0), NF 12.50% (1), NE 0.00% (0), kkz avg 0.00, dap 70.00, tza 27.00 (7)
+2 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+3 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 5
+0 - 37, Off 0.00% (0), Exel 0.00% (0), NF 2.70% (1), NE 2.70% (1), kkz avg 0.00, dap 71.35, tza 28.35 (31)
+1 - 2, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 50.00% (1), kkz avg 0.00, dap 80.00, tza 24.00 (2)
+2 - 3, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 66.67, tza 38.33 (3)
+3 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 6
+0 - 36, Off 0.00% (0), Exel 0.00% (0), NF 2.78% (1), NE 5.56% (2), kkz avg 0.00, dap 71.94, tza 28.63 (30)
+1 - 2, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 70.00, tza 34.00 (2)
+2 - 4, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 67.50, tza 28.75 (4)
+3 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 7
+0 - 21, Off 0.00% (0), Exel 0.00% (0), NF 4.76% (1), NE 4.76% (1), kkz avg 0.00, dap 71.90, tza 30.67 (18)
+1 - 11, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 9.09% (1), kkz avg 0.00, dap 76.36, tza 26.30 (10)
+2 - 8, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 68.75, tza 27.57 (7)
+3 - 2, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 50.00, tza 34.00 (1)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 8
+0 - 37, Off 0.00% (0), Exel 0.00% (0), NF 2.70% (1), NE 2.70% (1), kkz avg 0.00, dap 70.27, tza 29.09 (32)
+1 - 4, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 25.00% (1), kkz avg 0.00, dap 80.00, tza 26.00 (3)
+2 - 1, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 80.00, tza 33.00 (1)
+3 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 9
+0 - 26, Off 0.00% (0), Exel 0.00% (0), NF 3.85% (1), NE 3.85% (1), kkz avg 0.00, dap 73.46, tza 29.67 (21)
+1 - 13, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 7.69% (1), kkz avg 0.00, dap 66.92, tza 27.92 (12)
+2 - 3, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 73.33, tza 28.00 (3)
+3 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+
+Officer Type Maoz
+
+Maoz - 14, Off 0.00% (0), Exel 0.00% (0), NF 28.57% (4), NE 28.57% (4), kkz avg 0.00, dap 65.38, tza 27.80 (5)
+Topic 0
+0 - 12, Off 0.00% (0), Exel 0.00% (0), NF 25.00% (3), NE 25.00% (3), kkz avg 0.00, dap 64.55, tza 28.50 (4)
+1 - 2, Off 0.00% (0), Exel 0.00% (0), NF 50.00% (1), NE 50.00% (1), kkz avg 0.00, dap 70.00, tza 25.00 (1)
+2 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+3 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 1
+0 - 14, Off 0.00% (0), Exel 0.00% (0), NF 28.57% (4), NE 28.57% (4), kkz avg 0.00, dap 65.38, tza 27.80 (5)
+1 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+2 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+3 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 2
+0 - 6, Off 0.00% (0), Exel 0.00% (0), NF 33.33% (2), NE 33.33% (2), kkz avg 0.00, dap 61.67, tza 27.00 (2)
+1 - 8, Off 0.00% (0), Exel 0.00% (0), NF 25.00% (2), NE 25.00% (2), kkz avg 0.00, dap 68.57, tza 28.33 (3)
+2 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+3 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 3
+0 - 12, Off 0.00% (0), Exel 0.00% (0), NF 25.00% (3), NE 33.33% (4), kkz avg 0.00, dap 66.36, tza 27.00 (4)
+1 - 2, Off 0.00% (0), Exel 0.00% (0), NF 50.00% (1), NE 0.00% (0), kkz avg 0.00, dap 60.00, tza 31.00 (1)
+2 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+3 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 4
+0 - 11, Off 0.00% (0), Exel 0.00% (0), NF 36.36% (4), NE 27.27% (3), kkz avg 0.00, dap 69.00, tza 27.80 (5)
+1 - 1, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 70.00, tza 0.00 (0)
+2 - 2, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 50.00% (1), kkz avg 0.00, dap 45.00, tza 0.00 (0)
+3 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 5
+0 - 14, Off 0.00% (0), Exel 0.00% (0), NF 28.57% (4), NE 28.57% (4), kkz avg 0.00, dap 65.38, tza 27.80 (5)
+1 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+2 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+3 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 6
+0 - 14, Off 0.00% (0), Exel 0.00% (0), NF 28.57% (4), NE 28.57% (4), kkz avg 0.00, dap 65.38, tza 27.80 (5)
+1 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+2 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+3 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 7
+0 - 7, Off 0.00% (0), Exel 0.00% (0), NF 28.57% (2), NE 14.29% (1), kkz avg 0.00, dap 70.00, tza 28.00 (2)
+1 - 3, Off 0.00% (0), Exel 0.00% (0), NF 33.33% (1), NE 33.33% (1), kkz avg 0.00, dap 60.00, tza 31.00 (1)
+2 - 2, Off 0.00% (0), Exel 0.00% (0), NF 50.00% (1), NE 50.00% (1), kkz avg 0.00, dap 50.00, tza 29.00 (1)
+3 - 2, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 50.00% (1), kkz avg 0.00, dap 70.00, tza 23.00 (1)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 8
+0 - 13, Off 0.00% (0), Exel 0.00% (0), NF 23.08% (3), NE 30.77% (4), kkz avg 0.00, dap 64.17, tza 27.80 (5)
+1 - 1, Off 0.00% (0), Exel 0.00% (0), NF 100.00% (1), NE 0.00% (0), kkz avg 0.00, dap 80.00, tza 0.00 (0)
+2 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+3 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 9
+0 - 6, Off 0.00% (0), Exel 0.00% (0), NF 33.33% (2), NE 33.33% (2), kkz avg 0.00, dap 65.00, tza 26.00 (2)
+1 - 7, Off 0.00% (0), Exel 0.00% (0), NF 28.57% (2), NE 28.57% (2), kkz avg 0.00, dap 63.33, tza 29.00 (3)
+2 - 1, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 80.00, tza 0.00 (0)
+3 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+
+Officer Type Nachshon
+
+Nachshon - 70, Off 25.71% (18), Exel 11.11% (2), NF 10.00% (7), NE 5.71% (4), kkz avg 82.11, dap 75.65, tza 26.55 (38)
+Topic 0
+0 - 60, Off 26.67% (16), Exel 12.50% (2), NF 11.67% (7), NE 6.67% (4), kkz avg 82.69, dap 75.25, tza 26.42 (31)
+1 - 7, Off 14.29% (1), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 80.00, dap 80.00, tza 27.80 (5)
+2 - 3, Off 33.33% (1), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 75.00, dap 73.33, tza 25.50 (2)
+3 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 1
+0 - 63, Off 23.81% (15), Exel 6.67% (1), NF 6.35% (4), NE 6.35% (4), kkz avg 81.67, dap 75.48, tza 26.56 (36)
+1 - 6, Off 33.33% (2), Exel 0.00% (0), NF 50.00% (3), NE 0.00% (0), kkz avg 82.00, dap 80.00, tza 26.00 (1)
+2 - 1, Off 100.00% (1), Exel 100.00% (1), NF 0.00% (0), NE 0.00% (0), kkz avg 89.00, dap 60.00, tza 27.00 (1)
+3 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 2
+0 - 44, Off 25.00% (11), Exel 9.09% (1), NF 6.82% (3), NE 6.82% (3), kkz avg 81.64, dap 76.28, tza 26.62 (26)
+1 - 19, Off 36.84% (7), Exel 14.29% (1), NF 15.79% (3), NE 0.00% (0), kkz avg 82.86, dap 77.37, tza 27.44 (9)
+2 - 6, Off 0.00% (0), Exel 0.00% (0), NF 16.67% (1), NE 0.00% (0), kkz avg 0.00, dap 68.33, tza 21.50 (2)
+3 - 1, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 100.00% (1), kkz avg 0.00, dap 60.00, tza 27.00 (1)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 3
+0 - 57, Off 24.56% (14), Exel 7.14% (1), NF 10.53% (6), NE 5.26% (3), kkz avg 80.86, dap 75.96, tza 26.73 (30)
+1 - 8, Off 37.50% (3), Exel 33.33% (1), NF 12.50% (1), NE 12.50% (1), kkz avg 86.67, dap 77.14, tza 25.00 (4)
+2 - 4, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 70.00, tza 26.00 (3)
+3 - 1, Off 100.00% (1), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 86.00, dap 70.00, tza 29.00 (1)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 4
+0 - 58, Off 29.31% (17), Exel 11.76% (2), NF 10.34% (6), NE 3.45% (2), kkz avg 81.82, dap 76.32, tza 26.71 (34)
+1 - 12, Off 8.33% (1), Exel 0.00% (0), NF 8.33% (1), NE 16.67% (2), kkz avg 87.00, dap 72.50, tza 25.25 (4)
+2 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+3 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 5
+0 - 61, Off 26.23% (16), Exel 12.50% (2), NF 9.84% (6), NE 6.56% (4), kkz avg 82.06, dap 75.50, tza 26.70 (33)
+1 - 8, Off 12.50% (1), Exel 0.00% (0), NF 12.50% (1), NE 0.00% (0), kkz avg 79.00, dap 76.25, tza 24.75 (4)
+2 - 1, Off 100.00% (1), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 86.00, dap 80.00, tza 29.00 (1)
+3 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 6
+0 - 62, Off 29.03% (18), Exel 11.11% (2), NF 8.06% (5), NE 6.45% (4), kkz avg 82.11, dap 75.81, tza 26.79 (33)
+1 - 5, Off 0.00% (0), Exel 0.00% (0), NF 20.00% (1), NE 0.00% (0), kkz avg 0.00, dap 72.50, tza 23.67 (3)
+2 - 2, Off 0.00% (0), Exel 0.00% (0), NF 50.00% (1), NE 0.00% (0), kkz avg 0.00, dap 80.00, tza 28.00 (1)
+3 - 1, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 70.00, tza 26.00 (1)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 7
+0 - 41, Off 24.39% (10), Exel 20.00% (2), NF 12.20% (5), NE 4.88% (2), kkz avg 83.60, dap 75.25, tza 26.52 (21)
+1 - 16, Off 31.25% (5), Exel 0.00% (0), NF 6.25% (1), NE 0.00% (0), kkz avg 81.00, dap 77.50, tza 27.30 (10)
+2 - 10, Off 20.00% (2), Exel 0.00% (0), NF 10.00% (1), NE 20.00% (2), kkz avg 78.00, dap 74.00, tza 27.40 (5)
+3 - 3, Off 33.33% (1), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 81.00, dap 76.67, tza 21.00 (2)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 8
+0 - 64, Off 26.56% (17), Exel 5.88% (1), NF 10.94% (7), NE 6.25% (4), kkz avg 81.65, dap 75.24, tza 26.59 (37)
+1 - 4, Off 25.00% (1), Exel 100.00% (1), NF 0.00% (0), NE 0.00% (0), kkz avg 90.00, dap 75.00, tza 25.00 (1)
+2 - 2, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 90.00, tza 0.00 (0)
+3 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+
+Topic 9
+0 - 51, Off 25.49% (13), Exel 7.69% (1), NF 7.84% (4), NE 5.88% (3), kkz avg 83.08, dap 76.08, tza 26.73 (30)
+1 - 18, Off 22.22% (4), Exel 25.00% (1), NF 16.67% (3), NE 5.56% (1), kkz avg 81.75, dap 74.12, tza 25.00 (7)
+2 - 1, Off 100.00% (1), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 71.00, dap 80.00, tza 32.00 (1)
+3 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
+4 - 0, Off 0.00% (0), Exel 0.00% (0), NF 0.00% (0), NE 0.00% (0), kkz avg 0.00, dap 0.00, tza 0.00 (0)
 
 
 

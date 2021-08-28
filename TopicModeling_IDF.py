@@ -192,7 +192,7 @@ def run_topic_modeling(cand_year, outFile):
     #return 0
     X = get_np_array(db, engLines, users, words, cand_year)
 
-    model = lda.LDA(n_topics=N, n_iter=1500, random_state=1)
+    model = lda.LDA(n_topics=N, n_iter=300, random_state=1)
     model.fit(X)  # model.fit_transform(X) is also available
     topic_word = model.topic_word_  # model.components_ also works
     n_top_words = 8
@@ -209,8 +209,8 @@ def run_topic_modeling(cand_year, outFile):
 
 outFile = open("output.txt", "w")
 run_topic_modeling(2015, outFile)
-#run_topic_modeling(2020, outFile)
-#run_topic_modeling(2021, outFile)
+run_topic_modeling(2020, outFile)
+run_topic_modeling(2021, outFile)
 outFile.close()
 
 print("Done")
