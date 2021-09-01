@@ -12,8 +12,9 @@ import numpy as np
 import lda
 import lda.datasets
 
-DATA_LEN = 12110
+DATA_LEN = 12100
 N = 10
+ITERATIONS = 1500
 ACCEPTED_RATIO = 1.3
 
 # Validation errors
@@ -86,8 +87,8 @@ def is_valid(word):
     if word in non_interesting:
         return False
 
-    if word in names:
-        return False
+    #if word in names:
+    #    return False
 
     if isinstance(word, (int, float)):
         return False
@@ -122,14 +123,14 @@ def get_users_and_words(myDb, engLines, year, outFile):
                 #print("{} already in users".format(user))
                 duplicate = duplicate + 1
 
-    outFile.write("Users: {} (Diff Year : {}, Inv text: {}, T.ratio: {}, Dup: {}, Inv Off: {}, Inv Sadir {}, Inv Fail {})\n".format(users.__len__(),
-                                                                                            errors[YEAR_MISMATCH],
-                                                                                            errors[INVALID_TEXT],
-                                                                                            errors[INVALID_TRANS_RATIO],
-                                                                                            duplicate,
-                                                                                            errors[INVALID_OFFICER],
-                                                                                            errors[INVALID_SADIR],
-                                                                                            errors[INVALID_FAIL]))
+    #outFile.write("Users: {} (Diff Year : {}, Inv text: {}, T.ratio: {}, Dup: {}, Inv Off: {}, Inv Sadir {}, Inv Fail {})\n".format(users.__len__(),
+    #                                                                                        errors[YEAR_MISMATCH],
+    #                                                                                        errors[INVALID_TEXT],
+    #                                                                                        errors[INVALID_TRANS_RATIO],
+    #                                                                                        duplicate,
+    #                                                                                        errors[INVALID_OFFICER],
+    #                                                                                        errors[INVALID_SADIR],
+    #                                                                                        errors[INVALID_FAIL]))
     return users, words, cands
 
 
@@ -189,10 +190,10 @@ def run_topic_modeling(cand_year, outFile):
     engLines = get_translated_text("Translated_text.txt")
 
     users, words, cands = get_users_and_words(db, engLines, cand_year, outFile)
-    #return 0
+    return 0
     X = get_np_array(db, engLines, users, words, cand_year)
 
-    model = lda.LDA(n_topics=N, n_iter=300, random_state=1)
+    model = lda.LDA(n_topics=N, n_iter=ITERATIONS, random_state=1)
     model.fit(X)  # model.fit_transform(X) is also available
     topic_word = model.topic_word_  # model.components_ also works
     n_top_words = 8
@@ -207,10 +208,64 @@ def run_topic_modeling(cand_year, outFile):
     outFile.write('\n')
 
 
-outFile = open("output.txt", "w")
-run_topic_modeling(2015, outFile)
-run_topic_modeling(2020, outFile)
-run_topic_modeling(2021, outFile)
+def dump_tm(db, doc_topic, users, cands, file):
+    header = "id, "
+    for i in range(N):
+        header = "{}t{}, ".format(header, i)
+    header = "{}Officer, DAPAR, TZADAK, MAVDAK1, MAVDAK2, COMPLETED, EXCEL, GRADE, SOCIO_TIRONUT, SOCIO_PIKUD".format(header)
+    file.write("{}\n".format(header))
+
+    for i in range(0, len(users)):
+        line = cands[users[i]]
+        if line == 649:
+            stop = True
+        cand = CandData(db, line)
+        str = "{}, ".format(db.ID_coded[line])
+        for topic in range(N):
+            str = "{}{:.3f}, ".format(str, doc_topic[i][topic])
+
+        if cand.notEntered or cand.notFinished:
+            completed = 0
+        else:
+            completed = 1
+
+        if cand.honor:
+            excel = 1
+        else:
+            excel = 0
+
+        str = "{}{}, {}, {}, {}, {}, {}, {}, {}, {}\n".format(str, cand.dapar, cand.tzadak, cand.mavdak1, cand.mavdak2,
+                                                      completed, excel, cand.grade, cand.socio_t, cand.socio_p)
+        file.write("{}".format(str))
+
+
+def run_tm_and_dump(cand_year, outFile):
+    db = get_cands_data('thesis_db.xls', DATA_LEN)
+    engLines = get_translated_text("Translated_text.txt")
+
+    users, words, cands = get_users_and_words(db, engLines, cand_year, outFile)
+    X = get_np_array(db, engLines, users, words, cand_year)
+
+    model = lda.LDA(n_topics=N, n_iter=ITERATIONS, random_state=1)
+    model.fit(X)  # model.fit_transform(X) is also available
+    topic_word = model.topic_word_  # model.components_ also works
+    n_top_words = 8
+
+    for i, topic_dist in enumerate(topic_word):
+        topic_words = np.array(words)[np.argsort(topic_dist)][:-(n_top_words + 1):-1]
+        str = 'Topic {}: {}'.format(i, ' '.join(topic_words))
+        print(str)
+
+    dump_tm(db, model.doc_topic_, users, cands, outFile)
+    outFile.write('\n')
+
+
+outFile = open("topic_modeling_idf.csv", "w")
+
+run_tm_and_dump(2015, outFile)
+#run_topic_modeling(2015, outFile)
+#run_topic_modeling(2020, outFile)
+#run_topic_modeling(2021, outFile)
 outFile.close()
 
 print("Done")

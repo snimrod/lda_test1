@@ -26,16 +26,39 @@ class CandData:
             self.notEntered = (sium == NE)
 
         if is_empty_text(db.TZIUN_KKZ[line]):
-            self.grade = 0
+            self.grade = ""
         else:
             self.grade = db.TZIUN_KKZ[line]
 
         if is_empty_text(db.DAPAR[line]):
-            self.dapar = 0
+            self.dapar = ""
         else:
             self.dapar = db.DAPAR[line]
 
         if is_empty_text(db.TZADAK[line]):
-            self.tzadak = 0
+            self.tzadak = ""
         else:
             self.tzadak = db.TZADAK[line]
+
+        self.rejected = 0
+        self.mavdak1 = ""
+        self.mavdak2 = ""
+        if not is_empty_text(db.TZIYUN_MAVDAK[line]):
+            mavdak = db.TZIYUN_MAVDAK[line]
+            if mavdak == 10 or mavdak == 11 or mavdak == 90 or mavdak == 91:
+                self.rejected = 1
+            else:
+                if mavdak < 10:
+                    self.mavdak1 = mavdak
+                else:
+                    self.mavdak2 = mavdak
+
+        if is_empty_text(db.SOCIO_TIRONUT[line]):
+            self.socio_t = ""
+        else:
+            self.socio_t = db.SOCIO_TIRONUT[line]
+
+        if is_empty_text(db.SOTZIO_PIKUD[line]):
+            self.socio_p = ""
+        else:
+            self.socio_p = db.SOTZIO_PIKUD[line]
