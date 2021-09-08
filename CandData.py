@@ -14,6 +14,7 @@ NE = "הרחק בחינת כ."
 class CandData:
 
     def __init__(self, db, line):
+        self.id = db.ID_coded[line]
         self.officer = db.officer[line]
         sium = db.OFEN_SIUM_KKZ[line]
         if self.officer == 1:

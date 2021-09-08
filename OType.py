@@ -22,7 +22,7 @@ def get_officer_type(i):
     if 2406 <= i <= 3940:
         return MAOZ
 
-    if 3941 <= i <= 8406:
+    if 3941 <= i <= 8407:
         return NACHSHON
 
     return NONE

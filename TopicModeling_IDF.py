@@ -12,8 +12,8 @@ import numpy as np
 import lda
 import lda.datasets
 
-DATA_LEN = 12100
-N = 10
+DATA_LEN = 12110
+N = 50
 ITERATIONS = 1500
 ACCEPTED_RATIO = 1.3
 
@@ -103,12 +103,14 @@ def get_users_and_words(myDb, engLines, year, outFile):
     duplicate = 0
     errors = [0, 0, 0, 0, 0, 0]
 
+    rawLines = get_translated_text("Translated_text.txt")
+
     for i in range(0, DATA_LEN):
         #if i == 8407:
         #    stop = True
 
         print(i)
-        if valid_index(myDb, engLines, i, year, errors):
+        if valid_index(myDb, rawLines, i, year, errors):
             user = myDb.ID_coded[i]
             body = engLines[i].lower()
             if user not in users:
@@ -140,8 +142,10 @@ def get_np_array(myDb, engLines, users, words, year):
     nparr = np.reshape(nparr, [len(users), len(words)])
     errors = [0, 0, 0, 0, 0, 0]
 
+    rawLines = get_translated_text("Translated_text.txt")
+
     for i in range(0, DATA_LEN):
-        if valid_index(myDb, engLines, i, year, errors):
+        if valid_index(myDb, rawLines, i, year, errors):
             user = myDb.ID_coded[i]
             body = engLines[i].lower()
 
@@ -187,7 +191,8 @@ def run_topic_modeling(cand_year, outFile):
     outFile.write("Results for {}\n".format(cand_year))
 
     db = get_cands_data('thesis_db.xls', DATA_LEN)
-    engLines = get_translated_text("Translated_text.txt")
+    #engLines = get_translated_text("Translated_text.txt")
+    engLines = get_translated_text("lemmatized_db.txt")
 
     users, words, cands = get_users_and_words(db, engLines, cand_year, outFile)
     return 0
@@ -208,42 +213,89 @@ def run_topic_modeling(cand_year, outFile):
     outFile.write('\n')
 
 
-def dump_tm(db, doc_topic, users, cands, file):
-    header = "id, "
+def dump_tm(db, doc_topic, users, cands, files):
+    header = "id, KKZ, W_KKZ, "
     for i in range(N):
         header = "{}t{}, ".format(header, i)
-    header = "{}Officer, DAPAR, TZADAK, MAVDAK1, MAVDAK2, COMPLETED, EXCEL, GRADE, SOCIO_TIRONUT, SOCIO_PIKUD".format(header)
-    file.write("{}\n".format(header))
+    header = "{}A1, A10, A20, A30, A40, Single, Officer, DAPAR, TZADAK, MAVDAK1, MAVDAK2, REJECTED, EXCEL, GRADE, SOCIO_TIRONUT, SOCIO_PIKUD".format(header)
+
+    for f in files:
+        f.write("{}\n".format(header))
 
     for i in range(0, len(users)):
         line = cands[users[i]]
-        if line == 649:
-            stop = True
+        oType = get_officer_type(line)
         cand = CandData(db, line)
-        str = "{}, ".format(db.ID_coded[line])
-        for topic in range(N):
-            str = "{}{:.3f}, ".format(str, doc_topic[i][topic])
 
-        if cand.notEntered or cand.notFinished:
-            completed = 0
+        if oType == NONE:
+            w_kkz = 0
         else:
-            completed = 1
+            w_kkz = 1
+
+        a1 = 0
+        a10 = 0
+        a20 = 0
+        a30 = 0
+        a40 = 0
+        single = 0
+
+        x = []
+        ti = 0
+        for n in doc_topic[i]:
+            x.append([n, ti])
+            ti = ti + 1
+        x.sort()
+        # loc = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        loc = [0] * N
+
+        for tn in range(1, N):
+            if x[tn][0] == x[tn-1][0]:
+                loc[x[tn][1]] = loc[x[tn-1][1]]
+            else:
+                loc[x[tn][1]] = tn
+
+        str = "{}, {}, {}, ".format(db.ID_coded[line], oType, w_kkz, )
+        for topic in range(N):
+            #str = "{}{:.5f}, ".format(str, doc_topic[i][topic])
+            str = "{}{}, ".format(str, loc[topic])
+
+            p = doc_topic[i][topic]
+            if p >= 0.01:
+                a1 = a1 + 1
+            if p >= 0.1:
+                a10 = a10 + 1
+            if p >= 0.2:
+                a20 = a20 + 1
+            if p >= 0.3:
+                a30 = a30 + 1
+            if p >= 0.4:
+                a40 = a40 + 1
+            if p >= 0.7:
+                single = 1
+
+        if cand.rejected:
+            rejected = 1
+        else:
+            rejected = 0
 
         if cand.honor:
             excel = 1
         else:
             excel = 0
 
-        str = "{}{}, {}, {}, {}, {}, {}, {}, {}, {}\n".format(str, cand.dapar, cand.tzadak, cand.mavdak1, cand.mavdak2,
-                                                      completed, excel, cand.grade, cand.socio_t, cand.socio_p)
-        file.write("{}".format(str))
+        str = "{}{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}\n".format(str, a1, a10, a20, a30, a40, single, cand.officer, cand.dapar, cand.tzadak,
+                                                                  cand.mavdak1, cand.mavdak2, rejected, excel,
+                                                                  cand.grade, cand.socio_t, cand.socio_p)
+        files[0].write("{}".format(str))
+        files[oType + 1].write("{}".format(str))
 
 
-def run_tm_and_dump(cand_year, outFile):
+def run_tm_and_dump(cand_year, files):
     db = get_cands_data('thesis_db.xls', DATA_LEN)
-    engLines = get_translated_text("Translated_text.txt")
+    #engLines = get_translated_text("Translated_text.txt")
+    engLines = get_translated_text("lemmatized_db.txt")
 
-    users, words, cands = get_users_and_words(db, engLines, cand_year, outFile)
+    users, words, cands = get_users_and_words(db, engLines, cand_year, files[0])
     X = get_np_array(db, engLines, users, words, cand_year)
 
     model = lda.LDA(n_topics=N, n_iter=ITERATIONS, random_state=1)
@@ -256,16 +308,25 @@ def run_tm_and_dump(cand_year, outFile):
         str = 'Topic {}: {}'.format(i, ' '.join(topic_words))
         print(str)
 
-    dump_tm(db, model.doc_topic_, users, cands, outFile)
-    outFile.write('\n')
+    dump_tm(db, model.doc_topic_, users, cands, files)
+    rr= 6
+    #outFile.write('\n')
 
 
-outFile = open("topic_modeling_idf.csv", "w")
+#outFile = open("topic_modeling_idf.csv", "w")
+#f1 = open("topic_modeling_idf_1.csv", "w")
+#f2 = open("topic_modeling_idf_2.csv", "w")
+#f3 = open("topic_modeling_idf_3.csv", "w")
+#f4 = open("topic_modeling_idf_4.csv", "w")
+#files = [outFile, f1, f2, f3, f4]
 
-run_tm_and_dump(2015, outFile)
+#run_tm_and_dump(2015, files)
 #run_topic_modeling(2015, outFile)
 #run_topic_modeling(2020, outFile)
 #run_topic_modeling(2021, outFile)
-outFile.close()
-
-print("Done")
+#outFile.close()
+#f1.close()
+#f2.close()
+#f3.close()
+#f4.close()
+#print("Done")

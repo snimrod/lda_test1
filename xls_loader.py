@@ -8,7 +8,7 @@ def get_cands_data(fname, lines):
 
 
 def get_translated_text(fname):
-    f = open("Translated_text.txt", errors='ignore')
+    f = open(fname, errors='ignore')
     lines = f.readlines()
     f.close()
     return lines
