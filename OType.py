@@ -1,6 +1,6 @@
 from Topic import Topic
 from DataSet import DataSet
-from CandData import CandData
+#from CandData import CandData
 #from TopicModeling_IDF import N
 #from TopicModeling_IDF import O_TYPES_STR
 

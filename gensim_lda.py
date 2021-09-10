@@ -3,7 +3,7 @@ from xls_loader import get_translated_text
 # Run in python console
 import nltk;
 
-nltk.download('stopwords')
+#nltk.download('stopwords')
 from nltk.corpus import stopwords
 
 # Gensim
@@ -89,8 +89,21 @@ def gensim_lda_run(text, topics_n):
                                                 update_every=1,
                                                 chunksize=100,
                                                 passes=10,
-                                                alpha='auto',
+                                                #alpha='auto',
+                                                #alpha='symmetric',
+                                                alpha='asymmetric',
                                                 per_word_topics=True)
+    outFile = open("temp_results.txt", "w")
+    for i in range(len(text)):
+        str = [[(id2word[id], freq) for id, freq in cp] for cp in corpus[i:i+1]]
+        for s in str[0]:
+            outFile.write("({}, {}),".format(s[0], s[1]))
+        outFile.write("\n")
+        str = lda_model.get_document_topics(corpus[i], minimum_probability=0.01)
+        for s in str:
+            outFile.write("({}, {:.5f}),".format(s[0], s[1]))
+        outFile.write("\n")
+    outFile.close()
 
     return lda_model, corpus
 

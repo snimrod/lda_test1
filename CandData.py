@@ -1,4 +1,5 @@
 from xls_loader import is_empty_text
+from OType import get_officer_type
 
 EXCEL = "סיים בהצטיינות"
 MOFET = "סיים למופת"
@@ -16,13 +17,17 @@ class CandData:
     def __init__(self, db, line):
         self.id = db.ID_coded[line]
         self.officer = db.officer[line]
+        self.otype = get_officer_type(line)
         sium = db.OFEN_SIUM_KKZ[line]
         if self.officer == 1:
-            self.honor = (sium == EXCEL or sium == MOFET)
+            if sium == EXCEL or sium == MOFET:
+                self.excel = 1
+            else:
+                self.excel = 0
             self.notFinished = False
             self.notEntered = False
         else:
-            self.honor = False
+            self.excel = 0
             self.notFinished = (sium == NF1 or sium == NF2 or sium == NF3 or sium == NF4)
             self.notEntered = (sium == NE)
 
