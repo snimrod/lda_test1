@@ -91,11 +91,12 @@ def gensim_lda_run(text, topics_n):
                                                 passes=10,
                                                 #alpha='auto',
                                                 #alpha='symmetric',
-                                                alpha='asymmetric',
+                                                #alpha='asymmetric',
                                                 per_word_topics=True)
     outFile = open("temp_results.txt", "w")
     for i in range(len(text)):
         str = [[(id2word[id], freq) for id, freq in cp] for cp in corpus[i:i+1]]
+        str2 = [[(id2word[id], freq) for id, freq in corpus]]
         for s in str[0]:
             outFile.write("({}, {}),".format(s[0], s[1]))
         outFile.write("\n")
@@ -108,10 +109,47 @@ def gensim_lda_run(text, topics_n):
     return lda_model, corpus
 
 
-#sentences = get_translated_text("Translated_text.txt")
-#sen = sentences[:200]
+def gensim_analyze_corpus(text, fname):
+    data_words = list(sent_to_words(text))
 
-# print(lda_model.print_topics())
-#model, corp = gensim_lda_run(sen, 15)
-#print(model.print_topics())
-#print(model.get_document_topics(corp[6], minimum_probability=0.01))
+    # Remove Stop Words
+    data_words_nostops = remove_stopwords(data_words)
+
+    # Form Bigrams
+    data_words_bigrams = make_bigrams(data_words_nostops)
+
+    # Do lemmatization keeping only noun, adj, vb, adv
+    data_lemmatized = lemmatization(data_words_bigrams, allowed_postags=['NOUN', 'ADJ', 'VERB', 'ADV'])
+
+    # Create Dictionary
+    id2word = corpora.Dictionary(data_lemmatized)
+
+    # Create Corpus
+    texts = data_lemmatized
+
+    # Term Document Frequency
+    corpus = [id2word.doc2bow(text) for text in texts]
+
+    all = {}
+    for item in corpus:
+        for t in item:
+            if t[0] in all:
+                all[t[0]] = all[t[0]] + t[1]
+            else:
+                all[t[0]] = t[1]
+
+    all_list = [(k, v) for k, v in all.items()]
+    all_list.sort(key=lambda x: x[1])
+    all_list.reverse()
+
+    f = open(fname, "w")
+    size = len(text)
+    f.write("Size: {}\n".format(size))
+    for item in all_list:
+        f.write("{}) {} ({:.3f})\n".format(id2word[item[0]], item[1], item[1]/size))
+    f.close()
+
+    return all, all_list, id2word
+
+    vv = 1
+

@@ -3,12 +3,14 @@ from xls_loader import get_translated_text
 from TopicModeling_IDF import valid_index
 from CandData import CandData
 from gensim_lda import gensim_lda_run
-from pprint import pprint
+from gensim_lda import gensim_analyze_corpus
+from infra import convert_locations
 
 MAX_LINE = 12110
-N = 15
+N = 5
 YEAR = 2015
 NAMES = ["kkz0", "kkz1", "kkz2", "kkz3"]
+DUMP_LOCATIONS = False
 index2cand = {}
 
 
@@ -16,8 +18,7 @@ def dump_results(model, corpus, otype):
     header = "id,"
     for i in range(N):
         header = "{}t{},".format(header, i)
-    #header = "{}A1, A10, A20, A30, A40, Single, Officer, DAPAR, TZADAK, MAVDAK1, MAVDAK2, REJECTED, EXCEL, GRADE, SOCIO_TIRONUT, SOCIO_PIKUD".format(header)
-    header = "{}Officer, DAPAR, TZADAK, MAVDAK1, MAVDAK2, REJECTED, EXCEL, GRADE, SOCIO_TIRONUT, SOCIO_PIKUD".format(header)
+    header = "{}A10,A30,MAX,Officer,DAPAR,TZADAK,MAVDAK1,MAVDAK2,REJECTED,EXCEL,GRADE,SOCIO_TIRONUT,SOCIO_PIKUD".format(header)
 
     index = 0
     fname = "_gensim_{}_{}_topics.csv".format(NAMES[otype], N)
@@ -27,14 +28,30 @@ def dump_results(model, corpus, otype):
     for key in index2cand:
         cand = index2cand[key]
         if cand.otype == otype:
+            a10 = 0
+            a30 = 0
+            max = 0
             f.write("{},".format(cand.id))
             probabilities = model.get_document_topics(corpus[index], minimum_probability=0.00001)
+            prob_list = [prob[1] for prob in probabilities]
+            locations = convert_locations(prob_list)
             for p in probabilities:
-                f.write("{:.5f},".format(p[1]))
+                if DUMP_LOCATIONS:
+                    f.write("{},".format(locations[p[0]]))
+                else:
+                    f.write("{:.5f},".format(p[1]))
+                if p[1] >= 0.1:
+                    a10 = a10 + 1
+                if p[1] >= 0.3:
+                    a30 = a30 + 1
+                if p[1] > max:
+                    max = p[1]
+
             index = index + 1
-            f.write("{},{},{},{},{},{},{},{},{},{}\n".format(cand.officer, cand.dapar, cand.tzadak, cand.mavdak1,
-                                                             cand.mavdak2, cand.rejected, cand.excel, cand.grade,
-                                                             cand.socio_t, cand.socio_p))
+            f.write("{},{},{:.5f},{},{},{},{},{},{},{},{},{},{}\n".format(a10, a30, max, cand.officer, cand.dapar,
+                                                                          cand.tzadak, cand.mavdak1, cand.mavdak2,
+                                                                          cand.rejected, cand.excel, cand.grade,
+                                                                          cand.socio_t, cand.socio_p))
     f.close()
 
 
@@ -57,12 +74,10 @@ db = get_cands_data('thesis_db.xls', MAX_LINE)
 reviewed_cands = []
 errors = [0, 0, 0, 0, 0, 0]
 
-#kkz0_text = []
-#kkz1_text = []
-#kkz2_text = []
-#kkz3_text = []
-#lda_text = [kkz0_text, kkz1_text, kkz2_text, kkz3_text]
 lda_text = [[], [], [], []]
+
+high = []
+low = []
 
 index = 0
 for line in text:
@@ -71,20 +86,36 @@ for line in text:
         reviewed_cands.append(this_cand_id)
         if valid_index(db, full_text, index, YEAR, errors):
             cand = CandData(db, index)
-#            otype = get_officer_type(index)
-            lda_text[cand.otype].append(line)
+            # lda_text[cand.otype].append(line)
             index2cand[index] = cand
+            if cand.otype == 3 and not cand.grade == "" and int(cand.grade) > 83:
+                high.append(line)
+
+            if cand.otype == 3 and not cand.grade == "" and int(cand.grade) < 80:
+                low.append(line)
     index = index + 1
 
-for i in range(4):
-    run_lda(lda_text[i], i)
+high_d, high_l, id2word_h = gensim_analyze_corpus(high, "_high_grades.txt")
+low_d, low_l, id2word_l = gensim_analyze_corpus(low, "_low_grades.txt")
 
-#run_lda(lda_text, "suf")
-#if len(lda_text) > 0:
-#    model, corp = gensim_lda_run(lda_text, N)
-#    pprint(model.print_topics())
-#    print("\n")
-#    dump_results(model, corp, index_to_cand)
+for key in high_d:
+    if high_d[key] > 30:
+        word = id2word_h[key]
+        low_key = id2word_l.token2id[word]
+        if low_key in low_d:
+            ph = high_d[key] / len(high)
+            pl = low_d[low_key] / len(low)
+            if ph >= 1.8 * pl:
+                print("{}) {} ({:.5f}) VS  {} ({:.5f}) ".format(id2word_h[key], high_d[key], ph, low_d[low_key], pl))
+
+#for i in range(4):
+#    if len(lda_text[i]) > 0:
+#        name = "_{}_high_grade.txt".format(NAMES[i])
+#        print("{} size: {}".format(name, len(lda_text[i])))
+#        gensim_analyze_corpus(lda_text[i], name)
+
+
+#for i in range(4):
+#    run_lda(lda_text[i], i)
 
 print("Done")
-# print(model.get_document_topics(corp[6], minimum_probability=0.01))
