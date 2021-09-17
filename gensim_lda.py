@@ -3,7 +3,7 @@ from xls_loader import get_translated_text
 # Run in python console
 import nltk;
 
-#nltk.download('stopwords')
+# nltk.download('stopwords')
 from nltk.corpus import stopwords
 
 # Gensim
@@ -15,6 +15,11 @@ from gensim.models import CoherenceModel
 # spacy for lemmatization
 import spacy
 
+#my_stop_words = ['character', 'person', 'people', 'always', 'know', 'choose', 'good', 'positive', 'think', 'man',
+#                 'also', 'give', 'life', 'way', 'believe', 'quality', 'thing', 'even', 'opinion', 'trait', 'help',
+#                 'see', 'other', 'love', 'work', 'care', 'make', 'go', 'lot', 'take', 'lead', 'important']
+my_stop_words = []
+
 def sent_to_words(sentences):
     for sentence in sentences:
         yield (gensim.utils.simple_preprocess(str(sentence), deacc=True))  # deacc=True removes punctuations
@@ -24,6 +29,7 @@ def sent_to_words(sentences):
 def remove_stopwords(texts):
     # NLTK Stop words
     stop_words = stopwords.words('english')
+    stop_words.extend(my_stop_words)
     return [[word for word in simple_preprocess(str(doc)) if word not in stop_words] for doc in texts]
 
 
@@ -60,7 +66,7 @@ def lemmatization(texts, allowed_postags=['NOUN', 'ADJ', 'VERB', 'ADV']):
     return texts_out
 
 
-def gensim_lda_run(text, topics_n):
+def text2corpus(text):
     data_words = list(sent_to_words(text))
 
     # Remove Stop Words
@@ -72,6 +78,11 @@ def gensim_lda_run(text, topics_n):
     # Do lemmatization keeping only noun, adj, vb, adv
     data_lemmatized = lemmatization(data_words_bigrams, allowed_postags=['NOUN', 'ADJ', 'VERB', 'ADV'])
 
+    for i in range(len(data_lemmatized)):
+        for word in my_stop_words:
+            while word in data_lemmatized[i]:
+                data_lemmatized[i].remove(word)
+
     # Create Dictionary
     id2word = corpora.Dictionary(data_lemmatized)
 
@@ -80,7 +91,11 @@ def gensim_lda_run(text, topics_n):
 
     # Term Document Frequency
     corpus = [id2word.doc2bow(text) for text in texts]
+    return id2word, corpus
 
+
+def gensim_lda_run(text, topics_n, backup_name=''):
+    id2word, corpus = text2corpus(text)
     # Build LDA model
     lda_model = gensim.models.ldamodel.LdaModel(corpus=corpus,
                                                 id2word=id2word,
@@ -89,14 +104,17 @@ def gensim_lda_run(text, topics_n):
                                                 update_every=1,
                                                 chunksize=100,
                                                 passes=10,
-                                                #alpha='auto',
-                                                #alpha='symmetric',
-                                                #alpha='asymmetric',
+                                                # alpha='auto',
+                                                # alpha='symmetric',
+                                                # alpha='asymmetric',
                                                 per_word_topics=True)
+
+    if len(backup_name) > 0:
+        lda_model.save(backup_name)
+
     outFile = open("temp_results.txt", "w")
     for i in range(len(text)):
-        str = [[(id2word[id], freq) for id, freq in cp] for cp in corpus[i:i+1]]
-        str2 = [[(id2word[id], freq) for id, freq in corpus]]
+        str = [[(id2word[id], freq) for id, freq in cp] for cp in corpus[i:i + 1]]
         for s in str[0]:
             outFile.write("({}, {}),".format(s[0], s[1]))
         outFile.write("\n")
@@ -107,6 +125,24 @@ def gensim_lda_run(text, topics_n):
     outFile.close()
 
     return lda_model, corpus
+
+
+def gensim_load_model(fname):
+    return gensim.models.ldamodel.LdaModel.load(fname)
+
+
+def gensim_apply_text_on_model(model_name, text):
+    id2word, corpus = text2corpus(text)
+    model = gensim.models.ldamodel.LdaModel.load(model_name)
+
+    #unseen_doc = corpus[0]
+    #vector = model[corpus[0]]
+    #vector2 = model[corpus[1]]
+    #vector3 = model[corpus[2]]
+    for doc in corpus:
+        vector = model[doc]
+        print(vector[0])
+    print('ok')
 
 
 def gensim_analyze_corpus(text, fname):
@@ -146,10 +182,9 @@ def gensim_analyze_corpus(text, fname):
     size = len(text)
     f.write("Size: {}\n".format(size))
     for item in all_list:
-        f.write("{}) {} ({:.3f})\n".format(id2word[item[0]], item[1], item[1]/size))
+        f.write("{}) {} ({:.3f})\n".format(id2word[item[0]], item[1], item[1] / size))
     f.close()
 
     return all, all_list, id2word
 
     vv = 1
-

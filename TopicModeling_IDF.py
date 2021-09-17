@@ -38,6 +38,10 @@ def valid_translation(db, engLines, i):
 
 
 def valid_index(db, engLines, i, year, errors):
+
+#    if db.ID_coded[i] == 13821367:
+#        debugon = 1
+
     if not db.Test_Date[i].year == year:
         errors[YEAR_MISMATCH] = errors[YEAR_MISMATCH] + 1
         return False
