@@ -32,9 +32,11 @@ class CandData:
             self.notEntered = (sium == NE)
 
         if is_empty_text(db.TZIUN_KKZ[line]):
-            self.grade = ""
+            self.grade_str = ""
+            self.grade = 0
         else:
-            self.grade = db.TZIUN_KKZ[line]
+            self.grade_str = db.TZIUN_KKZ[line]
+            self.grade = int(self.grade_str)
 
         if is_empty_text(db.DAPAR[line]):
             self.dapar = ""

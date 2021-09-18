@@ -15,10 +15,11 @@ from gensim.models import CoherenceModel
 # spacy for lemmatization
 import spacy
 
-#my_stop_words = ['character', 'person', 'people', 'always', 'know', 'choose', 'good', 'positive', 'think', 'man',
-#                 'also', 'give', 'life', 'way', 'believe', 'quality', 'thing', 'even', 'opinion', 'trait', 'help',
-#                 'see', 'other', 'love', 'work', 'care', 'make', 'go', 'lot', 'take', 'lead', 'important']
-my_stop_words = []
+
+my_stop_words = ['character', 'person', 'people', 'always', 'know', 'choose', 'good', 'positive', 'think', 'man',
+                 'also', 'give', 'life', 'way', 'believe', 'quality', 'thing', 'even', 'opinion', 'trait', 'help',
+                 'see', 'other', 'love', 'work', 'care', 'make', 'go', 'lot', 'take', 'lead', 'important']
+#my_stop_words = []
 
 def sent_to_words(sentences):
     for sentence in sentences:
@@ -131,18 +132,16 @@ def gensim_load_model(fname):
     return gensim.models.ldamodel.LdaModel.load(fname)
 
 
-def gensim_apply_text_on_model(model_name, text):
+def gensim_apply_text_on_model(model, text):
     id2word, corpus = text2corpus(text)
-    model = gensim.models.ldamodel.LdaModel.load(model_name)
+    #model = gensim.models.ldamodel.LdaModel.load(model_name)
 
-    #unseen_doc = corpus[0]
-    #vector = model[corpus[0]]
-    #vector2 = model[corpus[1]]
-    #vector3 = model[corpus[2]]
+    vectors = []
+
     for doc in corpus:
         vector = model[doc]
-        print(vector[0])
-    print('ok')
+        vectors.append(vector[0])
+    return vectors
 
 
 def gensim_analyze_corpus(text, fname):

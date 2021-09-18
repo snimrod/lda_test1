@@ -18,3 +18,12 @@ def convert_locations(p_list):
             loc[x[tn][1]] = tn
 
     return loc
+
+
+# get list of tuples <id, val> and and return a list of list_len values.
+# If index in list is id in tuples list add value in this index to the list, if not fill it with zero
+def fill_zeros(tuples_list, list_len):
+    val_list = [0] * list_len
+    for t in tuples_list:
+        val_list[t[0]] = t[1]
+    return val_list

@@ -15,7 +15,7 @@ import lda.datasets
 DATA_LEN = 1110
 N = 50
 ITERATIONS = 1500
-ACCEPTED_RATIO = 1.3
+ACCEPTED_RATIO = 1.0
 
 # Validation errors
 YEAR_MISMATCH = 0
@@ -37,6 +37,50 @@ def valid_translation(db, engLines, i):
     # return True
 
 
+def get_cand(db, engLines, line, year, errors):
+
+#    if db.ID_coded[i] == 13821367:
+#        debugon = 1
+
+    if not db.Test_Date[line].year == year:
+        errors[YEAR_MISMATCH] = errors[YEAR_MISMATCH] + 1
+        return None
+
+    if not is_valid_text(db.text[line]):
+        errors[INVALID_TEXT] = errors[INVALID_TEXT] + 1
+        return None
+
+    sium = db.OFEN_SIUM_KKZ[line]
+    if sium == MEDIC or sium == BIRO:
+        errors[INVALID_FAIL] = errors[INVALID_FAIL] + 1
+        return None
+
+    valid = True
+    cand = CandData(db, line)
+
+    if not valid_translation(db, engLines, line):
+        errors[INVALID_TRANS_RATIO] = errors[INVALID_TRANS_RATIO] + 1
+        print("invalid t.ratio: {} {}".format(line, engLines[line]))
+        valid = False
+
+    if cand.officer == 1 and (cand.otype == NONE or cand.grade == 0 or cand.rejected == 1):
+        errors[INVALID_OFFICER] = errors[INVALID_OFFICER] + 1
+        valid = False
+
+    #if cand.officer == 1 and cand.grade == 0:
+    #    errors[INVALID_OFFICER] = errors[INVALID_OFFICER] + 1
+    #    valid = False
+
+    if cand.officer == 0 and not cand.grade == 0:
+        errors[INVALID_SADIR] = errors[INVALID_SADIR] + 1
+        valid = False
+
+    if valid:
+        return cand
+    else:
+        return None
+
+
 def valid_index(db, engLines, i, year, errors):
 
 #    if db.ID_coded[i] == 13821367:
@@ -56,11 +100,11 @@ def valid_index(db, engLines, i, year, errors):
         errors[INVALID_TRANS_RATIO] = errors[INVALID_TRANS_RATIO] + 1
         valid = False
 
-    if get_officer_type(i) == NONE and db.officer[i] == 1:
+    officer = db.officer[i]
+
+    if get_officer_type(i) == NONE and officer == 1:
         errors[INVALID_OFFICER] = errors[INVALID_OFFICER] + 1
         valid = False
-
-    officer = db.officer[i]
 
     if officer == 1 and is_empty_text(db.TZIUN_KKZ[i]):
         errors[INVALID_OFFICER] = errors[INVALID_OFFICER] + 1
@@ -70,10 +114,10 @@ def valid_index(db, engLines, i, year, errors):
         errors[INVALID_SADIR] = errors[INVALID_SADIR] + 1
         valid = False
 
-#    sium = db.OFEN_SIUM_KKZ[i]
-#    if sium == MEDIC or sium == BIRO:
-#        errors[INVALID_FAIL] = errors[INVALID_FAIL] + 1
-#        valid = False
+    sium = db.OFEN_SIUM_KKZ[i]
+    if sium == MEDIC or sium == BIRO:
+        errors[INVALID_FAIL] = errors[INVALID_FAIL] + 1
+        valid = False
 
     return valid
 

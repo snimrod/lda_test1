@@ -1,72 +1,26 @@
+import datetime
 from xls_loader import get_cands_data
 from xls_loader import get_translated_text
-from TopicModeling_IDF import valid_index
+#from TopicModeling_IDF import valid_index
+from TopicModeling_IDF import get_cand
 from CandData import CandData
 from gensim_lda import gensim_lda_run
 from gensim_lda import gensim_load_model
 from gensim_lda import gensim_apply_text_on_model
 from gensim_lda import gensim_analyze_corpus
 from infra import convert_locations
+from infra import fill_zeros
 from xls_loader import is_empty_text
 
-MAX_LINE = 12110
+MAX_LINE = 120
 N = 10
 YEAR = 2015
 NAMES = ["kkz0", "kkz1", "kkz2", "kkz3", "all"]
 DUMP_LOCATIONS = False
 index2cand = {}
+sample1_index2cand = {}
+sample2_index2cand = {}
 
-
-def dump_results(model, corpus, otype):
-    header = "id,"
-    for i in range(N):
-        header = "{}t{},".format(header, i)
-    header = "{}A10,A30,MAX,KKZ,KKZT,Officer,DAPAR,TZADAK,MAVDAK1,MAVDAK2,REJECTED,EXCEL,GRADE,SOCIO_TIRONUT,SOCIO_PIKUD".format(header)
-
-    index = 0
-    fname = "_gensim_{}_{}_topics.csv".format(NAMES[otype], N)
-    f = open(fname, "w")
-    f.write("{}\n".format(header))
-
-    for key in index2cand:
-        cand = index2cand[key]
-        if otype == 4 or cand.otype == otype:
-            a10 = 0
-            a30 = 0
-            max = 0
-            f.write("{},".format(cand.id))
-            probabilities = model.get_document_topics(corpus[index], minimum_probability=0.00001)
-            prob_list = [prob[1] for prob in probabilities]
-            locations = convert_locations(prob_list)
-            for p in probabilities:
-                if DUMP_LOCATIONS:
-                    f.write("{},".format(locations[p[0]]))
-                else:
-                    f.write("{:.5f},".format(p[1]))
-                if p[1] >= 0.1:
-                    a10 = a10 + 1
-                if p[1] >= 0.3:
-                    a30 = a30 + 1
-                if p[1] > max:
-                    max = p[1]
-
-            if cand.otype == 0:
-                kkz = 0
-            else:
-                kkz = 1
-
-            f.write("{},{},{:.5f},{},{},{},{},{},{},{},{},{},{}\n".format(a10, a30, max, kkz, cand.otype, cand.officer,
-                                                                          cand.dapar, cand.tzadak, cand.mavdak1,
-                                                                          cand.mavdak2, cand.rejected, cand.excel,
-                                                                          cand.grade, cand.socio_t, cand.socio_p))
-            index = index + 1
-    f.close()
-
-
-def print_probabilities(model, corpus, otype):
-
-    for i in corpus:
-        print(model.get_document_topics(i, minimum_probability=0.00001))
 
 
 def dump_big5():
@@ -114,7 +68,52 @@ def load_lda(fname):
     topicsf.close()
 
 
-def run_lda(texts, otype, backup_name=''):
+def dump_single_run_results(model, corpus, otype):
+    header = "id,"
+    for i in range(N):
+        header = "{}t{},".format(header, i)
+    header = "{}A10,A30,MAX,KKZ,KKZT,Officer,DAPAR,TZADAK,MAVDAK1,MAVDAK2,REJECTED,EXCEL,GRADE,SOCIO_TIRONUT,SOCIO_PIKUD".format(header)
+
+    index = 0
+    fname = "_gensim_{}_{}_topics.csv".format(NAMES[otype], N)
+    f = open(fname, "w")
+    f.write("{}\n".format(header))
+
+    for key in index2cand:
+        cand = index2cand[key]
+        if otype == 4 or cand.otype == otype:
+            a10 = 0
+            a30 = 0
+            max = 0
+            f.write("{},".format(cand.id))
+            probabilities = model.get_document_topics(corpus[index], minimum_probability=0.00001)
+            prob_list = [prob[1] for prob in probabilities]
+            locations = convert_locations(prob_list)
+            for p in probabilities:
+                if DUMP_LOCATIONS:
+                    f.write("{},".format(locations[p[0]]))
+                else:
+                    f.write("{:.5f},".format(p[1]))
+                if p[1] >= 0.1:
+                    a10 = a10 + 1
+                if p[1] >= 0.3:
+                    a30 = a30 + 1
+                if p[1] > max:
+                    max = p[1]
+
+            if cand.otype == 0:
+                kkz = 0
+            else:
+                kkz = 1
+            f.write("{},{},{:.5f},{},{},{},{},{},{},{},{},{},{},{},{}\n".format(a10, a30, max, kkz, cand.otype, cand.officer,
+                                                                          cand.dapar, cand.tzadak, cand.mavdak1,
+                                                                          cand.mavdak2, cand.rejected, cand.excel,
+                                                                          cand.grade, cand.socio_t, cand.socio_p))
+            index = index + 1
+    f.close()
+
+
+def run_lda(texts, otype, to_dump, backup_name=''):
     size = len(texts)
     print("Valid Candidates ({}): {}".format(NAMES[otype], size))
     if size > 0:
@@ -124,22 +123,84 @@ def run_lda(texts, otype, backup_name=''):
         for topic in s:
             topicsf.write("{}\n".format(topic))
         topicsf.close()
-        #dump_results(model, corp, otype)
-        #for i in corp:
-        #    print(model.get_document_topics(i, minimum_probability=0.1))
+        if to_dump:
+            dump_single_run_results(model, corp, otype)
+        return model
+    else:
+        return None
 
 
-full_text = get_translated_text("Translated_text.txt")
+def dump_applied_results(d_lists, i2c, name_suf):
+    print(d_lists)
+    header = "id,"
+    for i in range(N):
+        header = "{}t{},".format(header, i)
+    header = "{}A10,A30,MAX,KKZ,KKZT,Officer,DAPAR,TZADAK,MAVDAK1,MAVDAK2,REJECTED,EXCEL,GRADE,SOCIO_TIRONUT,SOCIO_PIKUD".format(header)
+
+    index = 0
+    fname = "_gensim_applied_{}_{}_topics.csv".format(name_suf, N)
+    f = open(fname, "w")
+    f.write("{}\n".format(header))
+
+    for key in i2c:
+        cand = i2c[key]
+        a10 = 0
+        a30 = 0
+        max = 0
+        f.write("{},".format(cand.id))
+        #probabilities = model.get_document_topics(corpus[index], minimum_probability=0.00001)
+        #prob_list = [prob[1] for prob in probabilities]
+        prob_list = d_lists[index]
+        locations = convert_locations(prob_list)
+        for p in prob_list:
+            if DUMP_LOCATIONS:
+                f.write("{},".format(locations[index]))
+            else:
+                f.write("{:.5f},".format(p))
+            if p >= 0.1:
+                a10 = a10 + 1
+            if p >= 0.3:
+                a30 = a30 + 1
+            if p > max:
+                max = p
+
+        if cand.otype == 0:
+            kkz = 0
+        else:
+            kkz = 1
+        f.write("{},{},{:.5f},{},{},{},{},{},{},{},{},{},{},{},{}\n".format(a10, a30, max, kkz, cand.otype, cand.officer,
+                                                                      cand.dapar, cand.tzadak, cand.mavdak1,
+                                                                      cand.mavdak2, cand.rejected, cand.excel,
+                                                                      cand.grade, cand.socio_t, cand.socio_p))
+        index = index + 1
+    f.close()
+
+
+def apply_new_text_on_train_model(train_model, new_text, i2c, name_suf):
+    vectors = gensim_apply_text_on_model(train_model, new_text)
+    dist_lists = []
+    for v in vectors:
+        dist_lists.append(fill_zeros(v, N))
+    dump_applied_results(dist_lists, i2c, name_suf)
+
+
+print(datetime.datetime.now())
+#full_text = get_translated_text("Translated_text.txt")
+full_text = get_translated_text("fake_translated.txt")
 text = full_text[:MAX_LINE]
-db = get_cands_data('thesis_db.xls', MAX_LINE)
+db = get_cands_data('fake_db.xls', MAX_LINE)
 reviewed_cands = []
 errors = [0, 0, 0, 0, 0, 0]
-
 lda_text = [[], [], [], []]
 accum_kkz_text = [""] * 4
 accum_grade_text = [""] * 41
 entire_text = []
-sample_text = []
+sample1_text = []
+sample2_text = []
+# Accumulated train text is gathered by certain criteria (e.g grade) and every index in it is a value that accumulates
+# text matching this value, There are no values higher than 100 for any criteria
+accum_train_text = [""] * 100
+accum_cands = 0
 
 high = []
 low = []
@@ -149,19 +210,34 @@ for line in text:
     this_cand_id = db.ID_coded[index]
     if this_cand_id not in reviewed_cands:
         reviewed_cands.append(this_cand_id)
-        if valid_index(db, full_text, index, YEAR, errors):
-            cand = CandData(db, index)
-            lda_text[cand.otype].append(line)
-            #accum_kkz_text[cand.otype] = accum_kkz_text[cand.otype] + " " + line
-            if cand.grade == "":
-                accum_grade_text[0] = accum_grade_text[0] + line
-            else:
-                ii = int(cand.grade) - 59
-                accum_grade_text[ii] = accum_grade_text[ii] + line
+        cand = get_cand(db, full_text, index, YEAR, errors)
+        if cand is not None:
             entire_text.append(line)
-            if len(sample_text) < 100 and not cand.otype == 0:
-                sample_text.append(line)
+            #lda_text[cand.otype].append(line)
             index2cand[index] = cand
+
+            sample1_index = len(sample1_text)
+            sample2_index = len(sample2_text)
+            #if (sample1_index < 100 and cand.otype == 0) or (sample2_index < 100 and cand.otype == 3):
+            if index > 89:
+                # Cand goes to applied sample
+            #    if sample1_index < 100 and cand.otype == 0:
+                sample1_text.append(line)
+                sample1_index2cand[sample1_index] = cand
+            #    else:
+            #        sample2_text.append(line)
+            #        sample2_index2cand[sample2_index] = cand
+
+            else:
+                # Cand goes to accumulate train text
+                if cand.grade == 0:
+                    ii = 0
+                else:
+                    ii = cand.grade - 59
+                accum_train_text[ii] = accum_train_text[ii] + line
+                accum_cands = accum_cands + 1
+
+
             #if cand.otype == 3 and not cand.grade == "" and int(cand.grade) > 83:
             #entire_text.append(line)
 
@@ -169,7 +245,33 @@ for line in text:
             #   low.append(line)
     index = index + 1
 
-#dump_big5()
+
+print(errors)
+#for i in range(4):
+#    run_lda(lda_text[i], i)
+#run_lda(entire_text, 4, True)
+
+print("Total {}, Train {}, Sample1 {}, Sample2 {}".format(len(entire_text), accum_cands, len(sample1_text), len(sample2_text)))
+
+# Ignore values which did not accumulated any text
+accum_text = []
+for t in accum_train_text:
+    if not len(t) == 0:
+        accum_text.append(t)
+
+t_model = run_lda(accum_text, 4, False)
+if len(sample1_text) > 0:
+    apply_new_text_on_train_model(t_model, sample1_text, sample1_index2cand, "last30")
+#if len(sample2_text) > 0:
+#    apply_new_text_on_train_model(t_model, sample2_text, sample2_index2cand, "2")
+
+#load_lda('my_lda_backup')
+
+#run_lda(lda_text[0], 0, 'lda0_backup')
+#gensim_apply_text_on_model('lda0_backup', sample_text)
+
+print(datetime.datetime.now())
+print("Done")
 
 #high_d, high_l, id2word_h = gensim_analyze_corpus(high, "_high_grades.txt")
 #low_d, low_l, id2word_l = gensim_analyze_corpus(low, "_low_grades.txt")
@@ -189,23 +291,3 @@ for line in text:
 #        name = "_{}_high_grade.txt".format(NAMES[i])
 #        print("{} size: {}".format(name, len(lda_text[i])))
 #        gensim_analyze_corpus(lda_text[i], name)
-
-
-#for i in range(4):
-#    run_lda(lda_text[i], i)
-
-#run_lda(entire_text, 0)
-
-accum_text = []
-for t in accum_grade_text:
-    if not len(t) == 0:
-        accum_text.append(t)
-
-#run_lda(accum_text, 1, 'my_lda_backup')
-#load_lda('my_lda_backup')
-
-run_lda(lda_text[0], 0, 'lda0_backup')
-gensim_apply_text_on_model('lda0_backup', sample_text)
-
-
-print("Done")
