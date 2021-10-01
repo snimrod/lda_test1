@@ -1,0 +1,6 @@
+(0, '0.017*"gurion" + 0.014*"express" + 0.013*"hard" + 0.013*"speak" + 0.012*"group" + 0.012*"ask" + 0.012*"vision" + 0.011*"menachem_begin" + 0.010*"herzl" + 0.010*"war"')
+(1, '0.025*"woman" + 0.022*"action" + 0.018*"positive_trait" + 0.017*"decide" + 0.014*"world" + 0.012*"really_appreciate" + 0.012*"establish" + 0.012*"team" + 0.010*"say" + 0.009*"reach"')
+(2, '0.022*"many" + 0.020*"understand" + 0.017*"book" + 0.015*"hand" + 0.013*"seems_positive" + 0.013*"say" + 0.012*"face" + 0.011*"fact" + 0.010*"age" + 0.010*"house"')
+(3, '0.067*"always" + 0.046*"know" + 0.030*"help" + 0.023*"good" + 0.019*"love" + 0.019*"think" + 0.018*"care" + 0.018*"positive" + 0.018*"other" + 0.013*"sociable"')
+(4, '0.026*"ability" + 0.018*"quality" + 0.018*"listen" + 0.015*"other" + 0.013*"story" + 0.012*"movie" + 0.011*"perseverance" + 0.011*"woman" + 0.011*"kind" + 0.011*"social"')
+(5, '0.021*"man" + 0.020*"life" + 0.017*"choose" + 0.017*"give" + 0.017*"opinion" + 0.015*"think" + 0.014*"even" + 0.013*"way" + 0.012*"good" + 0.011*"believe"')

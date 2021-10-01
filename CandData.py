@@ -16,6 +16,7 @@ class CandData:
 
     def __init__(self, db, line):
         self.id = db.ID_coded[line]
+        self.year = db.Test_Date[line].year
         self.officer = db.officer[line]
         self.otype = get_officer_type(line)
         sium = db.OFEN_SIUM_KKZ[line]
@@ -45,8 +46,10 @@ class CandData:
 
         if is_empty_text(db.TZADAK[line]):
             self.tzadak = ""
+            self.sex = 0
         else:
             self.tzadak = db.TZADAK[line]
+            self.sex = 1
 
         self.rejected = 0
         self.mavdak1 = ""

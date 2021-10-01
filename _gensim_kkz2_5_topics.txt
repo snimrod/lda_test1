@@ -1,0 +1,5 @@
+(0, '0.024*"lead" + 0.021*"man" + 0.020*"change" + 0.017*"believe" + 0.016*"think" + 0.012*"way" + 0.011*"give" + 0.011*"goal" + 0.011*"opinion" + 0.010*"trait"')
+(1, '0.023*"give" + 0.023*"know" + 0.020*"positive" + 0.016*"always" + 0.016*"opinion" + 0.015*"think" + 0.015*"life" + 0.013*"good" + 0.011*"other" + 0.011*"love"')
+(2, '0.015*"get" + 0.014*"strong" + 0.011*"manage" + 0.009*"addition" + 0.009*"bring" + 0.009*"society" + 0.009*"smile" + 0.009*"believe" + 0.008*"determine" + 0.008*"stubborn"')
+(3, '0.029*"child" + 0.016*"girl" + 0.013*"woman" + 0.011*"family" + 0.011*"mother" + 0.010*"country" + 0.010*"friend" + 0.010*"book" + 0.010*"live" + 0.009*"put"')
+(4, '0.030*"know" + 0.025*"always" + 0.017*"help" + 0.016*"choose" + 0.016*"quality" + 0.014*"good" + 0.012*"care" + 0.011*"strive" + 0.010*"develop" + 0.009*"well"')

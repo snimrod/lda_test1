@@ -1,0 +1,8 @@
+(0, '0.040*"man" + 0.027*"believe" + 0.024*"child" + 0.021*"go" + 0.016*"leader" + 0.014*"end" + 0.013*"father" + 0.013*"peace" + 0.013*"first" + 0.012*"country"')
+(1, '0.020*"courage" + 0.020*"historical_figure" + 0.018*"get" + 0.017*"listen" + 0.013*"many" + 0.013*"aspiration" + 0.012*"purpose" + 0.012*"close" + 0.012*"opinion" + 0.011*"experience"')
+(2, '0.021*"follow" + 0.019*"connect" + 0.016*"seems_positive" + 0.015*"hard" + 0.014*"reason" + 0.014*"responsibility" + 0.014*"intelligent" + 0.014*"pressure" + 0.013*"trust" + 0.012*"face"')
+(3, '0.020*"world" + 0.020*"get" + 0.018*"choose" + 0.018*"order" + 0.018*"society" + 0.015*"sensitive" + 0.015*"teach" + 0.015*"life" + 0.015*"never" + 0.014*"thank"')
+(4, '0.058*"want" + 0.020*"girl" + 0.018*"study" + 0.018*"smile" + 0.018*"social" + 0.017*"invest" + 0.014*"develop" + 0.014*"work" + 0.013*"accord" + 0.013*"task"')
+(5, '0.044*"contribute" + 0.041*"value" + 0.022*"dream" + 0.019*"talk" + 0.018*"considerate" + 0.016*"death" + 0.015*"war" + 0.013*"patient" + 0.013*"funny" + 0.013*"really_appreciate"')
+(6, '0.036*"know" + 0.023*"always" + 0.023*"think" + 0.020*"choose" + 0.020*"give" + 0.019*"good" + 0.017*"help" + 0.016*"positive" + 0.016*"also" + 0.014*"quality"')
+(7, '0.040*"mother" + 0.027*"always" + 0.021*"optimistic" + 0.019*"different" + 0.018*"sociable" + 0.016*"appreciate" + 0.015*"commander" + 0.014*"respect" + 0.013*"company" + 0.013*"successful"')

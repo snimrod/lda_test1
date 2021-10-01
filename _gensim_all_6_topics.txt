@@ -1,0 +1,6 @@
+(0, '0.038*"fight" + 0.034*"ability" + 0.028*"environment" + 0.016*"girl" + 0.014*"consider" + 0.013*"purpose" + 0.012*"reality" + 0.012*"high" + 0.010*"example" + 0.009*"belief"')
+(1, '0.013*"soldier" + 0.013*"live" + 0.012*"talk" + 0.012*"human" + 0.011*"life" + 0.011*"able" + 0.010*"name" + 0.010*"family" + 0.010*"book" + 0.009*"educate"')
+(2, '0.033*"man" + 0.018*"choose" + 0.016*"even" + 0.015*"go" + 0.015*"believe" + 0.015*"give" + 0.015*"life" + 0.012*"way" + 0.012*"make" + 0.012*"many"')
+(3, '0.030*"end" + 0.021*"ability" + 0.018*"power" + 0.016*"responsibility" + 0.014*"courage" + 0.014*"company" + 0.013*"faith" + 0.013*"respect" + 0.013*"hand" + 0.012*"express"')
+(4, '0.046*"always" + 0.041*"know" + 0.029*"help" + 0.028*"good" + 0.022*"give" + 0.021*"other" + 0.018*"positive" + 0.017*"think" + 0.016*"love" + 0.016*"care"')
+(5, '0.028*"quality" + 0.025*"positive" + 0.025*"think" + 0.021*"thing" + 0.019*"opinion" + 0.019*"eye" + 0.017*"choose" + 0.017*"trait" + 0.015*"important" + 0.014*"good"')

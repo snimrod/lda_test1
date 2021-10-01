@@ -16,10 +16,10 @@ from gensim.models import CoherenceModel
 import spacy
 
 
-my_stop_words = ['character', 'person', 'people', 'always', 'know', 'choose', 'good', 'positive', 'think', 'man',
-                 'also', 'give', 'life', 'way', 'believe', 'quality', 'thing', 'even', 'opinion', 'trait', 'help',
-                 'see', 'other', 'love', 'work', 'care', 'make', 'go', 'lot', 'take', 'lead', 'important']
-#my_stop_words = []
+#my_stop_words = ['character', 'person', 'people', 'always', 'know', 'choose', 'good', 'positive', 'think', 'man',
+#                 'also', 'give', 'life', 'way', 'believe', 'quality', 'thing', 'even', 'opinion', 'trait', 'help',
+#                 'see', 'other', 'love', 'work', 'care', 'make', 'go', 'lot', 'take', 'lead', 'important']
+my_stop_words = ['character', 'person', 'people']
 
 def sent_to_words(sentences):
     for sentence in sentences:
@@ -78,6 +78,7 @@ def text2corpus(text):
 
     # Do lemmatization keeping only noun, adj, vb, adv
     data_lemmatized = lemmatization(data_words_bigrams, allowed_postags=['NOUN', 'ADJ', 'VERB', 'ADV'])
+    #data_lemmatized = lemmatization(data_words_bigrams, allowed_postags=['ADJ', 'VERB'])
 
     for i in range(len(data_lemmatized)):
         for word in my_stop_words:
@@ -113,7 +114,7 @@ def gensim_lda_run(text, topics_n, backup_name=''):
     if len(backup_name) > 0:
         lda_model.save(backup_name)
 
-    outFile = open("temp_results.txt", "w")
+    outFile = open("temp_results2.txt", "w")
     for i in range(len(text)):
         str = [[(id2word[id], freq) for id, freq in cp] for cp in corpus[i:i + 1]]
         for s in str[0]:
@@ -144,6 +145,16 @@ def gensim_apply_text_on_model(model, text):
     return vectors
 
 
+def gensim_apply_text_on_model2(model, text):
+    my_text = [text]
+    id2word, corpus = text2corpus(my_text)
+    #model = gensim.models.ldamodel.LdaModel.load(model_name)
+
+    x = model.get_document_topics(corpus)
+    f = 5
+
+
+
 def gensim_analyze_corpus(text, fname):
     data_words = list(sent_to_words(text))
 
@@ -154,7 +165,9 @@ def gensim_analyze_corpus(text, fname):
     data_words_bigrams = make_bigrams(data_words_nostops)
 
     # Do lemmatization keeping only noun, adj, vb, adv
+
     data_lemmatized = lemmatization(data_words_bigrams, allowed_postags=['NOUN', 'ADJ', 'VERB', 'ADV'])
+    #data_lemmatized = lemmatization(data_words_bigrams, allowed_postags=['ADJ', 'VERB'])
 
     # Create Dictionary
     id2word = corpora.Dictionary(data_lemmatized)
@@ -186,4 +199,33 @@ def gensim_analyze_corpus(text, fname):
 
     return all, all_list, id2word
 
-    vv = 1
+
+def dump_data_lemmatized(text, ids, fname):
+    data_words = list(sent_to_words(text))
+
+    # Remove Stop Words
+    data_words_nostops = remove_stopwords(data_words)
+    # Form Bigrams
+    data_words_bigrams = make_bigrams(data_words_nostops)
+
+    data_lemmatized = lemmatization(data_words_bigrams, allowed_postags=['NOUN', 'ADJ', 'VERB', 'ADV'])
+
+    f = open(fname, "w")
+    i = 0
+    for d in data_lemmatized:
+        f.write("{} - {}\n".format(ids[i], d))
+        i = i + 1
+    f.close()
+
+
+def get_data_lemmatized(text):
+    data_words = list(sent_to_words(text))
+
+    # Remove Stop Words
+    data_words_nostops = remove_stopwords(data_words)
+    # Form Bigrams
+    data_words_bigrams = make_bigrams(data_words_nostops)
+
+    data_lemmatized = lemmatization(data_words_bigrams, allowed_postags=['NOUN', 'ADJ', 'VERB', 'ADV'])
+
+    return data_lemmatized

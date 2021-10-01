@@ -1,0 +1,6 @@
+(0, '0.034*"fight" + 0.022*"situation" + 0.013*"ability" + 0.011*"optimistic" + 0.010*"brave" + 0.010*"love" + 0.010*"jewish" + 0.009*"idea" + 0.009*"save" + 0.009*"much"')
+(1, '0.026*"man" + 0.025*"quality" + 0.022*"know" + 0.019*"choose" + 0.014*"way" + 0.013*"also" + 0.012*"lead" + 0.011*"soldier" + 0.011*"leader" + 0.010*"go"')
+(2, '0.026*"life" + 0.017*"child" + 0.015*"work" + 0.013*"go" + 0.012*"home" + 0.011*"decision" + 0.010*"bring" + 0.010*"year" + 0.009*"choose" + 0.009*"set"')
+(3, '0.047*"always" + 0.025*"help" + 0.025*"good" + 0.024*"give" + 0.021*"know" + 0.021*"other" + 0.019*"positive" + 0.018*"care" + 0.013*"try" + 0.012*"friend"')
+(4, '0.017*"believe" + 0.017*"state" + 0.017*"willing" + 0.015*"ben_gurion" + 0.015*"personal" + 0.012*"never" + 0.012*"task" + 0.012*"gurion" + 0.011*"honest" + 0.011*"determination"')
+(5, '0.020*"family" + 0.014*"life" + 0.014*"environment" + 0.013*"care" + 0.011*"human" + 0.011*"ambitious" + 0.010*"yet" + 0.010*"rabbi" + 0.009*"holocaust" + 0.009*"work"')

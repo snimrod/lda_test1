@@ -1,0 +1,8 @@
+(0, '0.036*"woman" + 0.032*"quality" + 0.030*"need" + 0.030*"positive" + 0.027*"trait" + 0.020*"important" + 0.020*"sociable" + 0.020*"think" + 0.017*"try" + 0.015*"mother"')
+(1, '0.028*"life" + 0.019*"live" + 0.017*"continue" + 0.016*"family" + 0.015*"able" + 0.014*"book" + 0.014*"story" + 0.013*"purpose" + 0.012*"save" + 0.011*"amazing"')
+(2, '0.021*"believe" + 0.021*"even" + 0.019*"way" + 0.018*"man" + 0.014*"go" + 0.014*"choose" + 0.014*"eye" + 0.013*"give" + 0.012*"important" + 0.012*"respect"')
+(3, '0.049*"realistic" + 0.028*"hand" + 0.027*"express" + 0.024*"job" + 0.020*"admire" + 0.018*"ambition" + 0.018*"simple" + 0.017*"demand" + 0.016*"sense_humor" + 0.014*"break"')
+(4, '0.040*"help" + 0.036*"other" + 0.034*"always" + 0.031*"know" + 0.030*"care" + 0.029*"give" + 0.026*"good" + 0.020*"choose" + 0.019*"think" + 0.019*"want"')
+(5, '0.034*"child" + 0.022*"really" + 0.014*"seems_positive" + 0.014*"home" + 0.013*"company" + 0.013*"deal" + 0.012*"little" + 0.011*"action" + 0.011*"bad" + 0.010*"play"')
+(6, '0.062*"always" + 0.042*"know" + 0.030*"good" + 0.023*"fight" + 0.020*"optimistic" + 0.019*"love" + 0.019*"thing" + 0.018*"ability" + 0.017*"environment" + 0.016*"lot"')
+(7, '0.034*"man" + 0.020*"choose" + 0.017*"lead" + 0.017*"know" + 0.016*"opinion" + 0.016*"leader" + 0.015*"change" + 0.015*"value" + 0.013*"think" + 0.013*"give"')

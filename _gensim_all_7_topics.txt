@@ -1,0 +1,7 @@
+(0, '0.018*"professional" + 0.018*"listen" + 0.016*"ambitious" + 0.015*"reality" + 0.014*"dream" + 0.014*"strive" + 0.012*"creative" + 0.011*"smart" + 0.011*"grandmother" + 0.010*"perseverance"')
+(1, '0.037*"woman" + 0.025*"life" + 0.013*"human" + 0.013*"lot" + 0.013*"soldier" + 0.013*"learn" + 0.011*"able" + 0.011*"name" + 0.011*"happy" + 0.011*"live"')
+(2, '0.040*"man" + 0.020*"choose" + 0.019*"believe" + 0.015*"lead" + 0.014*"many" + 0.013*"leader" + 0.013*"country" + 0.013*"make" + 0.012*"even" + 0.012*"change"')
+(3, '0.027*"courage" + 0.025*"shimon_pere" + 0.025*"hand" + 0.021*"confidence" + 0.021*"set" + 0.018*"role" + 0.017*"establish" + 0.017*"yet" + 0.015*"demand" + 0.015*"confident"')
+(4, '0.049*"always" + 0.037*"help" + 0.036*"know" + 0.028*"give" + 0.020*"good" + 0.019*"family" + 0.018*"situation" + 0.017*"want" + 0.016*"need" + 0.016*"get"')
+(5, '0.035*"quality" + 0.029*"know" + 0.027*"think" + 0.026*"positive" + 0.021*"opinion" + 0.019*"choose" + 0.019*"other" + 0.019*"care" + 0.018*"important" + 0.017*"ability"')
+(6, '0.028*"always" + 0.025*"thing" + 0.022*"good" + 0.022*"positive" + 0.020*"way" + 0.018*"fight" + 0.018*"see" + 0.018*"give" + 0.017*"go" + 0.016*"think"')

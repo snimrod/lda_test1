@@ -1,0 +1,7 @@
+(0, '0.036*"man" + 0.024*"believe" + 0.022*"child" + 0.019*"go" + 0.015*"way" + 0.013*"value" + 0.012*"peace" + 0.012*"give" + 0.012*"country" + 0.012*"charismatic"')
+(1, '0.039*"always" + 0.037*"positive" + 0.026*"friend" + 0.017*"optimistic" + 0.015*"historical_figure" + 0.014*"look" + 0.014*"traits_seem" + 0.014*"see" + 0.014*"book" + 0.013*"listen"')
+(2, '0.024*"contribute" + 0.019*"world" + 0.015*"work" + 0.015*"field" + 0.014*"company" + 0.014*"order" + 0.013*"difficulty" + 0.011*"social" + 0.010*"manage" + 0.010*"connect"')
+(3, '0.029*"get" + 0.019*"example" + 0.015*"society" + 0.014*"make" + 0.014*"appreciate" + 0.014*"commander" + 0.012*"never" + 0.012*"support" + 0.011*"soldier" + 0.011*"herzl"')
+(4, '0.048*"want" + 0.022*"different" + 0.020*"girl" + 0.015*"study" + 0.014*"invest" + 0.012*"decide" + 0.012*"develop" + 0.011*"accord" + 0.011*"family" + 0.009*"break"')
+(5, '0.028*"achieve" + 0.028*"value" + 0.017*"dream" + 0.015*"talk" + 0.014*"considerate" + 0.013*"act" + 0.013*"death" + 0.013*"funny" + 0.012*"work" + 0.012*"aspiration"')
+(6, '0.037*"know" + 0.023*"think" + 0.020*"always" + 0.019*"give" + 0.019*"choose" + 0.019*"good" + 0.017*"opinion" + 0.017*"help" + 0.016*"also" + 0.015*"quality"')

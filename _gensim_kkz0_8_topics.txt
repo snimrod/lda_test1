@@ -1,0 +1,8 @@
+(0, '0.055*"manage" + 0.025*"gurion" + 0.022*"wisdom" + 0.021*"army" + 0.019*"hard" + 0.017*"group" + 0.014*"war" + 0.014*"sherlock_holme" + 0.014*"word" + 0.012*"happen"')
+(1, '0.048*"woman" + 0.029*"many" + 0.024*"positive_trait" + 0.019*"day" + 0.016*"team" + 0.014*"decision" + 0.012*"decide" + 0.012*"ability" + 0.011*"use" + 0.011*"move"')
+(2, '0.026*"book" + 0.023*"hand" + 0.020*"seems_positive" + 0.019*"head" + 0.017*"express" + 0.016*"fact" + 0.013*"write" + 0.012*"many" + 0.012*"create" + 0.011*"continue"')
+(3, '0.020*"place" + 0.020*"love" + 0.019*"power" + 0.016*"new" + 0.016*"yossi" + 0.015*"girl" + 0.014*"describe" + 0.014*"help" + 0.014*"house" + 0.013*"special"')
+(4, '0.059*"always" + 0.057*"know" + 0.043*"help" + 0.026*"other" + 0.025*"good" + 0.023*"care" + 0.019*"love" + 0.017*"need" + 0.015*"also" + 0.014*"smart"')
+(5, '0.024*"think" + 0.023*"man" + 0.021*"life" + 0.019*"give" + 0.019*"choose" + 0.018*"opinion" + 0.015*"even" + 0.014*"way" + 0.014*"good" + 0.012*"believe"')
+(6, '0.025*"father" + 0.024*"choose" + 0.020*"seem" + 0.019*"trait" + 0.018*"story" + 0.017*"movie" + 0.016*"purpose" + 0.015*"addition" + 0.013*"serious" + 0.012*"leadership_ability"')
+(7, '0.024*"action" + 0.020*"addition" + 0.018*"say" + 0.013*"realistic" + 0.011*"really_appreciate" + 0.011*"call" + 0.011*"shimon_pere" + 0.010*"first" + 0.010*"establish" + 0.010*"determination"')

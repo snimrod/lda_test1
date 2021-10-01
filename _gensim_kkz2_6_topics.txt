@@ -1,0 +1,6 @@
+(0, '0.020*"lead" + 0.019*"man" + 0.016*"give" + 0.016*"goal" + 0.016*"strong" + 0.015*"believe" + 0.014*"develop" + 0.014*"figure" + 0.014*"think" + 0.013*"fight"')
+(1, '0.023*"father" + 0.019*"good" + 0.015*"believe" + 0.014*"life" + 0.013*"hand" + 0.013*"little" + 0.012*"world" + 0.012*"desire" + 0.012*"choose" + 0.011*"man"')
+(2, '0.020*"get" + 0.019*"country" + 0.013*"change" + 0.013*"quality" + 0.011*"believe" + 0.010*"society" + 0.010*"state" + 0.010*"smile" + 0.009*"leadership" + 0.009*"side"')
+(3, '0.022*"child" + 0.012*"put" + 0.012*"friend" + 0.012*"family" + 0.011*"book" + 0.010*"day" + 0.010*"live" + 0.009*"life" + 0.009*"full" + 0.009*"moshe_rabbeinu"')
+(4, '0.023*"quality" + 0.022*"know" + 0.019*"choose" + 0.014*"strive" + 0.013*"brave" + 0.011*"man" + 0.011*"take" + 0.011*"faith" + 0.009*"also" + 0.009*"goal"')
+(5, '0.034*"always" + 0.033*"know" + 0.022*"give" + 0.019*"positive" + 0.018*"thing" + 0.016*"opinion" + 0.015*"care" + 0.014*"other" + 0.014*"help" + 0.014*"mother"')

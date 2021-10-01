@@ -15,7 +15,7 @@ import lda.datasets
 DATA_LEN = 1110
 N = 50
 ITERATIONS = 1500
-ACCEPTED_RATIO = 1.0
+ACCEPTED_RATIO = 1.3
 
 # Validation errors
 YEAR_MISMATCH = 0
@@ -37,12 +37,12 @@ def valid_translation(db, engLines, i):
     # return True
 
 
-def get_cand(db, engLines, line, year, errors):
+def get_cand(db, engLines, line, years, errors):
 
 #    if db.ID_coded[i] == 13821367:
 #        debugon = 1
 
-    if not db.Test_Date[line].year == year:
+    if not db.Test_Date[line].year in years:
         errors[YEAR_MISMATCH] = errors[YEAR_MISMATCH] + 1
         return None
 
@@ -60,7 +60,6 @@ def get_cand(db, engLines, line, year, errors):
 
     if not valid_translation(db, engLines, line):
         errors[INVALID_TRANS_RATIO] = errors[INVALID_TRANS_RATIO] + 1
-        print("invalid t.ratio: {} {}".format(line, engLines[line]))
         valid = False
 
     if cand.officer == 1 and (cand.otype == NONE or cand.grade == 0 or cand.rejected == 1):
