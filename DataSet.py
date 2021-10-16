@@ -21,7 +21,7 @@ class DataSet:
         if cand.officer == 1:
             self.officers = self.officers + 1
             self.kkz_g_total = self.kkz_g_total + cand.grade
-            if cand.honor:
+            if cand.excel:
                 self.honor = self.honor + 1
         else:
             if cand.notFinished:
@@ -33,9 +33,9 @@ class DataSet:
             self.d_count = self.d_count + 1
             self.d_total = self.d_total + cand.dapar
 
-        if cand.tzadak > 0:
+        if len(cand.tzadak) > 0:
             self.z_count = self.z_count + 1
-            self.z_total = self.z_total + cand.tzadak
+            self.z_total = self.z_total + int(cand.tzadak)
 
 
     def officers_pcnt(self):

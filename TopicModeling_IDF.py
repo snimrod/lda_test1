@@ -7,13 +7,15 @@ from OType import get_officer_type
 from OType import NONE
 from DataSet import DataSet
 from CandData import CandData
+from gensim_lda import get_data_lemmatized
+from gensim_lda import text2corpus
 import re
 import numpy as np
 import lda
 import lda.datasets
 
 DATA_LEN = 1110
-N = 50
+N = 15
 ITERATIONS = 1500
 ACCEPTED_RATIO = 1.3
 
@@ -242,7 +244,6 @@ def run_topic_modeling(cand_year, outFile):
     engLines = get_translated_text("lemmatized_db.txt")
 
     users, words, cands = get_users_and_words(db, engLines, cand_year, outFile)
-    return 0
     X = get_np_array(db, engLines, users, words, cand_year)
 
     model = lda.LDA(n_topics=N, n_iter=ITERATIONS, random_state=1)
@@ -256,7 +257,7 @@ def run_topic_modeling(cand_year, outFile):
         print(str)
         outFile.write(str + '\n')
 
-    print_topic_modeling_stats(db, model.doc_topic_, users, cands, outFile)
+    #print_topic_modeling_stats(db, model.doc_topic_, users, cands, outFile)
     outFile.write('\n')
 
 
@@ -326,16 +327,50 @@ def dump_tm(db, doc_topic, users, cands, files):
         files[oType + 1].write("{}".format(str))
 
 
+def corpus2nparray(corpus, id2word):
+    nparr = np.array([0] * id2word.num_docs * len(id2word))
+    nparr = np.reshape(nparr, [id2word.num_docs, len(id2word)])
+    doc_i = 0
+    for doc in corpus:
+        for t in doc:
+            nparr[doc_i, t[0]] = t[1]
+        doc_i = doc_i + 1
+    return nparr
+
+
 def run_tm_and_dump(cand_year, files):
     db = get_cands_data('thesis_db.xls', DATA_LEN)
-    #engLines = get_translated_text("Translated_text.txt")
-    engLines = get_translated_text("lemmatized_db.txt")
+    engLines = get_translated_text("Translated_text.txt")
+
+    engLines = engLines[:DATA_LEN]
+
+
+    index = 0
+    reviewed_cands = []
+    cand_ids = []
+    index2cand = {}
+    run_text = []
+    errors = [0, 0, 0, 0, 0, 0]
+    for line in engLines:
+        this_cand_id = db.ID_coded[index]
+        if this_cand_id not in reviewed_cands:
+            reviewed_cands.append(this_cand_id)
+            cand = get_cand(db, engLines, index, [cand_year], errors)
+            if cand is not None:
+                run_text.append(line)
+                cand_ids.append(cand.id)
+                index2cand[index] = cand
+        index = index + 1
+
+    lem_text = get_data_lemmatized(run_text)
+    id2word, corpus = text2corpus(lem_text)
+    X2 = corpus2nparray(corpus, id2word)
 
     users, words, cands = get_users_and_words(db, engLines, cand_year, files[0])
     X = get_np_array(db, engLines, users, words, cand_year)
 
     model = lda.LDA(n_topics=N, n_iter=ITERATIONS, random_state=1)
-    model.fit(X)  # model.fit_transform(X) is also available
+    model.fit(X2)  # model.fit_transform(X) is also available
     topic_word = model.topic_word_  # model.components_ also works
     n_top_words = 8
 

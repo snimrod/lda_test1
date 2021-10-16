@@ -1,0 +1,1054 @@
+0) Candidate 11531836:
+Topic 0 : words matches = 0.000, engine_prob = 0.003, engine location = 6
+Topic 1 : words matches = 0.018, engine_prob = 0.003, engine location = 5
+Topic 2 : words matches = 0.086, engine_prob = 0.003, engine location = 13
+Topic 3 : words matches = 0.000, engine_prob = 0.003, engine location = 0
+Topic 4 : words matches = 0.017, engine_prob = 0.003, engine location = 2
+Topic 5 : words matches = 0.033, engine_prob = 0.003, engine location = 9
+Topic 6 : words matches = 0.032, engine_prob = 0.961, engine location = 14
+Topic 7 : words matches = 0.065, engine_prob = 0.003, engine location = 11
+Topic 8 : words matches = 0.021, engine_prob = 0.003, engine location = 6
+Topic 9 : words matches = 0.000, engine_prob = 0.003, engine location = 8
+Topic 10 : words matches = 0.018, engine_prob = 0.003, engine location = 3
+Topic 11 : words matches = 0.012, engine_prob = 0.003, engine location = 3
+Topic 12 : words matches = 0.053, engine_prob = 0.003, engine location = 12
+Topic 13 : words matches = 0.026, engine_prob = 0.003, engine location = 9
+Topic 14 : words matches = 0.000, engine_prob = 0.003, engine location = 0
+
+1) Candidate 11556347:
+Topic 0 : words matches = 0.036, engine_prob = 0.003, engine location = 9
+Topic 1 : words matches = 0.000, engine_prob = 0.003, engine location = 7
+Topic 2 : words matches = 0.010, engine_prob = 0.003, engine location = 7
+Topic 3 : words matches = 0.000, engine_prob = 0.003, engine location = 4
+Topic 4 : words matches = 0.032, engine_prob = 0.003, engine location = 1
+Topic 5 : words matches = 0.066, engine_prob = 0.003, engine location = 12
+Topic 6 : words matches = 0.000, engine_prob = 0.003, engine location = 1
+Topic 7 : words matches = 0.060, engine_prob = 0.959, engine location = 14
+Topic 8 : words matches = 0.032, engine_prob = 0.003, engine location = 9
+Topic 9 : words matches = 0.013, engine_prob = 0.003, engine location = 1
+Topic 10 : words matches = 0.017, engine_prob = 0.003, engine location = 11
+Topic 11 : words matches = 0.024, engine_prob = 0.003, engine location = 5
+Topic 12 : words matches = 0.054, engine_prob = 0.003, engine location = 6
+Topic 13 : words matches = 0.046, engine_prob = 0.003, engine location = 13
+Topic 14 : words matches = 0.000, engine_prob = 0.003, engine location = 0
+
+2) Candidate 11587558:
+Topic 0 : words matches = 0.000, engine_prob = 0.006, engine location = 1
+Topic 1 : words matches = 0.012, engine_prob = 0.006, engine location = 6
+Topic 2 : words matches = 0.000, engine_prob = 0.006, engine location = 6
+Topic 3 : words matches = 0.016, engine_prob = 0.006, engine location = 2
+Topic 4 : words matches = 0.032, engine_prob = 0.006, engine location = 10
+Topic 5 : words matches = 0.013, engine_prob = 0.006, engine location = 13
+Topic 6 : words matches = 0.016, engine_prob = 0.006, engine location = 5
+Topic 7 : words matches = 0.000, engine_prob = 0.006, engine location = 2
+Topic 8 : words matches = 0.031, engine_prob = 0.006, engine location = 11
+Topic 9 : words matches = 0.000, engine_prob = 0.922, engine location = 14
+Topic 10 : words matches = 0.017, engine_prob = 0.006, engine location = 8
+Topic 11 : words matches = 0.024, engine_prob = 0.006, engine location = 8
+Topic 12 : words matches = 0.000, engine_prob = 0.006, engine location = 2
+Topic 13 : words matches = 0.013, engine_prob = 0.006, engine location = 12
+Topic 14 : words matches = 0.000, engine_prob = 0.006, engine location = 0
+
+3) Candidate 11781920:
+Topic 0 : words matches = 0.018, engine_prob = 0.003, engine location = 11
+Topic 1 : words matches = 0.012, engine_prob = 0.003, engine location = 9
+Topic 2 : words matches = 0.015, engine_prob = 0.003, engine location = 13
+Topic 3 : words matches = 0.061, engine_prob = 0.003, engine location = 12
+Topic 4 : words matches = 0.032, engine_prob = 0.003, engine location = 5
+Topic 5 : words matches = 0.000, engine_prob = 0.003, engine location = 0
+Topic 6 : words matches = 0.016, engine_prob = 0.003, engine location = 8
+Topic 7 : words matches = 0.030, engine_prob = 0.003, engine location = 9
+Topic 8 : words matches = 0.000, engine_prob = 0.003, engine location = 3
+Topic 9 : words matches = 0.025, engine_prob = 0.958, engine location = 14
+Topic 10 : words matches = 0.017, engine_prob = 0.003, engine location = 5
+Topic 11 : words matches = 0.000, engine_prob = 0.003, engine location = 4
+Topic 12 : words matches = 0.000, engine_prob = 0.003, engine location = 0
+Topic 13 : words matches = 0.000, engine_prob = 0.003, engine location = 5
+Topic 14 : words matches = 0.000, engine_prob = 0.003, engine location = 0
+
+4) Candidate 11783220:
+Topic 0 : words matches = 0.000, engine_prob = 0.004, engine location = 10
+Topic 1 : words matches = 0.018, engine_prob = 0.004, engine location = 13
+Topic 2 : words matches = 0.025, engine_prob = 0.004, engine location = 8
+Topic 3 : words matches = 0.000, engine_prob = 0.004, engine location = 0
+Topic 4 : words matches = 0.000, engine_prob = 0.004, engine location = 0
+Topic 5 : words matches = 0.053, engine_prob = 0.004, engine location = 12
+Topic 6 : words matches = 0.000, engine_prob = 0.004, engine location = 6
+Topic 7 : words matches = 0.018, engine_prob = 0.004, engine location = 9
+Topic 8 : words matches = 0.011, engine_prob = 0.004, engine location = 7
+Topic 9 : words matches = 0.000, engine_prob = 0.004, engine location = 3
+Topic 10 : words matches = 0.009, engine_prob = 0.004, engine location = 3
+Topic 11 : words matches = 0.000, engine_prob = 0.004, engine location = 3
+Topic 12 : words matches = 0.032, engine_prob = 0.004, engine location = 11
+Topic 13 : words matches = 0.059, engine_prob = 0.951, engine location = 14
+Topic 14 : words matches = 0.000, engine_prob = 0.004, engine location = 0
+
+5) Candidate 11783427:
+Topic 0 : words matches = 0.000, engine_prob = 0.004, engine location = 0
+Topic 1 : words matches = 0.000, engine_prob = 0.004, engine location = 4
+Topic 2 : words matches = 0.000, engine_prob = 0.004, engine location = 12
+Topic 3 : words matches = 0.000, engine_prob = 0.004, engine location = 0
+Topic 4 : words matches = 0.017, engine_prob = 0.004, engine location = 8
+Topic 5 : words matches = 0.000, engine_prob = 0.004, engine location = 10
+Topic 6 : words matches = 0.000, engine_prob = 0.004, engine location = 7
+Topic 7 : words matches = 0.000, engine_prob = 0.938, engine location = 14
+Topic 8 : words matches = 0.000, engine_prob = 0.004, engine location = 5
+Topic 9 : words matches = 0.000, engine_prob = 0.004, engine location = 11
+Topic 10 : words matches = 0.000, engine_prob = 0.004, engine location = 5
+Topic 11 : words matches = 0.000, engine_prob = 0.004, engine location = 8
+Topic 12 : words matches = 0.000, engine_prob = 0.004, engine location = 12
+Topic 13 : words matches = 0.000, engine_prob = 0.004, engine location = 3
+Topic 14 : words matches = 0.000, engine_prob = 0.004, engine location = 0
+
+6) Candidate 11783744:
+Topic 0 : words matches = 0.010, engine_prob = 0.005, engine location = 7
+Topic 1 : words matches = 0.048, engine_prob = 0.928, engine location = 14
+Topic 2 : words matches = 0.015, engine_prob = 0.005, engine location = 9
+Topic 3 : words matches = 0.000, engine_prob = 0.005, engine location = 0
+Topic 4 : words matches = 0.000, engine_prob = 0.005, engine location = 8
+Topic 5 : words matches = 0.020, engine_prob = 0.005, engine location = 12
+Topic 6 : words matches = 0.000, engine_prob = 0.005, engine location = 2
+Topic 7 : words matches = 0.000, engine_prob = 0.005, engine location = 6
+Topic 8 : words matches = 0.000, engine_prob = 0.005, engine location = 2
+Topic 9 : words matches = 0.032, engine_prob = 0.005, engine location = 13
+Topic 10 : words matches = 0.009, engine_prob = 0.005, engine location = 2
+Topic 11 : words matches = 0.000, engine_prob = 0.005, engine location = 2
+Topic 12 : words matches = 0.011, engine_prob = 0.005, engine location = 10
+Topic 13 : words matches = 0.000, engine_prob = 0.005, engine location = 10
+Topic 14 : words matches = 0.000, engine_prob = 0.005, engine location = 0
+
+7) Candidate 11783776:
+Topic 0 : words matches = 0.000, engine_prob = 0.006, engine location = 0
+Topic 1 : words matches = 0.024, engine_prob = 0.922, engine location = 14
+Topic 2 : words matches = 0.000, engine_prob = 0.006, engine location = 7
+Topic 3 : words matches = 0.000, engine_prob = 0.006, engine location = 0
+Topic 4 : words matches = 0.000, engine_prob = 0.006, engine location = 0
+Topic 5 : words matches = 0.000, engine_prob = 0.006, engine location = 9
+Topic 6 : words matches = 0.000, engine_prob = 0.006, engine location = 12
+Topic 7 : words matches = 0.000, engine_prob = 0.006, engine location = 7
+Topic 8 : words matches = 0.000, engine_prob = 0.006, engine location = 0
+Topic 9 : words matches = 0.000, engine_prob = 0.006, engine location = 0
+Topic 10 : words matches = 0.017, engine_prob = 0.006, engine location = 13
+Topic 11 : words matches = 0.000, engine_prob = 0.006, engine location = 0
+Topic 12 : words matches = 0.000, engine_prob = 0.006, engine location = 10
+Topic 13 : words matches = 0.000, engine_prob = 0.006, engine location = 11
+Topic 14 : words matches = 0.000, engine_prob = 0.006, engine location = 0
+
+8) Candidate 11783844:
+Topic 0 : words matches = 0.009, engine_prob = 0.003, engine location = 1
+Topic 1 : words matches = 0.012, engine_prob = 0.003, engine location = 5
+Topic 2 : words matches = 0.035, engine_prob = 0.003, engine location = 12
+Topic 3 : words matches = 0.016, engine_prob = 0.003, engine location = 1
+Topic 4 : words matches = 0.032, engine_prob = 0.003, engine location = 5
+Topic 5 : words matches = 0.000, engine_prob = 0.003, engine location = 1
+Topic 6 : words matches = 0.024, engine_prob = 0.003, engine location = 9
+Topic 7 : words matches = 0.029, engine_prob = 0.003, engine location = 11
+Topic 8 : words matches = 0.021, engine_prob = 0.003, engine location = 13
+Topic 9 : words matches = 0.000, engine_prob = 0.003, engine location = 1
+Topic 10 : words matches = 0.026, engine_prob = 0.961, engine location = 14
+Topic 11 : words matches = 0.000, engine_prob = 0.003, engine location = 9
+Topic 12 : words matches = 0.000, engine_prob = 0.003, engine location = 5
+Topic 13 : words matches = 0.013, engine_prob = 0.003, engine location = 5
+Topic 14 : words matches = 0.000, engine_prob = 0.003, engine location = 0
+
+9) Candidate 11784651:
+Topic 0 : words matches = 0.056, engine_prob = 0.003, engine location = 5
+Topic 1 : words matches = 0.030, engine_prob = 0.003, engine location = 9
+Topic 2 : words matches = 0.015, engine_prob = 0.003, engine location = 9
+Topic 3 : words matches = 0.045, engine_prob = 0.003, engine location = 12
+Topic 4 : words matches = 0.017, engine_prob = 0.003, engine location = 1
+Topic 5 : words matches = 0.020, engine_prob = 0.003, engine location = 4
+Topic 6 : words matches = 0.000, engine_prob = 0.003, engine location = 1
+Topic 7 : words matches = 0.012, engine_prob = 0.003, engine location = 9
+Topic 8 : words matches = 0.031, engine_prob = 0.003, engine location = 5
+Topic 9 : words matches = 0.013, engine_prob = 0.003, engine location = 5
+Topic 10 : words matches = 0.000, engine_prob = 0.003, engine location = 1
+Topic 11 : words matches = 0.072, engine_prob = 0.963, engine location = 14
+Topic 12 : words matches = 0.032, engine_prob = 0.003, engine location = 12
+Topic 13 : words matches = 0.013, engine_prob = 0.003, engine location = 5
+Topic 14 : words matches = 0.000, engine_prob = 0.003, engine location = 0
+
+10) Candidate 11785198:
+Topic 0 : words matches = 0.117, engine_prob = 0.968, engine location = 14
+Topic 1 : words matches = 0.000, engine_prob = 0.002, engine location = 2
+Topic 2 : words matches = 0.000, engine_prob = 0.002, engine location = 4
+Topic 3 : words matches = 0.000, engine_prob = 0.002, engine location = 0
+Topic 4 : words matches = 0.000, engine_prob = 0.002, engine location = 4
+Topic 5 : words matches = 0.020, engine_prob = 0.002, engine location = 4
+Topic 6 : words matches = 0.040, engine_prob = 0.002, engine location = 13
+Topic 7 : words matches = 0.012, engine_prob = 0.002, engine location = 4
+Topic 8 : words matches = 0.021, engine_prob = 0.002, engine location = 12
+Topic 9 : words matches = 0.013, engine_prob = 0.002, engine location = 2
+Topic 10 : words matches = 0.000, engine_prob = 0.002, engine location = 4
+Topic 11 : words matches = 0.024, engine_prob = 0.002, engine location = 4
+Topic 12 : words matches = 0.032, engine_prob = 0.002, engine location = 4
+Topic 13 : words matches = 0.000, engine_prob = 0.002, engine location = 11
+Topic 14 : words matches = 0.000, engine_prob = 0.002, engine location = 0
+
+11) Candidate 11786185:
+Topic 0 : words matches = 0.000, engine_prob = 0.003, engine location = 9
+Topic 1 : words matches = 0.000, engine_prob = 0.003, engine location = 0
+Topic 2 : words matches = 0.015, engine_prob = 0.003, engine location = 10
+Topic 3 : words matches = 0.000, engine_prob = 0.003, engine location = 0
+Topic 4 : words matches = 0.000, engine_prob = 0.003, engine location = 0
+Topic 5 : words matches = 0.020, engine_prob = 0.003, engine location = 5
+Topic 6 : words matches = 0.008, engine_prob = 0.003, engine location = 5
+Topic 7 : words matches = 0.071, engine_prob = 0.963, engine location = 14
+Topic 8 : words matches = 0.000, engine_prob = 0.003, engine location = 5
+Topic 9 : words matches = 0.000, engine_prob = 0.003, engine location = 12
+Topic 10 : words matches = 0.000, engine_prob = 0.003, engine location = 0
+Topic 11 : words matches = 0.012, engine_prob = 0.003, engine location = 5
+Topic 12 : words matches = 0.053, engine_prob = 0.003, engine location = 13
+Topic 13 : words matches = 0.013, engine_prob = 0.003, engine location = 10
+Topic 14 : words matches = 0.000, engine_prob = 0.003, engine location = 0
+
+12) Candidate 11788051:
+Topic 0 : words matches = 0.018, engine_prob = 0.003, engine location = 12
+Topic 1 : words matches = 0.000, engine_prob = 0.003, engine location = 2
+Topic 2 : words matches = 0.010, engine_prob = 0.003, engine location = 5
+Topic 3 : words matches = 0.000, engine_prob = 0.003, engine location = 0
+Topic 4 : words matches = 0.017, engine_prob = 0.003, engine location = 5
+Topic 5 : words matches = 0.000, engine_prob = 0.003, engine location = 2
+Topic 6 : words matches = 0.000, engine_prob = 0.003, engine location = 5
+Topic 7 : words matches = 0.000, engine_prob = 0.003, engine location = 5
+Topic 8 : words matches = 0.000, engine_prob = 0.956, engine location = 14
+Topic 9 : words matches = 0.000, engine_prob = 0.003, engine location = 5
+Topic 10 : words matches = 0.000, engine_prob = 0.003, engine location = 5
+Topic 11 : words matches = 0.024, engine_prob = 0.003, engine location = 13
+Topic 12 : words matches = 0.000, engine_prob = 0.003, engine location = 2
+Topic 13 : words matches = 0.000, engine_prob = 0.003, engine location = 11
+Topic 14 : words matches = 0.000, engine_prob = 0.003, engine location = 0
+
+13) Candidate 11788407:
+Topic 0 : words matches = 0.000, engine_prob = 0.005, engine location = 0
+Topic 1 : words matches = 0.030, engine_prob = 0.005, engine location = 13
+Topic 2 : words matches = 0.015, engine_prob = 0.005, engine location = 12
+Topic 3 : words matches = 0.000, engine_prob = 0.005, engine location = 0
+Topic 4 : words matches = 0.000, engine_prob = 0.005, engine location = 0
+Topic 5 : words matches = 0.000, engine_prob = 0.005, engine location = 11
+Topic 6 : words matches = 0.000, engine_prob = 0.005, engine location = 6
+Topic 7 : words matches = 0.012, engine_prob = 0.005, engine location = 9
+Topic 8 : words matches = 0.000, engine_prob = 0.005, engine location = 6
+Topic 9 : words matches = 0.000, engine_prob = 0.005, engine location = 5
+Topic 10 : words matches = 0.060, engine_prob = 0.928, engine location = 14
+Topic 11 : words matches = 0.000, engine_prob = 0.005, engine location = 0
+Topic 12 : words matches = 0.000, engine_prob = 0.005, engine location = 6
+Topic 13 : words matches = 0.000, engine_prob = 0.005, engine location = 9
+Topic 14 : words matches = 0.000, engine_prob = 0.005, engine location = 0
+
+14) Candidate 11788886:
+Topic 0 : words matches = 0.036, engine_prob = 0.003, engine location = 5
+Topic 1 : words matches = 0.000, engine_prob = 0.003, engine location = 5
+Topic 2 : words matches = 0.020, engine_prob = 0.003, engine location = 12
+Topic 3 : words matches = 0.000, engine_prob = 0.003, engine location = 0
+Topic 4 : words matches = 0.000, engine_prob = 0.003, engine location = 0
+Topic 5 : words matches = 0.080, engine_prob = 0.003, engine location = 9
+Topic 6 : words matches = 0.040, engine_prob = 0.003, engine location = 9
+Topic 7 : words matches = 0.060, engine_prob = 0.003, engine location = 5
+Topic 8 : words matches = 0.000, engine_prob = 0.003, engine location = 0
+Topic 9 : words matches = 0.026, engine_prob = 0.003, engine location = 5
+Topic 10 : words matches = 0.009, engine_prob = 0.003, engine location = 4
+Topic 11 : words matches = 0.072, engine_prob = 0.003, engine location = 12
+Topic 12 : words matches = 0.244, engine_prob = 0.953, engine location = 14
+Topic 13 : words matches = 0.000, engine_prob = 0.003, engine location = 9
+Topic 14 : words matches = 0.000, engine_prob = 0.003, engine location = 0
+
+15) Candidate 11788958:
+Topic 0 : words matches = 0.018, engine_prob = 0.002, engine location = 11
+Topic 1 : words matches = 0.060, engine_prob = 0.969, engine location = 14
+Topic 2 : words matches = 0.051, engine_prob = 0.002, engine location = 13
+Topic 3 : words matches = 0.000, engine_prob = 0.002, engine location = 6
+Topic 4 : words matches = 0.000, engine_prob = 0.002, engine location = 0
+Topic 5 : words matches = 0.000, engine_prob = 0.002, engine location = 4
+Topic 6 : words matches = 0.000, engine_prob = 0.002, engine location = 8
+Topic 7 : words matches = 0.000, engine_prob = 0.002, engine location = 4
+Topic 8 : words matches = 0.032, engine_prob = 0.002, engine location = 12
+Topic 9 : words matches = 0.000, engine_prob = 0.002, engine location = 10
+Topic 10 : words matches = 0.009, engine_prob = 0.002, engine location = 6
+Topic 11 : words matches = 0.000, engine_prob = 0.002, engine location = 0
+Topic 12 : words matches = 0.000, engine_prob = 0.002, engine location = 0
+Topic 13 : words matches = 0.000, engine_prob = 0.002, engine location = 8
+Topic 14 : words matches = 0.000, engine_prob = 0.002, engine location = 0
+
+16) Candidate 11789566:
+Topic 0 : words matches = 0.010, engine_prob = 0.004, engine location = 2
+Topic 1 : words matches = 0.030, engine_prob = 0.004, engine location = 9
+Topic 2 : words matches = 0.000, engine_prob = 0.004, engine location = 6
+Topic 3 : words matches = 0.000, engine_prob = 0.004, engine location = 0
+Topic 4 : words matches = 0.032, engine_prob = 0.004, engine location = 6
+Topic 5 : words matches = 0.000, engine_prob = 0.004, engine location = 11
+Topic 6 : words matches = 0.000, engine_prob = 0.004, engine location = 2
+Topic 7 : words matches = 0.036, engine_prob = 0.945, engine location = 14
+Topic 8 : words matches = 0.042, engine_prob = 0.004, engine location = 13
+Topic 9 : words matches = 0.025, engine_prob = 0.004, engine location = 9
+Topic 10 : words matches = 0.000, engine_prob = 0.004, engine location = 4
+Topic 11 : words matches = 0.024, engine_prob = 0.004, engine location = 11
+Topic 12 : words matches = 0.000, engine_prob = 0.004, engine location = 4
+Topic 13 : words matches = 0.013, engine_prob = 0.004, engine location = 8
+Topic 14 : words matches = 0.000, engine_prob = 0.004, engine location = 0
+
+17) Candidate 11789585:
+Topic 0 : words matches = 0.018, engine_prob = 0.003, engine location = 7
+Topic 1 : words matches = 0.000, engine_prob = 0.003, engine location = 6
+Topic 2 : words matches = 0.045, engine_prob = 0.958, engine location = 14
+Topic 3 : words matches = 0.000, engine_prob = 0.003, engine location = 4
+Topic 4 : words matches = 0.017, engine_prob = 0.003, engine location = 4
+Topic 5 : words matches = 0.020, engine_prob = 0.003, engine location = 9
+Topic 6 : words matches = 0.008, engine_prob = 0.003, engine location = 0
+Topic 7 : words matches = 0.012, engine_prob = 0.003, engine location = 11
+Topic 8 : words matches = 0.000, engine_prob = 0.003, engine location = 0
+Topic 9 : words matches = 0.013, engine_prob = 0.003, engine location = 7
+Topic 10 : words matches = 0.009, engine_prob = 0.003, engine location = 0
+Topic 11 : words matches = 0.024, engine_prob = 0.003, engine location = 10
+Topic 12 : words matches = 0.032, engine_prob = 0.003, engine location = 11
+Topic 13 : words matches = 0.013, engine_prob = 0.003, engine location = 13
+Topic 14 : words matches = 0.000, engine_prob = 0.003, engine location = 0
+
+18) Candidate 11789587:
+Topic 0 : words matches = 0.000, engine_prob = 0.013, engine location = 0
+Topic 1 : words matches = 0.000, engine_prob = 0.013, engine location = 7
+Topic 2 : words matches = 0.000, engine_prob = 0.013, engine location = 8
+Topic 3 : words matches = 0.000, engine_prob = 0.013, engine location = 0
+Topic 4 : words matches = 0.000, engine_prob = 0.013, engine location = 0
+Topic 5 : words matches = 0.000, engine_prob = 0.013, engine location = 0
+Topic 6 : words matches = 0.000, engine_prob = 0.013, engine location = 9
+Topic 7 : words matches = 0.000, engine_prob = 0.013, engine location = 6
+Topic 8 : words matches = 0.000, engine_prob = 0.013, engine location = 11
+Topic 9 : words matches = 0.000, engine_prob = 0.013, engine location = 0
+Topic 10 : words matches = 0.000, engine_prob = 0.013, engine location = 9
+Topic 11 : words matches = 0.000, engine_prob = 0.013, engine location = 13
+Topic 12 : words matches = 0.000, engine_prob = 0.013, engine location = 12
+Topic 13 : words matches = 0.000, engine_prob = 0.813, engine location = 14
+Topic 14 : words matches = 0.000, engine_prob = 0.013, engine location = 0
+
+19) Candidate 11789905:
+Topic 0 : words matches = 0.072, engine_prob = 0.961, engine location = 14
+Topic 1 : words matches = 0.000, engine_prob = 0.003, engine location = 5
+Topic 2 : words matches = 0.000, engine_prob = 0.003, engine location = 12
+Topic 3 : words matches = 0.000, engine_prob = 0.003, engine location = 7
+Topic 4 : words matches = 0.000, engine_prob = 0.003, engine location = 0
+Topic 5 : words matches = 0.013, engine_prob = 0.003, engine location = 8
+Topic 6 : words matches = 0.024, engine_prob = 0.003, engine location = 9
+Topic 7 : words matches = 0.030, engine_prob = 0.003, engine location = 9
+Topic 8 : words matches = 0.063, engine_prob = 0.003, engine location = 12
+Topic 9 : words matches = 0.000, engine_prob = 0.003, engine location = 5
+Topic 10 : words matches = 0.000, engine_prob = 0.003, engine location = 3
+Topic 11 : words matches = 0.000, engine_prob = 0.003, engine location = 3
+Topic 12 : words matches = 0.000, engine_prob = 0.003, engine location = 0
+Topic 13 : words matches = 0.000, engine_prob = 0.003, engine location = 11
+Topic 14 : words matches = 0.000, engine_prob = 0.003, engine location = 0
+
+20) Candidate 11789906:
+Topic 0 : words matches = 0.000, engine_prob = 0.004, engine location = 3
+Topic 1 : words matches = 0.000, engine_prob = 0.004, engine location = 11
+Topic 2 : words matches = 0.015, engine_prob = 0.004, engine location = 12
+Topic 3 : words matches = 0.031, engine_prob = 0.004, engine location = 13
+Topic 4 : words matches = 0.000, engine_prob = 0.004, engine location = 0
+Topic 5 : words matches = 0.040, engine_prob = 0.004, engine location = 3
+Topic 6 : words matches = 0.016, engine_prob = 0.004, engine location = 7
+Topic 7 : words matches = 0.036, engine_prob = 0.004, engine location = 7
+Topic 8 : words matches = 0.000, engine_prob = 0.004, engine location = 3
+Topic 9 : words matches = 0.000, engine_prob = 0.004, engine location = 9
+Topic 10 : words matches = 0.000, engine_prob = 0.004, engine location = 0
+Topic 11 : words matches = 0.024, engine_prob = 0.004, engine location = 3
+Topic 12 : words matches = 0.150, engine_prob = 0.948, engine location = 14
+Topic 13 : words matches = 0.013, engine_prob = 0.004, engine location = 9
+Topic 14 : words matches = 0.000, engine_prob = 0.004, engine location = 0
+
+21) Candidate 11789919:
+Topic 0 : words matches = 0.000, engine_prob = 0.003, engine location = 5
+Topic 1 : words matches = 0.012, engine_prob = 0.003, engine location = 7
+Topic 2 : words matches = 0.000, engine_prob = 0.003, engine location = 7
+Topic 3 : words matches = 0.000, engine_prob = 0.003, engine location = 0
+Topic 4 : words matches = 0.000, engine_prob = 0.003, engine location = 0
+Topic 5 : words matches = 0.013, engine_prob = 0.003, engine location = 11
+Topic 6 : words matches = 0.000, engine_prob = 0.003, engine location = 5
+Topic 7 : words matches = 0.048, engine_prob = 0.003, engine location = 13
+Topic 8 : words matches = 0.011, engine_prob = 0.003, engine location = 7
+Topic 9 : words matches = 0.141, engine_prob = 0.961, engine location = 14
+Topic 10 : words matches = 0.025, engine_prob = 0.003, engine location = 11
+Topic 11 : words matches = 0.000, engine_prob = 0.003, engine location = 3
+Topic 12 : words matches = 0.000, engine_prob = 0.003, engine location = 3
+Topic 13 : words matches = 0.020, engine_prob = 0.003, engine location = 10
+Topic 14 : words matches = 0.000, engine_prob = 0.003, engine location = 0
+
+22) Candidate 11789922:
+Topic 0 : words matches = 0.027, engine_prob = 0.003, engine location = 11
+Topic 1 : words matches = 0.000, engine_prob = 0.003, engine location = 3
+Topic 2 : words matches = 0.000, engine_prob = 0.003, engine location = 3
+Topic 3 : words matches = 0.032, engine_prob = 0.003, engine location = 3
+Topic 4 : words matches = 0.264, engine_prob = 0.963, engine location = 14
+Topic 5 : words matches = 0.020, engine_prob = 0.003, engine location = 3
+Topic 6 : words matches = 0.032, engine_prob = 0.003, engine location = 8
+Topic 7 : words matches = 0.000, engine_prob = 0.003, engine location = 3
+Topic 8 : words matches = 0.021, engine_prob = 0.003, engine location = 13
+Topic 9 : words matches = 0.013, engine_prob = 0.003, engine location = 8
+Topic 10 : words matches = 0.034, engine_prob = 0.003, engine location = 8
+Topic 11 : words matches = 0.036, engine_prob = 0.003, engine location = 12
+Topic 12 : words matches = 0.000, engine_prob = 0.003, engine location = 1
+Topic 13 : words matches = 0.000, engine_prob = 0.003, engine location = 1
+Topic 14 : words matches = 0.000, engine_prob = 0.003, engine location = 0
+
+23) Candidate 11789924:
+Topic 0 : words matches = 0.018, engine_prob = 0.004, engine location = 6
+Topic 1 : words matches = 0.000, engine_prob = 0.004, engine location = 3
+Topic 2 : words matches = 0.010, engine_prob = 0.004, engine location = 7
+Topic 3 : words matches = 0.000, engine_prob = 0.004, engine location = 0
+Topic 4 : words matches = 0.032, engine_prob = 0.004, engine location = 10
+Topic 5 : words matches = 0.132, engine_prob = 0.951, engine location = 14
+Topic 6 : words matches = 0.008, engine_prob = 0.004, engine location = 12
+Topic 7 : words matches = 0.048, engine_prob = 0.004, engine location = 9
+Topic 8 : words matches = 0.032, engine_prob = 0.004, engine location = 11
+Topic 9 : words matches = 0.013, engine_prob = 0.004, engine location = 5
+Topic 10 : words matches = 0.000, engine_prob = 0.004, engine location = 3
+Topic 11 : words matches = 0.036, engine_prob = 0.004, engine location = 2
+Topic 12 : words matches = 0.096, engine_prob = 0.004, engine location = 13
+Topic 13 : words matches = 0.026, engine_prob = 0.004, engine location = 7
+Topic 14 : words matches = 0.000, engine_prob = 0.004, engine location = 0
+
+24) Candidate 11789931:
+Topic 0 : words matches = 0.000, engine_prob = 0.017, engine location = 0
+Topic 1 : words matches = 0.000, engine_prob = 0.017, engine location = 0
+Topic 2 : words matches = 0.000, engine_prob = 0.017, engine location = 0
+Topic 3 : words matches = 0.000, engine_prob = 0.017, engine location = 0
+Topic 4 : words matches = 0.000, engine_prob = 0.017, engine location = 0
+Topic 5 : words matches = 0.000, engine_prob = 0.767, engine location = 14
+Topic 6 : words matches = 0.000, engine_prob = 0.017, engine location = 0
+Topic 7 : words matches = 0.000, engine_prob = 0.017, engine location = 0
+Topic 8 : words matches = 0.000, engine_prob = 0.017, engine location = 0
+Topic 9 : words matches = 0.000, engine_prob = 0.017, engine location = 0
+Topic 10 : words matches = 0.000, engine_prob = 0.017, engine location = 0
+Topic 11 : words matches = 0.000, engine_prob = 0.017, engine location = 0
+Topic 12 : words matches = 0.000, engine_prob = 0.017, engine location = 0
+Topic 13 : words matches = 0.000, engine_prob = 0.017, engine location = 0
+Topic 14 : words matches = 0.000, engine_prob = 0.017, engine location = 0
+
+25) Candidate 11842706:
+Topic 0 : words matches = 0.018, engine_prob = 0.002, engine location = 9
+Topic 1 : words matches = 0.000, engine_prob = 0.002, engine location = 2
+Topic 2 : words matches = 0.045, engine_prob = 0.002, engine location = 9
+Topic 3 : words matches = 0.444, engine_prob = 0.967, engine location = 14
+Topic 4 : words matches = 0.032, engine_prob = 0.002, engine location = 12
+Topic 5 : words matches = 0.000, engine_prob = 0.002, engine location = 0
+Topic 6 : words matches = 0.016, engine_prob = 0.002, engine location = 9
+Topic 7 : words matches = 0.012, engine_prob = 0.002, engine location = 6
+Topic 8 : words matches = 0.021, engine_prob = 0.002, engine location = 6
+Topic 9 : words matches = 0.000, engine_prob = 0.002, engine location = 12
+Topic 10 : words matches = 0.017, engine_prob = 0.002, engine location = 6
+Topic 11 : words matches = 0.000, engine_prob = 0.002, engine location = 2
+Topic 12 : words matches = 0.000, engine_prob = 0.002, engine location = 2
+Topic 13 : words matches = 0.000, engine_prob = 0.002, engine location = 2
+Topic 14 : words matches = 0.000, engine_prob = 0.002, engine location = 0
+
+26) Candidate 11842809:
+Topic 0 : words matches = 0.018, engine_prob = 0.004, engine location = 5
+Topic 1 : words matches = 0.012, engine_prob = 0.004, engine location = 0
+Topic 2 : words matches = 0.000, engine_prob = 0.004, engine location = 9
+Topic 3 : words matches = 0.000, engine_prob = 0.004, engine location = 0
+Topic 4 : words matches = 0.017, engine_prob = 0.004, engine location = 4
+Topic 5 : words matches = 0.053, engine_prob = 0.004, engine location = 10
+Topic 6 : words matches = 0.024, engine_prob = 0.004, engine location = 8
+Topic 7 : words matches = 0.048, engine_prob = 0.004, engine location = 12
+Topic 8 : words matches = 0.031, engine_prob = 0.004, engine location = 5
+Topic 9 : words matches = 0.013, engine_prob = 0.004, engine location = 5
+Topic 10 : words matches = 0.000, engine_prob = 0.004, engine location = 0
+Topic 11 : words matches = 0.108, engine_prob = 0.945, engine location = 14
+Topic 12 : words matches = 0.096, engine_prob = 0.004, engine location = 13
+Topic 13 : words matches = 0.013, engine_prob = 0.004, engine location = 10
+Topic 14 : words matches = 0.000, engine_prob = 0.004, engine location = 0
+
+27) Candidate 11842833:
+Topic 0 : words matches = 0.000, engine_prob = 0.004, engine location = 3
+Topic 1 : words matches = 0.012, engine_prob = 0.004, engine location = 8
+Topic 2 : words matches = 0.020, engine_prob = 0.004, engine location = 5
+Topic 3 : words matches = 0.000, engine_prob = 0.004, engine location = 0
+Topic 4 : words matches = 0.000, engine_prob = 0.004, engine location = 0
+Topic 5 : words matches = 0.066, engine_prob = 0.004, engine location = 13
+Topic 6 : words matches = 0.000, engine_prob = 0.004, engine location = 6
+Topic 7 : words matches = 0.048, engine_prob = 0.945, engine location = 14
+Topic 8 : words matches = 0.000, engine_prob = 0.004, engine location = 8
+Topic 9 : words matches = 0.000, engine_prob = 0.004, engine location = 3
+Topic 10 : words matches = 0.000, engine_prob = 0.004, engine location = 6
+Topic 11 : words matches = 0.000, engine_prob = 0.004, engine location = 10
+Topic 12 : words matches = 0.022, engine_prob = 0.004, engine location = 11
+Topic 13 : words matches = 0.052, engine_prob = 0.004, engine location = 12
+Topic 14 : words matches = 0.000, engine_prob = 0.004, engine location = 0
+
+28) Candidate 11842876:
+Topic 0 : words matches = 0.054, engine_prob = 0.003, engine location = 8
+Topic 1 : words matches = 0.000, engine_prob = 0.003, engine location = 11
+Topic 2 : words matches = 0.000, engine_prob = 0.003, engine location = 2
+Topic 3 : words matches = 0.016, engine_prob = 0.003, engine location = 2
+Topic 4 : words matches = 0.064, engine_prob = 0.003, engine location = 13
+Topic 5 : words matches = 0.020, engine_prob = 0.003, engine location = 8
+Topic 6 : words matches = 0.168, engine_prob = 0.963, engine location = 14
+Topic 7 : words matches = 0.000, engine_prob = 0.003, engine location = 8
+Topic 8 : words matches = 0.022, engine_prob = 0.003, engine location = 12
+Topic 9 : words matches = 0.000, engine_prob = 0.003, engine location = 6
+Topic 10 : words matches = 0.017, engine_prob = 0.003, engine location = 6
+Topic 11 : words matches = 0.000, engine_prob = 0.003, engine location = 0
+Topic 12 : words matches = 0.000, engine_prob = 0.003, engine location = 2
+Topic 13 : words matches = 0.000, engine_prob = 0.003, engine location = 2
+Topic 14 : words matches = 0.000, engine_prob = 0.003, engine location = 0
+
+29) Candidate 11842885:
+Topic 0 : words matches = 0.092, engine_prob = 0.958, engine location = 14
+Topic 1 : words matches = 0.018, engine_prob = 0.003, engine location = 2
+Topic 2 : words matches = 0.010, engine_prob = 0.003, engine location = 5
+Topic 3 : words matches = 0.016, engine_prob = 0.003, engine location = 1
+Topic 4 : words matches = 0.083, engine_prob = 0.003, engine location = 9
+Topic 5 : words matches = 0.073, engine_prob = 0.003, engine location = 10
+Topic 6 : words matches = 0.024, engine_prob = 0.003, engine location = 2
+Topic 7 : words matches = 0.060, engine_prob = 0.003, engine location = 10
+Topic 8 : words matches = 0.032, engine_prob = 0.003, engine location = 7
+Topic 9 : words matches = 0.013, engine_prob = 0.003, engine location = 5
+Topic 10 : words matches = 0.017, engine_prob = 0.003, engine location = 2
+Topic 11 : words matches = 0.096, engine_prob = 0.003, engine location = 8
+Topic 12 : words matches = 0.107, engine_prob = 0.003, engine location = 13
+Topic 13 : words matches = 0.059, engine_prob = 0.003, engine location = 10
+Topic 14 : words matches = 0.000, engine_prob = 0.003, engine location = 0
+
+30) Candidate 11842961:
+Topic 0 : words matches = 0.000, engine_prob = 0.003, engine location = 2
+Topic 1 : words matches = 0.000, engine_prob = 0.003, engine location = 8
+Topic 2 : words matches = 0.147, engine_prob = 0.956, engine location = 14
+Topic 3 : words matches = 0.000, engine_prob = 0.003, engine location = 2
+Topic 4 : words matches = 0.000, engine_prob = 0.003, engine location = 0
+Topic 5 : words matches = 0.020, engine_prob = 0.003, engine location = 2
+Topic 6 : words matches = 0.016, engine_prob = 0.003, engine location = 7
+Topic 7 : words matches = 0.018, engine_prob = 0.003, engine location = 8
+Topic 8 : words matches = 0.042, engine_prob = 0.003, engine location = 8
+Topic 9 : words matches = 0.000, engine_prob = 0.003, engine location = 11
+Topic 10 : words matches = 0.009, engine_prob = 0.003, engine location = 2
+Topic 11 : words matches = 0.012, engine_prob = 0.003, engine location = 6
+Topic 12 : words matches = 0.053, engine_prob = 0.003, engine location = 13
+Topic 13 : words matches = 0.039, engine_prob = 0.003, engine location = 11
+Topic 14 : words matches = 0.000, engine_prob = 0.003, engine location = 0
+
+31) Candidate 11843021:
+Topic 0 : words matches = 0.018, engine_prob = 0.004, engine location = 2
+Topic 1 : words matches = 0.000, engine_prob = 0.004, engine location = 5
+Topic 2 : words matches = 0.000, engine_prob = 0.004, engine location = 3
+Topic 3 : words matches = 0.000, engine_prob = 0.004, engine location = 4
+Topic 4 : words matches = 0.000, engine_prob = 0.004, engine location = 0
+Topic 5 : words matches = 0.040, engine_prob = 0.004, engine location = 12
+Topic 6 : words matches = 0.016, engine_prob = 0.004, engine location = 10
+Topic 7 : words matches = 0.012, engine_prob = 0.004, engine location = 9
+Topic 8 : words matches = 0.011, engine_prob = 0.004, engine location = 5
+Topic 9 : words matches = 0.058, engine_prob = 0.948, engine location = 14
+Topic 10 : words matches = 0.017, engine_prob = 0.004, engine location = 7
+Topic 11 : words matches = 0.024, engine_prob = 0.004, engine location = 7
+Topic 12 : words matches = 0.032, engine_prob = 0.004, engine location = 12
+Topic 13 : words matches = 0.000, engine_prob = 0.004, engine location = 10
+Topic 14 : words matches = 0.000, engine_prob = 0.004, engine location = 0
+
+32) Candidate 11843134:
+Topic 0 : words matches = 0.028, engine_prob = 0.005, engine location = 7
+Topic 1 : words matches = 0.030, engine_prob = 0.005, engine location = 9
+Topic 2 : words matches = 0.000, engine_prob = 0.005, engine location = 1
+Topic 3 : words matches = 0.016, engine_prob = 0.005, engine location = 2
+Topic 4 : words matches = 0.049, engine_prob = 0.005, engine location = 9
+Topic 5 : words matches = 0.000, engine_prob = 0.005, engine location = 5
+Topic 6 : words matches = 0.032, engine_prob = 0.005, engine location = 12
+Topic 7 : words matches = 0.047, engine_prob = 0.005, engine location = 13
+Topic 8 : words matches = 0.128, engine_prob = 0.933, engine location = 14
+Topic 9 : words matches = 0.000, engine_prob = 0.005, engine location = 5
+Topic 10 : words matches = 0.017, engine_prob = 0.005, engine location = 7
+Topic 11 : words matches = 0.036, engine_prob = 0.005, engine location = 4
+Topic 12 : words matches = 0.000, engine_prob = 0.005, engine location = 2
+Topic 13 : words matches = 0.033, engine_prob = 0.005, engine location = 9
+Topic 14 : words matches = 0.000, engine_prob = 0.005, engine location = 0
+
+33) Candidate 11843187:
+Topic 0 : words matches = 0.018, engine_prob = 0.002, engine location = 4
+Topic 1 : words matches = 0.000, engine_prob = 0.002, engine location = 8
+Topic 2 : words matches = 0.066, engine_prob = 0.002, engine location = 13
+Topic 3 : words matches = 0.000, engine_prob = 0.002, engine location = 0
+Topic 4 : words matches = 0.000, engine_prob = 0.002, engine location = 2
+Topic 5 : words matches = 0.159, engine_prob = 0.967, engine location = 14
+Topic 6 : words matches = 0.008, engine_prob = 0.002, engine location = 5
+Topic 7 : words matches = 0.084, engine_prob = 0.002, engine location = 8
+Topic 8 : words matches = 0.000, engine_prob = 0.002, engine location = 8
+Topic 9 : words matches = 0.026, engine_prob = 0.002, engine location = 5
+Topic 10 : words matches = 0.017, engine_prob = 0.002, engine location = 7
+Topic 11 : words matches = 0.036, engine_prob = 0.002, engine location = 2
+Topic 12 : words matches = 0.118, engine_prob = 0.002, engine location = 8
+Topic 13 : words matches = 0.078, engine_prob = 0.002, engine location = 12
+Topic 14 : words matches = 0.014, engine_prob = 0.002, engine location = 0
+
+34) Candidate 11843550:
+Topic 0 : words matches = 0.018, engine_prob = 0.003, engine location = 12
+Topic 1 : words matches = 0.000, engine_prob = 0.003, engine location = 8
+Topic 2 : words matches = 0.102, engine_prob = 0.959, engine location = 14
+Topic 3 : words matches = 0.090, engine_prob = 0.003, engine location = 11
+Topic 4 : words matches = 0.000, engine_prob = 0.003, engine location = 0
+Topic 5 : words matches = 0.000, engine_prob = 0.003, engine location = 6
+Topic 6 : words matches = 0.000, engine_prob = 0.003, engine location = 8
+Topic 7 : words matches = 0.000, engine_prob = 0.003, engine location = 4
+Topic 8 : words matches = 0.000, engine_prob = 0.003, engine location = 0
+Topic 9 : words matches = 0.000, engine_prob = 0.003, engine location = 13
+Topic 10 : words matches = 0.000, engine_prob = 0.003, engine location = 6
+Topic 11 : words matches = 0.000, engine_prob = 0.003, engine location = 4
+Topic 12 : words matches = 0.000, engine_prob = 0.003, engine location = 0
+Topic 13 : words matches = 0.000, engine_prob = 0.003, engine location = 10
+Topic 14 : words matches = 0.006, engine_prob = 0.003, engine location = 0
+
+35) Candidate 11843567:
+Topic 0 : words matches = 0.018, engine_prob = 0.004, engine location = 2
+Topic 1 : words matches = 0.024, engine_prob = 0.004, engine location = 11
+Topic 2 : words matches = 0.000, engine_prob = 0.004, engine location = 5
+Topic 3 : words matches = 0.000, engine_prob = 0.004, engine location = 0
+Topic 4 : words matches = 0.000, engine_prob = 0.004, engine location = 2
+Topic 5 : words matches = 0.073, engine_prob = 0.951, engine location = 14
+Topic 6 : words matches = 0.016, engine_prob = 0.004, engine location = 2
+Topic 7 : words matches = 0.024, engine_prob = 0.004, engine location = 7
+Topic 8 : words matches = 0.031, engine_prob = 0.004, engine location = 13
+Topic 9 : words matches = 0.026, engine_prob = 0.004, engine location = 9
+Topic 10 : words matches = 0.000, engine_prob = 0.004, engine location = 6
+Topic 11 : words matches = 0.048, engine_prob = 0.004, engine location = 8
+Topic 12 : words matches = 0.043, engine_prob = 0.004, engine location = 9
+Topic 13 : words matches = 0.013, engine_prob = 0.004, engine location = 11
+Topic 14 : words matches = 0.000, engine_prob = 0.004, engine location = 0
+
+36) Candidate 11843642:
+Topic 0 : words matches = 0.010, engine_prob = 0.002, engine location = 5
+Topic 1 : words matches = 0.042, engine_prob = 0.002, engine location = 7
+Topic 2 : words matches = 0.071, engine_prob = 0.002, engine location = 12
+Topic 3 : words matches = 0.000, engine_prob = 0.002, engine location = 0
+Topic 4 : words matches = 0.000, engine_prob = 0.002, engine location = 0
+Topic 5 : words matches = 0.086, engine_prob = 0.002, engine location = 10
+Topic 6 : words matches = 0.008, engine_prob = 0.002, engine location = 4
+Topic 7 : words matches = 0.072, engine_prob = 0.002, engine location = 13
+Topic 8 : words matches = 0.084, engine_prob = 0.002, engine location = 9
+Topic 9 : words matches = 0.000, engine_prob = 0.002, engine location = 5
+Topic 10 : words matches = 0.000, engine_prob = 0.002, engine location = 3
+Topic 11 : words matches = 0.060, engine_prob = 0.002, engine location = 8
+Topic 12 : words matches = 0.075, engine_prob = 0.002, engine location = 11
+Topic 13 : words matches = 0.150, engine_prob = 0.968, engine location = 14
+Topic 14 : words matches = 0.000, engine_prob = 0.002, engine location = 0
+
+37) Candidate 11843694:
+Topic 0 : words matches = 0.018, engine_prob = 0.003, engine location = 10
+Topic 1 : words matches = 0.000, engine_prob = 0.003, engine location = 2
+Topic 2 : words matches = 0.000, engine_prob = 0.003, engine location = 8
+Topic 3 : words matches = 0.000, engine_prob = 0.003, engine location = 0
+Topic 4 : words matches = 0.000, engine_prob = 0.003, engine location = 2
+Topic 5 : words matches = 0.132, engine_prob = 0.959, engine location = 14
+Topic 6 : words matches = 0.064, engine_prob = 0.003, engine location = 13
+Topic 7 : words matches = 0.054, engine_prob = 0.003, engine location = 10
+Topic 8 : words matches = 0.011, engine_prob = 0.003, engine location = 4
+Topic 9 : words matches = 0.013, engine_prob = 0.003, engine location = 5
+Topic 10 : words matches = 0.017, engine_prob = 0.003, engine location = 5
+Topic 11 : words matches = 0.012, engine_prob = 0.003, engine location = 5
+Topic 12 : words matches = 0.053, engine_prob = 0.003, engine location = 8
+Topic 13 : words matches = 0.033, engine_prob = 0.003, engine location = 12
+Topic 14 : words matches = 0.000, engine_prob = 0.003, engine location = 0
+
+38) Candidate 11843713:
+Topic 0 : words matches = 0.000, engine_prob = 0.003, engine location = 2
+Topic 1 : words matches = 0.048, engine_prob = 0.003, engine location = 9
+Topic 2 : words matches = 0.177, engine_prob = 0.959, engine location = 14
+Topic 3 : words matches = 0.045, engine_prob = 0.003, engine location = 2
+Topic 4 : words matches = 0.017, engine_prob = 0.003, engine location = 4
+Topic 5 : words matches = 0.086, engine_prob = 0.003, engine location = 11
+Topic 6 : words matches = 0.024, engine_prob = 0.003, engine location = 6
+Topic 7 : words matches = 0.036, engine_prob = 0.003, engine location = 5
+Topic 8 : words matches = 0.052, engine_prob = 0.003, engine location = 13
+Topic 9 : words matches = 0.013, engine_prob = 0.003, engine location = 8
+Topic 10 : words matches = 0.027, engine_prob = 0.003, engine location = 1
+Topic 11 : words matches = 0.036, engine_prob = 0.003, engine location = 12
+Topic 12 : words matches = 0.022, engine_prob = 0.003, engine location = 7
+Topic 13 : words matches = 0.065, engine_prob = 0.003, engine location = 10
+Topic 14 : words matches = 0.000, engine_prob = 0.003, engine location = 0
+
+39) Candidate 11843836:
+Topic 0 : words matches = 0.000, engine_prob = 0.003, engine location = 0
+Topic 1 : words matches = 0.036, engine_prob = 0.961, engine location = 14
+Topic 2 : words matches = 0.025, engine_prob = 0.003, engine location = 9
+Topic 3 : words matches = 0.031, engine_prob = 0.003, engine location = 13
+Topic 4 : words matches = 0.000, engine_prob = 0.003, engine location = 9
+Topic 5 : words matches = 0.000, engine_prob = 0.003, engine location = 6
+Topic 6 : words matches = 0.000, engine_prob = 0.003, engine location = 3
+Topic 7 : words matches = 0.012, engine_prob = 0.003, engine location = 3
+Topic 8 : words matches = 0.000, engine_prob = 0.003, engine location = 9
+Topic 9 : words matches = 0.000, engine_prob = 0.003, engine location = 9
+Topic 10 : words matches = 0.000, engine_prob = 0.003, engine location = 3
+Topic 11 : words matches = 0.000, engine_prob = 0.003, engine location = 0
+Topic 12 : words matches = 0.000, engine_prob = 0.003, engine location = 8
+Topic 13 : words matches = 0.013, engine_prob = 0.003, engine location = 6
+Topic 14 : words matches = 0.002, engine_prob = 0.003, engine location = 0
+
+40) Candidate 11844461:
+Topic 0 : words matches = 0.036, engine_prob = 0.007, engine location = 11
+Topic 1 : words matches = 0.012, engine_prob = 0.007, engine location = 6
+Topic 2 : words matches = 0.000, engine_prob = 0.007, engine location = 3
+Topic 3 : words matches = 0.000, engine_prob = 0.007, engine location = 0
+Topic 4 : words matches = 0.017, engine_prob = 0.007, engine location = 2
+Topic 5 : words matches = 0.020, engine_prob = 0.007, engine location = 13
+Topic 6 : words matches = 0.000, engine_prob = 0.007, engine location = 3
+Topic 7 : words matches = 0.030, engine_prob = 0.007, engine location = 6
+Topic 8 : words matches = 0.031, engine_prob = 0.007, engine location = 8
+Topic 9 : words matches = 0.057, engine_prob = 0.896, engine location = 14
+Topic 10 : words matches = 0.000, engine_prob = 0.007, engine location = 3
+Topic 11 : words matches = 0.072, engine_prob = 0.007, engine location = 12
+Topic 12 : words matches = 0.032, engine_prob = 0.007, engine location = 8
+Topic 13 : words matches = 0.026, engine_prob = 0.007, engine location = 10
+Topic 14 : words matches = 0.000, engine_prob = 0.007, engine location = 0
+
+41) Candidate 11844527:
+Topic 0 : words matches = 0.018, engine_prob = 0.002, engine location = 9
+Topic 1 : words matches = 0.012, engine_prob = 0.002, engine location = 6
+Topic 2 : words matches = 0.000, engine_prob = 0.002, engine location = 3
+Topic 3 : words matches = 0.016, engine_prob = 0.002, engine location = 1
+Topic 4 : words matches = 0.032, engine_prob = 0.002, engine location = 3
+Topic 5 : words matches = 0.000, engine_prob = 0.002, engine location = 3
+Topic 6 : words matches = 0.016, engine_prob = 0.002, engine location = 6
+Topic 7 : words matches = 0.000, engine_prob = 0.002, engine location = 9
+Topic 8 : words matches = 0.031, engine_prob = 0.002, engine location = 11
+Topic 9 : words matches = 0.019, engine_prob = 0.002, engine location = 12
+Topic 10 : words matches = 0.102, engine_prob = 0.969, engine location = 14
+Topic 11 : words matches = 0.024, engine_prob = 0.002, engine location = 6
+Topic 12 : words matches = 0.000, engine_prob = 0.002, engine location = 1
+Topic 13 : words matches = 0.026, engine_prob = 0.002, engine location = 12
+Topic 14 : words matches = 0.002, engine_prob = 0.002, engine location = 0
+
+42) Candidate 11844584:
+Topic 0 : words matches = 0.000, engine_prob = 0.003, engine location = 5
+Topic 1 : words matches = 0.084, engine_prob = 0.959, engine location = 14
+Topic 2 : words matches = 0.020, engine_prob = 0.003, engine location = 6
+Topic 3 : words matches = 0.000, engine_prob = 0.003, engine location = 0
+Topic 4 : words matches = 0.000, engine_prob = 0.003, engine location = 2
+Topic 5 : words matches = 0.033, engine_prob = 0.003, engine location = 13
+Topic 6 : words matches = 0.000, engine_prob = 0.003, engine location = 2
+Topic 7 : words matches = 0.048, engine_prob = 0.003, engine location = 11
+Topic 8 : words matches = 0.042, engine_prob = 0.003, engine location = 8
+Topic 9 : words matches = 0.025, engine_prob = 0.003, engine location = 10
+Topic 10 : words matches = 0.000, engine_prob = 0.003, engine location = 2
+Topic 11 : words matches = 0.024, engine_prob = 0.003, engine location = 6
+Topic 12 : words matches = 0.032, engine_prob = 0.003, engine location = 8
+Topic 13 : words matches = 0.059, engine_prob = 0.003, engine location = 12
+Topic 14 : words matches = 0.002, engine_prob = 0.003, engine location = 0
+
+43) Candidate 11844628:
+Topic 0 : words matches = 0.027, engine_prob = 0.002, engine location = 4
+Topic 1 : words matches = 0.036, engine_prob = 0.002, engine location = 7
+Topic 2 : words matches = 0.015, engine_prob = 0.002, engine location = 10
+Topic 3 : words matches = 0.000, engine_prob = 0.002, engine location = 1
+Topic 4 : words matches = 0.049, engine_prob = 0.002, engine location = 7
+Topic 5 : words matches = 0.020, engine_prob = 0.002, engine location = 12
+Topic 6 : words matches = 0.008, engine_prob = 0.002, engine location = 2
+Topic 7 : words matches = 0.030, engine_prob = 0.002, engine location = 12
+Topic 8 : words matches = 0.188, engine_prob = 0.967, engine location = 14
+Topic 9 : words matches = 0.000, engine_prob = 0.002, engine location = 7
+Topic 10 : words matches = 0.000, engine_prob = 0.002, engine location = 4
+Topic 11 : words matches = 0.072, engine_prob = 0.002, engine location = 3
+Topic 12 : words matches = 0.053, engine_prob = 0.002, engine location = 11
+Topic 13 : words matches = 0.039, engine_prob = 0.002, engine location = 4
+Topic 14 : words matches = 0.002, engine_prob = 0.002, engine location = 0
+
+44) Candidate 11844653:
+Topic 0 : words matches = 0.010, engine_prob = 0.002, engine location = 8
+Topic 1 : words matches = 0.036, engine_prob = 0.002, engine location = 13
+Topic 2 : words matches = 0.081, engine_prob = 0.968, engine location = 14
+Topic 3 : words matches = 0.000, engine_prob = 0.002, engine location = 0
+Topic 4 : words matches = 0.000, engine_prob = 0.002, engine location = 0
+Topic 5 : words matches = 0.000, engine_prob = 0.002, engine location = 3
+Topic 6 : words matches = 0.000, engine_prob = 0.002, engine location = 4
+Topic 7 : words matches = 0.000, engine_prob = 0.002, engine location = 8
+Topic 8 : words matches = 0.000, engine_prob = 0.002, engine location = 8
+Topic 9 : words matches = 0.000, engine_prob = 0.002, engine location = 11
+Topic 10 : words matches = 0.009, engine_prob = 0.002, engine location = 5
+Topic 11 : words matches = 0.000, engine_prob = 0.002, engine location = 7
+Topic 12 : words matches = 0.033, engine_prob = 0.002, engine location = 5
+Topic 13 : words matches = 0.052, engine_prob = 0.002, engine location = 12
+Topic 14 : words matches = 0.000, engine_prob = 0.002, engine location = 0
+
+45) Candidate 11844719:
+Topic 0 : words matches = 0.000, engine_prob = 0.003, engine location = 1
+Topic 1 : words matches = 0.000, engine_prob = 0.003, engine location = 4
+Topic 2 : words matches = 0.015, engine_prob = 0.003, engine location = 8
+Topic 3 : words matches = 0.045, engine_prob = 0.003, engine location = 13
+Topic 4 : words matches = 0.000, engine_prob = 0.003, engine location = 2
+Topic 5 : words matches = 0.020, engine_prob = 0.003, engine location = 8
+Topic 6 : words matches = 0.032, engine_prob = 0.958, engine location = 14
+Topic 7 : words matches = 0.000, engine_prob = 0.003, engine location = 2
+Topic 8 : words matches = 0.011, engine_prob = 0.003, engine location = 4
+Topic 9 : words matches = 0.019, engine_prob = 0.003, engine location = 12
+Topic 10 : words matches = 0.000, engine_prob = 0.003, engine location = 8
+Topic 11 : words matches = 0.000, engine_prob = 0.003, engine location = 7
+Topic 12 : words matches = 0.000, engine_prob = 0.003, engine location = 4
+Topic 13 : words matches = 0.020, engine_prob = 0.003, engine location = 11
+Topic 14 : words matches = 0.002, engine_prob = 0.003, engine location = 0
+
+46) Candidate 11844801:
+Topic 0 : words matches = 0.036, engine_prob = 0.003, engine location = 9
+Topic 1 : words matches = 0.000, engine_prob = 0.003, engine location = 2
+Topic 2 : words matches = 0.025, engine_prob = 0.003, engine location = 9
+Topic 3 : words matches = 0.000, engine_prob = 0.003, engine location = 2
+Topic 4 : words matches = 0.000, engine_prob = 0.003, engine location = 2
+Topic 5 : words matches = 0.106, engine_prob = 0.003, engine location = 13
+Topic 6 : words matches = 0.016, engine_prob = 0.003, engine location = 8
+Topic 7 : words matches = 0.060, engine_prob = 0.003, engine location = 11
+Topic 8 : words matches = 0.000, engine_prob = 0.003, engine location = 1
+Topic 9 : words matches = 0.026, engine_prob = 0.003, engine location = 6
+Topic 10 : words matches = 0.034, engine_prob = 0.003, engine location = 12
+Topic 11 : words matches = 0.024, engine_prob = 0.003, engine location = 5
+Topic 12 : words matches = 0.043, engine_prob = 0.003, engine location = 6
+Topic 13 : words matches = 0.065, engine_prob = 0.963, engine location = 14
+Topic 14 : words matches = 0.000, engine_prob = 0.003, engine location = 0
+
+47) Candidate 11844995:
+Topic 0 : words matches = 0.018, engine_prob = 0.003, engine location = 10
+Topic 1 : words matches = 0.000, engine_prob = 0.003, engine location = 2
+Topic 2 : words matches = 0.030, engine_prob = 0.003, engine location = 10
+Topic 3 : words matches = 0.000, engine_prob = 0.003, engine location = 0
+Topic 4 : words matches = 0.032, engine_prob = 0.003, engine location = 9
+Topic 5 : words matches = 0.033, engine_prob = 0.003, engine location = 12
+Topic 6 : words matches = 0.000, engine_prob = 0.003, engine location = 6
+Topic 7 : words matches = 0.012, engine_prob = 0.003, engine location = 8
+Topic 8 : words matches = 0.000, engine_prob = 0.003, engine location = 2
+Topic 9 : words matches = 0.032, engine_prob = 0.003, engine location = 13
+Topic 10 : words matches = 0.017, engine_prob = 0.003, engine location = 6
+Topic 11 : words matches = 0.024, engine_prob = 0.003, engine location = 2
+Topic 12 : words matches = 0.032, engine_prob = 0.003, engine location = 5
+Topic 13 : words matches = 0.039, engine_prob = 0.963, engine location = 14
+Topic 14 : words matches = 0.000, engine_prob = 0.003, engine location = 0
+
+48) Candidate 11845190:
+Topic 0 : words matches = 0.018, engine_prob = 0.003, engine location = 2
+Topic 1 : words matches = 0.012, engine_prob = 0.003, engine location = 11
+Topic 2 : words matches = 0.050, engine_prob = 0.003, engine location = 13
+Topic 3 : words matches = 0.000, engine_prob = 0.003, engine location = 2
+Topic 4 : words matches = 0.017, engine_prob = 0.003, engine location = 1
+Topic 5 : words matches = 0.020, engine_prob = 0.003, engine location = 9
+Topic 6 : words matches = 0.016, engine_prob = 0.003, engine location = 2
+Topic 7 : words matches = 0.018, engine_prob = 0.003, engine location = 8
+Topic 8 : words matches = 0.000, engine_prob = 0.003, engine location = 5
+Topic 9 : words matches = 0.019, engine_prob = 0.963, engine location = 14
+Topic 10 : words matches = 0.009, engine_prob = 0.003, engine location = 5
+Topic 11 : words matches = 0.036, engine_prob = 0.003, engine location = 5
+Topic 12 : words matches = 0.053, engine_prob = 0.003, engine location = 12
+Topic 13 : words matches = 0.039, engine_prob = 0.003, engine location = 9
+Topic 14 : words matches = 0.000, engine_prob = 0.003, engine location = 0
+
+49) Candidate 11845193:
+Topic 0 : words matches = 0.038, engine_prob = 0.002, engine location = 5
+Topic 1 : words matches = 0.078, engine_prob = 0.970, engine location = 14
+Topic 2 : words matches = 0.035, engine_prob = 0.002, engine location = 12
+Topic 3 : words matches = 0.000, engine_prob = 0.002, engine location = 0
+Topic 4 : words matches = 0.000, engine_prob = 0.002, engine location = 0
+Topic 5 : words matches = 0.020, engine_prob = 0.002, engine location = 6
+Topic 6 : words matches = 0.008, engine_prob = 0.002, engine location = 3
+Topic 7 : words matches = 0.012, engine_prob = 0.002, engine location = 6
+Topic 8 : words matches = 0.031, engine_prob = 0.002, engine location = 6
+Topic 9 : words matches = 0.013, engine_prob = 0.002, engine location = 6
+Topic 10 : words matches = 0.018, engine_prob = 0.002, engine location = 3
+Topic 11 : words matches = 0.048, engine_prob = 0.002, engine location = 11
+Topic 12 : words matches = 0.064, engine_prob = 0.002, engine location = 13
+Topic 13 : words matches = 0.013, engine_prob = 0.002, engine location = 6
+Topic 14 : words matches = 0.000, engine_prob = 0.002, engine location = 0
+
+50) Candidate 11845311:
+Topic 0 : words matches = 0.028, engine_prob = 0.004, engine location = 11
+Topic 1 : words matches = 0.030, engine_prob = 0.004, engine location = 7
+Topic 2 : words matches = 0.000, engine_prob = 0.004, engine location = 7
+Topic 3 : words matches = 0.000, engine_prob = 0.004, engine location = 3
+Topic 4 : words matches = 0.000, engine_prob = 0.004, engine location = 5
+Topic 5 : words matches = 0.046, engine_prob = 0.004, engine location = 13
+Topic 6 : words matches = 0.000, engine_prob = 0.004, engine location = 7
+Topic 7 : words matches = 0.060, engine_prob = 0.938, engine location = 14
+Topic 8 : words matches = 0.000, engine_prob = 0.004, engine location = 6
+Topic 9 : words matches = 0.000, engine_prob = 0.004, engine location = 4
+Topic 10 : words matches = 0.000, engine_prob = 0.004, engine location = 1
+Topic 11 : words matches = 0.000, engine_prob = 0.004, engine location = 7
+Topic 12 : words matches = 0.000, engine_prob = 0.004, engine location = 1
+Topic 13 : words matches = 0.000, engine_prob = 0.004, engine location = 12
+Topic 14 : words matches = 0.000, engine_prob = 0.004, engine location = 0
+
+51) Candidate 11845425:
+Topic 0 : words matches = 0.018, engine_prob = 0.005, engine location = 8
+Topic 1 : words matches = 0.000, engine_prob = 0.005, engine location = 3
+Topic 2 : words matches = 0.015, engine_prob = 0.005, engine location = 11
+Topic 3 : words matches = 0.031, engine_prob = 0.005, engine location = 13
+Topic 4 : words matches = 0.017, engine_prob = 0.005, engine location = 8
+Topic 5 : words matches = 0.020, engine_prob = 0.005, engine location = 6
+Topic 6 : words matches = 0.024, engine_prob = 0.005, engine location = 12
+Topic 7 : words matches = 0.018, engine_prob = 0.005, engine location = 6
+Topic 8 : words matches = 0.000, engine_prob = 0.005, engine location = 2
+Topic 9 : words matches = 0.038, engine_prob = 0.928, engine location = 14
+Topic 10 : words matches = 0.000, engine_prob = 0.005, engine location = 0
+Topic 11 : words matches = 0.000, engine_prob = 0.005, engine location = 5
+Topic 12 : words matches = 0.000, engine_prob = 0.005, engine location = 10
+Topic 13 : words matches = 0.013, engine_prob = 0.005, engine location = 3
+Topic 14 : words matches = 0.000, engine_prob = 0.005, engine location = 0
+
+52) Candidate 11845711:
+Topic 0 : words matches = 0.018, engine_prob = 0.010, engine location = 10
+Topic 1 : words matches = 0.000, engine_prob = 0.010, engine location = 0
+Topic 2 : words matches = 0.000, engine_prob = 0.010, engine location = 7
+Topic 3 : words matches = 0.000, engine_prob = 0.010, engine location = 0
+Topic 4 : words matches = 0.051, engine_prob = 0.010, engine location = 13
+Topic 5 : words matches = 0.000, engine_prob = 0.010, engine location = 0
+Topic 6 : words matches = 0.000, engine_prob = 0.010, engine location = 5
+Topic 7 : words matches = 0.000, engine_prob = 0.010, engine location = 9
+Topic 8 : words matches = 0.021, engine_prob = 0.010, engine location = 12
+Topic 9 : words matches = 0.000, engine_prob = 0.010, engine location = 4
+Topic 10 : words matches = 0.000, engine_prob = 0.010, engine location = 10
+Topic 11 : words matches = 0.036, engine_prob = 0.867, engine location = 14
+Topic 12 : words matches = 0.000, engine_prob = 0.010, engine location = 7
+Topic 13 : words matches = 0.000, engine_prob = 0.010, engine location = 5
+Topic 14 : words matches = 0.000, engine_prob = 0.010, engine location = 0
+
+53) Candidate 11845816:
+Topic 0 : words matches = 0.010, engine_prob = 0.007, engine location = 7
+Topic 1 : words matches = 0.000, engine_prob = 0.007, engine location = 4
+Topic 2 : words matches = 0.000, engine_prob = 0.007, engine location = 9
+Topic 3 : words matches = 0.000, engine_prob = 0.007, engine location = 0
+Topic 4 : words matches = 0.000, engine_prob = 0.007, engine location = 5
+Topic 5 : words matches = 0.020, engine_prob = 0.007, engine location = 8
+Topic 6 : words matches = 0.016, engine_prob = 0.007, engine location = 11
+Topic 7 : words matches = 0.000, engine_prob = 0.007, engine location = 5
+Topic 8 : words matches = 0.000, engine_prob = 0.007, engine location = 0
+Topic 9 : words matches = 0.032, engine_prob = 0.896, engine location = 14
+Topic 10 : words matches = 0.000, engine_prob = 0.007, engine location = 0
+Topic 11 : words matches = 0.000, engine_prob = 0.007, engine location = 12
+Topic 12 : words matches = 0.000, engine_prob = 0.007, engine location = 13
+Topic 13 : words matches = 0.000, engine_prob = 0.007, engine location = 10
+Topic 14 : words matches = 0.000, engine_prob = 0.007, engine location = 0
+
+54) Candidate 11845926:
+Topic 0 : words matches = 0.018, engine_prob = 0.003, engine location = 8
+Topic 1 : words matches = 0.000, engine_prob = 0.003, engine location = 1
+Topic 2 : words matches = 0.000, engine_prob = 0.003, engine location = 4
+Topic 3 : words matches = 0.032, engine_prob = 0.003, engine location = 9
+Topic 4 : words matches = 0.032, engine_prob = 0.003, engine location = 5
+Topic 5 : words matches = 0.000, engine_prob = 0.003, engine location = 9
+Topic 6 : words matches = 0.080, engine_prob = 0.953, engine location = 14
+Topic 7 : words matches = 0.012, engine_prob = 0.003, engine location = 9
+Topic 8 : words matches = 0.000, engine_prob = 0.003, engine location = 1
+Topic 9 : words matches = 0.000, engine_prob = 0.003, engine location = 5
+Topic 10 : words matches = 0.034, engine_prob = 0.003, engine location = 12
+Topic 11 : words matches = 0.000, engine_prob = 0.003, engine location = 5
+Topic 12 : words matches = 0.000, engine_prob = 0.003, engine location = 1
+Topic 13 : words matches = 0.000, engine_prob = 0.003, engine location = 12
+Topic 14 : words matches = 0.000, engine_prob = 0.003, engine location = 0
+
+55) Candidate 11846286:
+Topic 0 : words matches = 0.000, engine_prob = 0.003, engine location = 2
+Topic 1 : words matches = 0.024, engine_prob = 0.003, engine location = 7
+Topic 2 : words matches = 0.010, engine_prob = 0.003, engine location = 4
+Topic 3 : words matches = 0.000, engine_prob = 0.003, engine location = 0
+Topic 4 : words matches = 0.000, engine_prob = 0.003, engine location = 3
+Topic 5 : words matches = 0.106, engine_prob = 0.003, engine location = 13
+Topic 6 : words matches = 0.024, engine_prob = 0.003, engine location = 6
+Topic 7 : words matches = 0.077, engine_prob = 0.003, engine location = 12
+Topic 8 : words matches = 0.031, engine_prob = 0.003, engine location = 10
+Topic 9 : words matches = 0.013, engine_prob = 0.003, engine location = 8
+Topic 10 : words matches = 0.000, engine_prob = 0.003, engine location = 4
+Topic 11 : words matches = 0.036, engine_prob = 0.003, engine location = 8
+Topic 12 : words matches = 0.085, engine_prob = 0.956, engine location = 14
+Topic 13 : words matches = 0.039, engine_prob = 0.003, engine location = 11
+Topic 14 : words matches = 0.000, engine_prob = 0.003, engine location = 0
+
+56) Candidate 11846316:
+Topic 0 : words matches = 0.000, engine_prob = 0.005, engine location = 6
+Topic 1 : words matches = 0.000, engine_prob = 0.005, engine location = 3
+Topic 2 : words matches = 0.020, engine_prob = 0.928, engine location = 14
+Topic 3 : words matches = 0.016, engine_prob = 0.005, engine location = 9
+Topic 4 : words matches = 0.017, engine_prob = 0.005, engine location = 3
+Topic 5 : words matches = 0.026, engine_prob = 0.005, engine location = 11
+Topic 6 : words matches = 0.008, engine_prob = 0.005, engine location = 10
+Topic 7 : words matches = 0.036, engine_prob = 0.005, engine location = 13
+Topic 8 : words matches = 0.000, engine_prob = 0.005, engine location = 0
+Topic 9 : words matches = 0.000, engine_prob = 0.005, engine location = 5
+Topic 10 : words matches = 0.026, engine_prob = 0.005, engine location = 12
+Topic 11 : words matches = 0.000, engine_prob = 0.005, engine location = 7
+Topic 12 : words matches = 0.000, engine_prob = 0.005, engine location = 2
+Topic 13 : words matches = 0.000, engine_prob = 0.005, engine location = 7
+Topic 14 : words matches = 0.000, engine_prob = 0.005, engine location = 0
+
+57) Candidate 11846341:
+Topic 0 : words matches = 0.000, engine_prob = 0.004, engine location = 6
+Topic 1 : words matches = 0.000, engine_prob = 0.004, engine location = 5
+Topic 2 : words matches = 0.000, engine_prob = 0.004, engine location = 0
+Topic 3 : words matches = 0.000, engine_prob = 0.004, engine location = 0
+Topic 4 : words matches = 0.049, engine_prob = 0.004, engine location = 12
+Topic 5 : words matches = 0.000, engine_prob = 0.004, engine location = 11
+Topic 6 : words matches = 0.000, engine_prob = 0.004, engine location = 8
+Topic 7 : words matches = 0.000, engine_prob = 0.004, engine location = 8
+Topic 8 : words matches = 0.011, engine_prob = 0.004, engine location = 7
+Topic 9 : words matches = 0.000, engine_prob = 0.004, engine location = 8
+Topic 10 : words matches = 0.126, engine_prob = 0.945, engine location = 14
+Topic 11 : words matches = 0.000, engine_prob = 0.004, engine location = 0
+Topic 12 : words matches = 0.000, engine_prob = 0.004, engine location = 0
+Topic 13 : words matches = 0.033, engine_prob = 0.004, engine location = 13
+Topic 14 : words matches = 0.000, engine_prob = 0.004, engine location = 0
+
+58) Candidate 11846439:
+Topic 0 : words matches = 0.000, engine_prob = 0.003, engine location = 3
+Topic 1 : words matches = 0.030, engine_prob = 0.003, engine location = 12
+Topic 2 : words matches = 0.010, engine_prob = 0.003, engine location = 3
+Topic 3 : words matches = 0.000, engine_prob = 0.003, engine location = 0
+Topic 4 : words matches = 0.000, engine_prob = 0.003, engine location = 0
+Topic 5 : words matches = 0.073, engine_prob = 0.964, engine location = 14
+Topic 6 : words matches = 0.000, engine_prob = 0.003, engine location = 7
+Topic 7 : words matches = 0.048, engine_prob = 0.003, engine location = 13
+Topic 8 : words matches = 0.011, engine_prob = 0.003, engine location = 7
+Topic 9 : words matches = 0.025, engine_prob = 0.003, engine location = 11
+Topic 10 : words matches = 0.000, engine_prob = 0.003, engine location = 3
+Topic 11 : words matches = 0.000, engine_prob = 0.003, engine location = 3
+Topic 12 : words matches = 0.011, engine_prob = 0.003, engine location = 7
+Topic 13 : words matches = 0.046, engine_prob = 0.003, engine location = 10
+Topic 14 : words matches = 0.000, engine_prob = 0.003, engine location = 0
+
+59) Candidate 11846480:
+Topic 0 : words matches = 0.000, engine_prob = 0.002, engine location = 4
+Topic 1 : words matches = 0.000, engine_prob = 0.002, engine location = 2
+Topic 2 : words matches = 0.000, engine_prob = 0.002, engine location = 5
+Topic 3 : words matches = 0.016, engine_prob = 0.002, engine location = 2
+Topic 4 : words matches = 0.032, engine_prob = 0.002, engine location = 7
+Topic 5 : words matches = 0.053, engine_prob = 0.002, engine location = 13
+Topic 6 : words matches = 0.032, engine_prob = 0.002, engine location = 5
+Topic 7 : words matches = 0.224, engine_prob = 0.965, engine location = 14
+Topic 8 : words matches = 0.043, engine_prob = 0.002, engine location = 11
+Topic 9 : words matches = 0.050, engine_prob = 0.002, engine location = 12
+Topic 10 : words matches = 0.017, engine_prob = 0.002, engine location = 9
+Topic 11 : words matches = 0.024, engine_prob = 0.002, engine location = 1
+Topic 12 : words matches = 0.106, engine_prob = 0.002, engine location = 10
+Topic 13 : words matches = 0.026, engine_prob = 0.002, engine location = 7
+Topic 14 : words matches = 0.000, engine_prob = 0.002, engine location = 0
+
+60) Candidate 11846627:
+Topic 0 : words matches = 0.036, engine_prob = 0.002, engine location = 11
+Topic 1 : words matches = 0.024, engine_prob = 0.002, engine location = 7
+Topic 2 : words matches = 0.035, engine_prob = 0.973, engine location = 14
+Topic 3 : words matches = 0.000, engine_prob = 0.002, engine location = 2
+Topic 4 : words matches = 0.000, engine_prob = 0.002, engine location = 2
+Topic 5 : words matches = 0.066, engine_prob = 0.002, engine location = 13
+Topic 6 : words matches = 0.032, engine_prob = 0.002, engine location = 11
+Topic 7 : words matches = 0.030, engine_prob = 0.002, engine location = 10
+Topic 8 : words matches = 0.042, engine_prob = 0.002, engine location = 8
+Topic 9 : words matches = 0.013, engine_prob = 0.002, engine location = 9
+Topic 10 : words matches = 0.000, engine_prob = 0.002, engine location = 4
+Topic 11 : words matches = 0.012, engine_prob = 0.002, engine location = 1
+Topic 12 : words matches = 0.053, engine_prob = 0.002, engine location = 6
+Topic 13 : words matches = 0.013, engine_prob = 0.002, engine location = 5
+Topic 14 : words matches = 0.000, engine_prob = 0.002, engine location = 0
+
+61) Candidate 11846665:
+Topic 0 : words matches = 0.000, engine_prob = 0.004, engine location = 10
+Topic 1 : words matches = 0.000, engine_prob = 0.004, engine location = 8
+Topic 2 : words matches = 0.000, engine_prob = 0.004, engine location = 13
+Topic 3 : words matches = 0.000, engine_prob = 0.004, engine location = 3
+Topic 4 : words matches = 0.000, engine_prob = 0.004, engine location = 0
+Topic 5 : words matches = 0.000, engine_prob = 0.004, engine location = 2
+Topic 6 : words matches = 0.016, engine_prob = 0.004, engine location = 10
+Topic 7 : words matches = 0.000, engine_prob = 0.004, engine location = 5
+Topic 8 : words matches = 0.032, engine_prob = 0.004, engine location = 12
+Topic 9 : words matches = 0.000, engine_prob = 0.004, engine location = 8
+Topic 10 : words matches = 0.000, engine_prob = 0.004, engine location = 3
+Topic 11 : words matches = 0.000, engine_prob = 0.004, engine location = 5
+Topic 12 : words matches = 0.000, engine_prob = 0.004, engine location = 5
+Topic 13 : words matches = 0.033, engine_prob = 0.951, engine location = 14
+Topic 14 : words matches = 0.000, engine_prob = 0.004, engine location = 0
+

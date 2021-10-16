@@ -1,8 +1,7 @@
 import datetime
 from xls_loader import get_cands_data
 from xls_loader import get_translated_text
-#from TopicModeling_IDF import valid_index
-from TopicModeling_IDF import get_cand
+from infra import get_cand
 from CandData import CandData
 from gensim_lda import gensim_lda_run
 from gensim_lda import gensim_load_model
@@ -11,20 +10,26 @@ from gensim_lda import gensim_apply_text_on_model2
 from gensim_lda import gensim_analyze_corpus
 from gensim_lda import dump_data_lemmatized
 from gensim_lda import get_data_lemmatized
+from gensim_lda import text2corpus
 from infra import convert_locations
 from infra import fill_zeros
 from xls_loader import is_empty_text
+from keras_lda import keras_lda_run
+import numpy as np
 
 MAX_LINE = 12120
-N = 10
+N = 15
 YEARS = [2015]
 NAMES = ["kkz0", "kkz1", "kkz2", "kkz3", "all"]
 DUMP_LOCATIONS = False
 DUMP_MY_MATCHES = True
+TOPIC_WORDS = 100
 id2matches = {}
 index2cand = {}
 sample1_index2cand = {}
 sample2_index2cand = {}
+G = "gensim"
+K = "keras"
 
 
 
@@ -62,159 +67,6 @@ def dump_big5():
 
     print("sum {}".format(c))
     f.close()
-
-
-def load_lda(fname):
-    model = gensim_load_model(fname)
-    topicsf = open("_gensim_loaded_{}.txt".format(fname), "w")
-    s = model.print_topics()
-    for topic in s:
-        topicsf.write("{}\n".format(topic))
-    topicsf.close()
-
-
-def create_word2prob_for_topic(topic_str):
-    words = {}
-    words_and_probs = topic_str[1].split(' + ')
-    for item in words_and_probs:
-        t = item.split('*')
-        words[t[1].strip('"')] = float(t[0])
-
-    return words
-
-
-def create_word2prob_dicts(model):
-    word2prob_dicts_list = []
-    s = model.print_topics(num_words=50)
-
-    for topic in s:
-        word2prob_dicts_list.append(create_word2prob_for_topic(topic))
-
-    return word2prob_dicts_list
-
-
-def calc_total_match(words, dict):
-    match = 0
-
-    for word in words:
-        if word in dict:
-            match = match + dict[word]
-
-    return match
-
-
-def dump_cand_matches(cand, cand_words, word2prob, f, topics_n, c_index, gensim_probs):
-    cand_matches = []
-    f.write("{}) Candidate {}:\n".format(c_index, cand.id))
-
-    prob_list = [prob[1] for prob in gensim_probs]
-    locations = convert_locations(prob_list)
-
-    i = 0
-    for w2p in word2prob:
-        p = gensim_probs[i]
-        match = calc_total_match(cand_words, w2p)
-        cand_matches.append(match)
-        f.write("Topic {} : words matches = {:.3f}, gensim_prob = {:.3f}, gensim location = {}\n".format(i, match, p[1], locations[p[0]]))
-        i = i + 1
-
-    f.write("\n")
-    return cand_matches
-
-
-def dump_matches(model, corpus, texts, otype, topics_n):
-    word2prob_list = create_word2prob_dicts(model)
-    lemmatized_text = get_data_lemmatized(texts)
-    fname = "_cands_matches_{}_{}_topics".format(NAMES[otype], topics_n)
-    f = open(fname, "w")
-
-    i = 0
-    for key in index2cand:
-        cand = index2cand[key]
-        if otype == 4 or cand.otype == otype:
-            probabilities = model.get_document_topics(corpus[i], minimum_probability=0.00001)
-            cand_matches = dump_cand_matches(cand, lemmatized_text[i], word2prob_list, f, topics_n, i, probabilities)
-            id2matches[cand.id] = cand_matches
-
-        i = i + 1
-
-    f.close()
-
-
-def dump_single_run_results(model, corpus, otype, topics_n):
-    header = "id,sex,year,"
-    for i in range(topics_n):
-        header = "{}t{},".format(header, i)
-    header = "{}A10,A30,MAX,KKZ,KKZT,Officer,DAPAR,TZADAK,MAVDAK1,MAVDAK2,REJECTED,EXCEL,GRADE,SOCIO_TIRONUT,SOCIO_PIKUD".format(header)
-
-    index = 0
-    fname = "_gensim_boys_{}_{}_topics_dist_loc.csv".format(NAMES[otype], topics_n)
-    f = open(fname, "w")
-    f.write("{}\n".format(header))
-
-    for key in index2cand:
-        cand = index2cand[key]
-        if otype == 4 or cand.otype == otype:
-            my_matches = id2matches[cand.id]
-            a10 = 0
-            a30 = 0
-            max = 0
-            f.write("{},{},{},".format(cand.id, cand.sex, cand.year))
-            probabilities = model.get_document_topics(corpus[index], minimum_probability=0.00001)
-            prob_list = [prob[1] for prob in probabilities]
-            locations = convert_locations(prob_list)
-            p_index = 0
-            for p in probabilities:
-                if DUMP_LOCATIONS:
-                    # f.write("{},".format(locations[p[0]]))
-                    #A hack to dump 1 if first and zero if not
-                    if locations[p[0]] == (topics_n - 1):
-                        f.write("1,")
-                    else:
-                        f.write("0,")
-                else:
-                    if DUMP_MY_MATCHES:
-                        f.write("{:.3f},".format(my_matches[p_index]))
-                    else:
-                        f.write("{:.5f},".format(p[1]))
-                p_index = p_index + 1
-
-                if p[1] >= 0.1:
-                    a10 = a10 + 1
-                if p[1] >= 0.3:
-                    a30 = a30 + 1
-                if p[1] > max:
-                    max = p[1]
-
-            if cand.otype == 0:
-                kkz = 0
-            else:
-                kkz = 1
-            f.write("{},{},{:.5f},{},{},{},{},{},{},{},{},{},{},{},{}\n".format(a10, a30, max, kkz, cand.otype, cand.officer,
-                                                                          cand.dapar, cand.tzadak, cand.mavdak1,
-                                                                          cand.mavdak2, cand.rejected, cand.excel,
-                                                                          cand.grade, cand.socio_t, cand.socio_p))
-            index = index + 1
-    f.close()
-
-
-def run_lda(texts, otype, to_dump, topics_n=N, backup_name=''):
-    size = len(texts)
-    print("Valid Candidates ({}): {}".format(NAMES[otype], size))
-    if size > 0:
-        model, corp = gensim_lda_run(texts, topics_n, backup_name)
-        topicsf = open("_gensim_{}_{}_topics.txt".format(NAMES[otype], topics_n), "w")
-        s = model.print_topics(num_words=50)
-        for topic in s:
-            topicsf.write("{}\n".format(topic))
-        topicsf.close()
-        dump_matches(model, corp, texts, otype, topics_n)
-        if to_dump:
-            dump_single_run_results(model, corp, otype, topics_n)
-
-        return model
-    else:
-        return None
 
 
 def dump_applied_results(d_lists, i2c, name_suf):
@@ -269,6 +121,237 @@ def apply_new_text_on_train_model(train_model, new_text, i2c, name_suf):
     #for v in vectors:
     #    dist_lists.append(fill_zeros(v, N))
     #dump_applied_results(dist_lists, i2c, name_suf)
+
+
+def load_lda(fname):
+    model = gensim_load_model(fname)
+    topicsf = open("_gensim_loaded_{}.txt".format(fname), "w")
+    s = model.print_topics()
+    for topic in s:
+        topicsf.write("{}\n".format(topic))
+    topicsf.close()
+
+
+def create_word2prob_for_topic(topic_str):
+    words = {}
+    words_and_probs = topic_str[1].split(' + ')
+    for item in words_and_probs:
+        t = item.split('*')
+        words[t[1].strip('"')] = float(t[0])
+
+    return words, topic_str[0]
+
+
+def create_word2prob_dicts(model):
+    word2prob_dicts_list = [[]] * N
+    s = model.print_topics(num_topics=N, num_words=TOPIC_WORDS)
+
+    for topic in s:
+        w2p, topic_i = create_word2prob_for_topic(topic)
+        word2prob_dicts_list[topic_i] = w2p
+
+    return word2prob_dicts_list
+
+
+def calc_total_match(words, dict):
+    match = 0
+    match_str = ""
+
+    for word in words:
+        if word in dict:
+            match = match + dict[word]
+            match_str = "{} {}*{} ".format(match_str, word, dict[word])
+
+    return match, match_str
+
+
+def dump_cand_matches(cand, cand_words, word2prob, f, calc_f, topics_n, c_index, gensim_probs):
+    cand_matches = []
+    f.write("{}) Candidate {}:\n".format(c_index, cand.id))
+    calc_f.write("{}) Candidate {}:\n".format(c_index, cand.id))
+
+    prob_list = [prob[1] for prob in gensim_probs]
+    locations = convert_locations(prob_list)
+
+    i = 0
+    for w2p in word2prob:
+        p = gensim_probs[i]
+        match, match_str = calc_total_match(cand_words, w2p)
+        calc_f.write("{}) [{:.3f}] - {}\n".format(i, match, match_str))
+        if i == 0:
+            zero_match = match
+        cand_matches.append(match)
+        f.write("Topic {} : words matches = {:.3f}, engine_prob = {:.3f}, engine location = {}\n".format(i, match, p[1], locations[p[0]]))
+        i = i + 1
+
+    f.write("\n")
+    zero_first = (zero_match == max(cand_matches))
+    if zero_first and cand.sex == 1:
+        print("{} - {}".format(cand.id, cand_words))
+    return cand_matches, zero_first
+
+
+def dump_matches(engine, model, corpus, texts, word2prob_list, otype, topics_n):
+    lemmatized_text = get_data_lemmatized(texts)
+    calc_f = open("_{}_match_calc_details.txt".format(engine), "w")
+    fname = "_{}_cands_matches_{}_{}_topics".format(engine, NAMES[otype], topics_n)
+    f = open(fname, "w")
+    fzl = []
+    mzl = []
+    males = [0, 0, 0, 0]
+    females = [0, 0, 0, 0]
+
+    i = 0
+    for key in index2cand:
+        cand = index2cand[key]
+        if otype == 4 or cand.otype == otype:
+            if cand.id == 11847784:
+                stop = True
+            probabilities = get_probabilities(engine, model, i, corpus)
+            print(cand.id)
+            print(probabilities)
+            cand_matches, zero_first = dump_cand_matches(cand, lemmatized_text[i], word2prob_list, f, calc_f, topics_n, i, probabilities)
+            id2matches[cand.id] = cand_matches
+            if zero_first:
+                if cand.sex == 0:
+                    fzl.append(cand.id)
+                    females[cand.otype] = females[cand.otype] + 1
+                else:
+                    mzl.append(cand.id)
+                    males[cand.otype] = males[cand.otype] + 1
+            i = i + 1
+
+    f_z = len(fzl)
+    total_z = f_z + len(mzl)
+    print("f%={} -  {}/{}".format(f_z/total_z, f_z, total_z))
+    print(males)
+    print(females)
+    print(fzl)
+    print(mzl)
+    calc_f.close()
+    f.close()
+
+
+def get_probabilities(engine, model, doc_index, corpus=None):
+    if engine == G:
+        return model.get_document_topics(corpus[doc_index], minimum_probability=0.00001)
+    else:
+        return list((i, prob) for i, prob in enumerate(model.doc_topic_[doc_index]))
+
+
+def dump_single_run_results(engine, model, corpus, otype, topics_n):
+    header = "id,sex,year,"
+    for i in range(topics_n):
+        header = "{}t{},".format(header, i)
+    header = "{}A10,A30,MAX,KKZ,KKZT,Officer,DAPAR,TZADAK,MAVDAK1,MAVDAK2,REJECTED,EXCEL,GRADE,SOCIO_TIRONUT,SOCIO_PIKUD".format(header)
+
+    fname = "_{}_{}_{}_topics_dist.csv".format(engine, NAMES[otype], topics_n)
+    f = open(fname, "w")
+    f.write("{}\n".format(header))
+
+    for i, key in enumerate(index2cand):
+        cand = index2cand[key]
+        if otype == 4 or cand.otype == otype:
+            # NOTICE: Assumes dump_matches was already called before
+            my_matches = id2matches[cand.id]
+            a10 = 0
+            a30 = 0
+            max = 0
+            f.write("{},{},{},".format(cand.id, cand.sex, cand.year))
+            probabilities = get_probabilities(engine, model, i, corpus)
+            #if engine == G:
+            #    probabilities = get_gensim_probabilities(model, corpus, index)
+            #else:
+            #    probabilities = get_keras_probabilities(model, index)
+            prob_list = [prob[1] for prob in probabilities]
+            locations = convert_locations(prob_list)
+            #locations = convert_locations(my_matches)
+            p_index = 0
+            for p in probabilities:
+                if DUMP_LOCATIONS:
+                    f.write("{},".format(locations[p[0]]))
+                    #A hack to dump 1 if first and zero if not
+                    #if locations[p[0]] == (topics_n - 1):
+                    #    f.write("1,")
+                    #else:
+                    #    f.write("0,")
+                else:
+                    if DUMP_MY_MATCHES:
+                        if p_index < len(my_matches):
+                            f.write("{:.3f},".format(my_matches[p_index]))
+                        else:
+                            print("index {} not found in my_matches".format(p_index))
+                    else:
+                        f.write("{:.5f},".format(p[1]))
+                p_index = p_index + 1
+
+                if p[1] >= 0.1:
+                    a10 = a10 + 1
+                if p[1] >= 0.3:
+                    a30 = a30 + 1
+                if p[1] > max:
+                    max = p[1]
+
+            if cand.otype == 0:
+                kkz = 0
+            else:
+                kkz = 1
+            f.write("{},{},{:.5f},{},{},{},{},{},{},{},{},{},{},{},{}\n".format(a10, a30, max, kkz, cand.otype, cand.officer,
+                                                                          cand.dapar, cand.tzadak, cand.mavdak1,
+                                                                          cand.mavdak2, cand.rejected, cand.excel,
+                                                                          cand.grade, cand.socio_t, cand.socio_p))
+    f.close()
+
+
+def run_gensim_engine(text, fname, topics_n):
+    model, corp = gensim_lda_run(text, topics_n)
+    topicsf = open(fname, "w")
+    s = model.print_topics(num_topics=N, num_words=TOPIC_WORDS)
+    for topic in s:
+        topicsf.write("{}\n".format(topic))
+    topicsf.close()
+    word2prob_list = create_word2prob_dicts(model)
+    return model, corp, word2prob_list
+
+
+def run_keras_engine(text, fname, topics_n):
+    word2prob_list = []
+
+    id2word, corpus = text2corpus(text)
+    model = keras_lda_run(corpus, id2word, topics_n)
+
+    topicsf = open(fname, "w")
+    topic_word = model.topic_word_  # model.components_ also works
+
+    for i, topic_dist in enumerate(topic_word):
+        d = {}
+        topic_words = np.array(list(id2word.token2id.keys()))[np.argsort(topic_dist)][:-(TOPIC_WORDS + 1):-1]
+        topic_str = '{}: '.format(i)
+        for word in topic_words:
+            prob = topic_dist[id2word.token2id[word]]
+            d[word] = round(prob, 3)
+            topic_str = "{}{:.3f}*{}, ".format(topic_str, prob, word)
+        word2prob_list.append(d)
+        topicsf.write(topic_str + '\n')
+    topicsf.close()
+    return model, corpus, word2prob_list
+
+
+def run_lda(engine, text, otype, to_dump, topics_n=N):
+    size = len(text)
+    print("Valid Candidates ({}): {}".format(NAMES[otype], size))
+    if size > 0:
+        fname = "_{}_{}_{}_topics.txt".format(engine, NAMES[otype], topics_n)
+        if engine == G:
+            model, corpus, word2prob_list = run_gensim_engine(text, fname, topics_n)
+        else:
+            model, corpus, word2prob_list = run_keras_engine(text, fname, topics_n)
+        dump_matches(engine, model, corpus, text, word2prob_list, otype, topics_n)
+        if to_dump:
+            dump_single_run_results(engine, model, corpus, otype, topics_n)
+        return model
+    else:
+        return None
 
 
 print(datetime.datetime.now())
@@ -341,10 +424,14 @@ for line in text:
             #   low.append(line)
     index = index + 1
 
+lem_text = get_data_lemmatized(entire_text)
+
 #for i in range(4):
-#    run_lda(lda_text[i], i, False, 14)
+#    run_lda(lda_text[i], i, True, N)
 #for topics in range(16, 26):
-run_lda(entire_text, 4, True, 15)
+#run_gensim(lem_text, 4, True, N)
+run_lda(K, lem_text, 4, True, N)
+#run_keras(lem_text, 4, N)
 #dump_data_lemmatized(entire_text, cand_ids, "_All_2015_lemmatized.txt")
 
 #gensim_analyze_corpus(entire_text, "_2020_adv_verb_word_count.txt")

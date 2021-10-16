@@ -67,7 +67,7 @@ def lemmatization(texts, allowed_postags=['NOUN', 'ADJ', 'VERB', 'ADV']):
     return texts_out
 
 
-def text2corpus(text):
+def rawtext2corpus(text):
     data_words = list(sent_to_words(text))
 
     # Remove Stop Words
@@ -90,6 +90,15 @@ def text2corpus(text):
 
     # Create Corpus
     texts = data_lemmatized
+
+    # Term Document Frequency
+    corpus = [id2word.doc2bow(text) for text in texts]
+    return id2word, corpus
+
+
+def text2corpus(texts):
+    # Create Dictionary
+    id2word = corpora.Dictionary(texts)
 
     # Term Document Frequency
     corpus = [id2word.doc2bow(text) for text in texts]
@@ -227,5 +236,10 @@ def get_data_lemmatized(text):
     data_words_bigrams = make_bigrams(data_words_nostops)
 
     data_lemmatized = lemmatization(data_words_bigrams, allowed_postags=['NOUN', 'ADJ', 'VERB', 'ADV'])
+
+    for i in range(len(data_lemmatized)):
+        for word in my_stop_words:
+            while word in data_lemmatized[i]:
+                data_lemmatized[i].remove(word)
 
     return data_lemmatized
