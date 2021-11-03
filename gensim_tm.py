@@ -16,14 +16,15 @@ from infra import fill_zeros
 from xls_loader import is_empty_text
 from keras_lda import keras_lda_run
 import numpy as np
+from operator import itemgetter
 
 MAX_LINE = 12120
 N = 15
 YEARS = [2015]
 NAMES = ["kkz0", "kkz1", "kkz2", "kkz3", "all"]
 DUMP_LOCATIONS = False
-DUMP_MY_MATCHES = True
-TOPIC_WORDS = 100
+DUMP_MY_MATCHES = False
+TOPIC_WORDS = 20
 id2matches = {}
 index2cand = {}
 sample1_index2cand = {}
@@ -186,8 +187,8 @@ def dump_cand_matches(cand, cand_words, word2prob, f, calc_f, topics_n, c_index,
 
     f.write("\n")
     zero_first = (zero_match == max(cand_matches))
-    if zero_first and cand.sex == 1:
-        print("{} - {}".format(cand.id, cand_words))
+    #if zero_first and cand.sex == 1:
+    #    print("{} - {}".format(cand.id, cand_words))
     return cand_matches, zero_first
 
 
@@ -208,8 +209,6 @@ def dump_matches(engine, model, corpus, texts, word2prob_list, otype, topics_n):
             if cand.id == 11847784:
                 stop = True
             probabilities = get_probabilities(engine, model, i, corpus)
-            print(cand.id)
-            print(probabilities)
             cand_matches, zero_first = dump_cand_matches(cand, lemmatized_text[i], word2prob_list, f, calc_f, topics_n, i, probabilities)
             id2matches[cand.id] = cand_matches
             if zero_first:
@@ -223,11 +222,11 @@ def dump_matches(engine, model, corpus, texts, word2prob_list, otype, topics_n):
 
     f_z = len(fzl)
     total_z = f_z + len(mzl)
-    print("f%={} -  {}/{}".format(f_z/total_z, f_z, total_z))
-    print(males)
-    print(females)
-    print(fzl)
-    print(mzl)
+    #print("f%={} -  {}/{}".format(f_z/total_z, f_z, total_z))
+    #print(males)
+    #print(females)
+    #print(fzl)
+    #print(mzl)
     calc_f.close()
     f.close()
 
@@ -239,7 +238,44 @@ def get_probabilities(engine, model, doc_index, corpus=None):
         return list((i, prob) for i, prob in enumerate(model.doc_topic_[doc_index]))
 
 
+def print_list_distribution(l):
+    dist = [0] * N
+    for probs in l:
+        #cand = t[0]
+        #probs = t[1]
+        m = 0
+        first_topic = 0
+        for p in probs:
+            if p[1] > m:
+                m = p[1]
+                first_topic = p[0]
+        dist[first_topic] = dist[first_topic] + 1
+    s = sum(dist)
+    print(s)
+    if s > 0:
+        dp = [round(x/s, 3) for x in dist]
+        print(dp)
+
+    rr=1
+
 def dump_single_run_results(engine, model, corpus, otype, topics_n):
+    lists_by_sex_excel = np.empty((2, 2), object)
+    lists_by_sex_excel[0, 0] = []
+    lists_by_sex_excel[0, 1] = []
+    lists_by_sex_excel[1, 0] = []
+    lists_by_sex_excel[1, 1] = []
+
+    lists_by_sex_off = np.empty((2, 2), object)
+    lists_by_sex_off[0, 0] = []
+    lists_by_sex_off[0, 1] = []
+    lists_by_sex_off[1, 0] = []
+    lists_by_sex_off[1, 1] = []
+
+    lists_by_sex = [[], []]
+    lists_by_excel = [[], []]
+
+    lists_by_grades = [[], [], [], [], [], []]
+
     header = "id,sex,year,"
     for i in range(topics_n):
         header = "{}t{},".format(header, i)
@@ -252,6 +288,7 @@ def dump_single_run_results(engine, model, corpus, otype, topics_n):
     for i, key in enumerate(index2cand):
         cand = index2cand[key]
         if otype == 4 or cand.otype == otype:
+        #if cand.excel or cand.rejected:
             # NOTICE: Assumes dump_matches was already called before
             my_matches = id2matches[cand.id]
             a10 = 0
@@ -259,22 +296,42 @@ def dump_single_run_results(engine, model, corpus, otype, topics_n):
             max = 0
             f.write("{},{},{},".format(cand.id, cand.sex, cand.year))
             probabilities = get_probabilities(engine, model, i, corpus)
-            #if engine == G:
-            #    probabilities = get_gensim_probabilities(model, corpus, index)
-            #else:
-            #    probabilities = get_keras_probabilities(model, index)
-            prob_list = [prob[1] for prob in probabilities]
-            locations = convert_locations(prob_list)
-            #locations = convert_locations(my_matches)
+
+            if DUMP_MY_MATCHES:
+                cand_probs = [(i, p) for i, p in enumerate(my_matches)]
+                prob_list = my_matches
+            else:
+                cand_probs = probabilities
+                prob_list = [prob[1] for prob in probabilities]
+
+            lists_by_sex_excel[cand.sex, cand.excel].append(cand_probs)
+            lists_by_sex_off[cand.sex, cand.officer].append(cand_probs)
+            lists_by_sex[cand.sex].append(cand_probs)
+            lists_by_excel[cand.excel].append(cand_probs)
+
+            if cand.officer == 0:
+                lists_by_grades[1].append(cand_probs)
+                if cand.rejected:
+                    lists_by_grades[0].append(cand_probs)
+            else:
+                lists_by_grades[3].append(cand_probs)
+                if cand.grade < 70:
+                    lists_by_grades[2].append(cand_probs)
+                if cand.grade > 80:
+                    lists_by_grades[4].append(cand_probs)
+                if cand.excel:
+                    lists_by_grades[5].append(cand_probs)
+
             p_index = 0
             for p in probabilities:
                 if DUMP_LOCATIONS:
-                    f.write("{},".format(locations[p[0]]))
+                    locations = convert_locations(prob_list)
+                    #f.write("{},".format(locations[p[0]]))
                     #A hack to dump 1 if first and zero if not
-                    #if locations[p[0]] == (topics_n - 1):
-                    #    f.write("1,")
-                    #else:
-                    #    f.write("0,")
+                    if locations[p[0]] == (topics_n - 1):
+                        f.write("1,")
+                    else:
+                        f.write("0,")
                 else:
                     if DUMP_MY_MATCHES:
                         if p_index < len(my_matches):
@@ -300,6 +357,30 @@ def dump_single_run_results(engine, model, corpus, otype, topics_n):
                                                                           cand.dapar, cand.tzadak, cand.mavdak1,
                                                                           cand.mavdak2, cand.rejected, cand.excel,
                                                                           cand.grade, cand.socio_t, cand.socio_p))
+
+    #print_list_distribution(lists_by_sex_excel[0, 0])
+    #print_list_distribution(lists_by_sex_excel[0, 1])
+    #print_list_distribution(lists_by_sex_excel[1, 0])
+    #print_list_distribution(lists_by_sex_excel[1, 1])
+
+    #print_list_distribution(lists_by_excel[0])
+    #print_list_distribution(lists_by_excel[1])
+
+    print_list_distribution(lists_by_sex[0])
+    print_list_distribution(lists_by_sex[1])
+
+    #print("women non officer")
+    #print_list_distribution(lists_by_sex_excel[0, 0])
+    #print("men non officer")
+    #print_list_distribution(lists_by_sex_excel[1, 0])
+    #print("women officer")
+    #print_list_distribution(lists_by_sex_excel[0, 1])
+    #print("men officer")
+    #print_list_distribution(lists_by_sex_excel[1, 1])
+
+    #for disl in lists_by_grades:
+        #print_list_distribution(disl)
+
     f.close()
 
 
