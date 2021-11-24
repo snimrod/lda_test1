@@ -1,4 +1,5 @@
 import datetime
+#import gensim.corpora as corpora
 from xls_loader import get_cands_data
 from xls_loader import get_translated_text
 from infra import get_cand
@@ -16,6 +17,7 @@ from infra import fill_zeros
 from xls_loader import is_empty_text
 from keras_lda import keras_lda_run
 import numpy as np
+from sklearn import linear_model
 from operator import itemgetter
 
 MAX_LINE = 12120
@@ -31,6 +33,12 @@ sample1_index2cand = {}
 sample2_index2cand = {}
 G = "gensim"
 K = "keras"
+clf = linear_model.LogisticRegression(C=1e5)
+LR_train_size = 1500
+LR_train_samples = []
+LR_train_categories = []
+LR_predict_samples = []
+LR_predict_categories = []
 
 
 
@@ -256,9 +264,11 @@ def print_list_distribution(l):
         dp = [round(x/s, 3) for x in dist]
         print(dp)
 
-    rr=1
-
 def dump_single_run_results(engine, model, corpus, otype, topics_n):
+    train_cnt = [0, 0, 0, 0]
+    predict_cnt = [0, 0]
+    r = 0
+    e = 0
     lists_by_sex_excel = np.empty((2, 2), object)
     lists_by_sex_excel[0, 0] = []
     lists_by_sex_excel[0, 1] = []
@@ -275,11 +285,12 @@ def dump_single_run_results(engine, model, corpus, otype, topics_n):
     lists_by_excel = [[], []]
 
     lists_by_grades = [[], [], [], [], [], []]
+    samples = [0, 0]
 
     header = "id,sex,year,"
     for i in range(topics_n):
         header = "{}t{},".format(header, i)
-    header = "{}A10,A30,MAX,KKZ,KKZT,Officer,DAPAR,TZADAK,MAVDAK1,MAVDAK2,REJECTED,EXCEL,GRADE,SOCIO_TIRONUT,SOCIO_PIKUD".format(header)
+    header = "{}A10,A30,MAX,KKZ,KKZT,Officer,DAPAR,TZADAK,MAVDAK1,MAVDAK2,REJECTED,EXCEL,GRADE,SOCIO_TIRONUT,SOCIO_PIKUD,WORDS_N,UNIQUE_R".format(header)
 
     fname = "_{}_{}_{}_topics_dist.csv".format(engine, NAMES[otype], topics_n)
     f = open(fname, "w")
@@ -298,35 +309,37 @@ def dump_single_run_results(engine, model, corpus, otype, topics_n):
             probabilities = get_probabilities(engine, model, i, corpus)
 
             if DUMP_MY_MATCHES:
-                cand_probs = [(i, p) for i, p in enumerate(my_matches)]
                 prob_list = my_matches
             else:
-                cand_probs = probabilities
                 prob_list = [prob[1] for prob in probabilities]
 
-            lists_by_sex_excel[cand.sex, cand.excel].append(cand_probs)
-            lists_by_sex_off[cand.sex, cand.officer].append(cand_probs)
-            lists_by_sex[cand.sex].append(cand_probs)
-            lists_by_excel[cand.excel].append(cand_probs)
+            if DUMP_LOCATIONS:
+                locations = convert_locations(prob_list)
 
-            if cand.officer == 0:
-                lists_by_grades[1].append(cand_probs)
-                if cand.rejected:
-                    lists_by_grades[0].append(cand_probs)
-            else:
-                lists_by_grades[3].append(cand_probs)
-                if cand.grade < 70:
-                    lists_by_grades[2].append(cand_probs)
-                if cand.grade > 80:
-                    lists_by_grades[4].append(cand_probs)
-                if cand.excel:
-                    lists_by_grades[5].append(cand_probs)
+            ## Creating lists for groups diff
+            #lists_by_sex_excel[cand.sex, cand.excel].append(cand_probs)
+            #lists_by_sex_off[cand.sex, cand.officer].append(cand_probs)
+            #lists_by_sex[cand.sex].append(cand_probs)
+            #lists_by_excel[cand.excel].append(cand_probs)
+
+            #if cand.officer == 0:
+            #    lists_by_grades[1].append(cand_probs)
+            #    if cand.rejected:
+            #        lists_by_grades[0].append(cand_probs)
+            #else:
+            #    lists_by_grades[3].append(cand_probs)
+            #    if cand.grade < 70:
+            #        lists_by_grades[2].append(cand_probs)
+            #    if cand.grade > 80:
+            #        lists_by_grades[4].append(cand_probs)
+            #    if cand.excel:
+            #        lists_by_grades[5].append(cand_probs)
 
             p_index = 0
             for p in probabilities:
                 if DUMP_LOCATIONS:
-                    locations = convert_locations(prob_list)
-                    #f.write("{},".format(locations[p[0]]))
+                    #locations = convert_locations(prob_list)
+                    f.write("{},".format(locations[p[0]]))
                     #A hack to dump 1 if first and zero if not
                     if locations[p[0]] == (topics_n - 1):
                         f.write("1,")
@@ -349,15 +362,46 @@ def dump_single_run_results(engine, model, corpus, otype, topics_n):
                 if p[1] > max:
                     max = p[1]
 
+            if cand.excel or cand.rejected:
+                if cand.id > 0:
+                    if cand.rejected:
+                        r = r + 1
+                    else:
+                        e = e + 1
+                train_quota = [327, 102]
+                predict_quota = [25, 25]
+
+                if DUMP_LOCATIONS:
+                    #sample = [locations[4], locations[6], locations[9]]
+                    sample = [locations[7], locations[12]]
+                else:
+                    sample = [prob_list[7], prob_list[12]]
+                    #sample = [prob_list[4], prob_list[6], prob_list[9]]
+                    # sample = [prob_list[3], prob_list[4], prob_list[6], prob_list[9], prob_list[13]]
+                category = cand.excel
+                group = category
+                p_group = category
+                if train_cnt[group] < train_quota[group]:
+                    LR_train_samples.append(sample)
+                    LR_train_categories.append(category)
+                    train_cnt[group] = train_cnt[group] + 1
+                elif predict_cnt[p_group] < predict_quota[p_group]:
+                    LR_predict_samples.append(sample)
+                    LR_predict_categories.append(category)
+                    predict_cnt[p_group] = predict_cnt[p_group] + 1
+
             if cand.otype == 0:
                 kkz = 0
             else:
                 kkz = 1
-            f.write("{},{},{:.5f},{},{},{},{},{},{},{},{},{},{},{},{}\n".format(a10, a30, max, kkz, cand.otype, cand.officer,
+            f.write("{},{},{:.5f},{},{},{},{},{},{},{},{},{},{},{},{},{},{:.4f}\n".format(a10, a30, max, kkz, cand.otype, cand.officer,
                                                                           cand.dapar, cand.tzadak, cand.mavdak1,
                                                                           cand.mavdak2, cand.rejected, cand.excel,
-                                                                          cand.grade, cand.socio_t, cand.socio_p))
+                                                                          cand.grade, cand.socio_t, cand.socio_p,
+                                                                          cand.words_n, cand.unique_ratio))
 
+    print("r={} e={}".format(r, e))
+    ## PRINTING distributions to test diff between groups
     #print_list_distribution(lists_by_sex_excel[0, 0])
     #print_list_distribution(lists_by_sex_excel[0, 1])
     #print_list_distribution(lists_by_sex_excel[1, 0])
@@ -366,8 +410,8 @@ def dump_single_run_results(engine, model, corpus, otype, topics_n):
     #print_list_distribution(lists_by_excel[0])
     #print_list_distribution(lists_by_excel[1])
 
-    print_list_distribution(lists_by_sex[0])
-    print_list_distribution(lists_by_sex[1])
+    #print_list_distribution(lists_by_sex[0])
+    #print_list_distribution(lists_by_sex[1])
 
     #print("women non officer")
     #print_list_distribution(lists_by_sex_excel[0, 0])
@@ -383,6 +427,21 @@ def dump_single_run_results(engine, model, corpus, otype, topics_n):
 
     f.close()
 
+
+def run_linear_regression():
+    results = [0, 0]
+    right = [0, 0]
+    clf.fit(LR_train_samples, LR_train_categories)
+    for i, sample in enumerate(LR_predict_samples):
+        prediction = clf.predict([sample])
+        results[prediction[0]] = results[prediction[0]] + 1
+        # print("prediction: {}, officer: {}".format(prediction[0], LR_predict_categories[i]))
+        if prediction[0] == LR_predict_categories[i]:
+            right[prediction[0]] = right[prediction[0]] + 1
+
+    print("Train data: {}/{}".format(sum(LR_train_categories), len(LR_train_categories)))
+    print("Predict data: {}/{}".format(sum(LR_predict_categories), len(LR_predict_categories)))
+    print("predictions: [0]={}/{}, [1]={}/{}, rate = {}".format(right[0], results[0], right[1], results[1], sum(right)/len(LR_predict_samples)))
 
 def run_gensim_engine(text, fname, topics_n):
     model, corp = gensim_lda_run(text, topics_n)
@@ -430,9 +489,115 @@ def run_lda(engine, text, otype, to_dump, topics_n=N):
         dump_matches(engine, model, corpus, text, word2prob_list, otype, topics_n)
         if to_dump:
             dump_single_run_results(engine, model, corpus, otype, topics_n)
+            run_linear_regression()
         return model
     else:
         return None
+
+
+def lr_by_text():
+    train_cnt = [0, 0, 0, 0]
+    predict_cnt = [0, 0]
+    len_ctrs = {}
+    ratio_ctrs = {}
+    cnt = 0
+    for c in index2cand.values():
+
+        #t = c.hebText.split()
+        #id2word = corpora.Dictionary([t])
+        #unique_ratio = len(id2word)/len(t)
+        #print("{} {} {}".format(len(t), len(id2word), unique_ratio))
+        #sample = [len(t), unique_ratio]
+        len_key = int(c.words_n/10)
+        ratio_key = int(c.unique_ratio * 100)
+
+        #if c.dapar >= 80:
+        #    category = 1
+        #else:
+        #    category = 0
+        category = c.sex
+
+        if len_key not in len_ctrs:
+            len_ctrs[len_key] = [0, 0]
+
+        len_ctrs[len_key][category] = len_ctrs[len_key][category] + 1
+
+        if ratio_key not in ratio_ctrs:
+            ratio_ctrs[ratio_key] = [0, 0]
+
+        ratio_ctrs[ratio_key][category] = ratio_ctrs[ratio_key][category] + 1
+
+
+
+
+
+
+        sample = [c.words_n]
+        train_quota = [2200, 2200, 220, 220]
+        predict_quota = [100, 100]
+        if c.words_n < 25:
+            p_group = 0
+            if c.sex == 0:
+                group = 0
+            else:
+                group = 1
+        else:
+            p_group = 1
+            if c.sex == 0:
+                group = 2
+            else:
+                group = 3
+
+
+
+        group = category
+        p_group = category
+        cnt = cnt + 1
+        if train_cnt[group] < train_quota[group]:
+            LR_train_samples.append(sample)
+            LR_train_categories.append(category)
+            train_cnt[group] = train_cnt[group] + 1
+        elif predict_cnt[p_group] < predict_quota[p_group]:
+            LR_predict_samples.append(sample)
+            LR_predict_categories.append(category)
+            predict_cnt[p_group] = predict_cnt[p_group] + 1
+
+    print(cnt)
+    print("ratio:\n")
+    for k in sorted(ratio_ctrs.keys()):
+        i = ratio_ctrs[k]
+        if sum(i) == 0:
+            pcnt = 0
+        else:
+            pcnt = 100 * i[0] / sum(i)
+        print("{}) {:.1f}% ({}/{})".format(k, pcnt, i[0], sum(i)))
+    print("\n")
+
+    print("len:\n")
+    for k in sorted(len_ctrs.keys()):
+        i = len_ctrs[k]
+        if sum(i) == 0:
+            pcnt = 0
+        else:
+            pcnt = 100 * i[0] / sum(i)
+        print("{}) {:.1f}% ({}/{})".format(k, pcnt, i[0], sum(i)))
+
+    run_linear_regression()
+    #print("officers in train data: {}/{}".format(sum(LR_train_categories), len(LR_train_categories)))
+    #print("officers in predict data: {}/{}".format(sum(LR_predict_categories), len(LR_predict_categories)))
+
+            #    if cand.dapar >= 80:
+            #        category = 1
+            #    else:
+            #        category = 0
+            #    if samples[category] < cat_samples[category]:
+            #        LR_train_samples.append(prob_list)
+            #        LR_train_categories.append(category)
+            #    else:
+            #        LR_predict_samples.append(prob_list)
+            #        LR_predict_categories.append(category)
+            #    samples[category] = samples[category] + 1
+
 
 
 print(datetime.datetime.now())
@@ -512,6 +677,7 @@ lem_text = get_data_lemmatized(entire_text)
 #for topics in range(16, 26):
 #run_gensim(lem_text, 4, True, N)
 run_lda(K, lem_text, 4, True, N)
+#lr_by_text()
 #run_keras(lem_text, 4, N)
 #dump_data_lemmatized(entire_text, cand_ids, "_All_2015_lemmatized.txt")
 

@@ -1,5 +1,6 @@
 from xls_loader import is_empty_text
 from OType import get_officer_type
+import gensim.corpora as corpora
 
 EXCEL = "סיים בהצטיינות"
 MOFET = "סיים למופת"
@@ -19,6 +20,14 @@ class CandData:
         self.year = db.Test_Date[line].year
         self.officer = db.officer[line]
         self.otype = get_officer_type(line)
+        self.hebText = db.text[line]
+
+        t = self.hebText.split()
+        self.words_n = len(t)
+        id2word = corpora.Dictionary([t])
+        self.unique_ratio = len(id2word) / self.words_n
+
+
         sium = db.OFEN_SIUM_KKZ[line]
         if self.officer == 1:
             if sium == EXCEL or sium == MOFET:
