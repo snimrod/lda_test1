@@ -286,6 +286,7 @@ def dump_single_run_results(engine, model, corpus, otype, topics_n):
 
     lists_by_grades = [[], [], [], [], [], []]
     samples = [0, 0]
+    gc = [0,0]
 
     header = "id,sex,year,"
     for i in range(topics_n):
@@ -362,23 +363,27 @@ def dump_single_run_results(engine, model, corpus, otype, topics_n):
                 if p[1] > max:
                     max = p[1]
 
-            if cand.excel or cand.rejected:
-                if cand.id > 0:
-                    if cand.rejected:
-                        r = r + 1
-                    else:
-                        e = e + 1
-                train_quota = [327, 102]
-                predict_quota = [25, 25]
+            gc[cand.sex] = gc[cand.sex] + 1
+
+            if True:
+                #if cand.id > 0:
+                #    if cand.rejected:
+                #        r = r + 1
+                #    else:
+                #        e = e + 1
+                train_quota = [2774, 3211]
+                predict_quota = [300, 300]
 
                 if DUMP_LOCATIONS:
-                    #sample = [locations[4], locations[6], locations[9]]
-                    sample = [locations[7], locations[12]]
+                    #sample = [cand.words_n, locations[4], locations[6], locations[9]]
+                    sample = [cand.words_n, locations[4], locations[6]]
+                    #sample = [locations[7], locations[12]]
                 else:
-                    sample = [prob_list[7], prob_list[12]]
-                    #sample = [prob_list[4], prob_list[6], prob_list[9]]
+                    #sample = [prob_list[7], prob_list[12]]
+                    sample = [cand.words_n, prob_list[4], prob_list[6], prob_list[9]]
+                    #sample = [cand.words_n, prob_list[4], prob_list[6]]
                     # sample = [prob_list[3], prob_list[4], prob_list[6], prob_list[9], prob_list[13]]
-                category = cand.excel
+                category = cand.sex
                 group = category
                 p_group = category
                 if train_cnt[group] < train_quota[group]:
@@ -400,7 +405,8 @@ def dump_single_run_results(engine, model, corpus, otype, topics_n):
                                                                           cand.grade, cand.socio_t, cand.socio_p,
                                                                           cand.words_n, cand.unique_ratio))
 
-    print("r={} e={}".format(r, e))
+    print(gc)
+    #print("r={} e={}".format(r, e))
     ## PRINTING distributions to test diff between groups
     #print_list_distribution(lists_by_sex_excel[0, 0])
     #print_list_distribution(lists_by_sex_excel[0, 1])
