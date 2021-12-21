@@ -24,7 +24,7 @@ MAX_LINE = 12120
 N = 15
 YEARS = [2015]
 NAMES = ["kkz0", "kkz1", "kkz2", "kkz3", "all"]
-DUMP_LOCATIONS = False
+DUMP_LOCATIONS = True
 DUMP_MY_MATCHES = False
 TOPIC_WORDS = 20
 id2matches = {}
@@ -287,6 +287,12 @@ def dump_single_run_results(engine, model, corpus, otype, topics_n):
     lists_by_grades = [[], [], [], [], [], []]
     samples = [0, 0]
     gc = [0,0]
+    boysd = [0] * N
+    girlsd = [0] * N
+    boysoffd = [0] * N
+    girlsoffd = [0] * N
+    maxcnt = 0
+
 
     header = "id,sex,year,"
     for i in range(topics_n):
@@ -306,6 +312,9 @@ def dump_single_run_results(engine, model, corpus, otype, topics_n):
             a10 = 0
             a30 = 0
             max = 0
+            if cand.id == 11846665:
+                stopp = 1
+
             f.write("{},{},{},".format(cand.id, cand.sex, cand.year))
             probabilities = get_probabilities(engine, model, i, corpus)
 
@@ -316,6 +325,7 @@ def dump_single_run_results(engine, model, corpus, otype, topics_n):
 
             if DUMP_LOCATIONS:
                 locations = convert_locations(prob_list)
+                r_locations = convert_locations(prob_list, True)
 
             ## Creating lists for groups diff
             #lists_by_sex_excel[cand.sex, cand.excel].append(cand_probs)
@@ -342,10 +352,20 @@ def dump_single_run_results(engine, model, corpus, otype, topics_n):
                     #locations = convert_locations(prob_list)
                     f.write("{},".format(locations[p[0]]))
                     #A hack to dump 1 if first and zero if not
-                    if locations[p[0]] == (topics_n - 1):
-                        f.write("1,")
-                    else:
-                        f.write("0,")
+                    #if locations[p[0]] == (topics_n - 1):
+                    if r_locations[p[0]] == 0:
+                        maxcnt = maxcnt + 1
+                        if cand.sex == 0:
+                            girlsd[p[0]] = girlsd[p[0]] + 1
+                            if cand.officer:
+                                girlsoffd[p[0]] = girlsoffd[p[0]] + 1
+                        else:
+                            boysd[p[0]] = boysd[p[0]] + 1
+                            if cand.officer:
+                                boysoffd[p[0]] = boysoffd[p[0]] + 1
+                        #f.write("1,")
+                    #else:
+                        #f.write("0,")
                 else:
                     if DUMP_MY_MATCHES:
                         if p_index < len(my_matches):
@@ -405,6 +425,13 @@ def dump_single_run_results(engine, model, corpus, otype, topics_n):
                                                                           cand.grade, cand.socio_t, cand.socio_p,
                                                                           cand.words_n, cand.unique_ratio))
 
+    print(boysd)
+    print(boysoffd)
+    print(sum(boysd))
+    print(girlsd)
+    print(girlsoffd)
+    print(sum(girlsd))
+    print(maxcnt)
     print(gc)
     #print("r={} e={}".format(r, e))
     ## PRINTING distributions to test diff between groups
@@ -495,7 +522,7 @@ def run_lda(engine, text, otype, to_dump, topics_n=N):
         dump_matches(engine, model, corpus, text, word2prob_list, otype, topics_n)
         if to_dump:
             dump_single_run_results(engine, model, corpus, otype, topics_n)
-            run_linear_regression()
+            #run_linear_regression()
         return model
     else:
         return None

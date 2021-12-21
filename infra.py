@@ -63,17 +63,19 @@ def get_cand(db, engLines, line, years, errors):
     else:
         return None
 
+
 # Convert array of probabilities to array of locations (location in the list when ordered)
-# gets a list of values and return a list where the value represent how many items in the list this item is bigger than
-# the smallest value will be changed to 0 and biggest value to (size - 1)
-def convert_locations(p_list):
+# gets a list of values and return a list where the value represent how many items in the list this item is
+# bigger/smaller than. If rev=True then value will be how much is small, otherwise how much is bigger
+# If bigger is requested - the smallest value will be changed to 0 and biggest value to (size - 1)
+def convert_locations(p_list, rev=False):
     size = len(p_list)
     x = []
     ti = 0
     for n in p_list:
         x.append([n, ti])
         ti = ti + 1
-    x.sort()
+    x.sort(reverse=rev)
     loc = [0] * size
 
     for tn in range(1, size):
