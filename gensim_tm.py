@@ -659,6 +659,23 @@ high = []
 low = []
 
 index = 0
+pc = 0
+fiction_females = ['מולאן', 'מולן', 'הרמיוני', 'פוקהונ', 'רפונזל']
+historic_females = ['רונה רמון', 'אשתו של אילן רמון', 'מרים פרץ', 'אנגלינה', 'מארי ק', 'אופרה ו', 'רוזה פ', 'מרגרט',
+                    'אליס מילר', 'שרה אה', 'חנה סנש', 'פרידה ק', 'אלטשולר', 'הלן קלר', 'שרה גיבו']
+real_females = ['אמא שלי', 'סבתא שלי', 'אחות שלי', 'חברה שלי', 'דודה שלי']
+historic_males = ['שמעון פרס', 'הרצל', 'רבין', 'אנשטיין', 'אינשטיין', 'איינשטין', 'איינשטיין', 'רועי קליין', 'רועי קלין', 'משה רב'
+            , 'ינוש', 'יאנוש', 'לותר', 'מייקל גורדן', 'מייקל פלפס', 'מנדלה', 'גנדי ', 'קהלני', 'טרומפלדור',
+            'קובי בר', 'אלי כהן', 'רונאלדו', 'דוד המלך', 'שלמה המלך', 'אריק שרון', 'נתניהו', 'צרציל', 'מרדכי',
+            'בניה ריין', ' בנאי', 'בגין', 'אילן רמון', 'אברהם אבינו', 'אברהם לינק', 'הרב אברהם', 'אברם', 'שטרן',
+            'עובדיה יוסף', 'אלכסנדר', 'נפוליאון', 'סטיב גובס', 'סטיבן ג', 'נל מסי', 'רבי עקיבא', 'בן נון', 'הרב קוק',
+            'ביל ג', 'יגאל', 'אליעזר', 'מאסק', 'מייקל גק', 'גלילאו', 'ארמסטרונג', 'רמבם', 'הוקינג', 'נפתלי בנט', 'שרלוק',
+            'צפלין', 'היטלר', 'מוחמד', 'מייק הררי', 'אובמה', 'מורנו', 'הוקינג', 'ריבלין', 'נועם גרשוני', 'וינברג',
+            'זבוטינסקי', 'טסלה', 'אהרון הכהן']
+fiction_males = ['באטמן', 'בטמן', 'סופרמן', 'בובספוג', 'בוב ספוג', 'קפטן אמריקה', 'איירו', 'ספייד', 'פו הדוב',
+                 'מיקי מאוס', 'פורסט']
+real_males = ['אבא שלי', 'סבא שלי', 'אח שלי', 'חבר שלי', 'דוד שלי']
+guys = ['דודה שלי']
 for line in text:
     this_cand_id = db.ID_coded[index]
     if this_cand_id not in reviewed_cands:
@@ -669,6 +686,12 @@ for line in text:
             cand_ids.append(cand.id)
             lda_text[cand.otype].append(line)
             index2cand[index] = cand
+
+            join_d = historic_males + historic_females + fiction_females + fiction_males + real_males + real_females
+            for dude in join_d:
+                if dude in cand.hebText:
+                    pc = pc + 1
+                    print(cand.hebText)
             #if cand.sex == 0:
             #    girls.append(line)
             #else:
@@ -703,13 +726,16 @@ for line in text:
             #   low.append(line)
     index = index + 1
 
-lem_text = get_data_lemmatized(entire_text)
+#   ADD THIS ONE  lem_text = get_data_lemmatized(entire_text)
+
+print(len(index2cand))
+print(pc)
 
 #for i in range(4):
 #    run_lda(lda_text[i], i, True, N)
 #for topics in range(16, 26):
 #run_gensim(lem_text, 4, True, N)
-run_lda(K, lem_text, 4, True, N)
+# ADD THIS ONE run_lda(K, lem_text, 4, True, N)
 #lr_by_text()
 #run_keras(lem_text, 4, N)
 #dump_data_lemmatized(entire_text, cand_ids, "_All_2015_lemmatized.txt")
