@@ -20,7 +20,7 @@ import numpy as np
 from sklearn import linear_model
 from operator import itemgetter
 
-MAX_LINE = 12120
+MAX_LINE = 12110
 N = 15
 YEARS = [2015]
 NAMES = ["kkz0", "kkz1", "kkz2", "kkz3", "all"]
@@ -687,11 +687,11 @@ for line in text:
             lda_text[cand.otype].append(line)
             index2cand[index] = cand
 
-            join_d = historic_males + historic_females + fiction_females + fiction_males + real_males + real_females
-            for dude in join_d:
-                if dude in cand.hebText:
-                    pc = pc + 1
-                    print(cand.hebText)
+            #join_d = historic_males + historic_females + fiction_females + fiction_males + real_males + real_females
+            #for dude in join_d:
+            #    if dude in cand.hebText:
+            #        pc = pc + 1
+            #        print(cand.hebText)
             #if cand.sex == 0:
             #    girls.append(line)
             #else:
@@ -726,16 +726,18 @@ for line in text:
             #   low.append(line)
     index = index + 1
 
-#   ADD THIS ONE  lem_text = get_data_lemmatized(entire_text)
+# These two are the actual 'main' for latest run.
+lem_text = get_data_lemmatized(entire_text)
+run_lda(K, lem_text, 4, True, N)
 
-print(len(index2cand))
-print(pc)
+#print(len(index2cand))
+#print(pc)
 
 #for i in range(4):
 #    run_lda(lda_text[i], i, True, N)
 #for topics in range(16, 26):
 #run_gensim(lem_text, 4, True, N)
-# ADD THIS ONE run_lda(K, lem_text, 4, True, N)
+#run_lda(K, lem_text, 4, True, N)
 #lr_by_text()
 #run_keras(lem_text, 4, N)
 #dump_data_lemmatized(entire_text, cand_ids, "_All_2015_lemmatized.txt")
