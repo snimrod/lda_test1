@@ -2,6 +2,16 @@ from xls_loader import get_cands_data
 from xls_loader import get_translated_text
 from infra import get_cand
 
+# Types
+PERSONAL = 1
+HISTORIC = 2
+FICTIONAL = 3
+
+# GENDER
+FEMALE = 0
+MALE = 1
+NONE = 2
+
 fiction_females = ['מולאן', 'מולן', 'הרמיוני', 'פוקהונ', 'רפונזל']
 historic_females = ['רונה רמון', 'אשתו של אילן רמון', 'מרים פרץ', 'אנגלינה', 'מארי ק', 'אופרה ו', 'רוזה פ', 'מרגרט',
                     'אליס מילר', 'שרה אה', 'חנה סנש', 'פרידה ק', 'אלטשולר', 'הלן קלר', 'שרה גיבו']
@@ -11,13 +21,13 @@ historic_males = ['שמעון פרס', 'הרצל', 'רבין', 'אנשטיין',
             'קובי בר', 'אלי כהן', 'רונאלדו', 'דוד המלך', 'שלמה המלך', 'אריק שרון', 'נתניהו', 'צרציל', 'מרדכי',
             'בניה ריין', ' בנאי', 'בגין', 'אילן רמון', 'אברהם אבינו', 'אברהם לינק', 'הרב אברהם', 'אברם', 'שטרן',
             'עובדיה יוסף', 'אלכסנדר', 'נפוליאון', 'סטיב גובס', 'סטיבן ג', 'נל מסי', 'רבי עקיבא', 'בן נון', 'הרב קוק',
-            'ביל ג', 'יגאל', 'אליעזר', 'מאסק', 'מייקל גק', 'גלילאו', 'ארמסטרונג', 'רמבם', 'הוקינג', 'נפתלי בנט', 'שרלוק',
+            'ביל ג', 'יגאל', 'אליעזר', 'מאסק', 'מייקל גק', 'גלילאו', 'ארמסטרונג', 'רמבם', 'הוקינג', 'נפתלי בנט',
             'צפלין', 'היטלר', 'מוחמד', 'מייק הררי', 'אובמה', 'מורנו', 'הוקינג', 'ריבלין', 'נועם גרשוני', 'וינברג',
             'זבוטינסקי', 'טסלה', 'אהרון הכהן']
 fiction_males = ['באטמן', 'בטמן', 'סופרמן', 'בובספוג', 'בוב ספוג', 'קפטן אמריקה', 'איירו', 'ספייד', 'פו הדוב',
-                 'מיקי מאוס', 'פורסט']
+                 'מיקי מאוס', 'פורסט', 'שרלוק']
 real_males = ['אבא שלי', 'סבא שלי', 'אח שלי', 'חבר שלי', 'דוד שלי']
-guys = ['אחותי']
+temp = ['אילן רמון']
 
 join_d = historic_males + historic_females + fiction_females + fiction_males + real_males + real_females
 
@@ -47,9 +57,33 @@ def analyze_characters():
                 to_drop.append(index)
             else:
                 cnt = cnt + 1
-                for dude in join_d:
-                    if dude in cand.hebText:
+                for char in fiction_males:
+                    print("Checking {}".format(char))
+                    if char in cand.hebText:
+                        print("Found")
+                        print(cand.hebText)
+                        db.Char_type[index] = 1
                         pc = pc + 1
+                        break
+                print("Out of for loop")
+                for char in historic_males:
+                    print("Checking {}".format(char))
+                    if char in cand.hebText:
+                        print("Found")
+                        print(cand.hebText)
+                        db.Char_type[index] = 1
+                        pc = pc + 1
+                        break
+                print("Out of for loop")
+                for char in real_males:
+                    print("Checking {}".format(char))
+                    if char in cand.hebText:
+                        print("Found")
+                        print(cand.hebText)
+                        db.Char_type[index] = 1
+                        pc = pc + 1
+                        break
+                print("Out of for loop")
 
     print(index)
     print(cnt)
@@ -57,6 +91,9 @@ def analyze_characters():
     #f.close()
     #db.to_excel('my_thesis_db.xlsx', sheet_name='Original')
     db2 = db.drop(to_drop, axis=0)
+    db2 = db2.drop(columns=["Test_Date", "bts_a", "bts_c", "bts_e", "bts_n", "bts_o", "T_LEIDA", "T_GIUS", "officer",
+                           "DAPAR", "TZADAK", "TAARICH_MAVDAK", "TZIYUN_MAVDAK", "OFEN_SIUM_KKZ", "TZIUN_KKZ",
+                           "SOCIO_TIRONUT", "SOTZIO_PIKUD"])
     db2.to_excel('my_thesis_db.xlsx', sheet_name='Original')
 
 
