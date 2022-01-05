@@ -18,9 +18,10 @@ from xls_loader import is_empty_text
 from keras_lda import keras_lda_run
 import numpy as np
 from sklearn import linear_model
+import pandas as pd
 from operator import itemgetter
 
-MAX_LINE = 12110
+MAX_LINE = 2110
 N = 15
 YEARS = [2015]
 NAMES = ["kkz0", "kkz1", "kkz2", "kkz3", "all"]
@@ -638,6 +639,7 @@ full_text = get_translated_text("Translated_text.txt")
 #full_text = get_translated_text("fake_translated.txt")
 text = full_text[:MAX_LINE]
 db = get_cands_data('thesis_db.xls', MAX_LINE)
+char_db = pd.read_excel('char_thesis_db.xlsx', 'Original', index_col=None, usecols=None, header=0, nrows=8000)
 #db = get_cands_data('fake_db.xls', MAX_LINE)
 reviewed_cands = []
 errors = [0, 0, 0, 0, 0, 0]

@@ -1,6 +1,8 @@
 from xls_loader import is_empty_text
 from OType import get_officer_type
 import gensim.corpora as corpora
+#from character_analyzer import get_fchar_type
+#from character_analyzer import get_mchar_type
 
 EXCEL = "סיים בהצטיינות"
 MOFET = "סיים למופת"
@@ -82,3 +84,6 @@ class CandData:
             self.socio_p = ""
         else:
             self.socio_p = db.SOTZIO_PIKUD[line]
+
+        #self.fchar_type = get_fchar_type(line)
+        #self.mchar_type = get_mchar_type(line)
