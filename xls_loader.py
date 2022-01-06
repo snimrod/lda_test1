@@ -32,6 +32,21 @@ def is_valid_text(text):
     return True
 
 
+def load_characters(chars_map):
+    char_db = pd.read_excel('not_found_chars.xlsx', 'Original', index_col=None, usecols=None, header=0, nrows=8000)
+    for i in range(len(char_db)):
+        if is_empty_text(char_db.m_char_type[i]):
+            m = 0
+        else:
+            m = char_db.m_char_type[i]
+        if is_empty_text(char_db.f_char_type[i]):
+            f = 0
+        else:
+            f = char_db.f_char_type[i]
+        chars_map[char_db.ID_coded[i]] = [m, f]
+        print(char_db.ID_coded[i])
+    print("loaded {}".format(len(char_db)))
+
 # df = pd.read_excel('Book1.xlsx', sheetname=None, header=None)
 # df = pd.read_excel('Book1.xlsx')
 

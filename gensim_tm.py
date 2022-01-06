@@ -18,7 +18,7 @@ from xls_loader import is_empty_text
 from keras_lda import keras_lda_run
 import numpy as np
 from sklearn import linear_model
-import pandas as pd
+from xls_loader import load_characters
 from operator import itemgetter
 
 MAX_LINE = 2110
@@ -633,23 +633,6 @@ def lr_by_text():
             #    samples[category] = samples[category] + 1
 
 
-def load_characters(chars_map):
-    char_db = pd.read_excel('not_found_chars.xlsx', 'Original', index_col=None, usecols=None, header=0, nrows=8000)
-    for i in range(len(char_db)):
-        if is_empty_text(char_db.m_char_type[i]):
-            m = 0
-        else:
-            m = char_db.m_char_type[i]
-        if is_empty_text(char_db.f_char_type[i]):
-            f = 0
-        else:
-            f = char_db.f_char_type[i]
-        chars_map[char_db.ID_coded[i]] = [m, f]
-        print(char_db.ID_coded[i])
-    print("loaded {}".format(len(char_db)))
-
-
-
 print(datetime.datetime.now())
 full_text = get_translated_text("Translated_text.txt")
 #full_text = get_translated_text("fake_translated.txt")
@@ -729,9 +712,9 @@ for line in text:
 #run_lda(K, lem_text, 4, True, N)
 load_characters(characters_map)
 
-if characters_map[11788407][0] > 0:
+if characters_map[11783427][0] > 0:
     print("yes 1")
-if characters_map[11788407][1] > 0:
+if characters_map[11783427][1] > 0:
     print("yes 2")
 
 #print(len(index2cand))

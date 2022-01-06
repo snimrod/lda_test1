@@ -11,9 +11,10 @@ HISTORIC = 2
 FICTIONAL = 3
 AMORPHOUS = 4
 
-fiction_females = ['מולאן', 'מולן', 'הרמיוני', 'פוקהונ', 'רפונזל']
+fiction_females = ['מולאן', 'מולן', 'הרמיוני', 'פוקהונ', 'רפונזל', 'גין אייר', 'סינדרלה', 'שלגיה', 'בילבי']
 historic_females = ['רונה רמון', 'אשתו של אילן רמון', 'מרים פרץ', 'אנגלינה', 'מארי ק', 'אופרה ו', 'רוזה פ', 'מרגרט',
-                    'אליס מילר', 'שרה אה', 'חנה סנש', 'פרידה ק', 'אלטשולר', 'הלן קלר', 'שרה גיבו', 'אילנה דיין']
+                    'אליס מילר', 'שרה אה', 'חנה סנש', 'פרידה ק', 'אלטשולר', 'הלן קלר', 'שרה גיבו', 'אילנה דיין',
+                    'גולדה', 'קלינטון']
 real_females = ['אמא שלי', 'סבתא שלי', 'אחות שלי', 'חברה שלי', 'דודה שלי', 'אחותי']
 historic_males = ['שמעון פרס', 'הרצל', 'רבין', 'אנשטיין', 'אינשטיין', 'איינשטין', 'איינשטיין', 'רועי קליין', 'רועי קלין', 'משה רב'
             , 'ינוש', 'יאנוש', 'לותר', 'מייקל גורדן', 'מייקל פלפס', 'מנדלה', 'גנדי ', 'קהלני', 'טרומפלדור',
@@ -22,11 +23,15 @@ historic_males = ['שמעון פרס', 'הרצל', 'רבין', 'אנשטיין',
             'עובדיה יוסף', 'אלכסנדר', 'נפוליאון', 'סטיב גובס', 'סטיבן ג', 'נל מסי', 'רבי עקיבא', 'בן נון', 'הרב קוק',
             'ביל ג', 'יגאל', 'אליעזר', 'מאסק', 'מייקל גק', 'גלילאו', 'ארמסטרונג', 'רמבם', 'הוקינג', 'נפתלי בנט',
             'צפלין', 'היטלר', 'מוחמד', 'מייק הררי', 'אובמה', 'מורנו', 'הוקינג', 'ריבלין', 'נועם גרשוני', 'וינברג',
-            'זבוטינסקי', 'טסלה', 'אהרון הכהן','ארז גר', 'מאיר הר', 'אריאל שרון']
+            'זבוטינסקי', 'טסלה', 'אהרון הכהן','ארז גר',  'מאיר הר', 'אריאל שרון', 'בן גוריון', 'צוות צביקה', 'צביקה גר',
+            'חילי טרופר', 'אמנון', 'אהוד ברק', 'שינדלר', 'ספרטקוס', 'טיורינג', 'מרטין לוטר', 'אל פרץ', 'גלילא', 'רפול',
+            'רפאל איתן']
 fiction_males = ['באטמן', 'בטמן', 'סופרמן', 'סופר מן', 'בובספוג', 'בוב ספוג', 'קפטן אמריקה', 'איירו', 'ספייד', 'פו הדוב',
-                 'מיקי מאוס', 'פורסט', 'שרלוק']
+                 'מיקי מאוס', 'פורסט', 'שרלוק', 'רובין הוד', 'גק ספ', 'פיטר פן', 'דון קישוט', 'סימבה', 'הנסיך הקטן',
+                 'פו הדב', 'לאניסטר', 'ד סטארק', 'פיקארד']
 real_males = ['אבא שלי', 'סבא שלי', 'אח שלי', 'חבר שלי', 'דוד שלי']
-temp = ['מאיר הר']
+temp = [ 'עדה יונת']
+#temp = [ 'מאיר הר', 'אריאל שרון', 'בן גוריון']
 
 # join_d = historic_males + historic_females + fiction_females + fiction_males + real_males + real_females
 
@@ -35,8 +40,22 @@ temp = ['מאיר הר']
 #char_db = pd.read_excel(CHARS_FILE, 'Original', index_col=None, usecols=None, header=0, nrows=8000)
 
 def move_to_auto_found():
+    to_move = []
+    auto_found = []
     not_found_db = pd.read_excel('not_found_chars.xlsx', 'Original', index_col=None, usecols=None, header=0, nrows=8000)
     found_db = pd.read_excel('found_chars.xlsx', 'Original', index_col=None, usecols=None, header=0, nrows=8000)
+    print("loaded {} auto found candidates".format(len(found_db)))
+    for i in range(len(found_db)):
+        auto_found.append(found_db.ID_coded[i])
+
+    print("loaded {} manual found candidates".format(len(not_found_db)))
+    for i in range(len(not_found_db)):
+        if not_found_db.ID_coded[i] in auto_found:
+            to_move.append(i)
+
+    print("Removing {} from manual".format(len(to_move)))
+    new_found_db = not_found_db.drop(to_move, axis=0)
+    new_found_db.to_excel('new_not_found_chars.xlsx', sheet_name='Original')
 
 
 def search_characters(char_list, cand):
@@ -135,16 +154,16 @@ def analyze_characters():
     print("Different candidates that found a match: {}".format(found_cnt))
     print("Different characters found: {}".format(char_cnt))
     print("temps {}".format(tmp_cnt))
-    #db2 = db.drop(to_drop, axis=0)
-    #db2 = db2.drop(columns=["Test_Date", "bts_a", "bts_c", "bts_e", "bts_n", "bts_o", "T_LEIDA", "T_GIUS", "officer",
-    #                       "DAPAR", "TZADAK", "TAARICH_MAVDAK", "TZIYUN_MAVDAK", "OFEN_SIUM_KKZ", "TZIUN_KKZ",
-    #                       "SOCIO_TIRONUT", "SOTZIO_PIKUD"])
-    #db2.to_excel(CHARS_FILE, sheet_name='Original')
-    #found_db = db2.drop(no_char, axis=0)
-    #not_found_db = db2.drop(found_char, axis=0)
+    db2 = db.drop(to_drop, axis=0)
+    db2 = db2.drop(columns=["Test_Date", "bts_a", "bts_c", "bts_e", "bts_n", "bts_o", "T_LEIDA", "T_GIUS", "officer",
+                           "DAPAR", "TZADAK", "TAARICH_MAVDAK", "TZIYUN_MAVDAK", "OFEN_SIUM_KKZ", "TZIUN_KKZ",
+                           "SOCIO_TIRONUT", "SOTZIO_PIKUD"])
+    db2.to_excel(CHARS_FILE, sheet_name='Original')
+    found_db = db2.drop(no_char, axis=0)
+    not_found_db = db2.drop(found_char, axis=0)
     #found_db.to_excel('found_chars.xlsx', sheet_name='Original')
     #not_found_db.to_excel('not_found_chars.xlsx', sheet_name='Original')
 
 
-#analyze_characters()
-move_to_auto_found()
+analyze_characters()
+#move_to_auto_found()
