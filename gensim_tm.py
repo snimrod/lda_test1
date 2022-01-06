@@ -633,15 +633,31 @@ def lr_by_text():
             #    samples[category] = samples[category] + 1
 
 
+def load_characters(chars_map):
+    char_db = pd.read_excel('not_found_chars.xlsx', 'Original', index_col=None, usecols=None, header=0, nrows=8000)
+    for i in range(len(char_db)):
+        if is_empty_text(char_db.m_char_type[i]):
+            m = 0
+        else:
+            m = char_db.m_char_type[i]
+        if is_empty_text(char_db.f_char_type[i]):
+            f = 0
+        else:
+            f = char_db.f_char_type[i]
+        chars_map[char_db.ID_coded[i]] = [m, f]
+        print(char_db.ID_coded[i])
+    print("loaded {}".format(len(char_db)))
+
+
 
 print(datetime.datetime.now())
 full_text = get_translated_text("Translated_text.txt")
 #full_text = get_translated_text("fake_translated.txt")
 text = full_text[:MAX_LINE]
 db = get_cands_data('thesis_db.xls', MAX_LINE)
-char_db = pd.read_excel('char_thesis_db.xlsx', 'Original', index_col=None, usecols=None, header=0, nrows=8000)
 #db = get_cands_data('fake_db.xls', MAX_LINE)
 reviewed_cands = []
+characters_map = {}
 errors = [0, 0, 0, 0, 0, 0]
 lda_text = [[], [], [], []]
 accum_kkz_text = [""] * 4
@@ -661,23 +677,7 @@ high = []
 low = []
 
 index = 0
-pc = 0
-fiction_females = ['מולאן', 'מולן', 'הרמיוני', 'פוקהונ', 'רפונזל']
-historic_females = ['רונה רמון', 'אשתו של אילן רמון', 'מרים פרץ', 'אנגלינה', 'מארי ק', 'אופרה ו', 'רוזה פ', 'מרגרט',
-                    'אליס מילר', 'שרה אה', 'חנה סנש', 'פרידה ק', 'אלטשולר', 'הלן קלר', 'שרה גיבו']
-real_females = ['אמא שלי', 'סבתא שלי', 'אחות שלי', 'חברה שלי', 'דודה שלי']
-historic_males = ['שמעון פרס', 'הרצל', 'רבין', 'אנשטיין', 'אינשטיין', 'איינשטין', 'איינשטיין', 'רועי קליין', 'רועי קלין', 'משה רב'
-            ,'ינוש', 'יאנוש', 'לותר', 'מייקל גורדן', 'מייקל פלפס', 'מנדלה', 'גנדי ', 'קהלני', 'טרומפלדור',
-            'קובי בר', 'אלי כהן', 'רונאלדו', 'דוד המלך', 'שלמה המלך', 'אריק שרון', 'נתניהו', 'צרציל', 'מרדכי',
-            'בניה ריין', ' בנאי', 'בגין', 'אילן רמון', 'אברהם אבינו', 'אברהם לינק', 'הרב אברהם', 'אברם', 'שטרן',
-            'עובדיה יוסף', 'אלכסנדר', 'נפוליאון', 'סטיב גובס', 'סטיבן ג', 'נל מסי', 'רבי עקיבא', 'בן נון', 'הרב קוק',
-            'ביל ג', 'יגאל', 'אליעזר', 'מאסק', 'מייקל גק', 'גלילאו', 'ארמסטרונג', 'רמבם', 'הוקינג', 'נפתלי בנט', 'שרלוק',
-            'צפלין', 'היטלר', 'מוחמד', 'מייק הררי', 'אובמה', 'מורנו', 'הוקינג', 'ריבלין', 'נועם גרשוני', 'וינברג',
-            'זבוטינסקי', 'טסלה', 'אהרון הכהן']
-fiction_males = ['באטמן', 'בטמן', 'סופרמן', 'בובספוג', 'בוב ספוג', 'קפטן אמריקה', 'איירו', 'ספייד', 'פו הדוב',
-                 'מיקי מאוס', 'פורסט']
-real_males = ['אבא שלי', 'סבא שלי', 'אח שלי', 'חבר שלי', 'דוד שלי']
-guys = ['דודה שלי']
+
 for line in text:
     this_cand_id = db.ID_coded[index]
     if this_cand_id not in reviewed_cands:
@@ -689,11 +689,7 @@ for line in text:
             lda_text[cand.otype].append(line)
             index2cand[index] = cand
 
-            #join_d = historic_males + historic_females + fiction_females + fiction_males + real_males + real_females
-            #for dude in join_d:
-            #    if dude in cand.hebText:
-            #        pc = pc + 1
-            #        print(cand.hebText)
+
             #if cand.sex == 0:
             #    girls.append(line)
             #else:
@@ -729,8 +725,14 @@ for line in text:
     index = index + 1
 
 # These two are the actual 'main' for latest run.
-lem_text = get_data_lemmatized(entire_text)
-run_lda(K, lem_text, 4, True, N)
+#lem_text = get_data_lemmatized(entire_text)
+#run_lda(K, lem_text, 4, True, N)
+load_characters(characters_map)
+
+if characters_map[11788407][0] > 0:
+    print("yes 1")
+if characters_map[11788407][1] > 0:
+    print("yes 2")
 
 #print(len(index2cand))
 #print(pc)
