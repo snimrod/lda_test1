@@ -21,7 +21,7 @@ from sklearn import linear_model
 from xls_loader import load_characters
 from operator import itemgetter
 
-MAX_LINE = 2110
+MAX_LINE = 12110
 N = 15
 YEARS = [2015]
 NAMES = ["kkz0", "kkz1", "kkz2", "kkz3", "all"]
@@ -40,6 +40,8 @@ LR_train_samples = []
 LR_train_categories = []
 LR_predict_samples = []
 LR_predict_categories = []
+
+distributions = np.array([0] * 90).reshape(2, 3, 15)
 
 
 
@@ -265,6 +267,17 @@ def print_list_distribution(l):
         dp = [round(x/s, 3) for x in dist]
         print(dp)
 
+
+def update_distributions(cand, topic_id):
+    # gender: 0 = female, 1 = male, 2 = amorphous
+    if cand.f_char_type == cand.m_char_type or (cand.f_char_type > 0 and cand.m_char_type > 0):
+        charg = 2
+    else:
+        charg = cand.sex
+
+    distributions[cand.sex, charg, topic_id] = distributions[cand.sex, charg, topic_id] + 1
+
+
 def dump_single_run_results(engine, model, corpus, otype, topics_n):
     train_cnt = [0, 0, 0, 0]
     predict_cnt = [0, 0]
@@ -355,6 +368,7 @@ def dump_single_run_results(engine, model, corpus, otype, topics_n):
                     #A hack to dump 1 if first and zero if not
                     #if locations[p[0]] == (topics_n - 1):
                     if r_locations[p[0]] == 0:
+                        update_distributions(cand, p[0])
                         maxcnt = maxcnt + 1
                         if cand.sex == 0:
                             girlsd[p[0]] = girlsd[p[0]] + 1
@@ -661,11 +675,13 @@ low = []
 
 index = 0
 
+load_characters(characters_map)
+
 for line in text:
     this_cand_id = db.ID_coded[index]
     if this_cand_id not in reviewed_cands:
         reviewed_cands.append(this_cand_id)
-        cand = get_cand(db, full_text, index, YEARS, errors)
+        cand = get_cand(db, full_text, characters_map, index, YEARS, errors)
         if cand is not None:
             entire_text.append(line)
             cand_ids.append(cand.id)
@@ -710,12 +726,11 @@ for line in text:
 # These two are the actual 'main' for latest run.
 #lem_text = get_data_lemmatized(entire_text)
 #run_lda(K, lem_text, 4, True, N)
-load_characters(characters_map)
 
-if characters_map[11783427][0] > 0:
-    print("yes 1")
-if characters_map[11783427][1] > 0:
-    print("yes 2")
+#if characters_map[11783427][0] > 0:
+#    print("yes 1")
+#if characters_map[11783427][1] > 0:
+#    print("yes 2")
 
 #print(len(index2cand))
 #print(pc)

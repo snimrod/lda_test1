@@ -30,7 +30,7 @@ fiction_males = ['באטמן', 'בטמן', 'סופרמן', 'סופר מן', 'ב�
                  'מיקי מאוס', 'פורסט', 'שרלוק', 'רובין הוד', 'גק ספ', 'פיטר פן', 'דון קישוט', 'סימבה', 'הנסיך הקטן',
                  'פו הדב', 'לאניסטר', 'ד סטארק', 'פיקארד']
 real_males = ['אבא שלי', 'סבא שלי', 'אח שלי', 'חבר שלי', 'דוד שלי']
-temp = [ 'עדה יונת']
+temp = [ 'באדולינה']
 #temp = [ 'מאיר הר', 'אריאל שרון', 'בן גוריון']
 
 # join_d = historic_males + historic_females + fiction_females + fiction_males + real_males + real_females
@@ -155,15 +155,15 @@ def analyze_characters():
     print("Different characters found: {}".format(char_cnt))
     #print(len())
     print("temps {}".format(tmp_cnt))
-    db2 = db.drop(to_drop, axis=0)
-    db2 = db2.drop(columns=["Test_Date", "bts_a", "bts_c", "bts_e", "bts_n", "bts_o", "T_LEIDA", "T_GIUS", "officer",
-                           "DAPAR", "TZADAK", "TAARICH_MAVDAK", "TZIYUN_MAVDAK", "OFEN_SIUM_KKZ", "TZIUN_KKZ",
-                           "SOCIO_TIRONUT", "SOTZIO_PIKUD"])
-    db2.to_excel(CHARS_FILE, sheet_name='Original')
-    found_db = db2.drop(no_char, axis=0)
-    not_found_db = db2.drop(found_char, axis=0)
-    found_db.to_excel('found_chars.xlsx', sheet_name='Original')
-    not_found_db.to_excel('not_found_chars.xlsx', sheet_name='Original')
+    #db2 = db.drop(to_drop, axis=0)
+    #db2 = db2.drop(columns=["Test_Date", "bts_a", "bts_c", "bts_e", "bts_n", "bts_o", "T_LEIDA", "T_GIUS", "officer",
+    #                       "DAPAR", "TZADAK", "TAARICH_MAVDAK", "TZIYUN_MAVDAK", "OFEN_SIUM_KKZ", "TZIUN_KKZ",
+    #                       "SOCIO_TIRONUT", "SOTZIO_PIKUD"])
+    #db2.to_excel(CHARS_FILE, sheet_name='Original')
+    #found_db = db2.drop(no_char, axis=0)
+    #not_found_db = db2.drop(found_char, axis=0)
+    #found_db.to_excel('found_chars2.xlsx', sheet_name='Original')
+    #not_found_db.to_excel('not_found_chars2.xlsx', sheet_name='Original')
 
 
 analyze_characters()

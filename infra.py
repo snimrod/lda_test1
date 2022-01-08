@@ -25,7 +25,7 @@ def valid_translation(db, engLines, i):
     # return True
 
 
-def get_cand(db, engLines, line, years, errors):
+def get_cand(db, engLines, characters_map, line, years, errors):
 
 #    if db.ID_coded[i] == 13821367:
 #        debugon = 1
@@ -44,7 +44,7 @@ def get_cand(db, engLines, line, years, errors):
         return None
 
     valid = True
-    cand = CandData(db, line)
+    cand = CandData(db, characters_map, line)
 
     if not valid_translation(db, engLines, line):
         errors[INVALID_TRANS_RATIO] = errors[INVALID_TRANS_RATIO] + 1

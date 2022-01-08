@@ -17,7 +17,7 @@ NE = "הרחק בחינת כ."
 
 class CandData:
 
-    def __init__(self, db, line):
+    def __init__(self, db, characters_map, line):
         self.id = db.ID_coded[line]
         self.year = db.Test_Date[line].year
         self.officer = db.officer[line]
@@ -61,6 +61,11 @@ class CandData:
         else:
             self.tzadak = db.TZADAK[line]
             self.sex = 1
+
+        if self.id in characters_map:
+            chars_type = characters_map[self.id]
+            self.m_char_type = chars_type[0]
+            self.f_char_type = chars_type[1]
 
         self.rejected = 0
         self.mavdak1 = ""
