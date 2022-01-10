@@ -268,13 +268,31 @@ def print_list_distribution(l):
         print(dp)
 
 
-def update_distributions(cand, topic_id):
+def dump_distributions():
+    f = open("characters_distribution.csv", "w")
+    for g in range(2):
+        for cg in range(3):
+            output = ""
+            for topic in range(N):
+                output = "{}{}, ".format(output, distributions[g, cg, topic])
+            f.write("{}-{},{}\n".format(g, cg, output))
+    f.close()
+
+
+def get_cand_char_gender(cand):
     # gender: 0 = female, 1 = male, 2 = amorphous
     if cand.f_char_type == cand.m_char_type or (cand.f_char_type > 0 and cand.m_char_type > 0):
         charg = 2
     else:
-        charg = cand.sex
+        if cand.f_char_type > 0:
+            charg = 0
+        else:
+            charg = 1
+    return charg
 
+
+def update_distributions(cand, topic_id):
+    charg = get_cand_char_gender(cand)
     distributions[cand.sex, charg, topic_id] = distributions[cand.sex, charg, topic_id] + 1
 
 
@@ -647,6 +665,14 @@ def lr_by_text():
             #    samples[category] = samples[category] + 1
 
 
+def print_characters_count():
+    counters = np.array([0] * 6).reshape(2, 3)
+    for c in index2cand.values():
+        cg = get_cand_char_gender(c)
+        counters[c.sex, cg] = counters[c.sex, cg] + 1
+    print(counters)
+
+
 print(datetime.datetime.now())
 full_text = get_translated_text("Translated_text.txt")
 #full_text = get_translated_text("fake_translated.txt")
@@ -723,9 +749,11 @@ for line in text:
             #   low.append(line)
     index = index + 1
 
+print_characters_count()
 # These two are the actual 'main' for latest run.
 #lem_text = get_data_lemmatized(entire_text)
 #run_lda(K, lem_text, 4, True, N)
+#dump_distributions()
 
 #if characters_map[11783427][0] > 0:
 #    print("yes 1")
