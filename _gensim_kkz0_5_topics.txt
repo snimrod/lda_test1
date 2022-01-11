@@ -1,5 +1,0 @@
-(0, '0.024*"manage" + 0.016*"decide" + 0.013*"go" + 0.012*"change" + 0.012*"king" + 0.011*"gurion" + 0.010*"end" + 0.010*"want" + 0.009*"army" + 0.009*"follow"')
-(1, '0.028*"man" + 0.017*"choose" + 0.016*"opinion" + 0.016*"even" + 0.015*"believe" + 0.013*"leader" + 0.012*"lead" + 0.012*"give" + 0.011*"many" + 0.011*"figure"')
-(2, '0.028*"ability" + 0.019*"many" + 0.014*"understand" + 0.013*"book" + 0.012*"position" + 0.012*"hand" + 0.011*"knowledge" + 0.009*"choose" + 0.008*"fact" + 0.008*"humble"')
-(3, '0.038*"always" + 0.036*"know" + 0.026*"good" + 0.023*"help" + 0.021*"think" + 0.018*"other" + 0.017*"give" + 0.017*"positive" + 0.016*"care" + 0.014*"love"')
-(4, '0.014*"responsible" + 0.014*"life" + 0.013*"well" + 0.012*"contribute" + 0.011*"ability" + 0.010*"work" + 0.009*"family" + 0.008*"lot" + 0.008*"story" + 0.008*"look"')

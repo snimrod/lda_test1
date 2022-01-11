@@ -44,7 +44,7 @@ def load_characters(chars_map):
             f = 0
         else:
             f = char_db.f_char_type[i]
-        chars_map[char_db.ID_coded[i]] = [m, f]
+        chars_map[char_db.ID_coded[i]] = [int(m), int(f)]
         if chars_map[char_db.ID_coded[i]] == [0, 0]:
             no_char = no_char + 1
 

@@ -1,7 +1,0 @@
-(0, '0.034*"fight" + 0.026*"man" + 0.023*"example" + 0.017*"country" + 0.016*"many" + 0.015*"choose" + 0.013*"talk" + 0.012*"child" + 0.012*"brave" + 0.011*"much"')
-(1, '0.032*"know" + 0.028*"quality" + 0.024*"man" + 0.020*"good" + 0.019*"choose" + 0.015*"always" + 0.015*"also" + 0.014*"positive" + 0.013*"soldier" + 0.012*"leader"')
-(2, '0.024*"life" + 0.022*"give" + 0.018*"go" + 0.014*"achieve" + 0.013*"goal" + 0.013*"set" + 0.013*"child" + 0.011*"even" + 0.011*"bring" + 0.009*"first"')
-(3, '0.043*"always" + 0.022*"give" + 0.020*"help" + 0.016*"work" + 0.014*"other" + 0.014*"good" + 0.014*"see" + 0.014*"life" + 0.014*"know" + 0.013*"positive"')
-(4, '0.019*"gurion" + 0.017*"state" + 0.017*"willing" + 0.015*"ben_gurion" + 0.012*"believe" + 0.012*"never" + 0.012*"task" + 0.011*"honest" + 0.011*"lead" + 0.011*"determination"')
-(5, '0.031*"family" + 0.018*"decision" + 0.017*"vision" + 0.017*"grandfather" + 0.017*"environment" + 0.015*"establish" + 0.014*"ambitious" + 0.014*"realize" + 0.012*"life" + 0.012*"yet"')
-(6, '0.033*"give" + 0.022*"change" + 0.021*"situation" + 0.020*"way" + 0.018*"other" + 0.017*"believe" + 0.017*"care" + 0.016*"influence" + 0.014*"human" + 0.013*"end"')

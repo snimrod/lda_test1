@@ -1,8 +1,0 @@
-(0, '0.029*"child" + 0.026*"life" + 0.023*"fight" + 0.013*"many" + 0.013*"work" + 0.011*"country" + 0.011*"jewish" + 0.011*"give" + 0.011*"year" + 0.011*"idea"')
-(1, '0.030*"know" + 0.023*"man" + 0.020*"choose" + 0.020*"quality" + 0.015*"always" + 0.014*"also" + 0.014*"positive" + 0.014*"way" + 0.013*"take" + 0.013*"good"')
-(2, '0.019*"use" + 0.019*"decision" + 0.018*"bring" + 0.014*"set" + 0.014*"head" + 0.014*"first" + 0.014*"speak" + 0.013*"brother" + 0.013*"cause" + 0.013*"goal"')
-(3, '0.023*"even" + 0.020*"give" + 0.018*"succeed" + 0.017*"example" + 0.013*"problem" + 0.012*"other" + 0.011*"man" + 0.011*"break" + 0.010*"see" + 0.010*"way"')
-(4, '0.023*"gurion" + 0.020*"achieve" + 0.019*"vision" + 0.019*"courage" + 0.018*"ben_gurion" + 0.017*"personal" + 0.016*"professionalism" + 0.015*"opinion" + 0.015*"state" + 0.015*"concern"')
-(5, '0.027*"family" + 0.022*"fight" + 0.015*"start" + 0.014*"time" + 0.013*"amazing" + 0.013*"work" + 0.013*"human" + 0.013*"yet" + 0.013*"rabbi" + 0.013*"go"')
-(6, '0.035*"situation" + 0.032*"give" + 0.022*"dream" + 0.017*"never" + 0.016*"believe" + 0.016*"honest" + 0.015*"maintain" + 0.015*"find" + 0.013*"company" + 0.012*"admire"')
-(7, '0.046*"always" + 0.031*"give" + 0.027*"good" + 0.023*"care" + 0.023*"help" + 0.021*"other" + 0.019*"think" + 0.013*"positive" + 0.013*"life" + 0.012*"know"')

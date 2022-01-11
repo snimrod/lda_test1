@@ -1,5 +1,0 @@
-(0, '0.036*"woman" + 0.027*"fight" + 0.023*"world" + 0.011*"girl" + 0.010*"consider" + 0.010*"live" + 0.009*"purpose" + 0.009*"deal" + 0.009*"shimon_pere" + 0.008*"give"')
-(1, '0.018*"life" + 0.018*"family" + 0.017*"happy" + 0.012*"live" + 0.011*"soldier" + 0.010*"book" + 0.009*"able" + 0.008*"story" + 0.008*"talk" + 0.008*"personal"')
-(2, '0.023*"man" + 0.020*"choose" + 0.017*"thing" + 0.015*"believe" + 0.015*"positive" + 0.015*"think" + 0.014*"opinion" + 0.014*"way" + 0.013*"even" + 0.012*"lead"')
-(3, '0.022*"ability" + 0.016*"quality" + 0.014*"responsibility" + 0.012*"traits_seem" + 0.012*"courage" + 0.011*"hand" + 0.011*"express" + 0.011*"trait" + 0.010*"dream" + 0.010*"confidence"')
-(4, '0.050*"always" + 0.043*"know" + 0.030*"help" + 0.028*"good" + 0.025*"other" + 0.021*"care" + 0.020*"give" + 0.018*"positive" + 0.016*"think" + 0.015*"love"')

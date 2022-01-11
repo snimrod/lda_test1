@@ -1,5 +1,0 @@
-(0, '0.025*"fight" + 0.019*"life" + 0.017*"man" + 0.016*"example" + 0.015*"child" + 0.011*"many" + 0.011*"achieve" + 0.010*"human" + 0.010*"give" + 0.009*"work"')
-(1, '0.030*"know" + 0.024*"quality" + 0.021*"man" + 0.018*"good" + 0.018*"always" + 0.016*"choose" + 0.015*"positive" + 0.013*"think" + 0.013*"also" + 0.012*"care"')
-(2, '0.014*"life" + 0.013*"situation" + 0.011*"come" + 0.010*"set" + 0.010*"ability" + 0.010*"go" + 0.009*"decision" + 0.009*"bring" + 0.009*"even" + 0.008*"environment"')
-(3, '0.029*"always" + 0.020*"help" + 0.020*"give" + 0.012*"even" + 0.011*"time" + 0.011*"strive" + 0.011*"look" + 0.011*"other" + 0.010*"work" + 0.010*"see"')
-(4, '0.016*"believe" + 0.015*"gurion" + 0.014*"state" + 0.014*"willing" + 0.014*"lead" + 0.013*"manage" + 0.012*"ben_gurion" + 0.012*"personal" + 0.012*"put" + 0.011*"leader"')

@@ -21,7 +21,7 @@ from sklearn import linear_model
 from xls_loader import load_characters
 from operator import itemgetter
 
-MAX_LINE = 12110
+MAX_LINE = 1110
 N = 15
 YEARS = [2015]
 NAMES = ["kkz0", "kkz1", "kkz2", "kkz3", "all"]
@@ -269,7 +269,7 @@ def print_list_distribution(l):
 
 
 def dump_distributions():
-    f = open("characters_distribution.csv", "w")
+    f = open("characters_detailed_distribution.csv", "w")
     for g in range(2):
         for cg in range(3):
             output = ""
@@ -283,16 +283,19 @@ def get_cand_char_gender(cand):
     # gender: 0 = female, 1 = male, 2 = amorphous
     if cand.f_char_type == cand.m_char_type or (cand.f_char_type > 0 and cand.m_char_type > 0):
         charg = 2
+        chart = cand.f_char_type
     else:
         if cand.f_char_type > 0:
             charg = 0
+            chart = cand.f_char_type
         else:
             charg = 1
-    return charg
+            chart = cand.m_char_type
+    return charg, chart
 
 
 def update_distributions(cand, topic_id):
-    charg = get_cand_char_gender(cand)
+    charg, chart = get_cand_char_gender(cand)
     distributions[cand.sex, charg, topic_id] = distributions[cand.sex, charg, topic_id] + 1
 
 
@@ -326,10 +329,14 @@ def dump_single_run_results(engine, model, corpus, otype, topics_n):
     maxcnt = 0
 
 
-    header = "id,sex,year,"
+    header = "id,gender,char_g, char_t,year,"
     for i in range(topics_n):
-        header = "{}t{},".format(header, i)
-    header = "{}A10,A30,MAX,KKZ,KKZT,Officer,DAPAR,TZADAK,MAVDAK1,MAVDAK2,REJECTED,EXCEL,GRADE,SOCIO_TIRONUT,SOCIO_PIKUD,WORDS_N,UNIQUE_R".format(header)
+        header = "{}t{}F,".format(header, i)
+    for i in range(topics_n):
+        header = "{}t{}V,".format(header, i)
+    for i in range(topics_n):
+        header = "{}t{}L,".format(header, i)
+    header = "{}KKZ,KKZT,Officer,DAPAR,TZADAK,MAVDAK1,MAVDAK2,REJECTED,EXCEL,GRADE,SOCIO_TIRONUT,SOCIO_PIKUD,WORDS_N,UNIQUE_R".format(header)
 
     fname = "_{}_{}_{}_topics_dist.csv".format(engine, NAMES[otype], topics_n)
     f = open(fname, "w")
@@ -341,13 +348,12 @@ def dump_single_run_results(engine, model, corpus, otype, topics_n):
         #if cand.excel or cand.rejected:
             # NOTICE: Assumes dump_matches was already called before
             my_matches = id2matches[cand.id]
-            a10 = 0
-            a30 = 0
-            max = 0
+
             if cand.id == 11846665:
                 stopp = 1
 
-            f.write("{},{},{},".format(cand.id, cand.sex, cand.year))
+            charg, chart = get_cand_char_gender(cand)
+            f.write("{},{},{},{},{},".format(cand.id, cand.sex, charg, chart, cand.year))
             probabilities = get_probabilities(engine, model, i, corpus)
 
             if DUMP_MY_MATCHES:
@@ -355,9 +361,9 @@ def dump_single_run_results(engine, model, corpus, otype, topics_n):
             else:
                 prob_list = [prob[1] for prob in probabilities]
 
-            if DUMP_LOCATIONS:
-                locations = convert_locations(prob_list)
-                r_locations = convert_locations(prob_list, True)
+            #if DUMP_LOCATIONS:
+            locations = convert_locations(prob_list)
+            r_locations = convert_locations(prob_list, True)
 
             ## Creating lists for groups diff
             #lists_by_sex_excel[cand.sex, cand.excel].append(cand_probs)
@@ -378,43 +384,53 @@ def dump_single_run_results(engine, model, corpus, otype, topics_n):
             #    if cand.excel:
             #        lists_by_grades[5].append(cand_probs)
 
-            p_index = 0
+            # Print 'is first' indication + update distributions tracker
             for p in probabilities:
-                if DUMP_LOCATIONS:
-                    #locations = convert_locations(prob_list)
-                    f.write("{},".format(locations[p[0]]))
+                if r_locations[p[0]] == 0:
+                    f.write("1,")
+                    update_distributions(cand, p[0])
+                else:
+                    f.write("0,")
+
+            # Print probabilities
+            for p in probabilities:
+                f.write("{:.5f},".format(p[1]))
+
+            # Print locations
+            for p in probabilities:
+                f.write("{},".format(locations[p[0]]))
+
+
+
+            #p_index = 0
+            #for p in probabilities:
+            #    if DUMP_LOCATIONS:
+            #        f.write("{},".format(locations[p[0]]))
                     #A hack to dump 1 if first and zero if not
                     #if locations[p[0]] == (topics_n - 1):
-                    if r_locations[p[0]] == 0:
-                        update_distributions(cand, p[0])
-                        maxcnt = maxcnt + 1
-                        if cand.sex == 0:
-                            girlsd[p[0]] = girlsd[p[0]] + 1
-                            if cand.officer:
-                                girlsoffd[p[0]] = girlsoffd[p[0]] + 1
-                        else:
-                            boysd[p[0]] = boysd[p[0]] + 1
-                            if cand.officer:
-                                boysoffd[p[0]] = boysoffd[p[0]] + 1
+            #        if r_locations[p[0]] == 0:
+            #            update_distributions(cand, p[0])
+            #            maxcnt = maxcnt + 1
+            #            if cand.sex == 0:
+            #                girlsd[p[0]] = girlsd[p[0]] + 1
+            #                if cand.officer:
+            #                    girlsoffd[p[0]] = girlsoffd[p[0]] + 1
+            #            else:
+            #                boysd[p[0]] = boysd[p[0]] + 1
+            #                if cand.officer:
+            #                    boysoffd[p[0]] = boysoffd[p[0]] + 1
                         #f.write("1,")
                     #else:
                         #f.write("0,")
-                else:
-                    if DUMP_MY_MATCHES:
-                        if p_index < len(my_matches):
-                            f.write("{:.3f},".format(my_matches[p_index]))
-                        else:
-                            print("index {} not found in my_matches".format(p_index))
-                    else:
-                        f.write("{:.5f},".format(p[1]))
-                p_index = p_index + 1
-
-                if p[1] >= 0.1:
-                    a10 = a10 + 1
-                if p[1] >= 0.3:
-                    a30 = a30 + 1
-                if p[1] > max:
-                    max = p[1]
+            #    else:
+            #        if DUMP_MY_MATCHES:
+            #            if p_index < len(my_matches):
+            #                f.write("{:.3f},".format(my_matches[p_index]))
+            #            else:
+            #                print("index {} not found in my_matches".format(p_index))
+            #        else:
+            #            f.write("{:.5f},".format(p[1]))
+            #    p_index = p_index + 1
 
             gc[cand.sex] = gc[cand.sex] + 1
 
@@ -452,7 +468,7 @@ def dump_single_run_results(engine, model, corpus, otype, topics_n):
                 kkz = 0
             else:
                 kkz = 1
-            f.write("{},{},{:.5f},{},{},{},{},{},{},{},{},{},{},{},{},{},{:.4f}\n".format(a10, a30, max, kkz, cand.otype, cand.officer,
+            f.write("{},{},{},{},{},{},{},{},{},{},{},{},{},{:.4f}\n".format(kkz, cand.otype, cand.officer,
                                                                           cand.dapar, cand.tzadak, cand.mavdak1,
                                                                           cand.mavdak2, cand.rejected, cand.excel,
                                                                           cand.grade, cand.socio_t, cand.socio_p,
@@ -666,11 +682,35 @@ def lr_by_text():
 
 
 def print_characters_count():
-    counters = np.array([0] * 6).reshape(2, 3)
+    #f = open("characters_count_by_type.csv", "w")
+    counters = np.array([0] * 30).reshape(2, 3, 5)
+    cnt = 0
+    fcnt = 0
+    #family = ["אמא", "אמי", "אימי", "אחות", "דודה"]
+    family = ["אמי"]
     for c in index2cand.values():
-        cg = get_cand_char_gender(c)
-        counters[c.sex, cg] = counters[c.sex, cg] + 1
-    print(counters)
+        cg, ct = get_cand_char_gender(c)
+        counters[c.sex, cg, ct] = counters[c.sex, cg, ct] + 1
+        if c.sex == 1 and cg == 0 and ct == 1:
+            cnt = cnt + 1
+            found = False
+            for word in family:
+                if word in c.hebText:
+                    if not found:
+                        fcnt = fcnt + 1
+                        found = True
+                        print(c.hebText)
+    print(cnt)
+    print(fcnt)
+
+    for i in range(2):
+        for j in range(3):
+            s = ""
+            for z in range(5):
+                s = "{}{},".format(s, counters[i, j, z])
+            #print(s)
+            #f.write(s + '\n')
+    #f.close()
 
 
 print(datetime.datetime.now())
@@ -749,10 +789,10 @@ for line in text:
             #   low.append(line)
     index = index + 1
 
-print_characters_count()
+#print_characters_count()
 # These two are the actual 'main' for latest run.
-#lem_text = get_data_lemmatized(entire_text)
-#run_lda(K, lem_text, 4, True, N)
+lem_text = get_data_lemmatized(entire_text)
+run_lda(K, lem_text, 4, True, N)
 #dump_distributions()
 
 #if characters_map[11783427][0] > 0:

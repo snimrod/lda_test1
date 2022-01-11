@@ -1,5 +1,0 @@
-(0, '0.027*"man" + 0.021*"believe" + 0.017*"give" + 0.015*"go" + 0.014*"child" + 0.014*"think" + 0.014*"choose" + 0.013*"way" + 0.012*"life" + 0.010*"many"')
-(1, '0.017*"figure" + 0.016*"choose" + 0.014*"world" + 0.013*"woman" + 0.012*"opinion" + 0.012*"ability" + 0.011*"imaginary" + 0.010*"bring" + 0.009*"courage" + 0.009*"dream"')
-(2, '0.019*"value" + 0.018*"ability" + 0.017*"quality" + 0.017*"fight" + 0.013*"lead" + 0.012*"trait" + 0.010*"important" + 0.009*"choose" + 0.009*"world" + 0.009*"man"')
-(3, '0.015*"example" + 0.013*"opinion" + 0.012*"society" + 0.010*"teach" + 0.010*"success" + 0.009*"book" + 0.009*"action" + 0.009*"name" + 0.008*"make" + 0.008*"positive_qualitie"')
-(4, '0.043*"know" + 0.037*"always" + 0.023*"help" + 0.022*"good" + 0.017*"think" + 0.017*"give" + 0.016*"also" + 0.015*"positive" + 0.015*"thing" + 0.014*"other"')

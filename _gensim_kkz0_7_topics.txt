@@ -1,7 +1,0 @@
-(0, '0.036*"manage" + 0.017*"set" + 0.017*"difficulty" + 0.016*"gurion" + 0.013*"change" + 0.013*"hard" + 0.012*"move" + 0.012*"example" + 0.011*"group" + 0.011*"reality"')
-(1, '0.023*"action" + 0.021*"show" + 0.019*"positive_trait" + 0.017*"come" + 0.016*"woman" + 0.016*"book" + 0.016*"world" + 0.015*"humble" + 0.015*"many" + 0.013*"say"')
-(2, '0.019*"position" + 0.016*"hand" + 0.016*"seems_positive" + 0.014*"consider" + 0.013*"express" + 0.013*"fact" + 0.012*"man" + 0.011*"say" + 0.010*"risk" + 0.009*"experience"')
-(3, '0.064*"always" + 0.043*"know" + 0.030*"help" + 0.027*"good" + 0.021*"love" + 0.019*"smart" + 0.018*"other" + 0.018*"mother" + 0.017*"positive" + 0.016*"sociable"')
-(4, '0.034*"contribute" + 0.029*"woman" + 0.015*"social" + 0.015*"problem" + 0.013*"connect" + 0.013*"grandfather" + 0.011*"assertive" + 0.011*"smart" + 0.011*"ask" + 0.010*"much"')
-(5, '0.021*"give" + 0.019*"life" + 0.019*"choose" + 0.019*"man" + 0.019*"know" + 0.018*"think" + 0.018*"opinion" + 0.013*"good" + 0.013*"also" + 0.012*"even"')
-(6, '0.027*"first" + 0.026*"imaginary" + 0.024*"choose" + 0.020*"father" + 0.018*"responsible" + 0.016*"seem" + 0.015*"quality" + 0.015*"story" + 0.014*"establish" + 0.014*"power"')
