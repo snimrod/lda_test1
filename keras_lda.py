@@ -2,7 +2,7 @@ import numpy as np
 import lda
 import lda.datasets
 
-ITERATIONS = 100
+ITERATIONS = 1500
 
 
 def corpus2nparray(corpus, id2word):

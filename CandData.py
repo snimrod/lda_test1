@@ -15,6 +15,21 @@ NF4 = "לא עמד/ה בתנאי"
 NE = "הרחק בחינת כ."
 
 
+def get_cand_char_gender(chars_type):
+    # gender: 0 = female, 1 = male, 2 = amorphous
+    if chars_type[1] == chars_type[0] or (chars_type[1] > 0 and chars_type[0] > 0):
+        charg = 2
+        chart = chars_type[1]
+    else:
+        if chars_type[1] > 0:
+            charg = 0
+            chart = chars_type[1]
+        else:
+            charg = 1
+            chart = chars_type[0]
+    return charg, chart
+
+
 class CandData:
 
     def __init__(self, db, characters_map, line):
@@ -23,12 +38,12 @@ class CandData:
         self.officer = db.officer[line]
         self.otype = get_officer_type(line)
         self.hebText = db.text[line]
+        self.probs = []
 
         t = self.hebText.split()
         self.words_n = len(t)
         id2word = corpora.Dictionary([t])
         self.unique_ratio = len(id2word) / self.words_n
-
 
         sium = db.OFEN_SIUM_KKZ[line]
         if self.officer == 1:
@@ -64,8 +79,9 @@ class CandData:
 
         if self.id in characters_map:
             chars_type = characters_map[self.id]
-            self.m_char_type = chars_type[0]
-            self.f_char_type = chars_type[1]
+            #self.m_char_type = chars_type[0]
+            #self.f_char_type = chars_type[1]
+            self.charg, self.chart = get_cand_char_gender(characters_map[self.id])
 
         self.rejected = 0
         self.mavdak1 = ""

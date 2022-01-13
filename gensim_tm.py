@@ -19,13 +19,14 @@ from keras_lda import keras_lda_run
 import numpy as np
 from sklearn import linear_model
 from xls_loader import load_characters
+import random
 from operator import itemgetter
 
-MAX_LINE = 1110
+MAX_LINE = 12110
 N = 15
 YEARS = [2015]
 NAMES = ["kkz0", "kkz1", "kkz2", "kkz3", "all"]
-DUMP_LOCATIONS = True
+DUMP_LOCATIONS = False
 DUMP_MY_MATCHES = False
 TOPIC_WORDS = 20
 id2matches = {}
@@ -43,7 +44,10 @@ LR_predict_categories = []
 
 distributions = np.array([0] * 90).reshape(2, 3, 15)
 
-
+# Genders
+FEMALE = 0
+MALE = 1
+NO_GENDER = 2
 
 def dump_big5():
     f = open("big5.csv", "w")
@@ -165,6 +169,89 @@ def create_word2prob_dicts(model):
     return word2prob_dicts_list
 
 
+def lr_by_text():
+    train_cnt = [0, 0, 0, 0]
+    predict_cnt = [0, 0]
+    len_ctrs = {}
+    ratio_ctrs = {}
+    cnt = 0
+    for c in index2cand.values():
+
+        #t = c.hebText.split()
+        #id2word = corpora.Dictionary([t])
+        #unique_ratio = len(id2word)/len(t)
+        #print("{} {} {}".format(len(t), len(id2word), unique_ratio))
+        #sample = [len(t), unique_ratio]
+        len_key = int(c.words_n/10)
+        ratio_key = int(c.unique_ratio * 100)
+
+        #if c.dapar >= 80:
+        #    category = 1
+        #else:
+        #    category = 0
+        category = c.sex
+
+        if len_key not in len_ctrs:
+            len_ctrs[len_key] = [0, 0]
+
+        len_ctrs[len_key][category] = len_ctrs[len_key][category] + 1
+
+        if ratio_key not in ratio_ctrs:
+            ratio_ctrs[ratio_key] = [0, 0]
+
+        ratio_ctrs[ratio_key][category] = ratio_ctrs[ratio_key][category] + 1
+
+        sample = [c.words_n]
+        train_quota = [2200, 2200, 220, 220]
+        predict_quota = [100, 100]
+        if c.words_n < 25:
+            p_group = 0
+            if c.sex == 0:
+                group = 0
+            else:
+                group = 1
+        else:
+            p_group = 1
+            if c.sex == 0:
+                group = 2
+            else:
+                group = 3
+
+        group = category
+        p_group = category
+        cnt = cnt + 1
+        if train_cnt[group] < train_quota[group]:
+            LR_train_samples.append(sample)
+            LR_train_categories.append(category)
+            train_cnt[group] = train_cnt[group] + 1
+        elif predict_cnt[p_group] < predict_quota[p_group]:
+            LR_predict_samples.append(sample)
+            LR_predict_categories.append(category)
+            predict_cnt[p_group] = predict_cnt[p_group] + 1
+
+    print(cnt)
+    print("ratio:\n")
+    for k in sorted(ratio_ctrs.keys()):
+        i = ratio_ctrs[k]
+        if sum(i) == 0:
+            pcnt = 0
+        else:
+            pcnt = 100 * i[0] / sum(i)
+        print("{}) {:.1f}% ({}/{})".format(k, pcnt, i[0], sum(i)))
+    print("\n")
+
+    print("len:\n")
+    for k in sorted(len_ctrs.keys()):
+        i = len_ctrs[k]
+        if sum(i) == 0:
+            pcnt = 0
+        else:
+            pcnt = 100 * i[0] / sum(i)
+        print("{}) {:.1f}% ({}/{})".format(k, pcnt, i[0], sum(i)))
+
+    run_linear_regression()
+
+
 def calc_total_match(words, dict):
     match = 0
     match_str = ""
@@ -279,24 +366,8 @@ def dump_distributions():
     f.close()
 
 
-def get_cand_char_gender(cand):
-    # gender: 0 = female, 1 = male, 2 = amorphous
-    if cand.f_char_type == cand.m_char_type or (cand.f_char_type > 0 and cand.m_char_type > 0):
-        charg = 2
-        chart = cand.f_char_type
-    else:
-        if cand.f_char_type > 0:
-            charg = 0
-            chart = cand.f_char_type
-        else:
-            charg = 1
-            chart = cand.m_char_type
-    return charg, chart
-
-
 def update_distributions(cand, topic_id):
-    charg, chart = get_cand_char_gender(cand)
-    distributions[cand.sex, charg, topic_id] = distributions[cand.sex, charg, topic_id] + 1
+    distributions[cand.sex, cand.charg, topic_id] = distributions[cand.sex, cand.charg, topic_id] + 1
 
 
 def dump_single_run_results(engine, model, corpus, otype, topics_n):
@@ -342,8 +413,17 @@ def dump_single_run_results(engine, model, corpus, otype, topics_n):
     f = open(fname, "w")
     f.write("{}\n".format(header))
 
+    grps = np.array([0.0] * 30).reshape(2, 15)
+    grps_cnt = [0, 0]
+
     for i, key in enumerate(index2cand):
         cand = index2cand[key]
+        #if not cand.charg == NO_GENDER:
+        #    continue
+
+        grp_id = cand.sex
+        grps_cnt[grp_id] = grps_cnt[grp_id] + 1
+
         if otype == 4 or cand.otype == otype:
         #if cand.excel or cand.rejected:
             # NOTICE: Assumes dump_matches was already called before
@@ -352,9 +432,9 @@ def dump_single_run_results(engine, model, corpus, otype, topics_n):
             if cand.id == 11846665:
                 stopp = 1
 
-            charg, chart = get_cand_char_gender(cand)
-            f.write("{},{},{},{},{},".format(cand.id, cand.sex, charg, chart, cand.year))
+            f.write("{},{},{},{},{},".format(cand.id, cand.sex, cand.charg, cand.chart, cand.year))
             probabilities = get_probabilities(engine, model, i, corpus)
+            cand.probs = probabilities
 
             if DUMP_MY_MATCHES:
                 prob_list = my_matches
@@ -393,76 +473,17 @@ def dump_single_run_results(engine, model, corpus, otype, topics_n):
                     f.write("0,")
 
             # Print probabilities
-            for p in probabilities:
+            for ti, p in enumerate(probabilities):
                 f.write("{:.5f},".format(p[1]))
+                grps[grp_id][ti] = grps[grp_id][ti] + p[1]
+
 
             # Print locations
             for p in probabilities:
                 f.write("{},".format(locations[p[0]]))
 
-
-
-            #p_index = 0
-            #for p in probabilities:
-            #    if DUMP_LOCATIONS:
-            #        f.write("{},".format(locations[p[0]]))
-                    #A hack to dump 1 if first and zero if not
-                    #if locations[p[0]] == (topics_n - 1):
-            #        if r_locations[p[0]] == 0:
-            #            update_distributions(cand, p[0])
-            #            maxcnt = maxcnt + 1
-            #            if cand.sex == 0:
-            #                girlsd[p[0]] = girlsd[p[0]] + 1
-            #                if cand.officer:
-            #                    girlsoffd[p[0]] = girlsoffd[p[0]] + 1
-            #            else:
-            #                boysd[p[0]] = boysd[p[0]] + 1
-            #                if cand.officer:
-            #                    boysoffd[p[0]] = boysoffd[p[0]] + 1
-                        #f.write("1,")
-                    #else:
-                        #f.write("0,")
-            #    else:
-            #        if DUMP_MY_MATCHES:
-            #            if p_index < len(my_matches):
-            #                f.write("{:.3f},".format(my_matches[p_index]))
-            #            else:
-            #                print("index {} not found in my_matches".format(p_index))
-            #        else:
-            #            f.write("{:.5f},".format(p[1]))
-            #    p_index = p_index + 1
-
             gc[cand.sex] = gc[cand.sex] + 1
 
-            if True:
-                #if cand.id > 0:
-                #    if cand.rejected:
-                #        r = r + 1
-                #    else:
-                #        e = e + 1
-                train_quota = [2774, 3211]
-                predict_quota = [300, 300]
-
-                if DUMP_LOCATIONS:
-                    #sample = [cand.words_n, locations[4], locations[6], locations[9]]
-                    sample = [cand.words_n, locations[4], locations[6]]
-                    #sample = [locations[7], locations[12]]
-                else:
-                    #sample = [prob_list[7], prob_list[12]]
-                    sample = [cand.words_n, prob_list[4], prob_list[6], prob_list[9]]
-                    #sample = [cand.words_n, prob_list[4], prob_list[6]]
-                    # sample = [prob_list[3], prob_list[4], prob_list[6], prob_list[9], prob_list[13]]
-                category = cand.sex
-                group = category
-                p_group = category
-                if train_cnt[group] < train_quota[group]:
-                    LR_train_samples.append(sample)
-                    LR_train_categories.append(category)
-                    train_cnt[group] = train_cnt[group] + 1
-                elif predict_cnt[p_group] < predict_quota[p_group]:
-                    LR_predict_samples.append(sample)
-                    LR_predict_categories.append(category)
-                    predict_cnt[p_group] = predict_cnt[p_group] + 1
 
             if cand.otype == 0:
                 kkz = 0
@@ -482,6 +503,18 @@ def dump_single_run_results(engine, model, corpus, otype, topics_n):
     print(sum(girlsd))
     print(maxcnt)
     print(gc)
+    print(grps_cnt)
+    print(grps)
+    #meansf = open("males_and_females_on_females_means.csv", "w")
+    mstr = ""
+    for i in range(2):
+        for j in range(15):
+            grps[i][j] = grps[i][j]/grps_cnt[i]
+            mstr = "{}{},".format(mstr, grps[i][j])
+        #meansf.write(mstr + "\n")
+        mstr = ""
+    #meansf.close()
+    print(grps)
     #print("r={} e={}".format(r, e))
     ## PRINTING distributions to test diff between groups
     #print_list_distribution(lists_by_sex_excel[0, 0])
@@ -509,21 +542,6 @@ def dump_single_run_results(engine, model, corpus, otype, topics_n):
 
     f.close()
 
-
-def run_linear_regression():
-    results = [0, 0]
-    right = [0, 0]
-    clf.fit(LR_train_samples, LR_train_categories)
-    for i, sample in enumerate(LR_predict_samples):
-        prediction = clf.predict([sample])
-        results[prediction[0]] = results[prediction[0]] + 1
-        # print("prediction: {}, officer: {}".format(prediction[0], LR_predict_categories[i]))
-        if prediction[0] == LR_predict_categories[i]:
-            right[prediction[0]] = right[prediction[0]] + 1
-
-    print("Train data: {}/{}".format(sum(LR_train_categories), len(LR_train_categories)))
-    print("Predict data: {}/{}".format(sum(LR_predict_categories), len(LR_predict_categories)))
-    print("predictions: [0]={}/{}, [1]={}/{}, rate = {}".format(right[0], results[0], right[1], results[1], sum(right)/len(LR_predict_samples)))
 
 def run_gensim_engine(text, fname, topics_n):
     model, corp = gensim_lda_run(text, topics_n)
@@ -577,110 +595,6 @@ def run_lda(engine, text, otype, to_dump, topics_n=N):
         return None
 
 
-def lr_by_text():
-    train_cnt = [0, 0, 0, 0]
-    predict_cnt = [0, 0]
-    len_ctrs = {}
-    ratio_ctrs = {}
-    cnt = 0
-    for c in index2cand.values():
-
-        #t = c.hebText.split()
-        #id2word = corpora.Dictionary([t])
-        #unique_ratio = len(id2word)/len(t)
-        #print("{} {} {}".format(len(t), len(id2word), unique_ratio))
-        #sample = [len(t), unique_ratio]
-        len_key = int(c.words_n/10)
-        ratio_key = int(c.unique_ratio * 100)
-
-        #if c.dapar >= 80:
-        #    category = 1
-        #else:
-        #    category = 0
-        category = c.sex
-
-        if len_key not in len_ctrs:
-            len_ctrs[len_key] = [0, 0]
-
-        len_ctrs[len_key][category] = len_ctrs[len_key][category] + 1
-
-        if ratio_key not in ratio_ctrs:
-            ratio_ctrs[ratio_key] = [0, 0]
-
-        ratio_ctrs[ratio_key][category] = ratio_ctrs[ratio_key][category] + 1
-
-
-
-
-
-
-        sample = [c.words_n]
-        train_quota = [2200, 2200, 220, 220]
-        predict_quota = [100, 100]
-        if c.words_n < 25:
-            p_group = 0
-            if c.sex == 0:
-                group = 0
-            else:
-                group = 1
-        else:
-            p_group = 1
-            if c.sex == 0:
-                group = 2
-            else:
-                group = 3
-
-
-
-        group = category
-        p_group = category
-        cnt = cnt + 1
-        if train_cnt[group] < train_quota[group]:
-            LR_train_samples.append(sample)
-            LR_train_categories.append(category)
-            train_cnt[group] = train_cnt[group] + 1
-        elif predict_cnt[p_group] < predict_quota[p_group]:
-            LR_predict_samples.append(sample)
-            LR_predict_categories.append(category)
-            predict_cnt[p_group] = predict_cnt[p_group] + 1
-
-    print(cnt)
-    print("ratio:\n")
-    for k in sorted(ratio_ctrs.keys()):
-        i = ratio_ctrs[k]
-        if sum(i) == 0:
-            pcnt = 0
-        else:
-            pcnt = 100 * i[0] / sum(i)
-        print("{}) {:.1f}% ({}/{})".format(k, pcnt, i[0], sum(i)))
-    print("\n")
-
-    print("len:\n")
-    for k in sorted(len_ctrs.keys()):
-        i = len_ctrs[k]
-        if sum(i) == 0:
-            pcnt = 0
-        else:
-            pcnt = 100 * i[0] / sum(i)
-        print("{}) {:.1f}% ({}/{})".format(k, pcnt, i[0], sum(i)))
-
-    run_linear_regression()
-    #print("officers in train data: {}/{}".format(sum(LR_train_categories), len(LR_train_categories)))
-    #print("officers in predict data: {}/{}".format(sum(LR_predict_categories), len(LR_predict_categories)))
-
-            #    if cand.dapar >= 80:
-            #        category = 1
-            #    else:
-            #        category = 0
-            #    if samples[category] < cat_samples[category]:
-            #        LR_train_samples.append(prob_list)
-            #        LR_train_categories.append(category)
-            #    else:
-            #        LR_predict_samples.append(prob_list)
-            #        LR_predict_categories.append(category)
-            #    samples[category] = samples[category] + 1
-
-
 def print_characters_count():
     #f = open("characters_count_by_type.csv", "w")
     counters = np.array([0] * 30).reshape(2, 3, 5)
@@ -689,9 +603,9 @@ def print_characters_count():
     #family = ["אמא", "אמי", "אימי", "אחות", "דודה"]
     family = ["אמי"]
     for c in index2cand.values():
-        cg, ct = get_cand_char_gender(c)
-        counters[c.sex, cg, ct] = counters[c.sex, cg, ct] + 1
-        if c.sex == 1 and cg == 0 and ct == 1:
+        #cg, ct = get_cand_char_gender(c)
+        counters[c.sex, c.charg, c.chart] = counters[c.sex, c.charg, c.chart] + 1
+        if c.sex == 1 and c.charg == 0 and c.chart == 1:
             cnt = cnt + 1
             found = False
             for word in family:
@@ -711,6 +625,95 @@ def print_characters_count():
             #print(s)
             #f.write(s + '\n')
     #f.close()
+
+
+def prepare_lr_sample(cand):
+    return [cand.sex, cand.chart, cand.probs[0][1], cand.probs[1][1], cand.probs[2][1], cand.probs[3][1],
+            cand.probs[4][1], cand.probs[5][1], cand.probs[6][1], cand.probs[7][1], cand.probs[8][1], cand.probs[9][1],
+            cand.probs[10][1], cand.probs[11][1], cand.probs[12][1], cand.probs[13][1], cand.probs[14][1]]
+
+
+def prepare_linear_regression_db(train_quota1, train_quota2, train_quota3, train_quota4, predict_quota1, predict_quota2,
+                                 predict_quota3, predict_quota4):
+    train_quota = [train_quota1, train_quota2, train_quota3, train_quota4]
+    predict_quota = [predict_quota1, predict_quota2, predict_quota3, predict_quota4]
+    #train_quota = [3, 3]
+    #predict_quota = [1, 1]
+    train_cnt = [0, 0, 0, 0]
+    predict_cnt = [0, 0, 0, 0]
+    train_samples = []
+    train_categories = []
+    predict_samples = []
+    predict_categories = []
+    predict_cands = []
+
+    for key in index2cand:
+        cand = index2cand[key]
+
+        if cand.charg == NO_GENDER:
+            continue
+
+        category = cand.charg
+        group = (2 * cand.sex) + cand.charg
+        p_group = cand.charg
+
+
+        if train_cnt[group] < train_quota[group]:
+            #print("gender {}, char gender {}, group {}, p_group {}".format(cand.sex, cand.charg, group, p_group))
+            #print("adding to train")
+            sample = prepare_lr_sample(cand)
+            train_samples.append(sample)
+            train_categories.append(category)
+            train_cnt[group] = train_cnt[group] + 1
+        elif predict_cnt[p_group] < predict_quota[p_group]:
+            #print("gender {}, char gender {}, group {}, p_group {}".format(cand.sex, cand.charg, group, p_group))
+            #print("adding to predict")
+            sample = prepare_lr_sample(cand)
+            predict_samples.append(sample)
+            predict_cands.append(cand)
+            predict_categories.append(category)
+            predict_cnt[p_group] = predict_cnt[p_group] + 1
+
+    #for i, item in enumerate(predict_cands):
+        #print("{},{}".format(predict_categories[i], predict_cands[i].hebText))
+
+    newl = list(zip(predict_samples, predict_categories, predict_cands))
+    random.shuffle(newl)
+
+    new_predict_samples, new_predict_categories, new_predict_cands = zip(*newl)
+
+    print(train_cnt)
+    print(predict_cnt)
+    return train_samples, train_categories, new_predict_samples, new_predict_categories, new_predict_cands
+
+
+def run_linear_regression(train_quota1, train_quota2, train_quota3, train_quota4, predict_quota1, predict_quota2,
+                          predict_quota3, predict_quota4):
+    results = [0, 0]
+    right = [0, 0]
+    train_samples, train_results, predict_samples, predict_results, predict_cands = prepare_linear_regression_db(train_quota1,
+                                                                                                  train_quota2,
+                                                                                                  train_quota3,
+                                                                                                  train_quota4,
+                                                                                                  predict_quota1,
+                                                                                                  predict_quota2,
+                                                                                                  predict_quota3,
+                                                                                                  predict_quota4)
+
+    clf.fit(train_samples, train_results)
+    for i, sample in enumerate(predict_samples):
+        prediction = clf.predict([sample])
+        results[prediction[0]] = results[prediction[0]] + 1
+        print(predict_cands[i].hebText)
+        if prediction[0] == predict_results[i]:
+            #print("prediction: {}, result: {} - TRUE".format(prediction[0], predict_results[i]))
+            right[prediction[0]] = right[prediction[0]] + 1
+        else:
+            print("prediction: {}, result: {} - FALSE".format(prediction[0], predict_results[i]))
+
+    print("Train data: {}/{}".format(sum(train_results), len(train_results)))
+    print("Predict data: {}/{}".format(sum(predict_results), len(predict_results)))
+    print("predictions: [0]={}/{}, [1]={}/{}, rate = {}".format(right[0], results[0], right[1], results[1], sum(right)/len(predict_samples)))
 
 
 print(datetime.datetime.now())
@@ -793,6 +796,21 @@ for line in text:
 # These two are the actual 'main' for latest run.
 lem_text = get_data_lemmatized(entire_text)
 run_lda(K, lem_text, 4, True, N)
+### THIS ONE GAVE 76.5% run_linear_regression(1000, 1000, 200, 1000, 100, 100, 0, 0)
+### THIS ONE GAVE 95% - 900 200 900 900 200 200 0 0
+### THIS ONE GAVE 97.5% 960 240 240 960 100 100 0 0
+
+val = input("Enter values for linear regression (train quota 1-4, predict quota 1-4): ")
+while not val == "":
+    parts = val.split()
+    if len(parts) > 7:
+        run_linear_regression(int(parts[0]), int(parts[1]), int(parts[2]), int(parts[3]), int(parts[4]), int(parts[5]),
+                              int(parts[6]), int(parts[7]))
+    else:
+        print("Invalid input")
+    val = input("Enter values for linear regression (train quota 1-4, predict quota 1-4): ")
+
+
 #dump_distributions()
 
 #if characters_map[11783427][0] > 0:
