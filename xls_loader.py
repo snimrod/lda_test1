@@ -32,7 +32,7 @@ def is_valid_text(text):
     return True
 
 
-def load_characters(chars_map):
+def load_characters(chars_map, close_type_map):
     char_db = pd.read_excel('not_found_chars.xlsx', 'Original', index_col=None, usecols=None, header=0, nrows=8000)
     no_char = 0
     for i in range(len(char_db)):
@@ -47,6 +47,11 @@ def load_characters(chars_map):
         chars_map[char_db.ID_coded[i]] = [int(m), int(f)]
         if chars_map[char_db.ID_coded[i]] == [0, 0]:
             no_char = no_char + 1
+
+        if is_empty_text(char_db.close_type[i]):
+            close_type_map[char_db.ID_coded[i]] = 0
+        else:
+            close_type_map[char_db.ID_coded[i]] = int(char_db.close_type[i])
 
         if not m == f and m > 0 and f > 0:
             print("{}: {} {}".format(char_db.ID_coded[i], m, f))
@@ -69,8 +74,14 @@ def load_characters(chars_map):
         if not m == f and m > 0 and f > 0:
             print("{}: {} {}".format(auto_char_db.ID_coded[i], m, f))
 
+        if is_empty_text(auto_char_db.close_type[i]):
+            close_type_map[auto_char_db.ID_coded[i]] = 0
+        else:
+            close_type_map[auto_char_db.ID_coded[i]] = int(auto_char_db.close_type[i])
+
     print("auto chars loaded {}".format(len(auto_char_db)))
     print("total chars loaded {}".format(len(chars_map)))
+
 
 # df = pd.read_excel('Book1.xlsx', sheetname=None, header=None)
 # df = pd.read_excel('Book1.xlsx')

@@ -32,12 +32,13 @@ def get_cand_char_gender(chars_type):
 
 class CandData:
 
-    def __init__(self, db, characters_map, line):
+    def __init__(self, db, characters_map, close_type_map, line, engText):
         self.id = db.ID_coded[line]
         self.year = db.Test_Date[line].year
         self.officer = db.officer[line]
         self.otype = get_officer_type(line)
         self.hebText = db.text[line]
+        self.engText = engText
         self.probs = []
 
         t = self.hebText.split()
@@ -82,6 +83,11 @@ class CandData:
             #self.m_char_type = chars_type[0]
             #self.f_char_type = chars_type[1]
             self.charg, self.chart = get_cand_char_gender(characters_map[self.id])
+
+        if self.id in close_type_map:
+            self.close_char_type = close_type_map[self.id]
+        else:
+            self.close_char_type = 0
 
         self.rejected = 0
         self.mavdak1 = ""

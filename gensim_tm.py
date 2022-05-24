@@ -49,6 +49,16 @@ FEMALE = 0
 MALE = 1
 NO_GENDER = 2
 
+# Close familiarity types
+PARENT = 1
+G_PARENT = 2
+SIBLING = 3
+UNCLE_AUNT = 4
+TEACHER = 5
+COMMANDER = 6
+FRIEND = 7
+SPOUSE = 8
+
 def dump_big5():
     f = open("big5.csv", "w")
     h = "B1,B2,B3,B4,B5,dapar,tzadak,mavdak1,mavdak2,rejected,nf,ne,socioT,socioP\n"
@@ -724,6 +734,7 @@ db = get_cands_data('thesis_db.xls', MAX_LINE)
 #db = get_cands_data('fake_db.xls', MAX_LINE)
 reviewed_cands = []
 characters_map = {}
+close_type_map = {}
 errors = [0, 0, 0, 0, 0, 0]
 lda_text = [[], [], [], []]
 accum_kkz_text = [""] * 4
@@ -742,20 +753,23 @@ cand_ids = []
 high = []
 low = []
 
+id2cand = {}
+
 index = 0
 
-load_characters(characters_map)
+load_characters(characters_map, close_type_map)
 
 for line in text:
     this_cand_id = db.ID_coded[index]
     if this_cand_id not in reviewed_cands:
         reviewed_cands.append(this_cand_id)
-        cand = get_cand(db, full_text, characters_map, index, YEARS, errors)
+        cand = get_cand(db, full_text, characters_map, close_type_map, index, YEARS, errors)
         if cand is not None:
             entire_text.append(line)
             cand_ids.append(cand.id)
             lda_text[cand.otype].append(line)
             index2cand[index] = cand
+            id2cand[cand.id] = cand
 
 
             #if cand.sex == 0:
@@ -794,21 +808,21 @@ for line in text:
 
 #print_characters_count()
 # These two are the actual 'main' for latest run.
-lem_text = get_data_lemmatized(entire_text)
-run_lda(K, lem_text, 4, True, N)
+#lem_text = get_data_lemmatized(entire_text)
+#run_lda(K, lem_text, 4, True, N)
 ### THIS ONE GAVE 76.5% run_linear_regression(1000, 1000, 200, 1000, 100, 100, 0, 0)
 ### THIS ONE GAVE 95% - 900 200 900 900 200 200 0 0
 ### THIS ONE GAVE 97.5% 960 240 240 960 100 100 0 0
 
-val = input("Enter values for linear regression (train quota 1-4, predict quota 1-4): ")
-while not val == "":
-    parts = val.split()
-    if len(parts) > 7:
-        run_linear_regression(int(parts[0]), int(parts[1]), int(parts[2]), int(parts[3]), int(parts[4]), int(parts[5]),
-                              int(parts[6]), int(parts[7]))
-    else:
-        print("Invalid input")
-    val = input("Enter values for linear regression (train quota 1-4, predict quota 1-4): ")
+#val = input("Enter values for linear regression (train quota 1-4, predict quota 1-4): ")
+#while not val == "":
+#    parts = val.split()
+#    if len(parts) > 7:
+#        run_linear_regression(int(parts[0]), int(parts[1]), int(parts[2]), int(parts[3]), int(parts[4]), int(parts[5]),
+#                              int(parts[6]), int(parts[7]))
+#    else:
+#        print("Invalid input")
+#    val = input("Enter values for linear regression (train quota 1-4, predict quota 1-4): ")
 
 
 #dump_distributions()
@@ -855,6 +869,32 @@ while not val == "":
 
 #run_lda(lda_text[0], 0, 'lda0_backup')
 #gensim_apply_text_on_model('lda0_backup', sample_text)
+
+cf = 0
+cm = 0
+close_types = np.array([0] * 54).reshape(2, 3, 9)
+
+for i, key in enumerate(index2cand):
+    cand = index2cand[key]
+    close_types[cand.sex][cand.charg][cand.close_char_type] = close_types[cand.sex][cand.charg][cand.close_char_type] + 1
+    if cand.close_char_type > 0:
+        if cand.charg == 0:
+            cf = cf + 1
+        else:
+            cm = cm + 1
+
+f = open("close_types.csv", "w")
+for i in range(2):
+    for j in range(2):
+        for z in range(9):
+            f.write("{},".format(close_types[i,j,z]))
+        f.write('\n')
+
+f.close()
+
+
+print("{} {}".format(cf, cm))
+
 
 print(datetime.datetime.now())
 print("Done")
