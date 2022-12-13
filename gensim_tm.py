@@ -20,6 +20,9 @@ import numpy as np
 from sklearn import linear_model
 from xls_loader import load_characters
 import random
+from datetime import date
+from statistics import mean
+from statistics import stdev
 from operator import itemgetter
 
 MAX_LINE = 12110
@@ -417,7 +420,7 @@ def dump_single_run_results(engine, model, corpus, otype, topics_n):
         header = "{}t{}V,".format(header, i)
     for i in range(topics_n):
         header = "{}t{}L,".format(header, i)
-    header = "{}KKZ,KKZT,Officer,DAPAR,TZADAK,MAVDAK1,MAVDAK2,REJECTED,EXCEL,GRADE,SOCIO_TIRONUT,SOCIO_PIKUD,WORDS_N,UNIQUE_R".format(header)
+    header = "{}KKZ,KKZT,Officer,DAPAR,TZADAK,MAVDAK1,MAVDAK2,REJECTED,EXCEL,GRADE,SOCIO_TIRONUT,SOCIO_PIKUD,WORDS_N,UNIQUE_R,Close_type".format(header)
 
     fname = "_{}_{}_{}_topics_dist.csv".format(engine, NAMES[otype], topics_n)
     f = open(fname, "w")
@@ -499,11 +502,12 @@ def dump_single_run_results(engine, model, corpus, otype, topics_n):
                 kkz = 0
             else:
                 kkz = 1
-            f.write("{},{},{},{},{},{},{},{},{},{},{},{},{},{:.4f}\n".format(kkz, cand.otype, cand.officer,
+            f.write("{},{},{},{},{},{},{},{},{},{},{},{},{},{:.4f},{}\n".format(kkz, cand.otype, cand.officer,
                                                                           cand.dapar, cand.tzadak, cand.mavdak1,
                                                                           cand.mavdak2, cand.rejected, cand.excel,
                                                                           cand.grade, cand.socio_t, cand.socio_p,
-                                                                          cand.words_n, cand.unique_ratio))
+                                                                          cand.words_n, cand.unique_ratio,
+                                                                          cand.close_char_type))
 
     print(boysd)
     print(boysoffd)
@@ -726,6 +730,11 @@ def run_linear_regression(train_quota1, train_quota2, train_quota3, train_quota4
     print("predictions: [0]={}/{}, [1]={}/{}, rate = {}".format(right[0], results[0], right[1], results[1], sum(right)/len(predict_samples)))
 
 
+def age(birthdate, today):
+    #today = date.today()
+    age = today.year - birthdate.year - ((today.month, today.day) < (birthdate.month, birthdate.day))
+    return age
+
 print(datetime.datetime.now())
 full_text = get_translated_text("Translated_text.txt")
 #full_text = get_translated_text("fake_translated.txt")
@@ -754,6 +763,7 @@ high = []
 low = []
 
 id2cand = {}
+ages = []
 
 index = 0
 
@@ -765,11 +775,13 @@ for line in text:
         reviewed_cands.append(this_cand_id)
         cand = get_cand(db, full_text, characters_map, close_type_map, index, YEARS, errors)
         if cand is not None:
-            entire_text.append(line)
-            cand_ids.append(cand.id)
-            lda_text[cand.otype].append(line)
-            index2cand[index] = cand
-            id2cand[cand.id] = cand
+            #entire_text.append(line)
+            #cand_ids.append(cand.id)
+            #lda_text[cand.otype].append(line)
+            #index2cand[index] = cand
+            #id2cand[cand.id] = cand
+            print(db.T_LEIDA[index], age(db.T_LEIDA[index], db.Test_Date[index]))
+            ages.append(age(db.T_LEIDA[index], db.Test_Date[index]))
 
 
             #if cand.sex == 0:
@@ -870,32 +882,35 @@ for line in text:
 #run_lda(lda_text[0], 0, 'lda0_backup')
 #gensim_apply_text_on_model('lda0_backup', sample_text)
 
-cf = 0
-cm = 0
-close_types = np.array([0] * 54).reshape(2, 3, 9)
+#cf = 0
+#cm = 0
+#close_types = np.array([0] * 54).reshape(2, 3, 9)
 
-for i, key in enumerate(index2cand):
-    cand = index2cand[key]
-    close_types[cand.sex][cand.charg][cand.close_char_type] = close_types[cand.sex][cand.charg][cand.close_char_type] + 1
-    if cand.close_char_type > 0:
-        if cand.charg == 0:
-            cf = cf + 1
-        else:
-            cm = cm + 1
+#for i, key in enumerate(index2cand):
+#    cand = index2cand[key]
+#    close_types[cand.sex][cand.charg][cand.close_char_type] = close_types[cand.sex][cand.charg][cand.close_char_type] + 1
+#    if cand.close_char_type > 0:
+#        if cand.charg == 0:
+#            cf = cf + 1
+#        else:
+#            cm = cm + 1
 
-f = open("close_types.csv", "w")
-for i in range(2):
-    for j in range(2):
-        for z in range(9):
-            f.write("{},".format(close_types[i,j,z]))
-        f.write('\n')
+#f = open("close_types.csv", "w")
+#for i in range(2):
+#    for j in range(2):
+#        for z in range(9):
+#            f.write("{},".format(close_types[i,j,z]))
+#        f.write('\n')
 
-f.close()
-
-
-print("{} {}".format(cf, cm))
+#f.close()
 
 
+#print("{} {}".format(cf, cm))
+
+print(ages)
+print(len(ages))
+print(mean(ages))
+print(stdev(ages))
 print(datetime.datetime.now())
 print("Done")
 
